@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-02T05:34:58.320Z",
+ "generated": "2026-09-02T06:14:24.318Z",
  "sources": [
   {
    "name": "Himalayas",
@@ -28,7 +28,7 @@
   {
    "name": "Databricks",
    "ok": true,
-   "count": 864,
+   "count": 865,
    "err": null
   },
   {
@@ -64,7 +64,7 @@
   {
    "name": "Rubrik",
    "ok": true,
-   "count": 134,
+   "count": 133,
    "err": null
   },
   {
@@ -190,7 +190,7 @@
   {
    "name": "Robinhood",
    "ok": true,
-   "count": 132,
+   "count": 131,
    "err": null
   },
   {
@@ -638,24 +638,6 @@
    "score": 9
   },
   {
-   "id": "gh:cloudflare-8089379",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Research Engineer Intern (Fall 2026)",
-   "loc": "In-Office",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8089379?gh_jid=8089379",
-   "posted": 1788310157000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "research engineer",
-    "intern"
-   ],
-   "score": 9
-  },
-  {
    "id": "gh:cloudflare-8089407",
    "src": "greenhouse",
    "srcLabel": "Cloudflare",
@@ -681,6 +663,24 @@
    "title": "Research Engineer Intern (Fall 2026)",
    "loc": "In-Office",
    "url": "https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400",
+   "posted": 1788310157000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "research engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:cloudflare-8089379",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Research Engineer Intern (Fall 2026)",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8089379?gh_jid=8089379",
    "posted": 1788310157000,
    "tags": [],
    "desc": "",
@@ -1685,6 +1685,24 @@
    "score": 9
   },
   {
+   "id": "gh:airbnb-7716341",
+   "src": "greenhouse",
+   "srcLabel": "Airbnb",
+   "company": "Airbnb",
+   "title": "Machine Learning Engineer, AI Platform",
+   "loc": "China",
+   "url": "https://careers.airbnb.com/positions/7716341?gh_jid=7716341",
+   "posted": 1788329303000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "ai"
+   ],
+   "score": 8
+  },
+  {
    "id": "gh:databricks-8099751002",
    "src": "greenhouse",
    "srcLabel": "Databricks",
@@ -1755,13 +1773,13 @@
    "score": 8
   },
   {
-   "id": "gh:mongodb-7993984",
+   "id": "gh:mongodb-8083366",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3",
    "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8083366",
    "posted": 1788248427000,
    "tags": [],
    "desc": "",
@@ -1789,13 +1807,13 @@
    "score": 8
   },
   {
-   "id": "gh:mongodb-8083366",
+   "id": "gh:mongodb-7993984",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3",
    "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8083366",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
    "posted": 1788248427000,
    "tags": [],
    "desc": "",
@@ -2050,13 +2068,13 @@
    "score": 8
   },
   {
-   "id": "gh:elastic-8080263",
+   "id": "gh:elastic-8080260",
    "src": "greenhouse",
    "srcLabel": "Elastic",
    "company": "Elastic",
    "title": "Software Engineer II - Full Stack - Web Engineering",
-   "loc": "Spain",
-   "url": "https://jobs.elastic.co/jobs?gh_jid=8080263&gh_jid=8080263",
+   "loc": "Portugal",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8080260&gh_jid=8080260",
    "posted": 1787844369000,
    "tags": [],
    "desc": "",
@@ -2086,13 +2104,13 @@
    "score": 8
   },
   {
-   "id": "gh:elastic-8080260",
+   "id": "gh:elastic-8080264",
    "src": "greenhouse",
    "srcLabel": "Elastic",
    "company": "Elastic",
    "title": "Software Engineer II - Full Stack - Web Engineering",
-   "loc": "Portugal",
-   "url": "https://jobs.elastic.co/jobs?gh_jid=8080260&gh_jid=8080260",
+   "loc": "Greece",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8080264&gh_jid=8080264",
    "posted": 1787844369000,
    "tags": [],
    "desc": "",
@@ -2104,13 +2122,13 @@
    "score": 8
   },
   {
-   "id": "gh:elastic-8080264",
+   "id": "gh:elastic-8080263",
    "src": "greenhouse",
    "srcLabel": "Elastic",
    "company": "Elastic",
    "title": "Software Engineer II - Full Stack - Web Engineering",
-   "loc": "Greece",
-   "url": "https://jobs.elastic.co/jobs?gh_jid=8080264&gh_jid=8080264",
+   "loc": "Spain",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8080263&gh_jid=8080263",
    "posted": 1787844369000,
    "tags": [],
    "desc": "",
@@ -2885,13 +2903,13 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7813157003",
+   "id": "gh:affirm-7813159003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
    "company": "Affirm",
    "title": "Software Engineer II, Backend (Collections)",
-   "loc": "Remote Spain",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7813157003",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7813159003",
    "posted": 1786561931000,
    "tags": [],
    "desc": "",
@@ -2903,13 +2921,13 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7813159003",
+   "id": "gh:affirm-7813157003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
    "company": "Affirm",
    "title": "Software Engineer II, Backend (Collections)",
-   "loc": "Remote Poland",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7813159003",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7813157003",
    "posted": 1786561931000,
    "tags": [],
    "desc": "",
@@ -4395,13 +4413,13 @@
    "score": 6
   },
   {
-   "id": "gh:brex-8536424002",
+   "id": "gh:brex-8459783002",
    "src": "greenhouse",
    "srcLabel": "Brex",
    "company": "Brex",
    "title": "Software Engineer II, Backend",
-   "loc": "New York, New York, United States",
-   "url": "https://www.brex.com/careers/8536424002?gh_jid=8536424002",
+   "loc": "San Francisco, California, United States",
+   "url": "https://www.brex.com/careers/8459783002?gh_jid=8459783002",
    "posted": 1787147578000,
    "tags": [],
    "desc": "",
@@ -4413,13 +4431,13 @@
    "score": 6
   },
   {
-   "id": "gh:brex-8459783002",
+   "id": "gh:brex-8536424002",
    "src": "greenhouse",
    "srcLabel": "Brex",
    "company": "Brex",
    "title": "Software Engineer II, Backend",
-   "loc": "San Francisco, California, United States",
-   "url": "https://www.brex.com/careers/8459783002?gh_jid=8459783002",
+   "loc": "New York, New York, United States",
+   "url": "https://www.brex.com/careers/8536424002?gh_jid=8536424002",
    "posted": 1787147578000,
    "tags": [],
    "desc": "",
@@ -5307,6 +5325,40 @@
    "score": 6
   },
   {
+   "id": "gh:stripe-7964956",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Full Stack Engineer, Growth",
+   "loc": "Singapore",
+   "url": "https://stripe.com/jobs/search?gh_jid=7964956",
+   "posted": 1788327850000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "full stack"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:stripe-7529787",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Payments",
+   "loc": "Singapore",
+   "url": "https://stripe.com/jobs/search?gh_jid=7529787",
+   "posted": 1788327718000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
    "id": "gh:databricks-8749859002",
    "src": "greenhouse",
    "srcLabel": "Databricks",
@@ -5443,13 +5495,13 @@
    "score": 5
   },
   {
-   "id": "gh:databricks-8760282002",
+   "id": "gh:databricks-8760281002",
    "src": "greenhouse",
    "srcLabel": "Databricks",
    "company": "Databricks",
    "title": "AI Engineer - FDE (Forward Deployed Engineer)",
-   "loc": "Bellevue, Washington; Seattle, Washington",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8760282002",
+   "loc": "Berkeley, California; Los Angeles, California; Mountain View, California; Sacramento, California; San Diego, California; San Francisco, California",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8760281002",
    "posted": 1788323218000,
    "tags": [],
    "desc": "",
@@ -5460,13 +5512,30 @@
    "score": 5
   },
   {
-   "id": "gh:databricks-8760281002",
+   "id": "gh:databricks-8760289002",
    "src": "greenhouse",
    "srcLabel": "Databricks",
    "company": "Databricks",
    "title": "AI Engineer - FDE (Forward Deployed Engineer)",
-   "loc": "Berkeley, California; Los Angeles, California; Mountain View, California; Sacramento, California; San Diego, California; San Francisco, California",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8760281002",
+   "loc": "New York City, New York",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8760289002",
+   "posted": 1788323218000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:databricks-8760282002",
+   "src": "greenhouse",
+   "srcLabel": "Databricks",
+   "company": "Databricks",
+   "title": "AI Engineer - FDE (Forward Deployed Engineer)",
+   "loc": "Bellevue, Washington; Seattle, Washington",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8760282002",
    "posted": 1788323218000,
    "tags": [],
    "desc": "",
@@ -5562,23 +5631,6 @@
    "score": 5
   },
   {
-   "id": "gh:databricks-8760289002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "AI Engineer - FDE (Forward Deployed Engineer)",
-   "loc": "New York City, New York",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8760289002",
-   "posted": 1788323218000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
-   ],
-   "score": 5
-  },
-  {
    "id": "gh:databricks-8519282002",
    "src": "greenhouse",
    "srcLabel": "Databricks",
@@ -5615,63 +5667,6 @@
    "salary": "",
    "hits": [
     "react"
-   ],
-   "score": 5
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/wing-assistant/jobs/ai-video-trainer-hebrew",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Wing Assistant",
-   "title": "AI Video Trainer - Hebrew",
-   "loc": "Israel",
-   "url": "https://himalayas.app/companies/wing-assistant/jobs/ai-video-trainer-hebrew",
-   "posted": 1788312183000,
-   "tags": [
-    "AI-Training",
-    "Data-Collection",
-    "Video-Production",
-    "Audio-Production",
-    "Language-Services"
-   ],
-   "desc": "Wing Data is looking for Freelance AI Audio & Video Trainers to support one of our clients on an AI Training Audio & Video Participation Study.",
-   "salary": "USD10–20",
-   "hits": [
-    "ai"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:cloudflare-8097321",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "AI Security Research & Red Team Engineer",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8097321?gh_jid=8097321",
-   "posted": 1788310157000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:cloudflare-8014902",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Full Stack Engineer - Internal Audit",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8014902?gh_jid=8014902",
-   "posted": 1788310157000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "full stack"
    ],
    "score": 5
   }
