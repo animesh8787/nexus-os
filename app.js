@@ -1777,6 +1777,239 @@ function feedSourcesPanel() {
   </div>`;
 }
 
+/* ---------- GitHub ---------- */
+const GH_EVENT = {
+  PushEvent: "pushed", CreateEvent: "created", PullRequestEvent: "pull request",
+  IssuesEvent: "issue", IssueCommentEvent: "comment", WatchEvent: "starred",
+  ForkEvent: "forked", ReleaseEvent: "released", DeleteEvent: "deleted",
+  PullRequestReviewEvent: "review",
+};
+ROUTES.github = function () {
+  const g = S.gh;
+  if (!g) return `
+  <div class="page-title">GitHub</div>
+  <div class="page-sub">Repos, languages and your contribution graph.</div>
+  <div class="card">
+    <div class="section-label">Connect your account</div>
+    <div class="connect">
+      <div class="field"><label class="field-label">GitHub username</label>
+        <input class="input" id="ghUser" placeholder="octocat" value="${esc(S.settings.github || "")}"></div>
+      <button class="btn btn-primary" data-action="gh-connect">Connect</button>
+    </div>
+    <div style="margin-top:14px">${empty("⑂", "Not connected yet", "Add your username to pull repos, stars and contributions")}</div>
+  </div>`;
+
+  const p = g.profile;
+  const topLang = g.langs.length ? g.langs[0][1] : 1;
+  return `
+  <div class="topline" style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap">
+    <div>
+      <div class="page-title">GitHub</div>
+      <div class="page-sub">${esc(p.name || p.login)} · <a href="${esc(p.url)}" target="_blank" rel="noopener">@${esc(p.login)} ↗</a></div>
+    </div>
+    <button class="btn btn-ghost btn-sm" data-action="gh-disconnect">Disconnect</button>
+  </div>
+
+  <div class="grid g-4" style="margin:14px 0">
+    ${stat("Contributions", g.contribTotal || 0, "past year", { icon: "⑂", color: g.contribTotal ? "var(--green)" : "var(--faint)" })}
+    ${stat("Public repos", p.publicRepos || 0, "on your profile", { icon: "◆", color: "var(--accent)" })}
+    ${stat("Stars earned", g.stars || 0, "across your repos", { icon: "★", color: g.stars ? "var(--amber)" : "var(--faint)" })}
+    ${stat("Followers", p.followers || 0, `following ${p.following || 0}`, { icon: "◎", color: "var(--faint)" })}
+  </div>
+
+  <div class="card" style="margin-bottom:14px">
+    <div class="card-head"><div class="card-title">Contribution graph</div>
+      <span class="faint tabnum" style="font-size:12px">synced ${ago(g.lastSync)}</span></div>
+    ${g.contributions.length
+      ? heatmap(calFromContrib(g.contributions), { weeks: 52, palette: ["var(--gh0)", "var(--gh1)", "var(--gh2)", "var(--gh3)", "var(--gh4)"] })
+      : empty("⑂", "No contribution data", "The contributions proxy may be down — sync again later")}
+  </div>
+
+  <div class="grid g-2" style="margin-bottom:14px">
+    <div class="card">
+      <div class="card-head"><div class="card-title">Top repositories</div></div>
+      ${g.topRepos.length ? g.topRepos.map((r) => `
+        <div class="list-line" style="display:block">
+          <div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline">
+            <a href="${esc(r.url)}" target="_blank" rel="noopener" style="font-weight:650;font-size:13px">${esc(r.name)}</a>
+            <span class="faint tabnum" style="font-size:11.5px">★ ${r.stars}</span>
+          </div>
+          ${r.desc ? `<div class="mut" style="font-size:12px;margin-top:3px">${esc(r.desc)}</div>` : ""}
+          <div class="faint" style="font-size:11px;margin-top:3px">${r.lang ? esc(r.lang) + " · " : ""}pushed ${ago(new Date(r.pushed).getTime())}</div>
+        </div>`).join("") : empty("◆", "No repos yet", "Push a project to see it here")}
+    </div>
+
+    <div class="card">
+      <div class="card-head"><div class="card-title">Languages</div></div>
+      ${g.langs.length ? g.langs.map(([lang, n]) => `
+        <div style="margin-bottom:11px">
+          <div style="display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px">
+            <span style="font-weight:600">${esc(lang)}</span>
+            <span class="faint tabnum">${n} repo${n === 1 ? "" : "s"}</span>
+          </div>
+          ${progress(n, topLang, { sm: true })}
+        </div>`).join("") : empty("▤", "No languages detected", "")}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title">Recent activity</div></div>
+    ${g.events.length ? g.events.map((e) => `
+      <div class="list-line">
+        <span class="badge b-muted">${esc(GH_EVENT[e.type] || String(e.type).replace("Event", ""))}</span>
+        <span class="mut" style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(e.repo || "—")}</span>
+        <span class="faint" style="font-size:11px">${ago(e.ts)}</span>
+      </div>`).join("") : empty("◷", "No recent public activity", "")}
+  </div>
+  `;
+};
+
+/* ---------- AI Coach ---------- */
+ROUTES.coach = function () {
+  const hasKey = !!S.settings.groqKey;
+  const h = S.ai.history || [];
+  return `
+  <div class="page-title">AI Coach</div>
+  <div class="page-sub">A second opinion on what to study, what to fix, and how you are tracking.</div>
+
+  ${!hasKey ? `
+  <div class="card" style="margin-bottom:14px;border-color:color-mix(in srgb,var(--amber) 30%,transparent);background:var(--amber-weak)">
+    <div class="card-head" style="margin-bottom:8px"><div class="card-title">🔑 Add a Groq API key</div></div>
+    <p class="mut" style="font-size:13px;margin-bottom:12px">The coach runs on Groq. Add a key in Settings to switch it on — everything below stays disabled until then.</p>
+    <button class="btn btn-primary" data-action="nav" data-view="settings">Open Settings →</button>
+  </div>` : ""}
+
+  <div class="card" style="margin-bottom:14px">
+    <div class="section-label">Ask the coach</div>
+    <div class="wrap">
+      ${Object.entries(COACH).map(([k, c]) => `
+        <button class="btn btn-sm ${hasKey ? "btn-primary" : "btn-ghost"}" data-action="coach-run" data-kind="${k}"${hasKey ? "" : " disabled"}>${c.icon} ${esc(c.label)}</button>`).join("")}
+    </div>
+    <div id="coachOut"></div>
+  </div>
+
+  <div class="card" style="margin-bottom:14px">
+    <div class="card-head"><div class="card-title">Review a solution</div></div>
+    <div class="field" style="margin-bottom:10px">
+      <label class="field-label">Problem (optional)</label>
+      <input class="input" id="revProb" placeholder="Two Sum">
+    </div>
+    <label class="field-label">Your code</label>
+    <textarea id="revCode" rows="9" class="code-area" placeholder="Paste your accepted solution…"></textarea>
+    <div style="margin-top:10px">
+      <button class="btn btn-primary" data-action="coach-review"${hasKey ? "" : " disabled"}>✦ Review my solution</button>
+    </div>
+    <div id="revOut" style="margin-top:12px"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title">History</div>
+      ${h.length ? `<button class="btn btn-sm btn-ghost" data-action="coach-clear">Clear</button>` : ""}</div>
+    ${!h.length ? empty("✦", "Nothing yet", "Run a briefing or a retro and it lands here") : h.map((x, i) => `
+      <div class="list-line" style="display:block">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+          <span class="badge b-accent">${esc((COACH[x.kind] && COACH[x.kind].label) || x.kind)}</span>
+          <span class="faint right" style="font-size:11px">${esc(new Date(x.date).toLocaleString("en", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }))}</span>
+          <button class="icon-btn" style="width:24px;height:24px;font-size:11px" data-action="coach-del" data-i="${i}" title="Delete">✕</button>
+        </div>
+        <div class="md-body">${mdToHtml(x.text)}</div>
+      </div>`).join("")}
+  </div>
+  `;
+};
+
+/* ---------- Skills ---------- */
+const SKILL_GROUPS = {
+  fullstack: { label: "Full-Stack Development", icon: "◆" },
+  aiml:      { label: "AI / ML",                icon: "λ" },
+};
+ROUTES.skills = function () {
+  const groups = Object.keys(S.skills);
+  const avg = (list) => (list.length ? Math.round(list.reduce((a, s) => a + (s.v || 0), 0) / list.length) : 0);
+  const all = groups.reduce((a, g) => a.concat(S.skills[g]), []);
+  const meta = (g) => SKILL_GROUPS[g] || { label: titleCase(g), icon: "◇" };
+
+  return `
+  <div class="page-title">Skills</div>
+  <div class="page-sub">Rate yourself honestly — the gaps are your syllabus.</div>
+
+  <div class="grid g-4" style="margin:14px 0">
+    ${stat("Overall", avg(all) + "%", "across every skill", { icon: "▤", color: avg(all) ? "var(--accent)" : "var(--faint)" })}
+    ${groups.map((g) => stat(meta(g).label, avg(S.skills[g]) + "%", `${S.skills[g].length} tracked`, { icon: meta(g).icon, color: avg(S.skills[g]) ? "var(--green)" : "var(--faint)" })).join("")}
+    ${stat("Solid", all.filter((s) => (s.v || 0) >= 70).length, `of ${all.length} at 70%+`, { icon: "✔", color: "var(--green)" })}
+  </div>
+
+  ${groups.map((g) => `
+    <div class="card" style="margin-bottom:14px">
+      <div class="card-head">
+        <div class="card-title">${meta(g).icon} ${esc(meta(g).label)}</div>
+        <span class="badge b-accent">${avg(S.skills[g])}%</span>
+      </div>
+      ${S.skills[g].length ? S.skills[g].map((s, i) => `
+        <div class="list-line" style="display:block">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="flex:1;font-size:13px;font-weight:600">${esc(s.n)}</span>
+            <span class="faint tabnum" id="sv-${g}-${i}" style="font-size:11.5px;min-width:38px;text-align:right">${s.v || 0}%</span>
+            <button class="icon-btn" style="width:24px;height:24px;font-size:11px" data-action="skill-del" data-g="${g}" data-i="${i}" title="Remove">✕</button>
+          </div>
+          <input type="range" min="0" max="100" value="${s.v || 0}" data-action="skill-range" data-g="${g}" data-i="${i}" style="width:100%;margin-top:7px">
+        </div>`).join("") : empty("◇", "No skills in this group", "Add one below")}
+      <div style="margin-top:12px"><button class="btn btn-sm" data-action="skill-add" data-g="${g}">+ Add skill</button></div>
+    </div>`).join("")}
+  `;
+};
+
+/* ---------- Projects ---------- */
+ROUTES.projects = function () {
+  const ps = S.projects || [];
+  const doneOf = (p) => p.tasks.filter((t) => t.done).length;
+  const totalTasks = ps.reduce((a, p) => a + p.tasks.length, 0);
+  const doneTasks = ps.reduce((a, p) => a + doneOf(p), 0);
+  const shipped = ps.filter((p) => p.tasks.length && doneOf(p) === p.tasks.length).length;
+
+  return `
+  <div class="topline" style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap">
+    <div>
+      <div class="page-title">Projects</div>
+      <div class="page-sub">Portfolio work — this is what interviews actually talk about.</div>
+    </div>
+    <button class="btn btn-primary btn-sm" data-action="proj-add">+ New project</button>
+  </div>
+
+  <div class="grid g-3" style="margin:14px 0">
+    ${stat("Projects", ps.length, "in the portfolio", { icon: "◆", color: ps.length ? "var(--accent)" : "var(--faint)" })}
+    ${stat("Tasks done", doneTasks + "/" + totalTasks, pct(doneTasks, totalTasks) + "% complete", { icon: "✔", color: doneTasks ? "var(--green)" : "var(--faint)" })}
+    ${stat("Shipped", shipped, "fully complete", { icon: "🚀", color: shipped ? "var(--green)" : "var(--faint)" })}
+  </div>
+
+  ${!ps.length ? `<div class="card">${empty("◆", "No projects yet", "Add one — a shipped project beats a hundred tutorials")}</div>`
+  : `<div class="stack">${ps.map((p) => {
+      const d = doneOf(p), t = p.tasks.length;
+      return `
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">${p.emoji || "◆"} ${esc(p.name)}</div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="badge ${t && d === t ? "b-green" : "b-accent"}">${d}/${t}</span>
+            <button class="icon-btn" style="width:24px;height:24px;font-size:11px" data-action="proj-del" data-id="${esc(p.id)}" title="Delete project">✕</button>
+          </div>
+        </div>
+        ${p.desc ? `<div class="mut" style="font-size:12.5px;margin-bottom:9px">${esc(p.desc)}</div>` : ""}
+        ${(p.tech && p.tech.length) ? `<div class="wrap" style="margin-bottom:11px">${p.tech.map((x) => `<span class="badge b-muted">${esc(x)}</span>`).join("")}</div>` : ""}
+        ${progress(d, t || 1)}
+        <div style="margin-top:10px">
+          ${t ? p.tasks.map((tk, i) => `
+            <div class="row-item ${tk.done ? "done" : ""}" data-action="proj-task" data-id="${esc(p.id)}" data-i="${i}">
+              <span class="check">${tk.done ? "✓" : ""}</span>
+              <span class="ri-text">${esc(tk.t)}</span>
+            </div>`).join("") : `<div class="faint" style="font-size:12.5px;padding:4px 2px">No tasks yet — break the work down.</div>`}
+        </div>
+        <div style="margin-top:10px"><button class="btn btn-sm" data-action="proj-task-add" data-id="${esc(p.id)}">+ Add task</button></div>
+      </div>`;
+    }).join("")}</div>`}
+  `;
+};
+
 /* ---------- Job Feed ---------- */
 /* _feedTab null = follow the feed: New while anything is unseen, otherwise All.
    Clicking a tab pins it. */
