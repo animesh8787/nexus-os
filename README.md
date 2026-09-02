@@ -127,7 +127,7 @@ schtasks /Delete /TN "NexusOS-JobAgent" /F
 and block scraping. Their own job alerts are the supported route:
 
 1. Create a job alert on each site matching your target roles.
-2. Point all of them at one dedicated inbox (e.g. `workreachoutanimesh@gmail.com`).
+2. Point all of them at one dedicated inbox (e.g. `your-job-alerts@example.com`).
 3. Check that inbox alongside the Job Feed.
 
 Automated reading of that inbox would need a Gmail OAuth connector — **never** a
