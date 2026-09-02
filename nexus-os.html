@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS OS — Engineering Grind System</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;900&family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--cy:#00c8ff;--pu:#8b5cf6;--pk:#f43f5e;--gr:#10f98a;--ye:#fbbf24;--or:#f97316;--tx:#dde8ff;--mu:rgba(170,190,255,.52);--di:rgba(140,160,230,.28)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;font-family:'Exo 2',sans-serif;color:var(--tx)}
+body{background:radial-gradient(ellipse 75% 50% at 12% -5%,rgba(139,92,246,.17) 0%,transparent 55%),radial-gradient(ellipse 55% 45% at 88% 108%,rgba(0,200,255,.1) 0%,transparent 55%),linear-gradient(160deg,#04040e,#06071c 50%,#040412)}
+.bg-grid{position:fixed;inset:0;z-index:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(0,200,255,.021) 39px,rgba(0,200,255,.021) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(0,200,255,.021) 39px,rgba(0,200,255,.021) 40px)}
+.lay{display:flex;height:100vh;position:relative;z-index:1;overflow:hidden}
+.sb{width:208px;flex-shrink:0;background:rgba(4,5,18,.95);border-right:1px solid rgba(0,195,255,.08);display:flex;flex-direction:column;backdrop-filter:blur(20px)}
+.sb-logo{padding:17px 15px 13px;border-bottom:1px solid rgba(0,195,255,.07)}
+.logo-t{font-family:'Orbitron',monospace;font-size:13px;font-weight:900;letter-spacing:3.5px;color:var(--cy);text-shadow:0 0 16px rgba(0,200,255,.45)}
+.logo-s{font-size:9px;color:rgba(0,195,255,.35);letter-spacing:2.5px;font-family:'Rajdhani',sans-serif;margin-top:2px;text-transform:uppercase}
+.sb-nav{flex:1;padding:10px 8px;overflow-y:auto}
+.sb-nav::-webkit-scrollbar{display:none}
+.sb-sec{font-size:8.5px;font-family:'Orbitron',monospace;letter-spacing:3px;color:rgba(0,195,255,.27);padding:10px 8px 5px;text-transform:uppercase}
+.nb{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:7px;cursor:pointer;margin-bottom:2px;font-family:'Rajdhani',sans-serif;font-size:14px;font-weight:600;color:rgba(170,190,255,.5);border:1px solid transparent;transition:all .18s;user-select:none}
+.nb:hover{background:rgba(0,200,255,.07);color:var(--cy);border-color:rgba(0,200,255,.12)}
+.nb.on{background:rgba(0,200,255,.1);color:var(--cy);border-color:rgba(0,200,255,.24);box-shadow:0 0 12px rgba(0,200,255,.07)}
+.sb-bot{padding:11px 13px;border-top:1px solid rgba(0,195,255,.07)}
+.main{flex:1;overflow-y:auto;padding:22px 24px}
+.main::-webkit-scrollbar{width:3px}
+.main::-webkit-scrollbar-thumb{background:rgba(0,200,255,.22);border-radius:2px}
+.view{display:none;animation:fup .3s ease-out both}
+.view.active{display:block}
+.card{background:rgba(8,12,38,.78);backdrop-filter:blur(12px);border:1px solid rgba(0,195,255,.1);border-radius:12px;transition:border-color .25s}
+.card:hover{border-color:rgba(0,195,255,.2)}
+.pt{background:rgba(255,255,255,.055);border-radius:100px;overflow:hidden}
+.pf{border-radius:100px;transition:width .9s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden}
+.pf::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2) 50%,transparent);animation:shim 2.5s infinite}
+.tr{display:flex;align-items:center;gap:10px;padding:8px 11px;border-radius:7px;cursor:pointer;margin-bottom:3px;border:1px solid transparent;transition:all .18s;font-family:'Rajdhani',sans-serif;font-size:14px;font-weight:500;color:rgba(170,190,255,.8)}
+.tr:hover{background:rgba(0,195,255,.05);border-color:rgba(0,195,255,.1)}
+.tr.dn{color:rgba(16,249,138,.55);text-decoration:line-through;opacity:.5}
+.si{display:flex;align-items:center;gap:12px;padding:9px 13px;border-radius:8px;border:1px solid transparent;margin-bottom:4px;transition:all .3s}
+.si.live{background:rgba(0,195,255,.08);border-color:rgba(0,195,255,.3);animation:pg 3s ease-in-out infinite}
+.si.past{opacity:.32}
+.badge{display:inline-flex;align-items:center;padding:2px 9px;border-radius:100px;font-size:11px;font-weight:700;font-family:'Rajdhani',sans-serif;letter-spacing:.5px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:6px 13px;border-radius:7px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-size:13px;font-weight:600;letter-spacing:.5px;border:1px solid;transition:all .18s;user-select:none;white-space:nowrap;background:none}
+.bc{border-color:rgba(0,200,255,.3);color:var(--cy)}.bc:hover{background:rgba(0,200,255,.1)}
+.bg{border-color:rgba(16,249,138,.3);color:var(--gr)}.bg:hover{background:rgba(16,249,138,.1)}
+.by{border-color:rgba(251,191,36,.3);color:var(--ye)}.by:hover{background:rgba(251,191,36,.1)}
+.br{border-color:rgba(244,63,94,.3);color:var(--pk)}.br:hover{background:rgba(244,63,94,.1)}
+input[type=text],input[type=date],select{background:rgba(0,200,255,.06);border:1px solid rgba(0,200,255,.2);color:var(--tx);border-radius:6px;padding:7px 10px;font-family:'Exo 2',sans-serif;font-size:13px;outline:none;width:100%}
+input[type=text]:focus,input[type=date]:focus,select:focus{border-color:rgba(0,200,255,.45)}
+input[type=text]::placeholder{color:rgba(170,190,255,.25)}
+select option{background:#08122a;color:var(--tx)}
+input[type=range]{-webkit-appearance:none;width:100%;height:4px;background:rgba(255,255,255,.1);border-radius:2px;outline:none;cursor:pointer;display:block}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;cursor:pointer}
+input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;cursor:pointer;border:none}
+.hc{border-radius:2px;cursor:pointer;transition:transform .14s;display:inline-block}
+.hc:hover{transform:scale(1.3)}
+.num{font-family:'Orbitron',monospace;font-weight:700}
+.st{font-family:'Orbitron',monospace;font-size:10.5px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(0,200,255,.42);margin-bottom:14px}
+.vt{font-family:'Orbitron',monospace;font-size:17px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--tx);margin-bottom:3px}
+.vs{font-size:13px;color:rgba(170,190,255,.5);font-family:'Rajdhani',sans-serif;margin-bottom:20px}
+@keyframes fup{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shim{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+@keyframes pg{0%,100%{box-shadow:0 0 8px rgba(0,195,255,.2)}50%{box-shadow:0 0 22px rgba(0,195,255,.5),0 0 42px rgba(0,195,255,.15)}}
+@keyframes fl{0%,100%{transform:scale(1) rotate(-2deg)}50%{transform:scale(1.12) rotate(2deg)}}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
+.fl{animation:fl 1.8s ease-in-out infinite;display:inline-block}
+.bl{animation:bl 1s infinite;display:inline}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="lay">
+  <aside class="sb">
+    <div class="sb-logo">
+      <div class="logo-t">NEXUS OS</div>
+      <div class="logo-s">Engineering Grind System</div>
+      <div style="margin-top:10px;display:flex;align-items:center;gap:8px">
+        <span id="sb-flame" style="font-size:15px">⚡</span>
+        <div>
+          <div id="sb-streak-val" class="num" style="font-size:14px;color:rgba(140,160,230,.3);line-height:1">No streak yet</div>
+          <div id="sb-streak-sub" style="font-size:9px;color:rgba(140,160,230,.28);font-family:'Rajdhani';margin-top:1px">SOLVE DSA TO START</div>
+        </div>
+      </div>
+    </div>
+    <div class="sb-nav">
+      <div class="sb-sec">OVERVIEW</div>
+      <div class="nb on" data-view="dashboard" onclick="showView('dashboard')">🏠 Dashboard</div>
+      <div class="nb" data-view="schedule" onclick="showView('schedule')">📅 Daily Schedule</div>
+      <div class="nb" data-view="daily" onclick="showView('daily')">✅ Daily Tracker</div>
+      <div class="sb-sec">LEARNING</div>
+      <div class="nb" data-view="dsa" onclick="showView('dsa')">⚡ DSA Tracker</div>
+      <div class="nb" data-view="fullstack" onclick="showView('fullstack')">💻 Full Stack</div>
+      <div class="nb" data-view="aiml" onclick="showView('aiml')">🧠 AI / ML</div>
+      <div class="sb-sec">BUILD</div>
+      <div class="nb" data-view="projects" onclick="showView('projects')">🚀 Projects</div>
+      <div class="nb" data-view="jobs" onclick="showView('jobs')">💼 Job Tracker</div>
+      <div class="sb-sec">INSIGHTS</div>
+      <div class="nb" data-view="analytics" onclick="showView('analytics')">📊 Analytics</div>
+    </div>
+    <div class="sb-bot">
+      <div style="display:flex;justify-content:space-between;margin-bottom:5px">
+        <span style="font-size:10px;color:var(--mu);font-family:'Rajdhani';text-transform:uppercase;letter-spacing:1px">Today</span>
+        <span id="sb-pct" class="num" style="font-size:11px;color:rgba(140,160,230,.3)">0%</span>
+      </div>
+      <div class="pt" style="height:3px"><div id="sb-bar" class="pf" style="width:0%;height:100%;background:linear-gradient(90deg,rgba(0,200,255,.55),#00c8ff)"></div></div>
+    </div>
+  </aside>
+  <main class="main">
+    <div id="view-dashboard" class="view active"></div>
+    <div id="view-daily" class="view"></div>
+    <div id="view-dsa" class="view"></div>
+    <div id="view-projects" class="view"></div>
+    <div id="view-fullstack" class="view"></div>
+    <div id="view-aiml" class="view"></div>
+    <div id="view-jobs" class="view"></div>
+    <div id="view-schedule" class="view"></div>
+    <div id="view-analytics" class="view"></div>
+  </main>
+</div>
+<script>
+// ═══════════════════════════════════════════════════════════
+// DATA DEFINITIONS
+// ═══════════════════════════════════════════════════════════
+const C={cy:'#00c8ff',pu:'#8b5cf6',pk:'#f43f5e',gr:'#10f98a',ye:'#fbbf24',or:'#f97316',mu:'rgba(170,190,255,.52)',di:'rgba(140,160,230,.28)'};
+
+const SCHED=[
+  {id:'wake',st:'05:00',en:'05:10',label:'Wake Up',icon:'🌅'},
+  {id:'wm',st:'05:10',en:'06:40',label:'Morning Workout',icon:'💪'},
+  {id:'b1',st:'06:40',en:'07:20',label:'Bath + Breakfast',icon:'🚿'},
+  {id:'dl',st:'07:20',en:'08:40',label:'DSA Lecture',icon:'🎓'},
+  {id:'ds1',st:'08:40',en:'13:20',label:'DSA Solving',icon:'⚡'},
+  {id:'lu',st:'13:30',en:'14:10',label:'Lunch',icon:'🍱'},
+  {id:'ds2',st:'14:10',en:'15:10',label:'DSA Solving',icon:'⚡'},
+  {id:'pr',st:'15:10',en:'17:20',label:'Desktop AI Dev',icon:'🤖'},
+  {id:'gm',st:'17:35',en:'18:50',label:'Evening Gym',icon:'🏋️'},
+  {id:'b2',st:'18:50',en:'19:10',label:'Bath / Cooldown',icon:'🚿'},
+  {id:'f1',st:'19:10',en:'20:00',label:'Full Stack Session',icon:'💻'},
+  {id:'di',st:'20:00',en:'20:40',label:'Dinner',icon:'🍽️'},
+  {id:'dw',st:'20:40',en:'20:50',label:'Dishes',icon:'🫧'},
+  {id:'f2',st:'20:50',en:'21:20',label:'Full Stack Session',icon:'💻'},
+  {id:'gh',st:'21:20',en:'21:45',label:'GitHub + LinkedIn',icon:'🐙'},
+  {id:'ai',st:'21:45',en:'22:30',label:'AI Concepts',icon:'🧠'},
+  {id:'wd',st:'22:30',en:'23:00',label:'Wind Down',icon:'🌙'},
+  {id:'sl',st:'23:00',en:'05:00',label:'Sleep',icon:'💤'},
+];
+
+const PROJ_DEFS=[
+  {id:1,name:'AI Desktop Assistant',em:'🤖',desc:'JARVIS-style AI for Windows',c:C.pu,tech:['Python','PyQt5','OpenAI'],tasks:['Voice recognition module','LLM integration (GPT-4)','JARVIS-style UI design','System commands executor','File management module','Packaging & deployment']},
+  {id:2,name:'AI Resume Ranker',em:'📄',desc:'NLP resume scoring system',c:C.cy,tech:['Python','NLP','FastAPI'],tasks:['Resume parsing module','Skill NLP extraction','Ranking algorithm','REST API endpoints','Frontend dashboard']},
+  {id:3,name:'Carbon Track + Time Bank',em:'🌱',desc:'Sustainability gamification platform',c:C.gr,tech:['React','Node.js','MongoDB'],tasks:['Architecture design','Carbon calc engine','Time bank system','Dashboard UI','Gamification system']},
+];
+
+const FS_DEF=[
+  {n:'HTML & CSS',c:C.or},{n:'JavaScript Adv.',c:C.ye},{n:'React.js',c:C.cy},
+  {n:'Node.js + Express',c:C.gr},{n:'MongoDB / SQL',c:C.pu},{n:'REST APIs',c:C.pk},
+  {n:'Auth & Security',c:C.or},{n:'Deployment & CI/CD',c:C.cy},
+];
+
+const AIML_DEF=[
+  {n:'ML Fundamentals',c:C.pu},{n:'Neural Nets (ANN)',c:C.pk},{n:'CNN + Vision',c:C.cy},
+  {n:'LLM Concepts',c:C.ye},{n:'Embeddings',c:C.gr},{n:'Vector DBs',c:C.or},
+  {n:'LangChain',c:C.pu},{n:'RAG Systems',c:C.pk},
+];
+
+const DSA_T=[
+  {n:'Arrays',max:30,c:C.cy},{n:'Linked Lists',max:20,c:C.pu},{n:'Trees',max:25,c:C.gr},
+  {n:'Graphs',max:30,c:C.pk},{n:'DP',max:40,c:C.ye},{n:'Stacks/Queues',max:18,c:C.or},
+  {n:'Binary Search',max:15,c:C.cy},{n:'Recursion',max:18,c:C.pu},{n:'Greedy',max:20,c:C.gr},
+];
+
+const TASK_DEFS=[
+  {id:'wakeup',l:'Wake Up at 5:00 AM',icon:'🌅',cat:'Routine',c:C.mu},
+  {id:'workout_m',l:'Morning Workout (5:10–6:40)',icon:'💪',cat:'Fitness',c:C.gr},
+  {id:'bath1',l:'Bath + Breakfast (6:40–7:20)',icon:'🚿',cat:'Routine',c:C.mu},
+  {id:'dsa_lec',l:'DSA Lecture (7:20–8:40)',icon:'🎓',cat:'Study',c:C.cy},
+  {id:'dsa_solve',l:'DSA Solving Sessions',icon:'⚡',cat:'Study',c:C.cy},
+  {id:'lunch',l:'Lunch (1:30–2:10)',icon:'🍱',cat:'Routine',c:C.or},
+  {id:'proj_dev',l:'Desktop AI Dev (3:10–5:20)',icon:'🤖',cat:'Project',c:C.pu},
+  {id:'gym_eve',l:'Evening Gym (5:35–6:50)',icon:'🏋️',cat:'Fitness',c:C.gr},
+  {id:'fullstack',l:'Full Stack Sessions (7:10–9:20)',icon:'💻',cat:'Study',c:C.or},
+  {id:'github_li',l:'GitHub + LinkedIn (9:20–9:45)',icon:'🐙',cat:'Career',c:C.gr},
+  {id:'ai_rev',l:'AI Concepts / Revision (9:45–10:30)',icon:'🧠',cat:'Study',c:C.pk},
+  {id:'sleep',l:'Sleep by 11:00 PM',icon:'💤',cat:'Routine',c:C.pu},
+];
+
+// ═══════════════════════════════════════════════════════════
+// STATE & STORAGE
+// ═══════════════════════════════════════════════════════════
+const SK={dsa:'nx:dsa',tasks:'nx:tasks',projs:'nx:projs',jobs:'nx:jobs',learn:'nx:learn'};
+
+let S={
+  dsa:{total:0,easy:0,medium:0,hard:0,today:0,todayDate:'',streak:0,heatmap:{},goal:350,topics:Array(9).fill(0)},
+  tasks:{},
+  projs:{1:Array(6).fill(false),2:Array(5).fill(false),3:Array(5).fill(false)},
+  jobs:[],
+  learn:{fs:Array(8).fill(0),aiml:Array(8).fill(0)}
+};
+
+function load(){
+  for(const k of Object.keys(SK)){
+    try{
+      const v=localStorage.getItem(SK[k]);
+      if(!v)continue;
+      const p=JSON.parse(v);
+      if(k==='dsa')S.dsa={...S.dsa,...p,topics:p.topics||Array(9).fill(0)};
+      else if(k==='projs')S.projs={...S.projs,...p};
+      else if(k==='learn')S.learn={...S.learn,...p};
+      else S[k]=p;
+    }catch(e){}
+  }
+}
+
+function save(k){try{localStorage.setItem(SK[k],JSON.stringify(S[k]));}catch(e){}}
+
+// ═══════════════════════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════════════════════
+const today=()=>new Date().toISOString().split('T')[0];
+const toMins=s=>{const[h,m]=s.split(':').map(Number);return h*60+m;};
+const pbar=(val,max,color,h=6)=>{
+  const pct=Math.min(100,max?Math.round(val/max*100):val);
+  return`<div class="pt" style="height:${h}px"><div class="pf" style="width:${pct}%;height:100%;background:linear-gradient(90deg,${color}88,${color});box-shadow:0 0 7px ${color}55"></div></div>`;
+};
+const statCard=(label,value,icon,color,sub='')=>`
+<div class="card" style="padding:15px;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-20px;right:-20px;width:90px;height:90px;background:radial-gradient(circle,${color}18 0%,transparent 70%)"></div>
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
+    <span style="font-size:10.5px;color:var(--mu);font-family:'Rajdhani';letter-spacing:.5px;text-transform:uppercase">${label}</span>
+    <span style="font-size:18px">${icon}</span>
+  </div>
+  <div class="num" style="font-size:26px;color:${color};line-height:1;margin-bottom:4px">${value}</div>
+  ${sub?`<div style="font-size:11px;color:var(--di);font-family:'Rajdhani'">${sub}</div>`:''}
+</div>`;
+const blank=(emoji,title,sub)=>`<div style="text-align:center;padding:36px 20px"><div style="font-size:30px;margin-bottom:10px">${emoji}</div><div style="font-family:'Rajdhani';font-weight:700;font-size:15px;color:var(--tx);margin-bottom:5px">${title}</div><div style="font-size:12px;color:var(--mu);font-family:'Rajdhani'">${sub}</div></div>`;
+const badge=(text,bg,color,border)=>`<span class="badge" style="background:${bg};color:${color};border:1px solid ${border}">${text}</span>`;
+const heatColor=v=>v===0?'rgba(255,255,255,.04)':v<=2?`${C.cy}42`:v<=5?`${C.cy}75`:C.cy;
+
+let charts={};
+function mkChart(id,cfg){
+  if(charts[id]){try{charts[id].destroy();}catch(e){} delete charts[id];}
+  const el=document.getElementById(id);
+  if(!el)return;
+  charts[id]=new Chart(el,cfg);
+}
+
+const chartOpts=(extra={})=>({responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},...(extra.plugins||{})},scales:{x:{grid:{display:false},border:{display:false},ticks:{color:'rgba(170,190,255,.52)',font:{family:"'Rajdhani'"}}},y:{grid:{color:'rgba(255,255,255,.04)'},border:{display:false},ticks:{color:'rgba(170,190,255,.52)'}},...(extra.scales||{})},...extra});
+
+// ═══════════════════════════════════════════════════════════
+// NAVIGATION
+// ═══════════════════════════════════════════════════════════
+const RENDERS={dashboard:renderDashboard,daily:renderDaily,dsa:renderDSA,projects:renderProjects,fullstack:renderFS,aiml:renderAIML,jobs:renderJobs,schedule:renderSchedule,analytics:renderAnalytics};
+
+function showView(id){
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+  document.getElementById('view-'+id).classList.add('active');
+  document.querySelectorAll('.nb').forEach(n=>n.classList.toggle('on',n.dataset.view===id));
+  if(RENDERS[id])RENDERS[id]();
+}
+
+// ═══════════════════════════════════════════════════════════
+// DASHBOARD
+// ═══════════════════════════════════════════════════════════
+function renderDashboard(){
+  const td=today();
+  const tasks=S.tasks[td]||{};
+  const done=TASK_DEFS.filter(t=>tasks[t.id]).length;
+  const pct=Math.round(done/TASK_DEFS.length*100);
+  const d=S.dsa;
+  const now=new Date();
+  const nowM=now.getHours()*60+now.getMinutes();
+  const cur=SCHED.find(sc=>{const st=toMins(sc.st),en=toMins(sc.en);if(sc.id==='sl')return nowM>=23*60||nowM<5*60;return nowM>=st&&nowM<en;});
+  const H=String(now.getHours()).padStart(2,'0'),M=String(now.getMinutes()).padStart(2,'0'),Sec=String(now.getSeconds()).padStart(2,'0');
+  const wkData=Array.from({length:7},(_,i)=>{const dd=new Date();dd.setDate(dd.getDate()-(6-i));return{day:dd.toLocaleDateString('en',{weekday:'short'}),v:d.heatmap[dd.toISOString().split('T')[0]]||0};});
+
+  document.getElementById('view-dashboard').innerHTML=`
+<div class="vt">MISSION CONTROL</div>
+<div class="vs">Your personal engineering OS — day one starts now</div>
+<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;margin-top:-16px">
+  <div></div>
+  <div style="text-align:right">
+    <div class="num" id="db-clock" style="font-size:34px;color:var(--cy);line-height:1">${H}<span class="bl" style="opacity:.6">:</span>${M}<span style="font-size:17px;color:var(--mu);margin-left:4px">${Sec}</span></div>
+    <div style="font-size:11px;color:var(--mu);font-family:'Rajdhani';margin-top:2px">${now.toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric'})}</div>
+  </div>
+</div>
+${cur?`<div class="card" style="padding:11px 16px;margin-bottom:16px;border-color:rgba(0,195,255,.25);background:rgba(0,195,255,.05)">
+  <div style="display:flex;align-items:center;gap:10px">
+    <div style="width:8px;height:8px;border-radius:50%;background:var(--cy);box-shadow:0 0 10px var(--cy);animation:pg 2s infinite"></div>
+    <span style="font-size:10px;color:var(--mu);font-family:'Rajdhani';letter-spacing:2px;text-transform:uppercase">NOW ACTIVE</span>
+    <span style="font-size:16px;margin-left:4px">${cur.icon}</span>
+    <span style="font-family:'Rajdhani';font-size:15px;font-weight:700;color:var(--tx)">${cur.label}</span>
+    <span style="margin-left:auto;font-size:12px;color:var(--mu);font-family:'Rajdhani'">${cur.st} – ${cur.en}</span>
+  </div>
+</div>`:''}
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px">
+  ${statCard('DSA Solved',d.total,'⚡',d.total>0?C.cy:C.mu,`of ${d.goal} target`)}
+  ${statCard('Day Streak',d.streak>0?d.streak+'🔥':'0',d.streak>0?'🔥':'–',d.streak>0?C.or:C.mu,d.streak>0?'Keep it going!':'Solve 1 DSA to start')}
+  ${statCard('Tasks Done',done+'/'+TASK_DEFS.length,'✅',done>0?C.gr:C.mu,pct+'% today')}
+  ${statCard("Today's DSA",d.today,'📈',d.today>0?C.cy:C.mu,d.today>=7?'Target hit! 🎯':'Daily target: 7')}
+</div>
+<div class="card" style="padding:13px 17px;margin-bottom:14px">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:9px">
+    <span style="font-family:'Rajdhani';font-weight:700;font-size:14px;color:var(--tx)">TODAY'S PROGRESS</span>
+    <span class="num" style="font-size:20px;color:${pct===100?C.gr:C.cy}">${pct}%</span>
+  </div>
+  ${pbar(pct,100,pct===100?C.gr:C.cy,7)}
+  <div style="display:flex;gap:14px;margin-top:9px">
+    ${[{l:'DSA',d:tasks.dsa_solve},{l:'Fitness',d:tasks.workout_m&&tasks.gym_eve},{l:'Full Stack',d:tasks.fullstack},{l:'Project',d:tasks.proj_dev},{l:'GitHub',d:tasks.github_li},{l:'AI',d:tasks.ai_rev}].map(({l,d})=>`<div style="display:flex;align-items:center;gap:4px"><div style="width:6px;height:6px;border-radius:50%;background:${d?C.gr:C.di}"></div><span style="font-size:11px;color:${d?C.gr:C.mu};font-family:'Rajdhani'">${l}</span></div>`).join('')}
+  </div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.6fr;gap:12px;margin-bottom:14px">
+  <div class="card" style="padding:15px">
+    <div class="st">DSA BREAKDOWN</div>
+    <div style="display:flex;gap:8px;margin-bottom:13px">
+      ${[{l:'Easy',v:d.easy,c:C.gr},{l:'Medium',v:d.medium,c:C.ye},{l:'Hard',v:d.hard,c:C.pk}].map(({l,v,c})=>`<div style="flex:1;background:${c}10;border:1px solid ${c}22;border-radius:8px;padding:8px 4px;text-align:center"><div class="num" style="font-size:20px;color:${c}">${v}</div><div style="font-size:10px;color:var(--mu);font-family:'Rajdhani'">${l}</div></div>`).join('')}
+    </div>
+    ${pbar(d.total,d.goal,C.cy,6)}
+    <div style="display:flex;justify-content:space-between;margin-top:6px">
+      <span style="font-size:11px;color:var(--di);font-family:'Rajdhani'">Goal: ${d.goal}</span>
+      <span class="num" style="font-size:11px;color:${C.cy}">${d.total}/${d.goal}</span>
+    </div>
+    ${d.total>0?`<div style="font-size:11px;color:var(--di);font-family:'Rajdhani';margin-top:4px">~${Math.ceil((d.goal-d.total)/7)} days at 7/day</div>`:''}
+  </div>
+  <div class="card" style="padding:15px">
+    <div class="st">THIS WEEK</div>
+    ${d.total===0?blank('📊','No data yet','Log DSA questions to see your weekly chart'):`<canvas id="db-chart" style="height:148px"></canvas>`}
+  </div>
+</div>
+<div class="card" style="padding:13px 17px;border-color:rgba(139,92,246,.2);background:rgba(139,92,246,.04)">
+  <div style="display:flex;gap:11px;align-items:flex-start">
+    <span style="font-size:18px;flex-shrink:0">⚡</span>
+    <p style="font-size:14px;color:var(--tx);font-family:'Rajdhani';font-weight:500;line-height:1.6;font-style:italic">"The grind you invest today compounds into the salary offer you receive tomorrow. Show up. Every single day."</p>
+  </div>
+</div>`;
+
+  if(d.total>0){
+    mkChart('db-chart',{type:'bar',data:{labels:wkData.map(d=>d.day),datasets:[{label:'Target',data:Array(7).fill(7),backgroundColor:'rgba(0,200,255,.09)',borderRadius:3,borderSkipped:false},{label:'Solved',data:wkData.map(d=>d.v),backgroundColor:C.cy,borderRadius:3,borderSkipped:false}]},options:chartOpts()});
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// DAILY TRACKER
+// ═══════════════════════════════════════════════════════════
+function renderDaily(){
+  const td=today();
+  const tasks=S.tasks[td]||{};
+  const done=TASK_DEFS.filter(t=>tasks[t.id]).length;
+  const pct=Math.round(done/TASK_DEFS.length*100);
+  const d=S.dsa;
+
+  document.getElementById('view-daily').innerHTML=`
+<div class="vt">DAILY TRACKER</div>
+<div class="vs">Check off each block as you finish it — resets fresh every new day</div>
+<div class="card" style="padding:13px 17px;margin-bottom:14px">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:9px">
+    <div>
+      <span style="font-family:'Rajdhani';font-weight:700;font-size:14px;color:var(--tx)">TODAY'S COMPLETION</span>
+      <div style="font-size:12px;color:var(--mu);font-family:'Rajdhani';margin-top:2px">${done} of ${TASK_DEFS.length} tasks done</div>
+    </div>
+    <div class="num" style="font-size:34px;color:${pct===100?C.gr:C.cy}">${pct}%</div>
+  </div>
+  ${pbar(pct,100,pct===100?C.gr:C.cy,7)}
+</div>
+<div class="card" style="padding:10px 7px;margin-bottom:14px">
+  ${TASK_DEFS.map(t=>{const dn=tasks[t.id];return`
+  <div class="tr${dn?' dn':''}" onclick="toggleTask('${t.id}')">
+    <div style="width:16px;height:16px;border-radius:50%;border:2px solid ${dn?C.gr:C.di};display:flex;align-items:center;justify-content:center;flex-shrink:0;background:${dn?C.gr+'20':'transparent'};transition:all .2s">
+      ${dn?`<span style="font-size:9px;color:${C.gr}">✓</span>`:''}
+    </div>
+    <span style="font-size:15px;flex-shrink:0">${t.icon}</span>
+    <span style="flex:1">${t.l}</span>
+    <span class="badge" style="background:${t.c}14;color:${t.c};border:1px solid ${t.c}28;font-size:10px">${t.cat}</span>
+  </div>`}).join('')}
+</div>
+<div class="card" style="padding:15px 17px">
+  <div style="font-family:'Rajdhani';font-weight:700;font-size:14px;color:var(--tx);margin-bottom:4px">LOG DSA QUESTIONS</div>
+  <div style="font-size:11px;color:var(--mu);font-family:'Rajdhani';margin-bottom:14px">Tag by difficulty — streak auto-updates · Today: <span class="num" style="color:${C.cy};font-size:13px">${d.today}</span> solved</div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px">
+    <button class="btn bg" style="padding:11px;justify-content:center" onclick="addDSA('easy')">✅ +Easy</button>
+    <button class="btn by" style="padding:11px;justify-content:center" onclick="addDSA('medium')">⭐ +Medium</button>
+    <button class="btn br" style="padding:11px;justify-content:center" onclick="addDSA('hard')">🔥 +Hard</button>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px">
+    <div style="flex:1">
+      ${pbar(d.today,7,d.today>=7?C.gr:C.cy,6)}
+      <div style="font-size:11px;color:var(--mu);font-family:'Rajdhani';margin-top:5px">${d.today===0?'Add your first question for today':d.today>=7?'✅ Daily target reached!':` ${7-d.today} more to hit the 7/day target`}</div>
+    </div>
+    <button class="btn bc" style="flex-shrink:0" onclick="subtractDSA()">Undo last</button>
+  </div>
+</div>`;
+}
+
+function toggleTask(id){
+  const td=today();
+  if(!S.tasks[td])S.tasks[td]={};
+  S.tasks[td][id]=!S.tasks[td][id];
+  save('tasks');
+  renderDaily();
+  updateSidebar();
+}
+
+// ═══════════════════════════════════════════════════════════
+// DSA TRACKER
+// ═══════════════════════════════════════════════════════════
+function renderDSA(){
+  const d=S.dsa;
+  const heatDays=Array.from({length:84},(_,i)=>{const dd=new Date();dd.setDate(dd.getDate()-(83-i));const k=dd.toISOString().split('T')[0];return{k,v:d.heatmap[k]||0};});
+  const wkData=Array.from({length:7},(_,i)=>{const dd=new Date();dd.setDate(dd.getDate()-(6-i));return{day:dd.toLocaleDateString('en',{weekday:'short'}),v:d.heatmap[dd.toISOString().split('T')[0]]||0};});
+
+  document.getElementById('view-dsa').innerHTML=`
+<div class="vt">DSA TRACKER</div>
+<div class="vs">Striver SDE Sheet — every question is a brick in your foundation</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px">
+  ${statCard('Total Solved',d.total,'⚡',d.total>0?C.cy:C.mu,'Goal: '+d.goal)}
+  ${statCard('Easy',d.easy,'🟢',C.gr,'Questions')}
+  ${statCard('Medium',d.medium,'🟡',C.ye,'Questions')}
+  ${statCard('Hard',d.hard,'🔴',C.pk,'Questions')}
+</div>
+<div class="card" style="padding:14px 17px;margin-bottom:14px">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+    <div>
+      <span style="font-family:'Rajdhani';font-weight:700;color:var(--tx);font-size:14px">LOG A QUESTION</span>
+      <div style="color:var(--mu);font-size:11px;font-family:'Rajdhani';margin-top:2px">Streak: <span class="num" style="color:${C.or};font-size:12px">${d.streak}</span> day${d.streak!==1?'s':''} · Today: <span class="num" style="color:${C.cy};font-size:12px">${d.today}</span></div>
+    </div>
+    <button class="btn bc" onclick="subtractDSA()">Undo last</button>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px">
+    <button class="btn bg" style="padding:12px;justify-content:center" onclick="addDSA('easy')">✅ + Easy</button>
+    <button class="btn by" style="padding:12px;justify-content:center" onclick="addDSA('medium')">⭐ + Medium</button>
+    <button class="btn br" style="padding:12px;justify-content:center" onclick="addDSA('hard')">🔥 + Hard</button>
+  </div>
+  <div style="display:flex;justify-content:space-between;margin-bottom:6px">
+    <span style="font-size:12px;color:var(--mu);font-family:'Rajdhani'">Goal: ${d.goal} questions</span>
+    <span class="num" style="font-size:12px;color:${C.cy}">${d.total}/${d.goal} (${Math.round(d.total/d.goal*100)}%)</span>
+  </div>
+  ${pbar(d.total,d.goal,C.cy,9)}
+  ${d.total>0?`<div style="font-size:11px;color:var(--di);font-family:'Rajdhani';margin-top:6px">~${Math.ceil((d.goal-d.total)/7)} days remaining at 7/day</div>`:''}
+</div>
+<div style="display:grid;grid-template-columns:1.3fr 1fr;gap:12px;margin-bottom:14px">
+  <div class="card" style="padding:15px">
+    <div class="st">THIS WEEK</div>
+    <canvas id="dsa-week-chart" style="height:155px"></canvas>
+  </div>
+  <div class="card" style="padding:15px">
+    <div class="st">CONSISTENCY HEATMAP</div>
+    <div style="display:grid;grid-template-rows:repeat(7,12px);grid-auto-flow:column;gap:3px;width:fit-content">
+      ${heatDays.map(({k,v})=>`<div class="hc" style="width:12px;height:12px;background:${heatColor(v)}" title="${k}: ${v} qs"></div>`).join('')}
+    </div>
+    <div style="display:flex;gap:6px;align-items:center;margin-top:10px">
+      <span style="font-size:10px;color:var(--mu);font-family:'Rajdhani'">Less</span>
+      ${[0,2,5,8].map(v=>`<div style="width:10px;height:10px;border-radius:2px;background:${heatColor(v)}"></div>`).join('')}
+      <span style="font-size:10px;color:var(--mu);font-family:'Rajdhani'">More</span>
+    </div>
+    ${Object.keys(d.heatmap).length===0?`<div style="margin-top:12px;font-size:11px;color:var(--di);font-family:'Rajdhani'">Solve your first question to light this up</div>`:''}
+  </div>
+</div>
+<div class="card" style="padding:15px">
+  <div class="st">TOPIC-WISE PROGRESS <span style="font-size:8px;letter-spacing:1px;color:var(--di)">— USE + / − TO UPDATE AS YOU SOLVE</span></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+    ${DSA_T.map((t,i)=>{const s=(d.topics||[])[i]||0;return`
+    <div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px">
+        <span style="font-size:12px;color:var(--mu);font-family:'Rajdhani'">${t.n}</span>
+        <div style="display:flex;align-items:center;gap:5px">
+          <button class="btn bc" style="padding:1px 7px;font-size:14px;line-height:1" onclick="updTopic(${i},-1)">−</button>
+          <span class="num" style="font-size:12px;color:${t.c};min-width:34px;text-align:center">${s}/${t.max}</span>
+          <button class="btn bc" style="padding:1px 7px;font-size:14px;line-height:1" onclick="updTopic(${i},1)">+</button>
+        </div>
+      </div>
+      ${pbar(s,t.max,t.c,4)}
+    </div>`;}).join('')}
+  </div>
+</div>`;
+
+  mkChart('dsa-week-chart',{type:'bar',data:{labels:wkData.map(d=>d.day),datasets:[{label:'Target',data:Array(7).fill(7),backgroundColor:'rgba(0,200,255,.09)',borderRadius:3,borderSkipped:false},{label:'Solved',data:wkData.map(d=>d.v),backgroundColor:C.cy,borderRadius:3,borderSkipped:false}]},options:chartOpts()});
+}
+
+function addDSA(type){
+  const ts=today();
+  const isNew=S.dsa.todayDate!==ts;
+  if(isNew){
+    S.dsa.today=0;
+    if(!S.dsa.todayDate)S.dsa.streak=1;
+    else{const diff=Math.round((new Date(ts)-new Date(S.dsa.todayDate))/86400000);S.dsa.streak=diff===1?S.dsa.streak+1:1;}
+    S.dsa.todayDate=ts;
+  }
+  S.dsa.total++;S.dsa[type]++;S.dsa.today++;
+  S.dsa.heatmap[ts]=(S.dsa.heatmap[ts]||0)+1;
+  save('dsa');
+  const active=document.querySelector('.view.active');
+  if(active){
+    const v=active.id.replace('view-','');
+    if(v==='dsa')renderDSA();
+    else if(v==='daily')renderDaily();
+    else if(v==='dashboard')renderDashboard();
+    else if(v==='analytics')renderAnalytics();
+  }
+  updateSidebar();
+}
+
+function subtractDSA(){
+  if(S.dsa.today<=0)return;
+  const ts=today();S.dsa.today--;S.dsa.total=Math.max(0,S.dsa.total-1);
+  S.dsa.heatmap[ts]=Math.max(0,(S.dsa.heatmap[ts]||1)-1);
+  save('dsa');
+  const active=document.querySelector('.view.active');
+  if(active){const v=active.id.replace('view-','');if(v==='dsa')renderDSA();else if(v==='daily')renderDaily();else if(v==='dashboard')renderDashboard();}
+  updateSidebar();
+}
+
+function updTopic(i,delta){
+  if(!S.dsa.topics)S.dsa.topics=Array(9).fill(0);
+  S.dsa.topics[i]=Math.max(0,Math.min(DSA_T[i].max,(S.dsa.topics[i]||0)+delta));
+  save('dsa');renderDSA();
+}
+
+// ═══════════════════════════════════════════════════════════
+// PROJECTS
+// ═══════════════════════════════════════════════════════════
+function renderProjects(){
+  document.getElementById('view-projects').innerHTML=`
+<div class="vt">PROJECT TRACKER</div>
+<div class="vs">Build the portfolio that opens every door — check off as you build</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+  ${PROJ_DEFS.map(proj=>{
+    const tasks=S.projs[proj.id]||[];
+    const dn=tasks.filter(Boolean).length;
+    const pct=tasks.length>0?Math.round(dn/tasks.length*100):0;
+    return`<div class="card" style="padding:15px">
+      <div style="display:flex;gap:10px;align-items:flex-start;margin-bottom:11px">
+        <span style="font-size:22px">${proj.em}</span>
+        <div><div style="font-family:'Rajdhani';font-weight:700;font-size:14px;color:var(--tx);line-height:1.3">${proj.name}</div><div style="font-size:11px;color:var(--mu);margin-top:3px">${proj.desc}</div></div>
+      </div>
+      <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:11px">
+        ${proj.tech.map(t=>`<span class="badge" style="background:rgba(255,255,255,.05);color:var(--mu);border:1px solid rgba(255,255,255,.07);font-size:10px">${t}</span>`).join('')}
+      </div>
+      <div style="margin-bottom:11px">
+        <div style="display:flex;justify-content:space-between;margin-bottom:5px">
+          <span style="font-size:11px;color:var(--mu);font-family:'Rajdhani'">Completion</span>
+          <span class="num" style="font-size:13px;color:${proj.c}">${pct}%</span>
+        </div>
+        ${pbar(pct,100,proj.c,5)}
+      </div>
+      <div style="font-size:9.5px;font-family:'Orbitron';letter-spacing:2px;color:${proj.c}55;text-transform:uppercase;margin-bottom:8px">TASKS</div>
+      ${proj.tasks.map((tl,i)=>`<div class="tr${tasks[i]?' dn':''}" style="padding:7px 10px;margin-bottom:2px;font-size:12px" onclick="toggleProjTask(${proj.id},${i})">
+        <div style="width:13px;height:13px;border-radius:50%;border:2px solid ${tasks[i]?C.gr:C.di};display:flex;align-items:center;justify-content:center;flex-shrink:0;background:${tasks[i]?C.gr+'20':'transparent'}">
+          ${tasks[i]?`<span style="font-size:7px;color:${C.gr}">✓</span>`:''}
+        </div>
+        <span>${tl}</span>
+      </div>`).join('')}
+    </div>`;}).join('')}
+</div>`;
+}
+
+function toggleProjTask(pid,idx){
+  if(!S.projs[pid])S.projs[pid]=Array(PROJ_DEFS.find(p=>p.id===pid).tasks.length).fill(false);
+  S.projs[pid][idx]=!S.projs[pid][idx];save('projs');renderProjects();
+}
+
+// ═══════════════════════════════════════════════════════════
+// FULL STACK
+// ═══════════════════════════════════════════════════════════
+function renderFS(){
+  const avg=Math.round(S.learn.fs.reduce((a,v)=>a+v,0)/S.learn.fs.length);
+  document.getElementById('view-fullstack').innerHTML=`
+<div class="vt">FULL STACK</div>
+<div class="vs">Drag each slider to your honest mastery level — update as you learn</div>
+<div style="display:grid;grid-template-columns:200px 1fr;gap:14px">
+  <div class="card" style="padding:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px">
+    <div class="num" style="font-size:54px;color:${avg>0?C.or:C.mu};line-height:1">${avg}%</div>
+    <div style="color:var(--mu);font-family:'Rajdhani';font-size:12px">OVERALL MASTERY</div>
+    <div style="width:100%">${pbar(avg,100,C.or,5)}</div>
+    ${avg===0?`<div style="font-size:11px;color:var(--di);font-family:'Rajdhani';line-height:1.5">Drag sliders to set your starting point</div>`:`<div style="font-size:11px;color:var(--di);font-family:'Rajdhani'">~${Math.round(avg*.8)}/80 hrs estimated</div>`}
+  </div>
+  <div class="card" style="padding:17px">
+    <div class="st">MODULE MASTERY — DRAG TO UPDATE</div>
+    ${FS_DEF.map((m,i)=>`
+    <div style="margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:7px">
+        <span style="font-size:13px;color:var(--tx);font-family:'Rajdhani';font-weight:600">${m.n}</span>
+        <span class="num" style="font-size:13px;color:${S.learn.fs[i]>0?m.c:C.di}" id="fs-val-${i}">${S.learn.fs[i]}%</span>
+      </div>
+      <input type="range" min="0" max="100" value="${S.learn.fs[i]}" style="accent-color:${m.c}" oninput="updFS(${i},this.value)">
+    </div>`).join('')}
+  </div>
+</div>`;
+}
+
+function updFS(i,v){
+  S.learn.fs[i]=parseInt(v);save('learn');
+  const el=document.getElementById('fs-val-'+i);
+  if(el){const avg=Math.round(S.learn.fs.reduce((a,v)=>a+v,0)/S.learn.fs.length);el.textContent=v+'%';document.querySelector('[style*="54px"]').textContent=avg+'%';}
+}
+
+// ═══════════════════════════════════════════════════════════
+// AI / ML
+// ═══════════════════════════════════════════════════════════
+function renderAIML(){
+  const avg=Math.round(S.learn.aiml.reduce((a,v)=>a+v,0)/S.learn.aiml.length);
+  const cat=(a,b)=>Math.round((S.learn.aiml[a]+S.learn.aiml[b])/2);
+  document.getElementById('view-aiml').innerHTML=`
+<div class="vt">AI / ML TRACKER</div>
+<div class="vs">From foundations to production AI engineering — update as you go</div>
+<div style="display:grid;grid-template-columns:200px 1fr;gap:14px">
+  <div style="display:flex;flex-direction:column;gap:10px">
+    ${[{l:'Overall',v:avg+'%',c:C.pu,i:'🧠'},{l:'Foundation',v:S.learn.aiml[0]+'%',c:C.pk,i:'📊'},{l:'Deep Learning',v:cat(1,2)+'%',c:C.cy,i:'🔬'},{l:'LLM / GenAI',v:cat(3,4)+'%',c:C.ye,i:'⚡'},{l:'Frameworks',v:Math.round((S.learn.aiml[5]+S.learn.aiml[6]+S.learn.aiml[7])/3)+'%',c:C.gr,i:'🏗️'}].map(s=>`
+    <div class="card" style="padding:11px 13px;display:flex;align-items:center;gap:10px">
+      <span style="font-size:17px">${s.i}</span>
+      <div style="flex:1"><div style="font-size:10px;color:var(--mu);font-family:'Rajdhani';margin-bottom:4px">${s.l}</div>${pbar(parseInt(s.v),100,s.c,4)}</div>
+      <span class="num" style="font-size:15px;color:${parseInt(s.v)>0?s.c:C.di}">${s.v}</span>
+    </div>`).join('')}
+  </div>
+  <div class="card" style="padding:17px">
+    <div class="st">TOPIC MASTERY — DRAG TO UPDATE</div>
+    ${AIML_DEF.map((t,i)=>`
+    <div style="margin-bottom:15px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:7px">
+        <span style="font-size:13px;color:var(--tx);font-family:'Rajdhani';font-weight:600">${t.n}</span>
+        <span class="num" style="font-size:13px;color:${S.learn.aiml[i]>0?t.c:C.di}" id="ai-val-${i}">${S.learn.aiml[i]}%</span>
+      </div>
+      <input type="range" min="0" max="100" value="${S.learn.aiml[i]}" style="accent-color:${t.c}" oninput="updAIML(${i},this.value)">
+    </div>`).join('')}
+  </div>
+</div>`;
+}
+
+function updAIML(i,v){
+  S.learn.aiml[i]=parseInt(v);save('learn');
+  const el=document.getElementById('ai-val-'+i);if(el)el.textContent=v+'%';
+}
+
+// ═══════════════════════════════════════════════════════════
+// JOB TRACKER
+// ═══════════════════════════════════════════════════════════
+let _showJobForm=false;
+
+function renderJobs(){
+  const total=S.jobs.length,resp=S.jobs.filter(j=>j.status==='response').length,rej=S.jobs.filter(j=>j.status==='rejected').length;
+  const rr=total>0?Math.round(resp/total*100):0;
+  const ss={applied:{bg:'rgba(0,200,255,.08)',c:C.cy,bo:'rgba(0,200,255,.22)'},response:{bg:'rgba(16,249,138,.08)',c:C.gr,bo:'rgba(16,249,138,.22)'},rejected:{bg:'rgba(244,63,94,.08)',c:C.pk,bo:'rgba(244,63,94,.18)'}};
+
+  document.getElementById('view-jobs').innerHTML=`
+<div class="vt">JOB TRACKER</div>
+<div class="vs">Log every application — the numbers will motivate you</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px">
+  ${statCard('Applied',total,'📤',total>0?C.cy:C.mu,total===0?'Add your first':'Total sent')}
+  ${statCard('Responses',resp,'💬',resp>0?C.gr:C.mu,'Interviews / OA')}
+  ${statCard('Rejected',rej,'📊',C.mu,'Data, not failure')}
+  ${statCard('Response Rate',rr+'%','📈',rr>10?C.gr:C.mu,'Industry avg: 10%')}
+</div>
+<div style="display:flex;justify-content:flex-end;margin-bottom:12px">
+  <button class="btn bc" id="add-job-btn" onclick="toggleJobForm()">+ Add Application</button>
+</div>
+<div id="job-form" class="card" style="padding:16px;margin-bottom:14px;border-color:rgba(0,195,255,.22);background:rgba(0,195,255,.04);display:${_showJobForm?'block':'none'}">
+  <div class="st" style="margin-bottom:12px">NEW APPLICATION</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+    <div><div style="font-size:10px;color:var(--mu);font-family:'Rajdhani';margin-bottom:4px">COMPANY *</div><input type="text" id="j-co" placeholder="e.g. Google"></div>
+    <div><div style="font-size:10px;color:var(--mu);font-family:'Rajdhani';margin-bottom:4px">ROLE *</div><input type="text" id="j-role" placeholder="e.g. SWE Intern"></div>
+    <div><div style="font-size:10px;color:var(--mu);font-family:'Rajdhani';margin-bottom:4px">SALARY</div><input type="text" id="j-sal" placeholder="e.g. ₹1.5L/mo"></div>
+    <div><div style="font-size:10px;color:var(--mu);font-family:'Rajdhani';margin-bottom:4px">STAGE</div><input type="text" id="j-stage" placeholder="e.g. OA Pending" value="Applied"></div>
+    <div><div style="font-size:10px;color:var(--mu);font-family:'Rajdhani';margin-bottom:4px">STATUS</div><select id="j-status"><option value="applied">Applied</option><option value="response">Response / Interview</option><option value="rejected">Rejected</option></select></div>
+    <div><div style="font-size:10px;color:var(--mu);font-family:'Rajdhani';margin-bottom:4px">DATE APPLIED</div><input type="date" id="j-dt" value="${today()}"></div>
+  </div>
+  <button class="btn bc" style="width:100%;justify-content:center;padding:10px" onclick="addJob()">+ Save Application</button>
+</div>
+${S.jobs.length===0?`<div class="card">${blank('🎯','No applications logged yet',"Click 'Add Application' to start tracking your job hunt. Every send counts.")}</div>`:`
+<div class="card" style="padding:12px 14px">
+  <div class="st">APPLICATION LOG</div>
+  <div style="display:grid;grid-template-columns:1.5fr 1.4fr .85fr 1.4fr .9fr 30px;margin-bottom:7px">
+    ${['COMPANY','ROLE','DATE','STAGE','SALARY',''].map(h=>`<div style="font-size:9px;color:var(--di);font-family:'Orbitron';letter-spacing:1.5px;padding:0 6px 6px">${h}</div>`).join('')}
+  </div>
+  ${S.jobs.map(j=>{const s=ss[j.status]||ss.applied;return`
+  <div style="display:grid;grid-template-columns:1.5fr 1.4fr .85fr 1.4fr .9fr 30px;border-top:1px solid rgba(255,255,255,.04);padding:9px 0;align-items:center">
+    <div style="padding:0 6px;font-family:'Rajdhani';font-weight:700;font-size:14px;color:var(--tx)">${j.co}</div>
+    <div style="padding:0 6px;font-size:13px;color:var(--mu);font-family:'Rajdhani'">${j.role}</div>
+    <div style="padding:0 6px;font-size:11px;color:var(--di);font-family:'Rajdhani'">${(j.dt||'').slice(5)}</div>
+    <div style="padding:0 6px"><span class="badge" style="background:${s.bg};color:${s.c};border:1px solid ${s.bo};font-size:10px">${j.stage}</span></div>
+    <div style="padding:0 6px;font-size:12px;color:${C.gr};font-family:'Rajdhani';font-weight:600">${j.sal||'–'}</div>
+    <button onclick="delJob(${j.id})" style="background:none;border:none;cursor:pointer;color:var(--di);padding:2px;font-size:14px;line-height:1">✕</button>
+  </div>`}).join('')}
+</div>`}`;
+}
+
+function toggleJobForm(){
+  _showJobForm=!_showJobForm;
+  const f=document.getElementById('job-form'),btn=document.getElementById('add-job-btn');
+  if(f)f.style.display=_showJobForm?'block':'none';
+  if(btn)btn.textContent=_showJobForm?'✕ Cancel':'+ Add Application';
+}
+
+function addJob(){
+  const co=(document.getElementById('j-co')||{}).value?.trim();
+  const role=(document.getElementById('j-role')||{}).value?.trim();
+  if(!co||!role)return;
+  const sal=(document.getElementById('j-sal')||{}).value?.trim()||'';
+  const stage=(document.getElementById('j-stage')||{}).value?.trim()||'Applied';
+  const status=(document.getElementById('j-status')||{}).value||'applied';
+  const dt=(document.getElementById('j-dt')||{}).value||today();
+  S.jobs.unshift({id:Date.now(),co,role,sal,stage,status,dt});
+  save('jobs');_showJobForm=false;renderJobs();
+}
+
+function delJob(id){S.jobs=S.jobs.filter(j=>j.id!==id);save('jobs');renderJobs();}
+
+// ═══════════════════════════════════════════════════════════
+// SCHEDULE
+// ═══════════════════════════════════════════════════════════
+function renderSchedule(){
+  const now=new Date();
+  const H=String(now.getHours()).padStart(2,'0'),M=String(now.getMinutes()).padStart(2,'0');
+  const nowM=now.getHours()*60+now.getMinutes();
+  const getSt=sc=>{const st=toMins(sc.st),en=toMins(sc.en);if(sc.id==='sl')return(nowM>=23*60||nowM<5*60)?'live':'future';if(nowM>=st&&nowM<en)return'live';if(nowM>=en)return'past';return'future';};
+  const cur=SCHED.find(sc=>getSt(sc)==='live');
+  const col=id=>{if(['dl','ds1','ds2','f1','f2','ai'].includes(id))return C.cy;if(['wm','gm'].includes(id))return C.gr;if(['pr'].includes(id))return C.pu;if(['gh'].includes(id))return C.or;return C.mu;};
+
+  document.getElementById('view-schedule').innerHTML=`
+<div class="vt">DAILY SCHEDULE</div>
+<div class="vs">The routine that builds the engineer — live block tracking</div>
+<div class="card" style="padding:12px 17px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;border-color:rgba(0,195,255,.22);background:rgba(0,195,255,.05)">
+  <div>
+    <div style="font-size:10px;color:var(--mu);font-family:'Rajdhani';letter-spacing:2px;text-transform:uppercase">CURRENT TIME</div>
+    <div class="num" style="font-size:30px;color:var(--cy);margin-top:2px" id="sch-clock">${H}<span class="bl" style="color:var(--mu)">:</span>${M}</div>
+  </div>
+  ${cur?`<div style="text-align:right">
+    <div style="font-size:10px;color:var(--mu);font-family:'Rajdhani';letter-spacing:2px;text-transform:uppercase">ACTIVE BLOCK</div>
+    <div style="font-family:'Rajdhani';font-size:16px;font-weight:700;color:var(--tx);margin-top:2px">${cur.icon} ${cur.label}</div>
+    <div style="font-size:11px;color:var(--mu);font-family:'Rajdhani'">${cur.st} — ${cur.en}</div>
+  </div>`:''}
+</div>
+<div class="card" style="padding:10px 9px">
+  ${SCHED.map(sc=>{const status=getSt(sc),c=col(sc.id);return`
+  <div class="si ${status}">
+    <div style="width:30px;height:30px;border-radius:7px;background:${c}18;border:1px solid ${c}28;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0">${sc.icon}</div>
+    <div style="flex:1">
+      <div style="font-family:'Rajdhani';font-weight:700;font-size:14px;color:${status==='live'?'var(--tx)':'var(--mu)'}">${sc.label}</div>
+      <div style="font-size:11px;color:var(--di);margin-top:1px">${sc.st} — ${sc.en}</div>
+    </div>
+    ${status==='live'?`<div style="display:flex;align-items:center;gap:5px;flex-shrink:0"><div style="width:6px;height:6px;border-radius:50%;background:var(--cy);box-shadow:0 0 8px var(--cy)"></div><span style="font-size:10px;color:var(--cy);font-family:'Orbitron';letter-spacing:1px">LIVE</span></div>`:''}
+    ${status==='past'?`<span style="font-size:12px;color:${C.gr};flex-shrink:0">✓</span>`:''}
+  </div>`}).join('')}
+</div>`;
+}
+
+// ═══════════════════════════════════════════════════════════
+// ANALYTICS
+// ═══════════════════════════════════════════════════════════
+function renderAnalytics(){
+  const d=S.dsa;
+  const fsAvg=Math.round(S.learn.fs.reduce((a,v)=>a+v,0)/S.learn.fs.length);
+  const aiAvg=Math.round(S.learn.aiml.reduce((a,v)=>a+v,0)/S.learn.aiml.length);
+  const td=today();const tasks=S.tasks[td]||{};
+  const tasksDone=TASK_DEFS.filter(t=>tasks[t.id]).length;
+  const wkData=Array.from({length:7},(_,i)=>{const dd=new Date();dd.setDate(dd.getDate()-(6-i));return{day:dd.toLocaleDateString('en',{weekday:'short'}),v:d.heatmap[dd.toISOString().split('T')[0]]||0};});
+  const hasAny=d.total>0||fsAvg>0||aiAvg>0||S.jobs.length>0;
+  const pieData=[{n:'DSA',v:d.total,c:C.cy},{n:'FS %',v:fsAvg,c:C.or},{n:'AI/ML %',v:aiAvg,c:C.pu},{n:'Jobs×10',v:S.jobs.length*10,c:C.gr}].filter(p=>p.v>0);
+
+  document.getElementById('view-analytics').innerHTML=`
+<div class="vt">ANALYTICS</div>
+<div class="vs">Your real numbers — no fake data, just what you've actually built</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px">
+  ${statCard('DSA Total',d.total,'⚡',d.total>0?C.cy:C.mu,Math.round(d.total/d.goal*100)+'% of goal')}
+  ${statCard('Best Streak',d.streak>0?d.streak+'🔥':'0','🏆',d.streak>0?C.or:C.mu,'Consecutive days')}
+  ${statCard('FS Mastery',fsAvg+'%','💻',fsAvg>0?C.or:C.mu,'Avg across modules')}
+  ${statCard('AI/ML Mastery',aiAvg+'%','🧠',aiAvg>0?C.pu:C.mu,'Avg across topics')}
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
+  <div class="card" style="padding:15px">
+    <div class="st">DSA — LAST 7 DAYS</div>
+    ${d.total===0?blank('📈','No DSA data yet','Head to DSA Tracker and log your first question'):`<canvas id="an-chart" style="height:148px"></canvas>`}
+  </div>
+  <div class="card" style="padding:15px">
+    <div class="st">ACTIVITY BREAKDOWN</div>
+    ${!hasAny?blank('🎯','Nothing tracked yet','Start using the app — your breakdown will appear here'):`<div style="display:flex;align-items:center;gap:14px"><canvas id="an-pie" width="120" height="120" style="flex-shrink:0"></canvas><div style="flex:1">${pieData.map(p=>`<div style="display:flex;align-items:center;gap:8px;margin-bottom:9px"><div style="width:9px;height:9px;border-radius:2px;background:${p.c};flex-shrink:0"></div><span style="font-size:12px;color:var(--mu);font-family:'Rajdhani';flex:1">${p.n}</span><span class="num" style="font-size:12px;color:${p.c}">${p.v}</span></div>`).join('')}</div></div>`}
+  </div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+  <div class="card" style="padding:15px">
+    <div class="st">TODAY'S SNAPSHOT</div>
+    ${[{l:"Tasks Completed",v:tasksDone+'/'+TASK_DEFS.length,c:tasksDone>8?C.gr:tasksDone>0?C.cy:C.mu},{l:"DSA Today",v:d.today,c:d.today>=7?C.gr:d.today>0?C.cy:C.mu},{l:"Active Streak",v:d.streak+'d',c:d.streak>0?C.or:C.mu},{l:"Jobs Applied",v:S.jobs.length,c:S.jobs.length>0?C.pu:C.mu},{l:"FS Mastery",v:fsAvg+'%',c:fsAvg>0?C.or:C.mu}].map(p=>`<div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.04)"><span style="font-size:13px;color:var(--mu);font-family:'Rajdhani'">${p.l}</span><span class="num" style="font-size:14px;color:${p.c}">${p.v}</span></div>`).join('')}
+  </div>
+  <div class="card" style="padding:15px">
+    <div class="st">PROJECTIONS</div>
+    ${!hasAny?blank('🔮','Start tracking','Projections will appear once you log your first day'):
+    [{l:`DSA Goal (${d.goal})`,d:d.total>0?`~${Math.ceil((d.goal-d.total)/7)}d`:'-',c:C.cy,i:'⚡'},{l:'Full Stack 80%',d:fsAvg>0?`~${Math.max(0,Math.ceil((80-fsAvg)*1.5))}d`:'-',c:C.or,i:'💻'},{l:'AI/ML 70%',d:aiAvg>0?`~${Math.max(0,Math.ceil((70-aiAvg)*2))}d`:'-',c:C.pu,i:'🧠'},{l:'10 Applications',d:`${Math.max(0,10-S.jobs.length)} more`,c:C.gr,i:'🎯'}].map(p=>`<div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.04)"><span style="font-size:14px">${p.i}</span><span style="flex:1;font-size:13px;color:var(--tx);font-family:'Rajdhani';font-weight:600">${p.l}</span><span class="num" style="font-size:13px;color:${p.c}">${p.d}</span></div>`).join('')}
+  </div>
+</div>`;
+
+  if(d.total>0){
+    mkChart('an-chart',{type:'bar',data:{labels:wkData.map(d=>d.day),datasets:[{label:'Solved',data:wkData.map(d=>d.v),backgroundColor:C.cy,borderRadius:3,borderSkipped:false}]},options:chartOpts()});
+  }
+  if(hasAny&&pieData.length>0){
+    mkChart('an-pie',{type:'doughnut',data:{labels:pieData.map(p=>p.n),datasets:[{data:pieData.map(p=>p.v),backgroundColor:pieData.map(p=>p.c),borderWidth:0,hoverOffset:4}]},options:{responsive:false,plugins:{legend:{display:false}},cutout:'55%'}});
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// SIDEBAR & CLOCK
+// ═══════════════════════════════════════════════════════════
+function updateSidebar(){
+  const d=S.dsa;
+  const sv=document.getElementById('sb-streak-val');
+  const ss=document.getElementById('sb-streak-sub');
+  const sf=document.getElementById('sb-flame');
+  if(sv){
+    if(d.streak>0){sv.textContent=d.streak+' day'+(d.streak>1?'s':'')+' 🔥';sv.style.color='var(--or)';if(ss)ss.textContent='KEEP IT GOING';if(sf){sf.textContent='🔥';sf.classList.add('fl');}}
+    else{sv.textContent='No streak yet';sv.style.color='rgba(140,160,230,.3)';if(ss)ss.textContent='SOLVE DSA TO START';if(sf){sf.textContent='⚡';sf.classList.remove('fl');}}
+  }
+  const td=today();const tasks=S.tasks[td]||{};
+  const done=TASK_DEFS.filter(t=>tasks[t.id]).length;
+  const pct=Math.round(done/TASK_DEFS.length*100);
+  const bar=document.getElementById('sb-bar'),pctEl=document.getElementById('sb-pct');
+  if(bar)bar.style.width=pct+'%';
+  if(pctEl){pctEl.textContent=pct+'%';pctEl.style.color=pct>0?'var(--cy)':'rgba(140,160,230,.3)';}
+}
+
+function updateClock(){
+  const now=new Date();
+  const H=String(now.getHours()).padStart(2,'0'),M=String(now.getMinutes()).padStart(2,'0'),Sec=String(now.getSeconds()).padStart(2,'0');
+  const dbClock=document.getElementById('db-clock');
+  if(dbClock)dbClock.innerHTML=`${H}<span class="bl" style="opacity:.6">:</span>${M}<span style="font-size:17px;color:var(--mu);margin-left:4px">${Sec}</span>`;
+  const schClock=document.getElementById('sch-clock');
+  if(schClock)schClock.innerHTML=`${H}<span class="bl" style="color:var(--mu)">:</span>${M}`;
+}
+
+// ═══════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════
+Chart.defaults.color='rgba(170,190,255,.52)';
+Chart.defaults.borderColor='rgba(255,255,255,.04)';
+load();
+renderDashboard();
+updateSidebar();
+setInterval(updateClock,1000);
+updateClock();
+</script>
+</body>
+</html>

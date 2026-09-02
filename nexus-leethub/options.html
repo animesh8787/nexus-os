@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Nexus OS - LeetCode to GitHub</title>
+<style>
+  :root{color-scheme:dark light}
+  body{margin:0;padding:40px 24px;background:#0b0b10;color:#e7e7ee;
+       font:15px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+  main{max-width:600px;margin:0 auto}
+  h1{font-size:21px;margin:0 0 4px}
+  p.sub{color:#9a9ab0;margin:0 0 26px;font-size:13.5px}
+  .card{background:#121219;border:1px solid #23233a;border-radius:12px;padding:20px;margin-bottom:16px}
+  label{display:block;font-size:11px;letter-spacing:.6px;text-transform:uppercase;
+        color:#8b8ba3;margin:0 0 6px}
+  input[type=text],input[type=password]{width:100%;box-sizing:border-box;background:#0d0d14;
+        border:1px solid #2a2a3f;border-radius:8px;padding:10px 12px;color:#e7e7ee;font-size:14px}
+  input:focus{outline:none;border-color:#4f46e5}
+  .row{display:flex;gap:12px}.row>div{flex:1}
+  .check{display:flex;align-items:center;gap:9px;margin-top:14px;font-size:13.5px;color:#c3c3d4}
+  .check input{width:auto}
+  button{background:#4f46e5;border:0;color:#fff;font-weight:650;font-size:13.5px;
+         padding:10px 18px;border-radius:8px;cursor:pointer}
+  button.ghost{background:#1c1c28;color:#c3c3d4;border:1px solid #2f2f45}
+  .btns{display:flex;gap:9px;margin-top:18px}
+  .note{border-left:3px solid #4f46e5;background:#14141c;padding:12px 15px;
+        border-radius:0 8px 8px 0;color:#a8a8bd;font-size:13px;margin-top:18px}
+  .out{margin-top:14px;font-size:13px}
+  .ok{color:#34d399}.err{color:#f87171}
+  code{background:#1b1b26;padding:2px 6px;border-radius:5px;font-size:12.5px}
+  a{color:#8b83ff}
+</style></head><body><main>
+
+<h1>Nexus OS &rarr; GitHub</h1>
+<p class="sub">Commits every accepted LeetCode solution straight to your solutions repo.</p>
+
+<div class="card">
+  <div class="row">
+    <div>
+      <label>Repository name</label>
+      <input type="text" id="repo" placeholder="leetcode-solutions">
+    </div>
+    <div>
+      <label>Fine-grained token</label>
+      <input type="password" id="token" placeholder="github_pat_..." autocomplete="off">
+    </div>
+  </div>
+
+  <label class="check"><input type="checkbox" id="autoPush"> Push automatically on each first Accept</label>
+  <label class="check"><input type="checkbox" id="ghPrivate"> Create the repo private if it does not exist</label>
+
+  <div class="btns">
+    <button id="save">Save</button>
+    <button id="test" class="ghost">Test connection</button>
+    <a href="https://github.com/settings/personal-access-tokens/new" target="_blank"
+       rel="noopener"><button class="ghost" type="button">Create token &#8599;</button></a>
+  </div>
+  <div class="out" id="out"></div>
+</div>
+
+<div class="note">
+  Give the token <strong>Contents: read and write</strong> on <em>just this one repository</em>,
+  and <strong>Administration: write</strong> only if you want the repo created for you.
+  Use a short expiry. The token is stored in this browser profile&rsquo;s extension storage and is
+  only ever sent to <code>api.github.com</code>.
+</div>
+
+<script src="options.js"></script>
+</main></body></html>

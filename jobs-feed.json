@@ -1,0 +1,5663 @@
+{
+ "generated": "2026-09-01T12:33:32.175Z",
+ "sources": [
+  {
+   "name": "Himalayas",
+   "ok": true,
+   "count": 120,
+   "err": null
+  },
+  {
+   "name": "Working Nomads",
+   "ok": true,
+   "count": 45,
+   "err": null
+  },
+  {
+   "name": "Jobspresso",
+   "ok": true,
+   "count": 10,
+   "err": null
+  },
+  {
+   "name": "NoDesk",
+   "ok": true,
+   "count": 10,
+   "err": null
+  },
+  {
+   "name": "Databricks",
+   "ok": true,
+   "count": 853,
+   "err": null
+  },
+  {
+   "name": "MongoDB",
+   "ok": true,
+   "count": 407,
+   "err": null
+  },
+  {
+   "name": "Sarvam AI",
+   "ok": true,
+   "count": 62,
+   "err": null
+  },
+  {
+   "name": "Zscaler",
+   "ok": true,
+   "count": 352,
+   "err": null
+  },
+  {
+   "name": "Stripe",
+   "ok": true,
+   "count": 586,
+   "err": null
+  },
+  {
+   "name": "GitLab",
+   "ok": true,
+   "count": 223,
+   "err": null
+  },
+  {
+   "name": "Rubrik",
+   "ok": true,
+   "count": 135,
+   "err": null
+  },
+  {
+   "name": "Squarepoint",
+   "ok": true,
+   "count": 93,
+   "err": null
+  },
+  {
+   "name": "Elastic",
+   "ok": true,
+   "count": 346,
+   "err": null
+  },
+  {
+   "name": "Razorpay",
+   "ok": true,
+   "count": 24,
+   "err": null
+  },
+  {
+   "name": "Coinbase",
+   "ok": true,
+   "count": 189,
+   "err": null
+  },
+  {
+   "name": "Twilio",
+   "ok": true,
+   "count": 137,
+   "err": null
+  },
+  {
+   "name": "Tower Research",
+   "ok": true,
+   "count": 82,
+   "err": null
+  },
+  {
+   "name": "IMC Trading",
+   "ok": true,
+   "count": 174,
+   "err": null
+  },
+  {
+   "name": "WorldQuant",
+   "ok": true,
+   "count": 104,
+   "err": null
+  },
+  {
+   "name": "Groww",
+   "ok": true,
+   "count": 5,
+   "err": null
+  },
+  {
+   "name": "Postman",
+   "ok": true,
+   "count": 64,
+   "err": null
+  },
+  {
+   "name": "Anthropic",
+   "ok": true,
+   "count": 568,
+   "err": null
+  },
+  {
+   "name": "Airbnb",
+   "ok": true,
+   "count": 168,
+   "err": null
+  },
+  {
+   "name": "Cloudflare",
+   "ok": true,
+   "count": 316,
+   "err": null
+  },
+  {
+   "name": "Samsara",
+   "ok": true,
+   "count": 245,
+   "err": null
+  },
+  {
+   "name": "Jump Trading",
+   "ok": true,
+   "count": 107,
+   "err": null
+  },
+  {
+   "name": "Jane Street",
+   "ok": true,
+   "count": 232,
+   "err": null
+  },
+  {
+   "name": "Figma",
+   "ok": true,
+   "count": 160,
+   "err": null
+  },
+  {
+   "name": "Vercel",
+   "ok": true,
+   "count": 89,
+   "err": null
+  },
+  {
+   "name": "Scale AI",
+   "ok": true,
+   "count": 215,
+   "err": null
+  },
+  {
+   "name": "Pinterest",
+   "ok": true,
+   "count": 206,
+   "err": null
+  },
+  {
+   "name": "Robinhood",
+   "ok": true,
+   "count": 128,
+   "err": null
+  },
+  {
+   "name": "Affirm",
+   "ok": true,
+   "count": 199,
+   "err": null
+  },
+  {
+   "name": "Brex",
+   "ok": true,
+   "count": 294,
+   "err": null
+  },
+  {
+   "name": "Slice",
+   "ok": true,
+   "count": 26,
+   "err": null
+  },
+  {
+   "name": "Perplexity",
+   "ok": true,
+   "count": 97,
+   "err": null
+  },
+  {
+   "name": "Notion",
+   "ok": true,
+   "count": 133,
+   "err": null
+  },
+  {
+   "name": "Ramp",
+   "ok": true,
+   "count": 137,
+   "err": null
+  },
+  {
+   "name": "Confluent",
+   "ok": true,
+   "count": 23,
+   "err": null
+  },
+  {
+   "name": "Linear",
+   "ok": true,
+   "count": 28,
+   "err": null
+  },
+  {
+   "name": "Supabase",
+   "ok": true,
+   "count": 58,
+   "err": null
+  },
+  {
+   "name": "Navi",
+   "ok": true,
+   "count": 9,
+   "err": null
+  }
+ ],
+ "total": 755,
+ "jobs": [
+  {
+   "id": "gh:jumptrading-8052343",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus AI Research Engineer – Deep Learning (Full-Time)",
+   "loc": "Chicago; New York",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8052343",
+   "posted": 1787093268000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "deep learning",
+    "ai",
+    "research engineer",
+    "campus"
+   ],
+   "score": 13
+  },
+  {
+   "id": "gh:jumptrading-8052338",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus AI Research Engineer - Deep Learning (Intern)",
+   "loc": "Chicago; New York",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8052338",
+   "posted": 1787089832000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "deep learning",
+    "ai",
+    "research engineer",
+    "intern"
+   ],
+   "score": 13
+  },
+  {
+   "id": "gh:gitlab-8698330002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "Fullstack Engineer (TypeScript), AI Engineering: Duo Client SDK",
+   "loc": "Remote, Canada; Remote, United States",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8698330002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "fullstack",
+    "typescript"
+   ],
+   "score": 12
+  },
+  {
+   "id": "gh:stripe-8031833",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Intern",
+   "loc": "Bengaluru",
+   "url": "https://stripe.com/jobs/search?gh_jid=8031833",
+   "posted": 1788192599000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 12
+  },
+  {
+   "id": "gh:databricks-8632126002",
+   "src": "greenhouse",
+   "srcLabel": "Databricks",
+   "company": "Databricks",
+   "title": "Full Stack Developer (AI Agents)",
+   "loc": "Bengaluru, India",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8632126002",
+   "posted": 1788235319000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "full stack"
+   ],
+   "score": 11
+  },
+  {
+   "id": "gh:mongodb-8111979",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3, AI Builder Experience ",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8111979",
+   "posted": 1787662697000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 11
+  },
+  {
+   "id": "gh:towerresearchcapital-8143756",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Intern - AI/ML",
+   "loc": "gurgaon",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8143756",
+   "posted": 1787230662000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "intern"
+   ],
+   "score": 10
+  },
+  {
+   "id": "gh:jumptrading-8052313",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus AI Research Engineer (Full-Time)",
+   "loc": "Chicago; New York",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8052313",
+   "posted": 1787093215000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "research engineer",
+    "campus"
+   ],
+   "score": 10
+  },
+  {
+   "id": "gh:jumptrading-8027955",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Python Software Engineer (Intern)",
+   "loc": "Singapore",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8027955",
+   "posted": 1787092660000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "software engineer",
+    "intern"
+   ],
+   "score": 10
+  },
+  {
+   "id": "gh:jumptrading-8052351",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus AI Research Engineer – Research Automation (Intern)",
+   "loc": "Chicago; New York",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8052351",
+   "posted": 1787089888000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "research engineer",
+    "intern"
+   ],
+   "score": 10
+  },
+  {
+   "id": "gh:jumptrading-8052281",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus AI Research Engineer (Intern)",
+   "loc": "Chicago; New York",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8052281",
+   "posted": 1787088439000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "research engineer",
+    "intern"
+   ],
+   "score": 10
+  },
+  {
+   "id": "gh:squarepointcapital-239376",
+   "src": "greenhouse",
+   "srcLabel": "Squarepoint",
+   "company": "Squarepoint",
+   "title": "Junior Quant Researcher",
+   "loc": "London, New York, Singapore, Boston, Paris, Zug, Geneva, Hong Kong, Bangalore",
+   "url": "https://www.squarepoint-capital.com/open-opportunities?id=239376&gh_jid=239376",
+   "posted": 1786014040000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quant",
+    "junior"
+   ],
+   "score": 10
+  },
+  {
+   "id": "gh:squarepointcapital-6069464",
+   "src": "greenhouse",
+   "srcLabel": "Squarepoint",
+   "company": "Squarepoint",
+   "title": "Junior Quant Researcher - ML Alpha Research",
+   "loc": "London, New York, Singapore, Boston, Paris, Zug, Geneva, Hong Kong, Bangalore",
+   "url": "https://www.squarepoint-capital.com/open-opportunities?id=6069464&gh_jid=6069464",
+   "posted": 1786014040000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quant",
+    "junior"
+   ],
+   "score": 10
+  },
+  {
+   "id": "gh:worldquant-4434997006",
+   "src": "greenhouse",
+   "srcLabel": "WorldQuant",
+   "company": "WorldQuant",
+   "title": "Quantitative Research Intern (LLMs & AI Agents)",
+   "loc": "Hanoi or Ho Chi Minh City",
+   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4434997006",
+   "posted": 1785232593000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "quantitative",
+    "intern"
+   ],
+   "score": 10
+  },
+  {
+   "id": "ab:notion-85947779-6b87-466a-98bc-30a640448c28",
+   "src": "ashby",
+   "srcLabel": "Notion",
+   "company": "Notion",
+   "title": "Software Engineer, Early Career (AI)",
+   "loc": "San Francisco, California",
+   "url": "https://jobs.ashbyhq.com/notion/85947779-6b87-466a-98bc-30a640448c28",
+   "posted": 1783363062434,
+   "tags": [
+    "Early Career",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer",
+    "early career"
+   ],
+   "score": 10
+  },
+  {
+   "id": "gh:towerresearchcapital-8168750",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Quantitative Researcher Intern, Bachelor or Master",
+   "loc": "Singapore, Hong Kong, Shanghai, Sydney",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8168750",
+   "posted": 1788235873000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8128744",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "San Francisco, Seattle, New York",
+   "url": "https://stripe.com/jobs/search?gh_jid=8128744",
+   "posted": 1788230335000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8128745",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Intern (Summer or Winter)",
+   "loc": "San Francisco, Seattle, New York City",
+   "url": "https://stripe.com/jobs/search?gh_jid=8128745",
+   "posted": 1788230302000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8097801",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Intern (Summer or Winter)",
+   "loc": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8097801",
+   "posted": 1788218723000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130805",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Intern (Summer or Winter)",
+   "loc": "Toronto",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130805",
+   "posted": 1788218508000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8157838",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "Toronto",
+   "url": "https://stripe.com/jobs/search?gh_jid=8157838",
+   "posted": 1788218174000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130881",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130881",
+   "posted": 1788217623000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130922",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "Bucharest",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130922",
+   "posted": 1788217414000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130807",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Intern ",
+   "loc": "Bucharest",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130807",
+   "posted": 1788216961000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130927",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad - Frontend",
+   "loc": "Barcelona",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130927",
+   "posted": 1788215745000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130930",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "London",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
+   "posted": 1788215573000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130867",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Intern",
+   "loc": "London",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130867",
+   "posted": 1788215438000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:gitlab-8698314002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "Backend Engineer, AI Engineering: Duo Chat",
+   "loc": "Remote, Canada; Remote, United States",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8698314002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:gitlab-8620720002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "Backend Engineer (Ruby), AI Engineering: Agent Observability",
+   "loc": "Remote, Canada",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8620720002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:jumptrading-8027938",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus AI/ML Researcher (Intern)",
+   "loc": "Hong Kong; Shanghai; Singapore",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8027938",
+   "posted": 1787916528000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:jumptrading-8027922",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Trader (Intern)",
+   "loc": "Hong Kong; Shanghai",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8027922",
+   "posted": 1787916489000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:jumptrading-8027900",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Researcher (Intern)",
+   "loc": "Hong Kong; Shanghai",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8027900",
+   "posted": 1787916469000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:jumptrading-8027898",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Researcher (Off-Cycle - Winter/Spring 2027 Intern) ",
+   "loc": "Hong Kong; Shanghai",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8027898",
+   "posted": 1787916381000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:jumptrading-8059384",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Researcher (M1/M2 Intern)",
+   "loc": "London; Paris",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8059384",
+   "posted": 1787913708000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:pinterest-8162046",
+   "src": "greenhouse",
+   "srcLabel": "Pinterest",
+   "company": "Pinterest",
+   "title": "Machine Learning Engineer II, Responsible AI",
+   "loc": "San Francisco, CA, US; Remote, US",
+   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8162046",
+   "posted": 1787848151000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "ai"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4564480101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Software Engineer (2026)",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4564480101",
+   "posted": 1787823985000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4818790101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Software Engineer",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4818790101",
+   "posted": 1787781674000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4751729101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Quantitative Trader",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4751729101",
+   "posted": 1787755575000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7809763003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer I, Fullstack (Servicing International)",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7809763003",
+   "posted": 1787749353000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "fullstack"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4907416101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Machine Learning Researcher - Chicago",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4907416101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4914883101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": " Graduate Machine Learning Researcher - London",
+   "loc": "London, United Kingdom",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4914883101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4907368101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Quantitative Researcher (BS/MS)",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4907368101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4912325101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Quantitative Researcher (PhD)",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4912325101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4892687101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Quant Researcher - Digital Assets ",
+   "loc": "Zug, Switzerland",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4892687101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quant",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4917773101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Software Engineer",
+   "loc": "Aarhus, Central Denmark Region, Denmark",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4917773101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4635938101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Software Engineer (2026)",
+   "loc": "Aarhus, Central Denmark Region, Denmark",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4635938101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4667814101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Software Engineer (2027)",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4667814101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4932192101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Software Engineer - Digital Assets",
+   "loc": "Zug, Switzerland",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4932192101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4912874101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Machine Learning Research Intern - Summer 2027 - Amsterdam",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4912874101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4907430101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Machine Learning Research Intern - Summer 2027 - Chicago",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4907430101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4956547101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Machine Learning Research Intern - Summer 2027 - Sydney",
+   "loc": "Sydney,  Australia",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4956547101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4941208101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Research Intern 2027",
+   "loc": "Hong Kong, Hong Kong",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4941208101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4907399101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Research Intern (BS/MS) - Summer 2027",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4907399101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4907400101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Research Intern (PhD) - Summer 2027",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4907400101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4936262101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Trader Intern",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4936262101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4941205101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Trader Intern 2027",
+   "loc": "Hong Kong, Hong Kong",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4941205101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4823923101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Trader Intern - Summer 2027",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4823923101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4577504101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Software Engineer, Early Career",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4577504101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "early career"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4667854101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Software Engineer Intern",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4667854101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4941206101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Software Engineer Intern 2027",
+   "loc": "Hong Kong, Hong Kong",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4941206101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4823924101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Software Engineer Intern - Summer 2027",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4823924101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:cloudflare-8089400",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Research Engineer Intern (Fall 2026)",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400",
+   "posted": 1787701113000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "research engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:cloudflare-8089407",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Research Engineer Intern (Fall 2026)",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8089407?gh_jid=8089407",
+   "posted": 1787701113000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "research engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:cloudflare-8089379",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Research Engineer Intern (Fall 2026)",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8089379?gh_jid=8089379",
+   "posted": 1787701113000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "research engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:cloudflare-8118845",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Software Engineer Intern (Fall 2026)",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845",
+   "posted": 1787701113000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:cloudflare-8118855",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Software Engineer Intern (Fall 2026)",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855",
+   "posted": 1787701113000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:cloudflare-8052785",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Software Engineer Intern (Fall 2026) - Austin, TX",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785",
+   "posted": 1787701113000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:squarepointcapital-1433622",
+   "src": "greenhouse",
+   "srcLabel": "Squarepoint",
+   "company": "Squarepoint",
+   "title": "Quant Developer (Python) ",
+   "loc": "London, Montreal, Warsaw, Hong Kong, Singapore, Madrid, Houston, Bangalore",
+   "url": "https://www.squarepoint-capital.com/open-opportunities?id=1433622&gh_jid=1433622",
+   "posted": 1786014040000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "quant"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:scaleai-4625345005",
+   "src": "greenhouse",
+   "srcLabel": "Scale AI",
+   "company": "Scale AI",
+   "title": " Machine Learning Research Engineer, Agent Data Foundation - Enterprise GenAI",
+   "loc": "San Francisco, CA; New York, NY",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4625345005",
+   "posted": 1785819881000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "genai",
+    "research engineer"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:scaleai-4625344005",
+   "src": "greenhouse",
+   "srcLabel": "Scale AI",
+   "company": "Scale AI",
+   "title": "Machine Learning Research Engineer, Agents - Enterprise GenAI",
+   "loc": "San Francisco, CA; New York, NY",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4625344005",
+   "posted": 1785819881000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "genai",
+    "research engineer"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:scaleai-4625341005",
+   "src": "greenhouse",
+   "srcLabel": "Scale AI",
+   "company": "Scale AI",
+   "title": "Machine Learning Systems Research Engineer, Agent Post-training - Enterprise GenAI",
+   "loc": "San Francisco, CA; New York, NY",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4625341005",
+   "posted": 1785819881000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "genai",
+    "research engineer"
+   ],
+   "score": 9
+  },
+  {
+   "id": "ab:sarvam-fcb15601-6440-41f7-aa79-b9992057a4b2",
+   "src": "ashby",
+   "srcLabel": "Sarvam AI",
+   "company": "Sarvam AI",
+   "title": "Platform Engineer - AI Infrastructure",
+   "loc": "Bengaluru",
+   "url": "https://jobs.ashbyhq.com/sarvam/fcb15601-6440-41f7-aa79-b9992057a4b2",
+   "posted": 1782723082501,
+   "tags": [
+    "Infrastructure ",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "platform engineer"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:worldquant-4443948006",
+   "src": "greenhouse",
+   "srcLabel": "WorldQuant",
+   "company": "WorldQuant",
+   "title": "AI Software Engineer",
+   "loc": "Ramat Gan",
+   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4443948006",
+   "posted": 1788259305000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:mongodb-8161336",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8161336",
+   "posted": 1788248427000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:mongodb-7993984",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
+   "posted": 1788248427000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:mongodb-8083366",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8083366",
+   "posted": 1788248427000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:razorpaysoftwareprivatelimited-4699107005",
+   "src": "greenhouse",
+   "srcLabel": "Razorpay",
+   "company": "Razorpay",
+   "title": "Full Stack Builder",
+   "loc": "Bengaluru",
+   "url": "https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited/jobs/4699107005",
+   "posted": 1788248352000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "full stack"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:gitlab-8556658002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "AI Engineer",
+   "loc": "Remote, Bangalore",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8556658002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:gitlab-8695515002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "Backend Engineer, Geo Team",
+   "loc": "Bangalore, India",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8695515002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "backend"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:gitlab-8722304002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "Intermediate Backend Engineer - Database Change Management",
+   "loc": "Bangalore, India",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8722304002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "backend"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:gitlab-8623751002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "Intermediate Fullstack Engineer - Data Products",
+   "loc": "Bangalore, India",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8623751002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "fullstack"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:imc-4682071101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Software Engineer – AI Powered Engineering",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4682071101",
+   "posted": 1788159670000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:rubrik-7956918",
+   "src": "greenhouse",
+   "srcLabel": "Rubrik",
+   "company": "Rubrik",
+   "title": "Software Engineer - IAM",
+   "loc": "Pune",
+   "url": "https://www.rubrik.com/company/careers/departments/job.7956918?gh_jid=7956918",
+   "posted": 1788157286000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:coinbase-8165441",
+   "src": "greenhouse",
+   "srcLabel": "Coinbase",
+   "company": "Coinbase",
+   "title": "Software Engineer, Security Platform",
+   "loc": "Remote - India",
+   "url": "https://www.coinbase.com/careers/positions/8165441?gh_jid=8165441",
+   "posted": 1787959615000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:anthropic-5115935008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Research Engineer, Machine Learning (Reinforcement Learning)",
+   "loc": "London, UK",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5115935008",
+   "posted": 1787942638000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "research engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:anthropic-5198074008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Research Engineer, Machine Learning (RL Velocity)",
+   "loc": "London, UK",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5198074008",
+   "posted": 1787942638000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "research engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:janestreet-7437779002",
+   "src": "greenhouse",
+   "srcLabel": "Jane Street",
+   "company": "Jane Street",
+   "title": "Machine Learning Research Engineer",
+   "loc": "London, England, United Kingdom",
+   "url": "https://www.janestreet.com/join-jane-street/apply/7437779002?gh_jid=7437779002",
+   "posted": 1787860406000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "research engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:janestreet-6802323002",
+   "src": "greenhouse",
+   "srcLabel": "Jane Street",
+   "company": "Jane Street",
+   "title": "Machine Learning Research Engineer",
+   "loc": "Hong Kong, Hong Kong",
+   "url": "https://www.janestreet.com/join-jane-street/apply/6802323002?gh_jid=6802323002",
+   "posted": 1787860390000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "research engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:janestreet-6485460002",
+   "src": "greenhouse",
+   "srcLabel": "Jane Street",
+   "company": "Jane Street",
+   "title": "Machine Learning Research Engineer",
+   "loc": "New York, New York, United States",
+   "url": "https://www.janestreet.com/join-jane-street/apply/6485460002?gh_jid=6485460002",
+   "posted": 1787860383000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "research engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:elastic-8154997",
+   "src": "greenhouse",
+   "srcLabel": "Elastic",
+   "company": "Elastic",
+   "title": "AI QA & Evaluation Engineer",
+   "loc": "Bangalore, India",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8154997&gh_jid=8154997",
+   "posted": 1787844369000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:elastic-8097064",
+   "src": "greenhouse",
+   "srcLabel": "Elastic",
+   "company": "Elastic",
+   "title": "Software Engineer II - Full Stack - Web Engineering",
+   "loc": "Ireland",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8097064&gh_jid=8097064",
+   "posted": 1787844369000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:elastic-8080264",
+   "src": "greenhouse",
+   "srcLabel": "Elastic",
+   "company": "Elastic",
+   "title": "Software Engineer II - Full Stack - Web Engineering",
+   "loc": "Greece",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8080264&gh_jid=8080264",
+   "posted": 1787844369000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:elastic-8080263",
+   "src": "greenhouse",
+   "srcLabel": "Elastic",
+   "company": "Elastic",
+   "title": "Software Engineer II - Full Stack - Web Engineering",
+   "loc": "Spain",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8080263&gh_jid=8080263",
+   "posted": 1787844369000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:elastic-8080260",
+   "src": "greenhouse",
+   "srcLabel": "Elastic",
+   "company": "Elastic",
+   "title": "Software Engineer II - Full Stack - Web Engineering",
+   "loc": "Portugal",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8080260&gh_jid=8080260",
+   "posted": 1787844369000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:figma-5551697004",
+   "src": "greenhouse",
+   "srcLabel": "Figma",
+   "company": "Figma",
+   "title": "Software Engineer - AI Product (London, United Kingdom)",
+   "loc": "London, England",
+   "url": "https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004",
+   "posted": 1787826255000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:imc-4282973101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "C++ Software Engineer",
+   "loc": "Mumbai, India",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4282973101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:imc-4548292101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Python Software Engineer",
+   "loc": "Sydney,  Australia",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4548292101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:imc-4630983101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Python Software Engineer",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4630983101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:imc-4637535101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Python Software Engineer - Digital Assets",
+   "loc": "Zug, Switzerland",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4637535101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:imc-4874399101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Developer - Python",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4874399101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "quantitative"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:imc-4694175101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Researcher",
+   "loc": "Mumbai, India",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4694175101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:imc-4930380101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Software Engineer - Machine Learning Frameworks",
+   "loc": "Sydney,  Australia",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4930380101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:imc-4885477101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Talent Sourcer – Machine Learning & Quantitative Research",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4885477101",
+   "posted": 1787743910000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "quantitative"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:cloudflare-7831810",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Software Engineer, AI Agents",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/7831810?gh_jid=7831810",
+   "posted": 1787701113000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:robinhood-8008723",
+   "src": "greenhouse",
+   "srcLabel": "Robinhood",
+   "company": "Robinhood",
+   "title": "Full Stack Software Engineer, Credit Cards & Banking",
+   "loc": "Bellevue, WA; Menlo Park, CA; New York, NY",
+   "url": "https://boards.greenhouse.io/robinhood/jobs/8008723?t=gh_src=&gh_jid=8008723",
+   "posted": 1787683001000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:robinhood-7263592",
+   "src": "greenhouse",
+   "srcLabel": "Robinhood",
+   "company": "Robinhood",
+   "title": "Software Engineer, Backend",
+   "loc": "Menlo Park, CA; New York, NY",
+   "url": "https://boards.greenhouse.io/robinhood/jobs/7263592?t=gh_src=&gh_jid=7263592",
+   "posted": 1787683001000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:figma-6131089004",
+   "src": "greenhouse",
+   "srcLabel": "Figma",
+   "company": "Figma",
+   "title": "Software Engineer Intern (Winter 2027)",
+   "loc": "San Francisco, CA • New York, NY",
+   "url": "https://boards.greenhouse.io/figma/jobs/6131089004?gh_jid=6131089004",
+   "posted": 1787608823000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8125888",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Researcher, PhD (Full-Time)",
+   "loc": "Chicago; New York",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8125888",
+   "posted": 1787585983000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "campus"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:samsara-8097345",
+   "src": "greenhouse",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "Software Engineer I (New Grad)",
+   "loc": "London - UK2",
+   "url": "https://www.samsara.com/company/careers/roles/8097345?gh_jid=8097345",
+   "posted": 1787422903000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7819447003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Fullstack (App Experience)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7819447003",
+   "posted": 1787333300000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "fullstack"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7819445003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Fullstack (App Experience)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7819445003",
+   "posted": 1787333295000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "fullstack"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:anthropic-5198108008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Research Engineer, Machine Learning (RL Velocity)",
+   "loc": "Remote-Friendly (Travel-Required) | San Francisco, CA | New York City, NY",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5198108008",
+   "posted": 1787331009000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "research engineer"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:pinterest-7697137",
+   "src": "greenhouse",
+   "srcLabel": "Pinterest",
+   "company": "Pinterest",
+   "title": "Machine Learning Engineer II, Visual AI",
+   "loc": "San Francisco, CA, US; Remote, US",
+   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7697137",
+   "posted": 1787262090000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "ai"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7590373003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (PMI Integrations)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7590373003",
+   "posted": 1787259702000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7807508003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer I, Backend (Collections)",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807508003",
+   "posted": 1787255908000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7807506003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer I, Backend (Collections)",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807506003",
+   "posted": 1787255908000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7799348003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Furnishing Platform) ",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7799348003",
+   "posted": 1787133516000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8027941",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Trader (Intern)",
+   "loc": "Singapore",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8027941",
+   "posted": 1787093008000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8027939",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Researcher (Intern)",
+   "loc": "Singapore",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8027939",
+   "posted": 1787092974000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8027946",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus C++ Software Engineer (Intern)",
+   "loc": "Singapore",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8027946",
+   "posted": 1787092628000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-7977145",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus ML Research Engineer (Intern)",
+   "loc": "London",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=7977145",
+   "posted": 1787091693000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "research engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-7977132",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus ML Research Engineer (Full-Time)",
+   "loc": "London",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=7977132",
+   "posted": 1787091653000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "research engineer",
+    "campus"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-7975026",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Software Engineer (Intern)",
+   "loc": "London",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=7975026",
+   "posted": 1787091492000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-7975008",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Data Engineer (Intern)",
+   "loc": "London",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=7975008",
+   "posted": 1787091330000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "data engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-7974943",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus UI Software Engineer (Intern)",
+   "loc": "London",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=7974943",
+   "posted": 1787091285000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:vercel-5430088004",
+   "src": "greenhouse",
+   "srcLabel": "Vercel",
+   "company": "Vercel",
+   "title": "Software Engineer, Backend",
+   "loc": "Remote - United States",
+   "url": "https://job-boards.greenhouse.io/vercel/jobs/5430088004",
+   "posted": 1787090749000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8049938",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Researcher, PhD (Intern)",
+   "loc": "Chicago; New York",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8049938",
+   "posted": 1787089760000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:pinterest-4843547",
+   "src": "greenhouse",
+   "srcLabel": "Pinterest",
+   "company": "Pinterest",
+   "title": "Software Engineer II, Fullstack",
+   "loc": "San Francisco, CA, US; Remote, US",
+   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=4843547",
+   "posted": 1787082156000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "fullstack"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:databricks-7011263002",
+   "src": "greenhouse",
+   "srcLabel": "Databricks",
+   "company": "Databricks",
+   "title": "PhD GenAI Research Scientist Intern",
+   "loc": "San Francisco, California",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002",
+   "posted": 1787073426000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "genai",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7809761003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer I, Fullstack (Servicing International)",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7809761003",
+   "posted": 1787066650000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "fullstack"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:towerresearchcapital-8138524",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Quantitative Developer Intern",
+   "loc": "Singapore",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8138524",
+   "posted": 1787036559000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:postman-7823417003",
+   "src": "greenhouse",
+   "srcLabel": "Postman",
+   "company": "Postman",
+   "title": "AI Engineer, Internship - Summer 2026 - Applications Open Now",
+   "loc": "Berkeley, California, United States; San Francisco, California, United States",
+   "url": "https://job-boards.greenhouse.io/postman/jobs/7823417003",
+   "posted": 1787004955000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "internship"
+   ],
+   "score": 7
+  },
+  {
+   "id": "ab:notion-e32799d2-8ef8-4803-8189-c72514afa816",
+   "src": "ashby",
+   "srcLabel": "Notion",
+   "company": "Notion",
+   "title": "Software Engineer, New Grad (Dec 2026)",
+   "loc": "San Francisco, California",
+   "url": "https://jobs.ashbyhq.com/notion/e32799d2-8ef8-4803-8189-c72514afa816",
+   "posted": 1786734759557,
+   "tags": [
+    "Early Career",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 7
+  },
+  {
+   "id": "ab:notion-3fba1c39-c5cb-47d7-9ad2-1cec4d7e9d0c",
+   "src": "ashby",
+   "srcLabel": "Notion",
+   "company": "Notion",
+   "title": "Software Engineer Intern (Summer 2027)",
+   "loc": "San Francisco, California",
+   "url": "https://jobs.ashbyhq.com/notion/3fba1c39-c5cb-47d7-9ad2-1cec4d7e9d0c",
+   "posted": 1786734433459,
+   "tags": [
+    "Early Career",
+    "Intern"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "ab:notion-e66c6658-9e65-4c58-8db2-844628b6e8f8",
+   "src": "ashby",
+   "srcLabel": "Notion",
+   "company": "Notion",
+   "title": "Software Engineer Intern (Winter 2027)",
+   "loc": "San Francisco, California",
+   "url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+   "posted": 1786734318297,
+   "tags": [
+    "Early Career",
+    "Intern"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8002998",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Data Engineer (Intern)",
+   "loc": "Chicago",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8002998",
+   "posted": 1786722133000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "data engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8003019",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus UI Software Engineer (Intern)",
+   "loc": "Chicago",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8003019",
+   "posted": 1786722115000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7854835003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Fullstack (International)",
+   "loc": "Remote UK",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7854835003",
+   "posted": 1786625311000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "fullstack"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:worldquant-4572988006",
+   "src": "greenhouse",
+   "srcLabel": "WorldQuant",
+   "company": "WorldQuant",
+   "title": "Quant Developer Intern ",
+   "loc": "Singapore",
+   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4572988006",
+   "posted": 1786584791000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quant",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7749755003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Capital Orchestration)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7749755003",
+   "posted": 1786561931000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7813157003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Collections)",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7813157003",
+   "posted": 1786561931000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7813159003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Collections)",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7813159003",
+   "posted": 1786561931000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7799346003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II , Backend, (Furnishing Platform) ",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7799346003",
+   "posted": 1786561931000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7727320003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Test Infra)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727320003",
+   "posted": 1786561931000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:affirm-7727322003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Test Infra)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727322003",
+   "posted": 1786561931000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:towerresearchcapital-8024128",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Quantitative Trader/Researcher Intern - Summer 2027",
+   "loc": "New York, Chicago",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8024128",
+   "posted": 1786547596000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:towerresearchcapital-8113986",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Quantitative Research Internship - 6 Months, Central Execution Research",
+   "loc": "London",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8113986",
+   "posted": 1786539154000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "internship"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8050796",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Researcher (Full-Time)",
+   "loc": "London; Amsterdam",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8050796",
+   "posted": 1786165309000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "campus"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8050801",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Trader (Full-Time)",
+   "loc": "London; Amsterdam",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8050801",
+   "posted": 1786165309000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "campus"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8010307",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Researcher (Intern)",
+   "loc": "London; Amsterdam",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8010307",
+   "posted": 1786165304000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-7982648",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Researcher, UG/MS (Intern)",
+   "loc": "Chicago; New York",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=7982648",
+   "posted": 1786165303000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8000835",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Software Engineer (Full-Time)",
+   "loc": "Chicago",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8000835",
+   "posted": 1786165303000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "campus"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8002989",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Software Engineer (Intern)",
+   "loc": "Chicago",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8002989",
+   "posted": 1786165303000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-7848371",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Trader (Intern)",
+   "loc": "Chicago; New York",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=7848371",
+   "posted": 1786165299000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-7565728",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Trading Team Software Engineer  (Intern)",
+   "loc": "Hong Kong",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=7565728",
+   "posted": 1786165291000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:squarepointcapital-7918610",
+   "src": "greenhouse",
+   "srcLabel": "Squarepoint",
+   "company": "Squarepoint",
+   "title": "Graduate Quant Developer",
+   "loc": "London, Montreal, Singapore",
+   "url": "https://www.squarepoint-capital.com/open-opportunities?id=7918610&gh_jid=7918610",
+   "posted": 1786014040000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quant",
+    "graduate"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:squarepointcapital-243853",
+   "src": "greenhouse",
+   "srcLabel": "Squarepoint",
+   "company": "Squarepoint",
+   "title": "Intern Quant Researcher",
+   "loc": "London, Paris, New York, Singapore, Hong Kong",
+   "url": "https://www.squarepoint-capital.com/open-opportunities?id=243853&gh_jid=243853",
+   "posted": 1786014040000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quant",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:squarepointcapital-6034466",
+   "src": "greenhouse",
+   "srcLabel": "Squarepoint",
+   "company": "Squarepoint",
+   "title": "Junior Quant Developer",
+   "loc": "London, Montreal, Singapore",
+   "url": "https://www.squarepoint-capital.com/open-opportunities?id=6034466&gh_jid=6034466",
+   "posted": 1786014040000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quant",
+    "junior"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:squarepointcapital-6033550",
+   "src": "greenhouse",
+   "srcLabel": "Squarepoint",
+   "company": "Squarepoint",
+   "title": "Junior Software Developer (Python)",
+   "loc": "London, Montreal, Singapore",
+   "url": "https://www.squarepoint-capital.com/open-opportunities?id=6033550&gh_jid=6033550",
+   "posted": 1786014040000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "junior"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:worldquant-4084570006",
+   "src": "greenhouse",
+   "srcLabel": "WorldQuant",
+   "company": "WorldQuant",
+   "title": "Quantitative Research Intern",
+   "loc": "Beijing OR Shanghai",
+   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4084570006",
+   "posted": 1786013492000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "ab:supabase-3b5d54ca-741b-45ac-bd3f-31605a0d3541",
+   "src": "ashby",
+   "srcLabel": "Supabase",
+   "company": "Supabase",
+   "title": "AI Platform Engineer",
+   "loc": "Remote, Global",
+   "url": "https://jobs.ashbyhq.com/supabase/3b5d54ca-741b-45ac-bd3f-31605a0d3541",
+   "posted": 1785524199246,
+   "tags": [
+    "Business Operations",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "platform engineer"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:towerresearchcapital-8091777",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Junior Quantitative Trader / Researcher ",
+   "loc": "Singapore",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8091777",
+   "posted": 1785245019000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "junior"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:worldquant-4652485006",
+   "src": "greenhouse",
+   "srcLabel": "WorldQuant",
+   "company": "WorldQuant",
+   "title": "Software Engineer Intern",
+   "loc": "Hanoi",
+   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4652485006",
+   "posted": 1785232953000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:jumptrading-8050772",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Campus Quantitative Trader (Intern)",
+   "loc": "London; Amsterdam",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8050772",
+   "posted": 1784937603000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "ab:notion-297b4ece-765f-4eea-b1b8-46057cb6501f",
+   "src": "ashby",
+   "srcLabel": "Notion",
+   "company": "Notion",
+   "title": "Software Engineer, Early Career",
+   "loc": "San Francisco, California",
+   "url": "https://jobs.ashbyhq.com/notion/297b4ece-765f-4eea-b1b8-46057cb6501f",
+   "posted": 1783363055161,
+   "tags": [
+    "Early Career",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "early career"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:towerresearchcapital-8044334",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Quantitative Developer Intern - Summer 2027",
+   "loc": "New York, Chicago",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8044334",
+   "posted": 1783288101000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:towerresearchcapital-8024138",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Quantitative Trader Intern, PhD",
+   "loc": "New York",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8024138",
+   "posted": 1783288096000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "ab:perplexity-be94e89b-89d5-4f2a-a58b-7929c8d97f92",
+   "src": "ashby",
+   "srcLabel": "Perplexity",
+   "company": "Perplexity",
+   "title": "Internship - Search Backend Infra Engineer",
+   "loc": "Belgrade",
+   "url": "https://jobs.ashbyhq.com/perplexity/be94e89b-89d5-4f2a-a58b-7929c8d97f92",
+   "posted": 1782908370009,
+   "tags": [
+    "Search",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "backend",
+    "internship"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:worldquant-4655484006",
+   "src": "greenhouse",
+   "srcLabel": "WorldQuant",
+   "company": "WorldQuant",
+   "title": "Software Engineer Intern",
+   "loc": "Budapest",
+   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4655484006",
+   "posted": 1777915210000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "ab:perplexity-71168628-1998-47d3-87a9-be7bc56a430d",
+   "src": "ashby",
+   "srcLabel": "Perplexity",
+   "company": "Perplexity",
+   "title": "Internship - Search Machine Learning Engineer",
+   "loc": "London",
+   "url": "https://jobs.ashbyhq.com/perplexity/71168628-1998-47d3-87a9-be7bc56a430d",
+   "posted": 1775655181709,
+   "tags": [
+    "Search",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "internship"
+   ],
+   "score": 7
+  },
+  {
+   "id": "ab:perplexity-9246cf02-26fd-4ae8-90c5-639c6e85e9e2",
+   "src": "ashby",
+   "srcLabel": "Perplexity",
+   "company": "Perplexity",
+   "title": "Internship - Search Machine Learning Engineer",
+   "loc": "Belgrade",
+   "url": "https://jobs.ashbyhq.com/perplexity/9246cf02-26fd-4ae8-90c5-639c6e85e9e2",
+   "posted": 1768339202894,
+   "tags": [
+    "Search",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "internship"
+   ],
+   "score": 7
+  },
+  {
+   "id": "ab:ramp-67fadb77-43d8-4449-954b-d4cf2c6d3b8b",
+   "src": "ashby",
+   "srcLabel": "Ramp",
+   "company": "Ramp",
+   "title": "Software Engineer Internship, Android ",
+   "loc": "New York, NY (HQ)",
+   "url": "https://jobs.ashbyhq.com/ramp/67fadb77-43d8-4449-954b-d4cf2c6d3b8b",
+   "posted": 1754599778961,
+   "tags": [
+    "Engineering",
+    "Intern"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "internship"
+   ],
+   "score": 7
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/zero21/jobs/founding-engineer-full-stack-1535659599",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Zero21",
+   "title": "Founding Engineer - Full Stack",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/zero21/jobs/founding-engineer-full-stack-1535659599",
+   "posted": 1788253936000,
+   "tags": [
+    "Founding-Engineer",
+    "Full-Stack-Engineer",
+    "Health-Tech",
+    "Software-Engineer",
+    "Web-Development"
+   ],
+   "desc": "Hi, thanks for checking out our job board! If you're an entrepreneurial-minded builder who loves to work with great people to solve wicked problems that have a meaningful impact, read on to see if this position might be a good fit for you!",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:gitlab-8638232002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "AI Transformation Owner, CRO",
+   "loc": "Remote, United States",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8638232002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:gitlab-8716179002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "AI Transformation Owner, Product & Design",
+   "loc": "Remote, Canada; Remote, United Kingdom; Remote, United States",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8716179002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:gitlab-8517171002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "Forward Deployed Engineer, AI and Agentic SDLC",
+   "loc": "Remote, United States",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8517171002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:gitlab-8644569002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "Intermediate Backend Engineer, Platform Readiness",
+   "loc": "Remote, Canada; Remote, United States",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8644569002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:gitlab-8688078002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "Intermediate Software Engineer, Security Factory: Vulnerability Management ",
+   "loc": "Remote, Canada; Remote, Israel; Remote, United Kingdom",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8688078002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:gitlab-8604630002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "Strategic Account Executive, AI - San Francisco ",
+   "loc": "Remote, US",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8604630002",
+   "posted": 1788213396000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "wnomads:https://www.workingnomads.com/job/go/1826864/",
+   "src": "workingnomads",
+   "srcLabel": "Working Nomads",
+   "company": "Evaboot",
+   "title": "Agentic Python Engineer",
+   "loc": "WORLDWIDE",
+   "url": "https://www.workingnomads.com/job/go/1826864/",
+   "posted": 1788192257000,
+   "tags": [
+    "python",
+    "engineer",
+    "aws",
+    "analytics",
+    "seo"
+   ],
+   "desc": "Evaboot | Agentic Python Engineer | REMOTE | Full-time | $70-120K USD Evaboot turns LinkedIn Sales Navigator searches into clean, verified prospecting lists. Demo: https://www.youtube.com/watch?v=khYgyDlo2Iw Bootstrapped, $2.2M+ ARR, team of 5, remote since day one. What we're doing: building self-improving loops and agentic products. Agentic products you'll work on: SDR agent (sales navigator age",
+   "salary": "",
+   "hits": [
+    "python"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-7647708",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer",
+   "loc": "Remote - Estonia",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/7647708",
+   "posted": 1788186874000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-7996774",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Machine Learning Engineer",
+   "loc": "Remote - Ireland",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/7996774",
+   "posted": 1788186727000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-8007455",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Machine Learning Engineer",
+   "loc": "Remote - Spain",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8007455",
+   "posted": 1788186691000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 6
+  },
+  {
+   "id": "nodesk:https://nodesk.co/remote-jobs/figma-support-ai-engineer/",
+   "src": "nodesk",
+   "srcLabel": "NoDesk",
+   "company": "",
+   "title": "Support AI Engineer at Figma",
+   "loc": "Remote",
+   "url": "https://nodesk.co/remote-jobs/figma-support-ai-engineer/",
+   "posted": 1788156000000,
+   "tags": [],
+   "desc": "Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma’s platform helps teams bring ideas to life—whether you re brainstorming, creating a prototype, translating designs into code, or iterating with AI. From idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the wor",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-8103253",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer (L4)",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8103253",
+   "posted": 1787957905000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-8098945",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer (L4)",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8098945",
+   "posted": 1787957905000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-8009057",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer L3",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8009057",
+   "posted": 1787957904000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-7954715",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer (L3) Data Substrate",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/7954715",
+   "posted": 1787957904000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-8026207",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer, Platform Engineering (L2)",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8026207",
+   "posted": 1787957904000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-8026203",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer-Platform Engineering (L3)",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8026203",
+   "posted": 1787957904000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-7702644",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Machine Learning Engineer",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/7702644",
+   "posted": 1787957903000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-7605743",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer, Identity",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/7605743",
+   "posted": 1787957903000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-8100236",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer (L2)",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8100236",
+   "posted": 1787957903000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-7689461",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer (L2) ",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/7689461",
+   "posted": 1787957903000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-7434770",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer L2 - Cloud Infrastructure ",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/7434770",
+   "posted": 1787957903000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-7661919",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer - Video",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/7661919",
+   "posted": 1787957903000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:samsara-7997311",
+   "src": "greenhouse",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "Data Engineer",
+   "loc": "Remote - Canada",
+   "url": "https://www.samsara.com/company/careers/roles/7997311?gh_jid=7997311",
+   "posted": 1787950585000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "data engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:samsara-7859702",
+   "src": "greenhouse",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "Data Engineer",
+   "loc": "Remote - US",
+   "url": "https://www.samsara.com/company/careers/roles/7859702?gh_jid=7859702",
+   "posted": 1787950534000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "data engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:anthropic-5183044008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Anthropic Fellows Program, AI Safety & Security",
+   "loc": "London, UK; Ontario, CAN; Remote-Friendly, United States; San Francisco, CA",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5183044008",
+   "posted": 1787949984000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:coinbase-8164730",
+   "src": "greenhouse",
+   "srcLabel": "Coinbase",
+   "company": "Coinbase",
+   "title": "Software Engineer, CDP - Payment Acceptance ",
+   "loc": "Remote - USA",
+   "url": "https://www.coinbase.com/careers/positions/8164730?gh_jid=8164730",
+   "posted": 1787946604000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:affirm-7815954003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Quantitative Analyst II (Capital Structuring & Analytics)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7815954003",
+   "posted": 1787941477000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:affirm-7815952003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Quantitative Analyst II (Capital Structuring & Analytics)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7815952003",
+   "posted": 1787941475000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:zscaler-5208825007",
+   "src": "greenhouse",
+   "srcLabel": "Zscaler",
+   "company": "Zscaler",
+   "title": "AI Solutions Engineer, People & Culture",
+   "loc": "Remote - USA",
+   "url": "https://job-boards.greenhouse.io/zscaler/jobs/5208825007",
+   "posted": 1787866293000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:vercel-6093255004",
+   "src": "greenhouse",
+   "srcLabel": "Vercel",
+   "company": "Vercel",
+   "title": "Security Software Engineer, IAM",
+   "loc": "Remote - United States",
+   "url": "https://job-boards.greenhouse.io/vercel/jobs/6093255004",
+   "posted": 1787774896000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:anthropic-5390966008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "AI Engineer, GTM Claudification ",
+   "loc": "Remote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390966008",
+   "posted": 1787698768000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:coinbase-8100066",
+   "src": "greenhouse",
+   "srcLabel": "Coinbase",
+   "company": "Coinbase",
+   "title": "Software Engineer, EAA ",
+   "loc": "Remote - Brazil",
+   "url": "https://www.coinbase.com/careers/positions/8100066?gh_jid=8100066",
+   "posted": 1787675622000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:coinbase-8031260",
+   "src": "greenhouse",
+   "srcLabel": "Coinbase",
+   "company": "Coinbase",
+   "title": "Machine Learning Engineer, CX Intelligence",
+   "loc": "Remote - Brazil",
+   "url": "https://www.coinbase.com/careers/positions/8031260?gh_jid=8031260",
+   "posted": 1787675618000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:coinbase-8024814",
+   "src": "greenhouse",
+   "srcLabel": "Coinbase",
+   "company": "Coinbase",
+   "title": "Software Engineer, Enterprise Apps",
+   "loc": "Remote - Brazil",
+   "url": "https://www.coinbase.com/careers/positions/8024814?gh_jid=8024814",
+   "posted": 1787675603000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:affirm-7813362003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Analyst II, Full Stack (Revenue Analytics)",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7813362003",
+   "posted": 1787667038000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "full stack"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:affirm-7916080003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Analyst II, Full Stack (Revenue Analytics)",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7916080003",
+   "posted": 1787667038000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "full stack"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:databricks-8099751002",
+   "src": "greenhouse",
+   "srcLabel": "Databricks",
+   "company": "Databricks",
+   "title": "AI Engineer - FDE (Forward Deployed Engineer)",
+   "loc": "Remote - India",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8099751002",
+   "posted": 1787561353000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:anthropic-5186067008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Full-Stack Software Engineer, Reinforcement Learning",
+   "loc": "San Francisco, CA | New York City, NY",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5186067008",
+   "posted": 1787331006000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:anthropic-4613568008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Research Engineer, Machine Learning (Reinforcement Learning) ",
+   "loc": "San Francisco, CA | New York City, NY",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/4613568008",
+   "posted": 1787330977000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "research engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:squarepointcapital-2546549",
+   "src": "greenhouse",
+   "srcLabel": "Squarepoint",
+   "company": "Squarepoint",
+   "title": "Desk Quant Analyst",
+   "loc": "London, Madrid, Montreal, Bangalore, Singapore, Hong Kong, Warsaw",
+   "url": "https://www.squarepoint-capital.com/open-opportunities?id=2546549&gh_jid=2546549",
+   "posted": 1787268384000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quant"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:stripe-7895284",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Full Stack Software Engineer, Brazil",
+   "loc": "Sao Paulo",
+   "url": "https://stripe.com/jobs/search?gh_jid=7895284",
+   "posted": 1787256888000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:towerresearchcapital-8141423",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Software Engineer II",
+   "loc": "Gurgaon",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8141423",
+   "posted": 1787220939000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:rubrik-8121053",
+   "src": "greenhouse",
+   "srcLabel": "Rubrik",
+   "company": "Rubrik",
+   "title": "Software Engineer - Cloud Native Protection",
+   "loc": "Bangalore ",
+   "url": "https://www.rubrik.com/company/careers/departments/job.8121053?gh_jid=8121053",
+   "posted": 1787205880000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:brex-8603327002",
+   "src": "greenhouse",
+   "srcLabel": "Brex",
+   "company": "Brex",
+   "title": "Software Engineer II, Backend",
+   "loc": "Vancouver, British Columbia, Canada",
+   "url": "https://www.brex.com/careers/8603327002?gh_jid=8603327002",
+   "posted": 1787147579000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:brex-8536424002",
+   "src": "greenhouse",
+   "srcLabel": "Brex",
+   "company": "Brex",
+   "title": "Software Engineer II, Backend",
+   "loc": "New York, New York, United States",
+   "url": "https://www.brex.com/careers/8536424002?gh_jid=8536424002",
+   "posted": 1787147578000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:brex-8459783002",
+   "src": "greenhouse",
+   "srcLabel": "Brex",
+   "company": "Brex",
+   "title": "Software Engineer II, Backend",
+   "loc": "San Francisco, California, United States",
+   "url": "https://www.brex.com/careers/8459783002?gh_jid=8459783002",
+   "posted": 1787147578000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:towerresearchcapital-8132180",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Software Engineer II",
+   "loc": "Gurgaon",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8132180",
+   "posted": 1787117381000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:vercel-5798406004",
+   "src": "greenhouse",
+   "srcLabel": "Vercel",
+   "company": "Vercel",
+   "title": "Software Engineer, AI Gateway",
+   "loc": "Hybrid - San Francisco, New York City",
+   "url": "https://job-boards.greenhouse.io/vercel/jobs/5798406004",
+   "posted": 1787090767000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:vercel-5474915004",
+   "src": "greenhouse",
+   "srcLabel": "Vercel",
+   "company": "Vercel",
+   "title": "Software Engineer, AI SDK",
+   "loc": "Hybrid - San Francisco, New York City",
+   "url": "https://job-boards.greenhouse.io/vercel/jobs/5474915004",
+   "posted": 1787090751000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:stripe-8084476",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Machine Learning Infrastructure",
+   "loc": "Toronto, Canada",
+   "url": "https://stripe.com/jobs/search?gh_jid=8084476",
+   "posted": 1787090382000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:stripe-8130578",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Backend Engineer- Credit Coverage",
+   "loc": "New York, NY",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130578",
+   "posted": 1787089129000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:stripe-8079132",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Treasury Finance AI and Quantitative Analytics, Americas",
+   "loc": "NYC",
+   "url": "https://stripe.com/jobs/search?gh_jid=8079132",
+   "posted": 1787089127000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "quantitative"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:stripe-7543868",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Internal Systems",
+   "loc": "Bengaluru, India",
+   "url": "https://stripe.com/jobs/search?gh_jid=7543868",
+   "posted": 1787089038000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:databricks-8012650002",
+   "src": "greenhouse",
+   "srcLabel": "Databricks",
+   "company": "Databricks",
+   "title": "Software Engineer - Backend",
+   "loc": "Belgrade, Serbia",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012650002",
+   "posted": 1787073429000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:databricks-8029666002",
+   "src": "greenhouse",
+   "srcLabel": "Databricks",
+   "company": "Databricks",
+   "title": "Software Engineer - Backend",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8029666002",
+   "posted": 1787073427000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:towerresearchcapital-8095921",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Machine Learning Research Engineer",
+   "loc": "New York",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8095921",
+   "posted": 1786994509000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "research engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:scaleai-4665557005",
+   "src": "greenhouse",
+   "srcLabel": "Scale AI",
+   "company": "Scale AI",
+   "title": "Infrastructure Software Engineer, Enterprise GenAI",
+   "loc": "San Francisco, CA; New York, NY",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4665557005",
+   "posted": 1786641522000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "genai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:scaleai-4513943005",
+   "src": "greenhouse",
+   "srcLabel": "Scale AI",
+   "company": "Scale AI",
+   "title": "Software Engineer, Enterprise AI",
+   "loc": "New York, NY; San Francisco, CA",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4513943005",
+   "posted": 1786641522000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:scaleai-4722512005",
+   "src": "greenhouse",
+   "srcLabel": "Scale AI",
+   "company": "Scale AI",
+   "title": "Software Engineer - AI Enablement",
+   "loc": "San Francisco, CA",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4722512005",
+   "posted": 1786602379000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:figma-5551532004",
+   "src": "greenhouse",
+   "srcLabel": "Figma",
+   "company": "Figma",
+   "title": "Software Engineer - Machine Learning",
+   "loc": "San Francisco, CA • New York, NY • United States",
+   "url": "https://boards.greenhouse.io/figma/jobs/5551532004?gh_jid=5551532004",
+   "posted": 1786493373000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:figma-5691911004",
+   "src": "greenhouse",
+   "srcLabel": "Figma",
+   "company": "Figma",
+   "title": "Software Engineer - Full Stack",
+   "loc": "San Francisco, CA • New York, NY • United States",
+   "url": "https://boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004",
+   "posted": 1786493237000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:figma-5551730004",
+   "src": "greenhouse",
+   "srcLabel": "Figma",
+   "company": "Figma",
+   "title": "Software Engineer - AI Product",
+   "loc": "San Francisco, CA • New York, NY • United States",
+   "url": "https://boards.greenhouse.io/figma/jobs/5551730004?gh_jid=5551730004",
+   "posted": 1786493081000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:figma-5691886004",
+   "src": "greenhouse",
+   "srcLabel": "Figma",
+   "company": "Figma",
+   "title": "Software Engineer - AI Platforms",
+   "loc": "San Francisco, CA • New York, NY • United States",
+   "url": "https://boards.greenhouse.io/figma/jobs/5691886004?gh_jid=5691886004",
+   "posted": 1786493049000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:towerresearchcapital-8119466",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Software Engineer II",
+   "loc": "Gurgaon",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8119466",
+   "posted": 1786423755000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:towerresearchcapital-8074310",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Software Engineer III",
+   "loc": "Gurgaon",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8074310",
+   "posted": 1786343380000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:towerresearchcapital-6629676",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Python Developer",
+   "loc": "Gurgaon",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=6629676",
+   "posted": 1786343106000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:jumptrading-8104832",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Python Software Engineer",
+   "loc": "Shanghai",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8104832",
+   "posted": 1786165313000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:jumptrading-6032511",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Research Scientist/Research Engineer | Deep Learning",
+   "loc": "Chicago, New York, London",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=6032511",
+   "posted": 1786165270000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "deep learning",
+    "research engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "ab:notion-42f18ccd-c4c8-4a85-8c1f-de12c575fe87",
+   "src": "ashby",
+   "srcLabel": "Notion",
+   "company": "Notion",
+   "title": "Software Engineer, Infrastructure ",
+   "loc": "Hyderabad, India",
+   "url": "https://jobs.ashbyhq.com/notion/42f18ccd-c4c8-4a85-8c1f-de12c575fe87",
+   "posted": 1786047466520,
+   "tags": [
+    "Engineering",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:squarepointcapital-953511",
+   "src": "greenhouse",
+   "srcLabel": "Squarepoint",
+   "company": "Squarepoint",
+   "title": "Software Developer - Data Pipelines (Python) ",
+   "loc": "London, Montreal, Madrid, Bangalore",
+   "url": "https://www.squarepoint-capital.com/open-opportunities?id=953511&gh_jid=953511",
+   "posted": 1786014040000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:scaleai-4630032005",
+   "src": "greenhouse",
+   "srcLabel": "Scale AI",
+   "company": "Scale AI",
+   "title": "Software Engineer (Backend), Enterprise",
+   "loc": "Budapest, Hungary",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4630032005",
+   "posted": 1785819882000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:scaleai-4591300005",
+   "src": "greenhouse",
+   "srcLabel": "Scale AI",
+   "company": "Scale AI",
+   "title": "Software Engineer, Gen AI",
+   "loc": "San Francisco, CA; New York, NY",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4591300005",
+   "posted": 1785819872000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:scaleai-4363623005",
+   "src": "greenhouse",
+   "srcLabel": "Scale AI",
+   "company": "Scale AI",
+   "title": "Software Engineer, Frontier AI Infrastructure",
+   "loc": "San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4363623005",
+   "posted": 1785819688000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:coinbase-7985187",
+   "src": "greenhouse",
+   "srcLabel": "Coinbase",
+   "company": "Coinbase",
+   "title": "Machine Learning Engineer",
+   "loc": "Remote - India",
+   "url": "https://www.coinbase.com/careers/positions/7985187?gh_jid=7985187",
+   "posted": 1785429645000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:pinterest-4813946",
+   "src": "greenhouse",
+   "srcLabel": "Pinterest",
+   "company": "Pinterest",
+   "title": "Software Engineer II, Backend",
+   "loc": "San Francisco, CA, US; Seattle, WA, US",
+   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=4813946",
+   "posted": 1785270254000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:pinterest-5459622",
+   "src": "greenhouse",
+   "srcLabel": "Pinterest",
+   "company": "Pinterest",
+   "title": "Software Engineer II, Full Stack",
+   "loc": "Toronto, ON, CA",
+   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=5459622",
+   "posted": 1785270254000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 6
+  },
+  {
+   "id": "ab:ramp-b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
+   "src": "ashby",
+   "srcLabel": "Ramp",
+   "company": "Ramp",
+   "title": "Software Engineer, Forward Deployed AI",
+   "loc": "New York, NY (HQ)",
+   "url": "https://jobs.ashbyhq.com/ramp/b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
+   "posted": 1785261417225,
+   "tags": [
+    "Engineering",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:figma-5707966004",
+   "src": "greenhouse",
+   "srcLabel": "Figma",
+   "company": "Figma",
+   "title": "AI Applied Scientist",
+   "loc": "San Francisco, CA • New York, NY • United States",
+   "url": "https://boards.greenhouse.io/figma/jobs/5707966004?gh_jid=5707966004",
+   "posted": 1784713028000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "applied scientist"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:towerresearchcapital-6384976",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Quantitative Developer, Python",
+   "loc": "New York",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=6384976",
+   "posted": 1784232274000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "quantitative"
+   ],
+   "score": 6
+  },
+  {
+   "id": "ab:notion-a9d4a192-d31c-48d2-8156-e2a75d98eec1",
+   "src": "ashby",
+   "srcLabel": "Notion",
+   "company": "Notion",
+   "title": "Software Engineer, AI Platform",
+   "loc": "San Francisco, California",
+   "url": "https://jobs.ashbyhq.com/notion/a9d4a192-d31c-48d2-8156-e2a75d98eec1",
+   "posted": 1784039011706,
+   "tags": [
+    "Engineering",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "ab:ramp-6a7e382f-240a-4952-b9e5-7fe2b3856bc9",
+   "src": "ashby",
+   "srcLabel": "Ramp",
+   "company": "Ramp",
+   "title": "Applied AI Engineer, Fullstack",
+   "loc": "New York, NY (HQ)",
+   "url": "https://jobs.ashbyhq.com/ramp/6a7e382f-240a-4952-b9e5-7fe2b3856bc9",
+   "posted": 1782311442943,
+   "tags": [
+    "Engineering",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "fullstack"
+   ],
+   "score": 6
+  },
+  {
+   "id": "ab:notion-49bdf081-6e20-4323-8c73-6d6b19544ff5",
+   "src": "ashby",
+   "srcLabel": "Notion",
+   "company": "Notion",
+   "title": "Software Engineer, Developer Experience",
+   "loc": "Hyderabad, India",
+   "url": "https://jobs.ashbyhq.com/notion/49bdf081-6e20-4323-8c73-6d6b19544ff5",
+   "posted": 1782289615883,
+   "tags": [
+    "Engineering",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:coinbase-7558051",
+   "src": "greenhouse",
+   "srcLabel": "Coinbase",
+   "company": "Coinbase",
+   "title": "Software Engineer, EAA Integrations",
+   "loc": "Remote - India",
+   "url": "https://www.coinbase.com/careers/positions/7558051?gh_jid=7558051",
+   "posted": 1782155298000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:towerresearchcapital-7102180",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Quantitative Developer ",
+   "loc": "Gurgaon",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=7102180",
+   "posted": 1781845449000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:towerresearchcapital-7080219",
+   "src": "greenhouse",
+   "srcLabel": "Tower Research",
+   "company": "Tower Research",
+   "title": "Quantitative Developer, Python - Trading Teams EMEA",
+   "loc": "London",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=7080219",
+   "posted": 1781845449000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "quantitative"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:worldquant-4673030006",
+   "src": "greenhouse",
+   "srcLabel": "WorldQuant",
+   "company": "WorldQuant",
+   "title": "Quantitative Researcher",
+   "loc": "Mumbai",
+   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4673030006",
+   "posted": 1781793358000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative"
+   ],
+   "score": 6
+  },
+  {
+   "id": "ab:notion-def3f337-5593-491c-b34d-e0b53f2a5cac",
+   "src": "ashby",
+   "srcLabel": "Notion",
+   "company": "Notion",
+   "title": "Software Engineer, AI Security",
+   "loc": "San Francisco, California",
+   "url": "https://jobs.ashbyhq.com/notion/def3f337-5593-491c-b34d-e0b53f2a5cac",
+   "posted": 1781039272334,
+   "tags": [
+    "Engineering",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "ab:sarvam-b07dfd8a-208d-43c1-a811-f1c447df26f9",
+   "src": "ashby",
+   "srcLabel": "Sarvam AI",
+   "company": "Sarvam AI",
+   "title": "Backend Engineer - Studio Media Platform",
+   "loc": "Bengaluru",
+   "url": "https://jobs.ashbyhq.com/sarvam/b07dfd8a-208d-43c1-a811-f1c447df26f9",
+   "posted": 1780334842296,
+   "tags": [
+    "Engineering",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "ab:notion-17330e14-83db-49a4-ae31-411690d97dba",
+   "src": "ashby",
+   "srcLabel": "Notion",
+   "company": "Notion",
+   "title": "Software Engineer, AI Workflows",
+   "loc": "San Francisco, California",
+   "url": "https://jobs.ashbyhq.com/notion/17330e14-83db-49a4-ae31-411690d97dba",
+   "posted": 1779805792238,
+   "tags": [
+    "Engineering",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:worldquant-4673040006",
+   "src": "greenhouse",
+   "srcLabel": "WorldQuant",
+   "company": "WorldQuant",
+   "title": "Data Engineer",
+   "loc": "New Delhi",
+   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4673040006",
+   "posted": 1777915210000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "data engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:worldquant-4570052006",
+   "src": "greenhouse",
+   "srcLabel": "WorldQuant",
+   "company": "WorldQuant",
+   "title": "Python Software Engineer",
+   "loc": "Budapest",
+   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4570052006",
+   "posted": 1777915210000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:worldquant-4379256006",
+   "src": "greenhouse",
+   "srcLabel": "WorldQuant",
+   "company": "WorldQuant",
+   "title": "Quantitative Python Developer",
+   "loc": "Montevideo",
+   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4379256006",
+   "posted": 1777915210000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "quantitative"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:worldquant-4372598006",
+   "src": "greenhouse",
+   "srcLabel": "WorldQuant",
+   "company": "WorldQuant",
+   "title": "Quantitative Researcher, Quant Macro",
+   "loc": "Taipei",
+   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4372598006",
+   "posted": 1777915210000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "quant"
+   ],
+   "score": 6
+  },
+  {
+   "id": "ab:sarvam-86ae80f8-b7eb-43a4-afde-fef58e77e23e",
+   "src": "ashby",
+   "srcLabel": "Sarvam AI",
+   "company": "Sarvam AI",
+   "title": "Backend Engineer, Chanakya",
+   "loc": "Bengaluru",
+   "url": "https://jobs.ashbyhq.com/sarvam/86ae80f8-b7eb-43a4-afde-fef58e77e23e",
+   "posted": 1776426831772,
+   "tags": [
+    "Engineering",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/mercor/jobs/ai-safety-specialist-evaluation-expert-9770421310",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "mercor",
+   "title": "AI Safety Specialist - Evaluation Expert",
+   "loc": "Slovenia",
+   "url": "https://himalayas.app/companies/mercor/jobs/ai-safety-specialist-evaluation-expert-9770421310",
+   "posted": 1788254817000,
+   "tags": [
+    "AI-Safety-Specialist",
+    "AI-Evaluator",
+    "Trust-and-Safety",
+    "Content-Moderation-Specialist",
+    "AI-Safety-Research"
+   ],
+   "desc": "About the jobMercor connects elite creative and technical talent with leading AI research labs.",
+   "salary": "USD60–70",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/mercor/jobs/ai-safety-red-teamer-expert-7161013557",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "mercor",
+   "title": "AI Safety Red Teamer Expert",
+   "loc": "Italy",
+   "url": "https://himalayas.app/companies/mercor/jobs/ai-safety-red-teamer-expert-7161013557",
+   "posted": 1788253398000,
+   "tags": [
+    "AI-Safety",
+    "AI-Red-Teaming",
+    "Trust-and-Safety",
+    "Cybersecurity",
+    "Prompt-Engineering"
+   ],
+   "desc": "About the jobMercor connects elite creative and technical talent with leading AI research labs.",
+   "salary": "USD70–84",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/mercor/jobs/ai-safety-specialist-evaluation-expert-7826128625",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "mercor",
+   "title": "AI Safety Specialist - Evaluation Expert",
+   "loc": "Norway",
+   "url": "https://himalayas.app/companies/mercor/jobs/ai-safety-specialist-evaluation-expert-7826128625",
+   "posted": 1788252494000,
+   "tags": [
+    "AI-Safety-Specialist",
+    "AI-Evaluation",
+    "Trust-and-Safety",
+    "Content-Moderation",
+    "AI-Safety-Practitioner"
+   ],
+   "desc": "About the jobMercor connects elite creative and technical talent with leading AI research labs.",
+   "salary": "USD60–70",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-8089124",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "United States",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8089124",
+   "posted": 1788248427000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:cloudflare-8168623",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Software Engineer - Platforms & Productivity",
+   "loc": "Hybrid",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8168623?gh_jid=8168623",
+   "posted": 1788239952000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:janestreet-8637960002",
+   "src": "greenhouse",
+   "srcLabel": "Jane Street",
+   "company": "Jane Street",
+   "title": "Software Engineer",
+   "loc": "Hong Kong, Hong Kong",
+   "url": "https://www.janestreet.com/join-jane-street/apply/8637960002?gh_jid=8637960002",
+   "posted": 1788239745000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-8119843",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3, Networking & Observability",
+   "loc": "Alberta; British Columbia; Ontario; Quebec",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8119843",
+   "posted": 1788237364000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-8119841",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3, Networking & Observability",
+   "loc": "New York City; United States",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8119841",
+   "posted": 1788237364000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-8107198",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "New York City",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8107198",
+   "posted": 1788237305000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:janestreet-8646746002",
+   "src": "greenhouse",
+   "srcLabel": "Jane Street",
+   "company": "Jane Street",
+   "title": "Software Engineer",
+   "loc": "Singapore",
+   "url": "https://www.janestreet.com/join-jane-street/apply/8646746002?gh_jid=8646746002",
+   "posted": 1788234750000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:stripe-7975725",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Core Infrastructure",
+   "loc": "Sydney, Australia",
+   "url": "https://stripe.com/jobs/search?gh_jid=7975725",
+   "posted": 1788228546000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:airbnb-7708224",
+   "src": "greenhouse",
+   "srcLabel": "Airbnb",
+   "company": "Airbnb",
+   "title": "Machine Learning Engineer, Relevance and Personalization",
+   "loc": "United States",
+   "url": "https://careers.airbnb.com/positions/7708224?gh_jid=7708224",
+   "posted": 1788219877000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:anthropic-5129961008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Applied AI Research (Capabilities)",
+   "loc": "San Francisco, CA | New York City, NY",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5129961008",
+   "posted": 1788196688000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:databricks-8638847002",
+   "src": "greenhouse",
+   "srcLabel": "Databricks",
+   "company": "Databricks",
+   "title": "AI Engineer — GTM Analytics",
+   "loc": "United States",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8638847002",
+   "posted": 1788191223000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-8148004",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Enterprise Account Executive, AI Natives",
+   "loc": "Amsterdam; Copenhagen; Stockholm",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8148004",
+   "posted": 1788190456000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:cloudflare-8092731",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Software Engineer, Registrar",
+   "loc": "Hybrid",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8092731?gh_jid=8092731",
+   "posted": 1788182237000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-8147938",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Enterprise Account Executive, AI Natives",
+   "loc": "London",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8147938",
+   "posted": 1788178435000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:stripe-6717520",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Payments, Risk, & Premium Merchant Experiences",
+   "loc": "Dublin, Ireland",
+   "url": "https://stripe.com/jobs/search?gh_jid=6717520",
+   "posted": 1788178118000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-8147945",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Enterprise Account Executive, AI Natives",
+   "loc": "Berlin; Frankfurt; Munich; Zurich",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8147945",
+   "posted": 1788175816000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-8147941",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Enterprise Account Executive, AI Natives",
+   "loc": "Paris",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8147941",
+   "posted": 1788175757000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:anthropic-5390799008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Applied AI Engineer",
+   "loc": "Tokyo, Japan",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390799008",
+   "posted": 1788150421000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:stripe-7964956",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Full Stack Engineer, Growth",
+   "loc": "Singapore",
+   "url": "https://stripe.com/jobs/search?gh_jid=7964956",
+   "posted": 1788103184000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "full stack"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:robinhood-8067604",
+   "src": "greenhouse",
+   "srcLabel": "Robinhood",
+   "company": "Robinhood",
+   "title": "Software Engineer, Proactive Capabilities",
+   "loc": "Bellevue, WA; Menlo Park, CA",
+   "url": "https://boards.greenhouse.io/robinhood/jobs/8067604?t=gh_src=&gh_jid=8067604",
+   "posted": 1788073558000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:cloudflare-7887609",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Software Engineer, Realtime",
+   "loc": "Hybrid",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/7887609?gh_jid=7887609",
+   "posted": 1787995698000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:anthropic-5409299008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Regulatory Counsel, AI Regulation, US",
+   "loc": "San Francisco, CA | New York City, NY",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5409299008",
+   "posted": 1787954670000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:stripe-8131144",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Backend Engineer, Link",
+   "loc": "NYC, Sea, SF, Tor",
+   "url": "https://stripe.com/jobs/search?gh_jid=8131144",
+   "posted": 1787954546000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "backend"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:anthropic-5112018008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Research Engineer, Production Model Post-Training",
+   "loc": "Zürich, CH",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5112018008",
+   "posted": 1787950179000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "research engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:anthropic-5390795008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Applied AI Engineer, Enterprise",
+   "loc": "Munich, Germany",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390795008",
+   "posted": 1787949954000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:anthropic-5400160008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Software Engineer, Business Technology",
+   "loc": "London, UK",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5400160008",
+   "posted": 1787942642000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:anthropic-5390791008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Applied AI Strategist, EMEA",
+   "loc": "London, UK",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390791008",
+   "posted": 1787942640000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:anthropic-5264619008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Research Engineer, RL Scaling Science",
+   "loc": "London, UK",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5264619008",
+   "posted": 1787942639000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "research engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:anthropic-5119713008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Research Engineer, Pretraining",
+   "loc": "London, UK",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5119713008",
+   "posted": 1787942638000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "research engineer"
+   ],
+   "score": 5
+  }
+ ]
+}

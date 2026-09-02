@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nexus OS — Engineering Grind Dashboard</title>
+<meta name="description" content="Personal dashboard that tracks LeetCode, GitHub, your study schedule, projects and job applications.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app" class="app">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <div class="brand">
+        <span class="brand-mark">◇</span>
+        <div class="brand-text">
+          <div class="brand-name">NEXUS OS</div>
+          <div class="brand-sub">Engineering Grind</div>
+        </div>
+      </div>
+      <button class="icon-btn sidebar-close" data-action="close-sidebar" aria-label="Close menu">✕</button>
+    </div>
+
+    <div class="streak-box" id="streakBox">
+      <span class="streak-flame" id="streakFlame">⚡</span>
+      <div>
+        <div class="streak-num" id="streakNum">No streak yet</div>
+        <div class="streak-sub" id="streakSub">Log practice to start</div>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav"></nav>
+
+    <div class="sidebar-foot">
+      <div class="today-bar">
+        <div class="today-bar-head">
+          <span>Today</span><span id="todayPct">0%</span>
+        </div>
+        <div class="progress"><div class="progress-fill" id="todayFill" style="width:0%"></div></div>
+      </div>
+      <div class="foot-row">
+        <span class="sync-chip" id="syncChip">Not synced</span>
+        <button class="icon-btn" data-action="cycle-theme" id="themeBtn" aria-label="Change theme" title="Theme">◐</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="scrim" data-action="close-sidebar"></div>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" data-action="open-sidebar" aria-label="Open menu">☰</button>
+      <div class="topbar-title" id="pageTitle">Dashboard</div>
+      <div class="topbar-actions">
+        <span class="today-date" id="todayDate"></span>
+        <button class="btn btn-ghost" data-action="sync-all" id="syncBtn">↻ Sync</button>
+      </div>
+    </header>
+    <main class="content" id="content"></main>
+    <footer class="foot-note">Nexus OS · all data is stored locally in this browser · <span id="lastSyncNote">never synced</span></footer>
+  </div>
+</div>
+
+<div class="toast-wrap" id="toasts"></div>
+<input type="file" id="importFile" accept="application/json" hidden>
+<script src="app.js"></script>
+</body>
+</html>
