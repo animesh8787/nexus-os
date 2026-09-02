@@ -1777,6 +1777,115 @@ function feedSourcesPanel() {
   </div>`;
 }
 
+/* ---------- Job Feed ---------- */
+/* _feedTab null = follow the feed: New while anything is unseen, otherwise All.
+   Clicking a tab pins it. */
+let _feedTab = null;
+let _showSources = false;
+
+const FEED_TABS = [
+  { t: "new",   label: "New" },
+  { t: "india", label: "India" },
+  { t: "entry", label: "Entry level" },
+  { t: "all",   label: "All" },
+];
+
+function feedFilterTab(jobs, tab, f) {
+  if (tab === "new")   return jobs.filter((j) => j.isNew);
+  if (tab === "india") return jobs.filter((j) => IN_CITY.test((j.loc || "").toLowerCase()));
+  if (tab === "entry") return jobs.filter((j) => {
+    const t = normTerm(j.title);
+    return f.levels.some((lv) => hasTerm(t, lv));
+  });
+  return jobs;
+}
+
+function feedCard(j) {
+  const inIndia = IN_CITY.test((j.loc || "").toLowerCase());
+  const tracked = !!S.jobfeed.tracked[j.id];
+  return `
+  <div class="job-card${j.isNew ? " is-new" : ""}">
+    <div class="job-main">
+      <div class="job-top">
+        <a class="job-title" href="${esc(j.url)}" target="_blank" rel="noopener"
+           data-action="feed-open" data-id="${esc(j.id)}">${esc(j.title)}</a>
+        ${j.isNew ? `<span class="badge b-green">NEW</span>` : ""}
+        ${tracked ? `<span class="badge b-muted">tracked</span>` : ""}
+      </div>
+      <div class="job-meta">
+        <strong>${esc(j.company || j.srcLabel || "—")}</strong>
+        <span class="${inIndia ? "job-loc-in" : ""}">${esc(j.loc || "Location not listed")}</span>
+        ${j.salary ? `<span style="color:var(--green);font-weight:600">${esc(j.salary)}</span>` : ""}
+        ${j.srcLabel ? `<span class="faint">via ${esc(j.srcLabel)}</span>` : ""}
+        ${j.posted ? `<span class="faint">${ago(j.posted)}</span>` : ""}
+        ${(j.hits && j.hits.length) ? `<span class="mut">matched: ${esc(j.hits.join(", "))}</span>` : ""}
+      </div>
+    </div>
+    <div class="job-actions">
+      <span class="job-score" title="match score">${j.score}</span>
+      <a class="btn btn-sm btn-primary" href="${esc(j.url)}" target="_blank" rel="noopener"
+         data-action="feed-open" data-id="${esc(j.id)}">Apply ↗</a>
+      <button class="btn btn-sm" data-action="feed-track" data-id="${esc(j.id)}" ${tracked ? "disabled" : ""}>${tracked ? "Tracked" : "Track"}</button>
+      <button class="icon-btn" style="width:26px;height:26px;font-size:11px" data-action="feed-dismiss" data-id="${esc(j.id)}" title="Hide this posting forever">✕</button>
+    </div>
+  </div>`;
+}
+
+ROUTES.jobfeed = function () {
+  const jf = S.jobfeed;
+  const f = jf.filters;
+  const all = jf.cache || [];
+  const counts = {
+    new:   feedFilterTab(all, "new", f).length,
+    india: feedFilterTab(all, "india", f).length,
+    entry: feedFilterTab(all, "entry", f).length,
+    all:   all.length,
+  };
+  const tab = _feedTab || (counts.new ? "new" : "all");
+  const jobs = feedFilterTab(all, tab, f).slice(0, 200);
+  const errs = jf.errors || [];
+
+  return `
+  <div class="page-title">Job Feed</div>
+  <div class="page-sub">Live postings matched to your profile — apply on the employer's own page.</div>
+
+  <div class="grid g-4" style="margin-bottom:14px">
+    ${stat("Matches", counts.all, "after your filters", { icon: "◎", color: counts.all ? "var(--accent)" : "var(--faint)" })}
+    ${stat("New", counts.new, "since last check", { icon: "✦", color: counts.new ? "var(--green)" : "var(--faint)" })}
+    ${stat("In India", counts.india, "on-site or hybrid", { icon: "📍", color: counts.india ? "var(--accent)" : "var(--faint)" })}
+    ${stat("Entry level", counts.entry, "intern / new grad", { icon: "🌱", color: counts.entry ? "var(--green)" : "var(--faint)" })}
+  </div>
+
+  <div class="card" style="margin-bottom:14px">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div class="wrap">
+        ${FEED_TABS.map((x) => `
+          <button class="btn btn-sm ${tab === x.t ? "btn-primary" : "btn-ghost"}" data-action="feed-tab" data-t="${x.t}">
+            ${x.label} <span class="tabnum">${counts[x.t]}</span>
+          </button>`).join("")}
+      </div>
+      <div class="wrap">
+        <button class="btn btn-sm btn-primary" data-action="feed-refresh">↻ Fetch jobs</button>
+        ${counts.new ? `<button class="btn btn-sm btn-ghost" data-action="feed-seen">Mark all seen</button>` : ""}
+        <button class="btn btn-sm btn-ghost" data-action="feed-sources">${_showSources ? "✕ Close" : "⚙ Sources &amp; filters"}</button>
+      </div>
+    </div>
+    <div class="faint" style="font-size:11.5px;margin-top:8px">
+      Last fetch ${ago(jf.lastFetch)} · ${jf.boards.filter((b) => b.on).length} company boards ·
+      ${Object.values(jf.aggregators).filter((a) => a.on).length} aggregators
+      ${errs.length ? ` · <span class="badge b-amber">${errs.length} source(s) failed</span> <span class="mut">${esc(errs.slice(0, 6).join(", "))}${errs.length > 6 ? "…" : ""}</span>` : ""}
+    </div>
+    ${_showSources ? feedSourcesPanel() : ""}
+  </div>
+
+  ${!all.length
+    ? `<div class="card">${empty("◎", "No jobs loaded yet", "Press “↻ Fetch jobs” to pull live postings from your boards")}</div>`
+    : !jobs.length
+    ? `<div class="card">${empty("✓", "Nothing in this tab", "You're caught up here — try “All”, or loosen your filters under Sources & filters")}</div>`
+    : `<div class="stack">${jobs.map(feedCard).join("")}</div>`}
+  `;
+};
+
 /* ---------- Jobs ---------- */
 let showJobForm = false;
 ROUTES.jobs = function () {
