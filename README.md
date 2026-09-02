@@ -103,20 +103,25 @@ into the feed automatically, and appends a digest to `agent-log.txt`.
 node feed-agent.mjs
 ```
 
-A Windows scheduled task **`NexusOS-JobAgent`** is registered to run it daily at
-**08:00**. Manage it with:
+It runs daily at **08:00 IST** in GitHub Actions
+([`.github/workflows/feed-and-deploy.yml`](.github/workflows/feed-and-deploy.yml)),
+which then commits the refreshed `jobs-feed.json` and redeploys the site — so the
+published dashboard always serves a fresh feed. The runner has no CORS restrictions,
+which is exactly why it can reach the boards the browser can't.
+
+A plain push only redeploys; the feed refresh runs on the schedule or on demand:
 
 ```bash
-schtasks /Query /TN "NexusOS-JobAgent" /FO LIST
+gh workflow run "job feed + deploy"
 ```
 
 ```bash
-schtasks /Run /TN "NexusOS-JobAgent"
+gh run list --workflow "job feed + deploy"
 ```
 
-```bash
-schtasks /Delete /TN "NexusOS-JobAgent" /F
-```
+> Previously this ran as a Windows scheduled task (`NexusOS-JobAgent`). That only
+> refreshed the feed on one machine, and it had to be awake at 08:00 — the Actions
+> run replaces it.
 
 > SkipTheDrive was dropped — its RSS feed now serves HTML.
 > Stack Overflow Jobs shut down in 2022.
