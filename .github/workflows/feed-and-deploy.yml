@@ -1,0 +1,73 @@
+name: job feed + deploy
+
+# Replaces the local Windows scheduled task (NexusOS-JobAgent).
+# The runner has no CORS restrictions, so it reaches the boards a browser
+# can't: Himalayas, Working Nomads, Jobspresso, NoDesk + all company boards.
+#
+# Pages is deployed from this workflow rather than from a branch, because a
+# push made with GITHUB_TOKEN does not retrigger the branch-based Pages build,
+# which would leave the published jobs-feed.json stale.
+
+on:
+  push:
+    branches: [master, main]
+  schedule:
+    - cron: "30 2 * * *"   # 02:30 UTC = 08:00 IST, same as the old local task
+  workflow_dispatch:
+
+permissions:
+  contents: write   # commit the refreshed jobs-feed.json
+  pages: write      # publish
+  id-token: write   # publish
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      # feed-agent.mjs imports only node: builtins, so there is nothing to install
+
+      # A plain push is just a code change - only refresh on a schedule or a
+      # manual run, so editing app.js doesn't burn 40+ board requests.
+      - name: Refresh job feed
+        if: github.event_name != 'push'
+        run: node feed-agent.mjs
+
+      - name: Commit refreshed feed
+        if: github.event_name != 'push'
+        run: |
+          git config user.name  "feed-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add jobs-feed.json
+          git diff --staged --quiet || git commit -m "feed: $(date -u +%F)"
+          git push
+
+      # Only the four files the dashboard actually serves. Building an explicit
+      # _site keeps .git, .github and the browser extension off the public site.
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp index.html styles.css app.js jobs-feed.json _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
