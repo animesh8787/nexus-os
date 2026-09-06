@@ -1,16 +1,16 @@
 {
- "generated": "2026-09-05T07:05:16.478Z",
+ "generated": "2026-09-06T07:16:34.498Z",
  "sources": [
   {
    "name": "Himalayas",
    "ok": true,
-   "count": 114,
+   "count": 119,
    "err": null
   },
   {
    "name": "Working Nomads",
    "ok": true,
-   "count": 35,
+   "count": 32,
    "err": null
   },
   {
@@ -28,7 +28,7 @@
   {
    "name": "Databricks",
    "ok": true,
-   "count": 871,
+   "count": 870,
    "err": null
   },
   {
@@ -52,19 +52,19 @@
   {
    "name": "Stripe",
    "ok": true,
-   "count": 614,
+   "count": 615,
    "err": null
   },
   {
    "name": "GitLab",
    "ok": true,
-   "count": 227,
+   "count": 229,
    "err": null
   },
   {
    "name": "Rubrik",
    "ok": true,
-   "count": 134,
+   "count": 136,
    "err": null
   },
   {
@@ -76,13 +76,13 @@
   {
    "name": "Elastic",
    "ok": true,
-   "count": 364,
+   "count": 365,
    "err": null
   },
   {
    "name": "Razorpay",
    "ok": true,
-   "count": 25,
+   "count": 24,
    "err": null
   },
   {
@@ -94,7 +94,7 @@
   {
    "name": "Twilio",
    "ok": true,
-   "count": 146,
+   "count": 147,
    "err": null
   },
   {
@@ -130,19 +130,19 @@
   {
    "name": "Anthropic",
    "ok": true,
-   "count": 595,
+   "count": 593,
    "err": null
   },
   {
    "name": "Airbnb",
    "ok": true,
-   "count": 171,
+   "count": 168,
    "err": null
   },
   {
    "name": "Cloudflare",
    "ok": true,
-   "count": 332,
+   "count": 331,
    "err": null
   },
   {
@@ -178,7 +178,7 @@
   {
    "name": "Scale AI",
    "ok": true,
-   "count": 216,
+   "count": 215,
    "err": null
   },
   {
@@ -196,7 +196,7 @@
   {
    "name": "Affirm",
    "ok": true,
-   "count": 205,
+   "count": 204,
    "err": null
   },
   {
@@ -214,7 +214,7 @@
   {
    "name": "Perplexity",
    "ok": true,
-   "count": 111,
+   "count": 112,
    "err": null
   },
   {
@@ -254,7 +254,7 @@
    "err": null
   }
  ],
- "total": 775,
+ "total": 782,
  "jobs": [
   {
    "id": "gh:jumptrading-8052343",
@@ -449,6 +449,32 @@
    "score": 11
   },
   {
+   "id": "himalayas:https://himalayas.app/companies/bright-vision-technologies/jobs/full-stack-software-engineer-net-57649806",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bright Vision Technologies",
+   "title": "Full Stack Software Engineer – .NET",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/bright-vision-technologies/jobs/full-stack-software-engineer-net-57649806",
+   "posted": 1788668733000,
+   "tags": [
+    "Full-Stack-Engineer",
+    ".NET-Developer",
+    "Backend-Engineer",
+    "Front-End-Developer",
+    "Software-Engineer"
+   ],
+   "desc": "Bright Vision Technologies is a technology consulting and software development company delivering cloud, AI, data, and enterprise solutions across the United States.",
+   "salary": "USD100000–150000",
+   "hits": [
+    "ai",
+    "software engineer",
+    "backend",
+    "full stack"
+   ],
+   "score": 10
+  },
+  {
    "id": "gh:towerresearchcapital-8143756",
    "src": "greenhouse",
    "srcLabel": "Tower Research",
@@ -601,30 +627,6 @@
    "score": 10
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/zup-innovation/jobs/pessoa-engenheira-backend-python-senior-7566090886",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Zup Innovation",
-   "title": "Pessoa Engenheira Backend Python Sênior",
-   "loc": "Remote",
-   "url": "https://himalayas.app/companies/zup-innovation/jobs/pessoa-engenheira-backend-python-senior-7566090886",
-   "posted": 1788587508000,
-   "tags": [
-    "Backend-Development",
-    "Python-Engineering",
-    "Cloud-Architecture",
-    "AWS-Microservices",
-    "Infrastructure-as-Code"
-   ],
-   "desc": "Nosso propósito é criar tecnologias que desafiam as melhores do mundo e mudam o jogo para nossos clientes.",
-   "salary": "",
-   "hits": [
-    "python",
-    "backend"
-   ],
-   "score": 9
-  },
-  {
    "id": "gh:affirm-7981803003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
@@ -715,24 +717,6 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8128745",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, Intern (Summer or Winter)",
-   "loc": "San Francisco, Seattle, New York City",
-   "url": "https://stripe.com/jobs/search?gh_jid=8128745",
-   "posted": 1788545535000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "intern"
-   ],
-   "score": 9
-  },
-  {
    "id": "gh:stripe-8130805",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -751,13 +735,31 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8130922",
+   "id": "gh:stripe-8128745",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Intern (Summer or Winter)",
+   "loc": "San Francisco, Seattle, New York City",
+   "url": "https://stripe.com/jobs/search?gh_jid=8128745",
+   "posted": 1788545535000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130930",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, New Grad",
-   "loc": "Bucharest",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130922",
+   "loc": "London",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
    "posted": 1788545535000,
    "tags": [],
    "desc": "",
@@ -787,13 +789,13 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8130881",
+   "id": "gh:stripe-8130922",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, New Grad",
-   "loc": "Dublin",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130881",
+   "loc": "Bucharest",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130922",
    "posted": 1788545535000,
    "tags": [],
    "desc": "",
@@ -805,13 +807,13 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8130930",
+   "id": "gh:stripe-8130881",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, New Grad",
-   "loc": "London",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
+   "loc": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130881",
    "posted": 1788545535000,
    "tags": [],
    "desc": "",
@@ -949,13 +951,13 @@
    "score": 9
   },
   {
-   "id": "gh:cloudflare-8118855",
+   "id": "gh:cloudflare-8118845",
    "src": "greenhouse",
    "srcLabel": "Cloudflare",
    "company": "Cloudflare",
    "title": "Software Engineer Intern (Fall 2026)",
    "loc": "In-Office",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845",
    "posted": 1788533957000,
    "tags": [],
    "desc": "",
@@ -967,13 +969,13 @@
    "score": 9
   },
   {
-   "id": "gh:cloudflare-8118845",
+   "id": "gh:cloudflare-8118855",
    "src": "greenhouse",
    "srcLabel": "Cloudflare",
    "company": "Cloudflare",
    "title": "Software Engineer Intern (Fall 2026)",
    "loc": "In-Office",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855",
    "posted": 1788533957000,
    "tags": [],
    "desc": "",
@@ -1364,6 +1366,30 @@
     "platform engineer"
    ],
    "score": 9
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/zarego/jobs/full-stack-developer-java-react-remote-latam",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Zarego",
+   "title": "Full Stack Developer (Java, React) - Remote LATAM",
+   "loc": "Argentina",
+   "url": "https://himalayas.app/companies/zarego/jobs/full-stack-developer-java-react-remote-latam",
+   "posted": 1788669057000,
+   "tags": [
+    "Full-Stack-Developer",
+    "Full-Stack-Engineer",
+    "Java-Developer",
+    "React-Developer",
+    "Software-Developer"
+   ],
+   "desc": "English level: B2 or higher Seniority: Senior Stack: Java, React, AWS Remote Anywhere in LATAM Hi!",
+   "salary": "",
+   "hits": [
+    "full stack",
+    "react"
+   ],
+   "score": 8
   },
   {
    "id": "gh:scaleai-4625344005",
@@ -1952,6 +1978,55 @@
    "score": 8
   },
   {
+   "id": "himalayas:https://himalayas.app/companies/wonderly/jobs/account-executive-early-career",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Wonderly",
+   "title": "Account Executive (Early Career)",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/wonderly/jobs/account-executive-early-career",
+   "posted": 1788668994000,
+   "tags": [
+    "Junior-Account-Executive",
+    "Account-Executive",
+    "Account-Executive-Intern",
+    "Entry-Level-Account-Manager",
+    "Entry-Level-Strategic-Account-Executive"
+   ],
+   "desc": "About WonderlyWonderly gives Main Street businesses the AI agents, capital, and growth team they need to scale, and charges nothing for any of it.",
+   "salary": "USD80000–150000",
+   "hits": [
+    "ai",
+    "early career"
+   ],
+   "score": 7
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/keyrus/jobs/ai-engineer-aws-gen-ai",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Keyrus",
+   "title": "AI Engineer (AWS, Gen AI)",
+   "loc": "Portugal, Spain",
+   "url": "https://himalayas.app/companies/keyrus/jobs/ai-engineer-aws-gen-ai",
+   "posted": 1788668886000,
+   "tags": [
+    "AI-Engineering",
+    "Generative-AI-Engineering",
+    "AWS-Cloud-Engineering",
+    "Machine-Learning-Engineering",
+    "Cloud-Architecture"
+   ],
+   "desc": "Why Keyrus, Why Now! Keyrus is an international group of 2,800 consultants and experts across 28 countries, built on a single conviction: AI does not transform businesses.",
+   "salary": "EUR45000–70000",
+   "hits": [
+    "machine learning",
+    "ai",
+    "generative"
+   ],
+   "score": 7
+  },
+  {
    "id": "nodesk:https://nodesk.co/remote-jobs/sticker-mule-software-engineer/",
    "src": "nodesk",
    "srcLabel": "NoDesk",
@@ -2524,24 +2599,6 @@
    "hits": [
     "machine learning",
     "research engineer"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-7590373003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (PMI Integrations)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7590373003",
-   "posted": 1787259702000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
    ],
    "score": 7
   },
@@ -3503,26 +3560,69 @@
    "score": 7
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/bright-vision-technologies/jobs/chip-software-engineer-9793314204",
+   "id": "himalayas:https://himalayas.app/companies/blackfluo-ai/jobs/product-engineer-full-remote-5774955696",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Bright Vision Technologies",
-   "title": "Chip Software Engineer",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/bright-vision-technologies/jobs/chip-software-engineer-9793314204",
-   "posted": 1788586389000,
+   "company": "Blackfluo.ai",
+   "title": "Product Engineer - Full Remote",
+   "loc": "Colombia",
+   "url": "https://himalayas.app/companies/blackfluo-ai/jobs/product-engineer-full-remote-5774955696",
+   "posted": 1788668699000,
    "tags": [
-    "Chip-Software-Engineer",
-    "Semiconductor-Software-Engineering",
-    "Firmware-Engineering",
-    "EDA-Software-Engineer",
-    "Embedded-Systems-Engineering"
+    "Full-Stack-Developer",
+    "Backend-Engineer",
+    "Python-Developer",
+    "Software-Engineer",
+    "Product-Engineer"
    ],
-   "desc": "Chip Software Engineer – Remote Bright Vision Technologies is a technology consulting and software development company delivering cloud, AI, data, and enterprise solutions across the United States.",
-   "salary": "USD80000–100000",
+   "desc": "Job Opportunity: Senior Full-Stack Developer (Focus Backend Python) Location: Fully Remote (PST Timezone) Start Date: ASAP ️ Languages: English required We're growing our team to support the expansion of our internal projects.",
+   "salary": "",
    "hits": [
-    "ai",
-    "software engineer"
+    "python",
+    "software engineer",
+    "backend",
+    "full stack"
+   ],
+   "score": 6
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/mercor/jobs/ai-safety-expert-red-team",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "mercor",
+   "title": "AI Safety Expert - Red Team",
+   "loc": "Philippines",
+   "url": "https://himalayas.app/companies/mercor/jobs/ai-safety-expert-red-team",
+   "posted": 1788668692000,
+   "tags": [
+    "AI-Safety",
+    "Red-Teaming",
+    "Cybersecurity",
+    "AI-Research",
+    "Adversarial-Machine-Learning"
+   ],
+   "desc": "About the jobMercor connects elite creative and technical talent with leading AI research labs.",
+   "salary": "USD17–25",
+   "hits": [
+    "machine learning",
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:anthropic-5183044008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Anthropic Fellows Program, AI Safety & Security",
+   "loc": "London, UK; Ontario, CAN; Remote-Friendly, United States; San Francisco, CA",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5183044008",
+   "posted": 1788640810000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
    ],
    "score": 6
   },
@@ -4003,13 +4103,13 @@
    "score": 6
   },
   {
-   "id": "gh:twilio-8103253",
+   "id": "gh:twilio-8098945",
    "src": "greenhouse",
    "srcLabel": "Twilio",
    "company": "Twilio",
    "title": "Software Engineer (L4)",
    "loc": "Remote - US",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8103253",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8098945",
    "posted": 1788364824000,
    "tags": [],
    "desc": "",
@@ -4020,13 +4120,13 @@
    "score": 6
   },
   {
-   "id": "gh:twilio-8098945",
+   "id": "gh:twilio-8103253",
    "src": "greenhouse",
    "srcLabel": "Twilio",
    "company": "Twilio",
    "title": "Software Engineer (L4)",
    "loc": "Remote - US",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8098945",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8103253",
    "posted": 1788364824000,
    "tags": [],
    "desc": "",
@@ -4394,13 +4494,13 @@
    "score": 6
   },
   {
-   "id": "gh:elastic-8080260",
+   "id": "gh:elastic-8080263",
    "src": "greenhouse",
    "srcLabel": "Elastic",
    "company": "Elastic",
    "title": "Software Engineer II - Full Stack - Web Engineering",
-   "loc": "Portugal",
-   "url": "https://jobs.elastic.co/jobs?gh_jid=8080260&gh_jid=8080260",
+   "loc": "Spain",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8080263&gh_jid=8080263",
    "posted": 1787844369000,
    "tags": [],
    "desc": "",
@@ -4448,13 +4548,13 @@
    "score": 6
   },
   {
-   "id": "gh:elastic-8080263",
+   "id": "gh:elastic-8080260",
    "src": "greenhouse",
    "srcLabel": "Elastic",
    "company": "Elastic",
    "title": "Software Engineer II - Full Stack - Web Engineering",
-   "loc": "Spain",
-   "url": "https://jobs.elastic.co/jobs?gh_jid=8080263&gh_jid=8080263",
+   "loc": "Portugal",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8080260&gh_jid=8080260",
    "posted": 1787844369000,
    "tags": [],
    "desc": "",
@@ -5467,47 +5567,20 @@
    "score": 6
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/zup-innovation/jobs/pessoa-engenheira-de-inteligencia-artificial-senior",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Zup Innovation",
-   "title": "Pessoa Engenheira de Inteligência Artificial Sênior",
-   "loc": "Brazil",
-   "url": "https://himalayas.app/companies/zup-innovation/jobs/pessoa-engenheira-de-inteligencia-artificial-senior",
-   "posted": 1788586881000,
+   "id": "wnomads:https://www.workingnomads.com/job/go/1837431/",
+   "src": "workingnomads",
+   "srcLabel": "Working Nomads",
+   "company": "iMerit Technology",
+   "title": "AI Image Evaluation Analyst",
+   "loc": "Japan, Turkey, Vietnam, Mexico, Norway, France",
+   "url": "https://www.workingnomads.com/job/go/1837431/",
+   "posted": 1788676623000,
    "tags": [
-    "Senior-AI-Engineer",
-    "AI-Security-Specialist",
-    "Machine-Learning-Engineer",
-    "LLM-Specialist",
-    "AI-Agent-Developer"
+    "analyst",
+    "annotation",
+    "english"
    ],
-   "desc": "Nosso propósito é criar tecnologias que desafiam as melhores do mundo e mudam o jogo para nossos clientes.",
-   "salary": "",
-   "hits": [
-    "machine learning",
-    "ai",
-    "llm"
-   ],
-   "score": 5
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/futuresight/jobs/co-founder-ceo-ai-native-mortgage-origination-4689499072",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "FutureSight",
-   "title": "Co-Founder & CEO - AI-Native Mortgage Origination",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/futuresight/jobs/co-founder-ceo-ai-native-mortgage-origination-4689499072",
-   "posted": 1788579090000,
-   "tags": [
-    "Co-Founder",
-    "CEO",
-    "Startup-Founder",
-    "Fintech-Executive",
-    "Venture-Backed-Entrepreneur"
-   ],
-   "desc": "The OpportunityFutureSight is seeking a Co-Founder & CEO to lead Closeline, an AI-native mortgage origination venture.",
+   "desc": "The work iMerit, an EXL company, is looking for detail oriented analysts to evaluate and rank AI generated responses to image based prompts. You will review AI generated responses and decide which ones actually hold up: accurate, relevant, concise, safe, well localized, and true to what the user asked for. Every ranking comes with a short written rationale, and those comments feed directly into ho",
    "salary": "",
    "hits": [
     "ai"
@@ -5515,25 +5588,71 @@
    "score": 5
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/futuresight/jobs/co-founder-ceo-ai-native-recruiting-firm-6053878987",
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/ceo-ai-investing-4290890183",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "FutureSight",
-   "title": "Co-Founder & CEO - AI Native Recruiting Firm",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/futuresight/jobs/co-founder-ceo-ai-native-recruiting-firm-6053878987",
-   "posted": 1788578912000,
+   "company": "Bjak",
+   "title": "CEO - AI Investing",
+   "loc": "Hong Kong",
+   "url": "https://himalayas.app/companies/bjak/jobs/ceo-ai-investing-4290890183",
+   "posted": 1788668878000,
    "tags": [
-    "Co-Founder",
-    "CEO",
-    "Venture-Builder",
-    "Entrepreneur-In-Residence",
-    "Start-up-Leadership"
+    "Chief-AI-Officer",
+    "Executive-AI-Leader",
+    "Executive-AI-Leadership",
+    "AI-Executive",
+    "Chief-Investment-Officer"
    ],
-   "desc": "The OpportunityFutureSight is seeking a Co-Founder & CEO to lead Foundry, an AI-Native Recruiting Agency currently in build at FutureSight.",
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
    "salary": "",
    "hits": [
     "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/proximity-works/jobs/test-automation-engineer-ai-powered-quality-engineering",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Proximity Works",
+   "title": "Test Automation Engineer - AI-Powered Quality Engineering",
+   "loc": "Malaysia",
+   "url": "https://himalayas.app/companies/proximity-works/jobs/test-automation-engineer-ai-powered-quality-engineering",
+   "posted": 1788668822000,
+   "tags": [
+    "Test-Automation-Engineering",
+    "Quality-Assurance-Engineering",
+    "Software-Testing",
+    "QA-Automation",
+    "Engineering"
+   ],
+   "desc": "We’re seeking a highly skilled, execution-focused Test Automation Engineer with a minimum of 2 years of experience to join our team.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/lingaro/jobs/data-engineer-with-aws",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Lingaro",
+   "title": "Data Engineer with AWS",
+   "loc": "Poland",
+   "url": "https://himalayas.app/companies/lingaro/jobs/data-engineer-with-aws",
+   "posted": 1788668754000,
+   "tags": [
+    "Data-Engineering",
+    "Cloud-Data-Engineering",
+    "AWS-Data-Engineering",
+    "Data-Pipeline-Development",
+    "Data-Engineering-Management"
+   ],
+   "desc": "Growth through diversity, equity, and inclusion. As an ethical business, we do what is right — including ensuring equal opportunities and fostering a safe, respectful workplace for each of us.",
+   "salary": "",
+   "hits": [
+    "data engineer"
    ],
    "score": 5
   },
@@ -5602,91 +5721,6 @@
    "salary": "",
    "hits": [
     "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:stripe-8174105",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer",
-   "loc": "Seattle, WA",
-   "url": "https://stripe.com/jobs/search?gh_jid=8174105",
-   "posted": 1788545540000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:stripe-8142764",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Full Stack Engineer, Bridge",
-   "loc": "San Francisco, NYC",
-   "url": "https://stripe.com/jobs/search?gh_jid=8142764",
-   "posted": 1788545536000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "full stack"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:stripe-8137997",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Machine Learning Engineer",
-   "loc": "South San Francisco, CA",
-   "url": "https://stripe.com/jobs/search?gh_jid=8137997",
-   "posted": 1788545536000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:stripe-8137972",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer",
-   "loc": "Chicago, IL",
-   "url": "https://stripe.com/jobs/search?gh_jid=8137972",
-   "posted": 1788545536000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:stripe-8130725",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Account Executive, AI Startups (Hunter)",
-   "loc": "San Francisco",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130725",
-   "posted": 1788545535000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
    ],
    "score": 5
   }
