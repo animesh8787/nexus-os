@@ -1,16 +1,16 @@
 {
- "generated": "2026-09-13T07:37:41.129Z",
+ "generated": "2026-09-14T08:04:45.816Z",
  "sources": [
   {
    "name": "Himalayas",
    "ok": true,
-   "count": 101,
+   "count": 118,
    "err": null
   },
   {
    "name": "Working Nomads",
    "ok": true,
-   "count": 45,
+   "count": 44,
    "err": null
   },
   {
@@ -28,13 +28,13 @@
   {
    "name": "Databricks",
    "ok": true,
-   "count": 892,
+   "count": 888,
    "err": null
   },
   {
    "name": "MongoDB",
    "ok": true,
-   "count": 405,
+   "count": 406,
    "err": null
   },
   {
@@ -46,13 +46,13 @@
   {
    "name": "Zscaler",
    "ok": true,
-   "count": 371,
+   "count": 374,
    "err": null
   },
   {
    "name": "Stripe",
    "ok": true,
-   "count": 633,
+   "count": 631,
    "err": null
   },
   {
@@ -76,7 +76,7 @@
   {
    "name": "Elastic",
    "ok": true,
-   "count": 356,
+   "count": 357,
    "err": null
   },
   {
@@ -88,7 +88,7 @@
   {
    "name": "Coinbase",
    "ok": true,
-   "count": 218,
+   "count": 217,
    "err": null
   },
   {
@@ -118,7 +118,7 @@
   {
    "name": "Groww",
    "ok": true,
-   "count": 7,
+   "count": 8,
    "err": null
   },
   {
@@ -142,13 +142,13 @@
   {
    "name": "Cloudflare",
    "ok": true,
-   "count": 358,
+   "count": 354,
    "err": null
   },
   {
    "name": "Samsara",
    "ok": true,
-   "count": 262,
+   "count": 245,
    "err": null
   },
   {
@@ -184,19 +184,19 @@
   {
    "name": "Pinterest",
    "ok": true,
-   "count": 184,
+   "count": 183,
    "err": null
   },
   {
    "name": "Robinhood",
    "ok": true,
-   "count": 125,
+   "count": 126,
    "err": null
   },
   {
    "name": "Affirm",
    "ok": true,
-   "count": 207,
+   "count": 208,
    "err": null
   },
   {
@@ -220,7 +220,7 @@
   {
    "name": "Notion",
    "ok": true,
-   "count": 127,
+   "count": 126,
    "err": null
   },
   {
@@ -254,7 +254,7 @@
    "err": null
   }
  ],
- "total": 785,
+ "total": 777,
  "jobs": [
   {
    "id": "gh:jumptrading-8052343",
@@ -295,6 +295,33 @@
     "intern"
    ],
    "score": 13
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/engen/jobs/full-stack-software-engineer-7173625861",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "EnGen",
+   "title": "Full-Stack Software Engineer",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/engen/jobs/full-stack-software-engineer-7173625861",
+   "posted": 1789368859000,
+   "tags": [
+    "Fullstack-Development",
+    "Backend-Engineering",
+    "Frontend-Engineer",
+    "AI-LLM-Integration",
+    "Product-Engineering"
+   ],
+   "desc": "About the Organization EnGen offers an at-scale, AI-powered approach to English instruction, designed to solve a systemic access issue: Adult English learners now represent 1 in 10 working-age adults in the U.",
+   "salary": "USD120000–150000",
+   "hits": [
+    "ai",
+    "llm",
+    "software engineer",
+    "backend",
+    "full stack"
+   ],
+   "score": 12
   },
   {
    "id": "gh:stripe-8031833",
@@ -351,28 +378,28 @@
    "score": 12
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/ewor-gmbh/jobs/applied-ai-full-stack-developer-100-remote-m-f-d-6670702578",
+   "id": "himalayas:https://himalayas.app/companies/devgrid/jobs/python-developer-with-machine-learning-knowledge-5305853289",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "EWOR GmbH",
-   "title": "Applied AI Full-Stack Developer (100 % remote) (m/f/d)",
+   "company": "DevGrid",
+   "title": "Python Developer (with Machine Learning knowledge)",
    "loc": "Remote",
-   "url": "https://himalayas.app/companies/ewor-gmbh/jobs/applied-ai-full-stack-developer-100-remote-m-f-d-6670702578",
-   "posted": 1789279506000,
+   "url": "https://himalayas.app/companies/devgrid/jobs/python-developer-with-machine-learning-knowledge-5305853289",
+   "posted": 1789370121000,
    "tags": [
-    "Fullstack-Development",
-    "Applied-AI",
-    "Software-Engineer",
-    "AI-Engineering",
-    "Product-Development"
+    "Python-Development",
+    "Machine-Learning",
+    "Backend-Development",
+    "API-Development",
+    "Software-Engineer"
    ],
-   "desc": "EWOR is launching cutting-edge new initiatives, and we are looking for exceptional operators and builders to join our new department.",
+   "desc": "Who we are:DevGrid is a top-tier software consulting company based in the UK, with a development hub in Brazil and operations spanning Europe and the US.",
    "salary": "",
    "hits": [
-    "ai",
+    "machine learning",
+    "python",
     "software engineer",
-    "full stack",
-    "fullstack"
+    "backend"
    ],
    "score": 11
   },
@@ -986,13 +1013,13 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8097801",
+   "id": "gh:stripe-8128745",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, Intern (Summer or Winter)",
-   "loc": "Dublin",
-   "url": "https://stripe.com/jobs/search?gh_jid=8097801",
+   "loc": "San Francisco, Seattle, New York City",
+   "url": "https://stripe.com/jobs/search?gh_jid=8128745",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -1004,13 +1031,13 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8128745",
+   "id": "gh:stripe-8097801",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, Intern (Summer or Winter)",
-   "loc": "San Francisco, Seattle, New York City",
-   "url": "https://stripe.com/jobs/search?gh_jid=8128745",
+   "loc": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8097801",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -1040,13 +1067,13 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8130930",
+   "id": "gh:stripe-8157838",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, New Grad",
-   "loc": "London",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
+   "loc": "Toronto",
+   "url": "https://stripe.com/jobs/search?gh_jid=8157838",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -1058,13 +1085,13 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8157838",
+   "id": "gh:stripe-8130881",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, New Grad",
-   "loc": "Toronto",
-   "url": "https://stripe.com/jobs/search?gh_jid=8157838",
+   "loc": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130881",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -1094,13 +1121,13 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8160776",
+   "id": "gh:stripe-8130930",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, New Grad",
-   "loc": "Singapore",
-   "url": "https://stripe.com/jobs/search?gh_jid=8160776",
+   "loc": "London",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -1112,13 +1139,13 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8130881",
+   "id": "gh:stripe-8160776",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, New Grad",
-   "loc": "Dublin",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130881",
+   "loc": "Singapore",
+   "url": "https://stripe.com/jobs/search?gh_jid=8160776",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -1382,24 +1409,6 @@
    "score": 9
   },
   {
-   "id": "gh:imc-4907430101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Machine Learning Research Intern - Summer 2027 - Chicago",
-   "loc": "Chicago, United States",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4907430101",
-   "posted": 1788741358000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning",
-    "intern"
-   ],
-   "score": 9
-  },
-  {
    "id": "gh:scaleai-4625341005",
    "src": "greenhouse",
    "srcLabel": "Scale AI",
@@ -1476,32 +1485,6 @@
    "score": 9
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/gcore/jobs/python-inference-engineer",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Gcore",
-   "title": "Python Inference Engineer",
-   "loc": "Cyprus, Serbia",
-   "url": "https://himalayas.app/companies/gcore/jobs/python-inference-engineer",
-   "posted": 1789280006000,
-   "tags": [
-    "Machine-Learning-Engineering",
-    "Python-Engineering",
-    "AI-Infrastructure-Engineering",
-    "Backend-Engineering",
-    "Platform-Engineering"
-   ],
-   "desc": "What You’ll Do• Build and improve the inference layer of the Gcore Inference platform.",
-   "salary": "",
-   "hits": [
-    "machine learning",
-    "ai",
-    "python",
-    "backend"
-   ],
-   "score": 8
-  },
-  {
    "id": "gh:mongodb-7922676",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
@@ -1519,13 +1502,13 @@
    "score": 8
   },
   {
-   "id": "gh:mongodb-8167389",
+   "id": "gh:mongodb-7993984",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3",
    "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8167389",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
    "posted": 1789155430000,
    "tags": [],
    "desc": "",
@@ -1553,23 +1536,6 @@
    "score": 8
   },
   {
-   "id": "gh:mongodb-8161336",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8161336",
-   "posted": 1789155430000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
    "id": "gh:mongodb-7597723",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
@@ -1587,13 +1553,30 @@
    "score": 8
   },
   {
-   "id": "gh:mongodb-7993984",
+   "id": "gh:mongodb-8161336",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3",
    "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8161336",
+   "posted": 1789155430000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:mongodb-8167389",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8167389",
    "posted": 1789155430000,
    "tags": [],
    "desc": "",
@@ -1977,27 +1960,45 @@
    "score": 8
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/cds-global/jobs/software-engineer",
+   "id": "himalayas:https://himalayas.app/companies/hr-ways/jobs/full-stack-developer-net-vuejs-remote",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "CDS Global",
-   "title": "Software Engineer",
+   "company": "HR Ways",
+   "title": "Full Stack Developer|.Net+Vuejs| Remote",
    "loc": "United States",
-   "url": "https://himalayas.app/companies/cds-global/jobs/software-engineer",
-   "posted": 1789279507000,
+   "url": "https://himalayas.app/companies/hr-ways/jobs/full-stack-developer-net-vuejs-remote",
+   "posted": 1789369436000,
    "tags": [
-    "Software-Engineer",
+    "Fullstack-Development",
+    ".NET-Development",
+    "Frontend-Development",
     "Backend-Development",
-    "Cloud-Engineer",
-    "AWS-Serverless-Development",
-    "Fullstack-Development"
+    "Web-Development"
    ],
-   "desc": "Be Part of What's NextAt Bring a Trailer, you’ll help shape the future of one of the world's most passionate automotive communities by building cloud-native technology that powers exceptional user experiences.",
-   "salary": "USD116000–125000",
+   "desc": "Full Stack Developer|. Net+Vuejs| RemoteAbout the Company: A leading Dubai-based company that provides Information and Communication Technology (ICT) Services and Software Solutions.",
+   "salary": "",
    "hits": [
-    "software engineer",
     "backend",
+    "full stack",
     "fullstack"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:imc-4907430101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Machine Learning Research Intern - Summer 2027 - Chicago",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4907430101",
+   "posted": 1788741358000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "intern"
    ],
    "score": 7
   },
@@ -2088,60 +2089,6 @@
    "hits": [
     "software engineer",
     "new grad"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:cloudflare-8118855",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Software Engineer Intern (Fall 2026)",
-   "loc": "In-Office",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855",
-   "posted": 1788533957000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "intern"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:cloudflare-8118845",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Software Engineer Intern (Fall 2026)",
-   "loc": "In-Office",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845",
-   "posted": 1788533957000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "intern"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:cloudflare-8052785",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Software Engineer Intern (Fall 2026) - Austin, TX",
-   "loc": "In-Office",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785",
-   "posted": 1788533957000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "intern"
    ],
    "score": 7
   },
@@ -2632,13 +2579,13 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7807508003",
+   "id": "gh:affirm-7807506003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
    "company": "Affirm",
    "title": "Software Engineer I, Backend (Collections)",
-   "loc": "Remote Poland",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807508003",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807506003",
    "posted": 1787255908000,
    "tags": [],
    "desc": "",
@@ -2650,13 +2597,13 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7807506003",
+   "id": "gh:affirm-7807508003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
    "company": "Affirm",
    "title": "Software Engineer I, Backend (Collections)",
-   "loc": "Remote Spain",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807506003",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807508003",
    "posted": 1787255908000,
    "tags": [],
    "desc": "",
@@ -3055,13 +3002,13 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7727322003",
+   "id": "gh:affirm-7727320003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
    "company": "Affirm",
    "title": "Software Engineer II, Backend (Test Infra)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727322003",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727320003",
    "posted": 1786561931000,
    "tags": [],
    "desc": "",
@@ -3073,13 +3020,13 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7727320003",
+   "id": "gh:affirm-7727322003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
    "company": "Affirm",
    "title": "Software Engineer II, Backend (Test Infra)",
-   "loc": "Remote US",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727320003",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727322003",
    "posted": 1786561931000,
    "tags": [],
    "desc": "",
@@ -3481,50 +3428,26 @@
    "score": 7
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/dacodes/jobs/backend-developer-node-js-c-azure-mexico-only-english-required",
+   "id": "himalayas:https://himalayas.app/companies/speechify/jobs/software-engineer-platform-abuja-nigeria",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "DaCodes",
-   "title": "Backend Developer - Node.js, C# & Azure - México Only - English Required",
-   "loc": "Mexico",
-   "url": "https://himalayas.app/companies/dacodes/jobs/backend-developer-node-js-c-azure-mexico-only-english-required",
-   "posted": 1789279989000,
+   "company": "Speechify",
+   "title": "Software Engineer, Platform - Abuja, Nigeria",
+   "loc": "Nigeria",
+   "url": "https://himalayas.app/companies/speechify/jobs/software-engineer-platform-abuja-nigeria",
+   "posted": 1789367360000,
    "tags": [
-    "Backend-Development",
-    "Backend-Engineer",
+    "Backend-Engineering",
+    "Platform-Engineering",
     "Software-Engineer",
-    "Node.Js-Development",
-    "C#-Development"
+    "Backend-Development",
+    "API-Development"
    ],
-   "desc": "¡Trabaja en DaCodes! Somos una firma de expertos en software y transformación digital de alto impacto.",
+   "desc": "The mission of Speechify is to make sure that reading is never a barrier to learning.",
    "salary": "",
    "hits": [
     "software engineer",
     "backend"
-   ],
-   "score": 6
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/bright-vision-technologies/jobs/sap-hana-platform-engineer-9183891843",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Bright Vision Technologies",
-   "title": "SAP HANA Platform Engineer",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/bright-vision-technologies/jobs/sap-hana-platform-engineer-9183891843",
-   "posted": 1789279695000,
-   "tags": [
-    "SAP-HANA-Engineer",
-    "SAP-Development",
-    "Data-Engineering",
-    "SAP-Analytics",
-    "SAP-Platform-Engineer"
-   ],
-   "desc": "Bright Vision Technologies is a technology consulting and software development company delivering cloud, AI, data, and enterprise solutions across the United States.",
-   "salary": "USD100000–150000",
-   "hits": [
-    "ai",
-    "platform engineer"
    ],
    "score": 6
   },
@@ -4103,23 +4026,6 @@
    "salary": "",
    "hits": [
     "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:anthropic-5183044008",
-   "src": "greenhouse",
-   "srcLabel": "Anthropic",
-   "company": "Anthropic",
-   "title": "Anthropic Fellows Program, AI Safety & Security",
-   "loc": "London, UK; Ontario, CAN; Remote-Friendly, United States; San Francisco, CA",
-   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5183044008",
-   "posted": 1788731683000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
    ],
    "score": 6
   },
@@ -5330,72 +5236,59 @@
    "score": 6
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/sourcegraph-com/jobs/ml-agentic-systems-engineer-ic4",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Sourcegraph",
-   "title": "ML & Agentic Systems Engineer [IC4]",
-   "loc": "Remote",
-   "url": "https://himalayas.app/companies/sourcegraph-com/jobs/ml-agentic-systems-engineer-ic4",
-   "posted": 1789280032000,
-   "tags": [
-    "ML-Engineering",
-    "AI-Engineering",
-    "Staff-Engineer",
-    "Agentic-Systems-Engineering",
-    "Machine-Learning"
-   ],
-   "desc": "Who we areOur mission is to bring clarity and control to the world's most complex codebases.",
-   "salary": "USD88000–176000",
+   "id": "gh:zscaler-5233185007",
+   "src": "greenhouse",
+   "srcLabel": "Zscaler",
+   "company": "Zscaler",
+   "title": "Account Executive, Enterprise - AI",
+   "loc": "Tokyo, JPN",
+   "url": "https://job-boards.greenhouse.io/zscaler/jobs/5233185007",
+   "posted": 1789372275000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
    "hits": [
-    "machine learning",
     "ai"
    ],
    "score": 5
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/lockheed-martin-corporation/jobs/software-engineer-e2",
+   "id": "himalayas:https://himalayas.app/companies/toloka-ai/jobs/record-your-daily-routine-get-paid-ai-training-6158937475",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Lockheed Martin Corporation",
-   "title": "Software Engineer - E2",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/lockheed-martin-corporation/jobs/software-engineer-e2",
-   "posted": 1789279642000,
+   "company": "Toloka AI",
+   "title": "Record Your Daily Routine & Get Paid - AI Training",
+   "loc": "Colombia",
+   "url": "https://himalayas.app/companies/toloka-ai/jobs/record-your-daily-routine-get-paid-ai-training-6158937475",
+   "posted": 1789368426000,
    "tags": [
-    "SAP-Development",
-    "ABAP-Programming",
-    "ERP-Development",
-    "SAP-S-4HANA",
-    "Sap-Developer"
+    "AI-Training-Data-Collection",
+    "Video-Recording",
+    "Freelance-Data-Collection",
+    "AI-Data-Annotation",
+    "Remote-Gig-Work"
    ],
-   "desc": "Standard Job Description The 1LMX ERP Production Operations IT Team is specifically transforming Lockheed Martin businesses using the latest SAP S/4HANA ERP systems to drive to a common set of streamlined processes and deliver results for our customers.",
-   "salary": "USD72900–135500",
+   "desc": "This is a project-based opportunity on an AI training platform — not a job.",
+   "salary": "USD6–6",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:elastic-8154426",
+   "src": "greenhouse",
+   "srcLabel": "Elastic",
+   "company": "Elastic",
+   "title": "Software Engineer II - Builder Experience - Platform Engineering Productivity",
+   "loc": "United States",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8154426&gh_jid=8154426",
+   "posted": 1789308574000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
    "hits": [
     "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/sagalegal/jobs/account-executive-legal-ai-netherlands",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Saga",
-   "title": "Account Executive, Legal AI | Netherlands",
-   "loc": "Netherlands",
-   "url": "https://himalayas.app/companies/sagalegal/jobs/account-executive-legal-ai-netherlands",
-   "posted": 1789279419000,
-   "tags": [
-    "Account-Executive",
-    "SaaS-Sales",
-    "LegalTech-Sales",
-    "B2B-Sales",
-    "Business-Development-Executive"
-   ],
-   "desc": "Saga is a legal innovation company on a mission to remove the friction between legal expertise and real-world impact, so lawyers can focus on what matters the most: people, ethics, and impact.",
-   "salary": "EUR55000–65000",
-   "hits": [
-    "ai"
    ],
    "score": 5
   },
@@ -5451,13 +5344,13 @@
    "score": 5
   },
   {
-   "id": "gh:mongodb-8147945",
+   "id": "gh:mongodb-8147938",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Enterprise Account Executive, AI Natives",
-   "loc": "Berlin; Frankfurt; Munich; Zurich",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8147945",
+   "loc": "London",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8147938",
    "posted": 1789155430000,
    "tags": [],
    "desc": "",
@@ -5485,13 +5378,13 @@
    "score": 5
   },
   {
-   "id": "gh:mongodb-8147938",
+   "id": "gh:mongodb-8147945",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Enterprise Account Executive, AI Natives",
-   "loc": "London",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8147938",
+   "loc": "Berlin; Frankfurt; Munich; Zurich",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8147945",
    "posted": 1789155430000,
    "tags": [],
    "desc": "",
@@ -5509,23 +5402,6 @@
    "title": "Software Engineer 2",
    "loc": "Dublin",
    "url": "https://www.mongodb.com/careers/job/?gh_jid=7613695",
-   "posted": 1789155430000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:mongodb-8108725",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3",
-   "loc": "Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8108725",
    "posted": 1789155430000,
    "tags": [],
    "desc": "",
@@ -5570,6 +5446,23 @@
    "score": 5
   },
   {
+   "id": "gh:mongodb-8089124",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "United States",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8089124",
+   "posted": 1789155430000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
    "id": "gh:mongodb-8107198",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
@@ -5587,13 +5480,13 @@
    "score": 5
   },
   {
-   "id": "gh:mongodb-8089124",
+   "id": "gh:mongodb-8108725",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3",
-   "loc": "United States",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8089124",
+   "loc": "Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8108725",
    "posted": 1789155430000,
    "tags": [],
    "desc": "",
@@ -5655,13 +5548,13 @@
    "score": 5
   },
   {
-   "id": "gh:mongodb-7662950",
+   "id": "gh:mongodb-7523920",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3, Atlas Search Systems",
-   "loc": "Toronto",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7662950",
+   "loc": "San Francisco",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7523920",
    "posted": 1789155430000,
    "tags": [],
    "desc": "",
@@ -5672,13 +5565,13 @@
    "score": 5
   },
   {
-   "id": "gh:mongodb-7523920",
+   "id": "gh:mongodb-7662950",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3, Atlas Search Systems",
-   "loc": "San Francisco",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7523920",
+   "loc": "Toronto",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7662950",
    "posted": 1789155430000,
    "tags": [],
    "desc": "",
@@ -5697,6 +5590,91 @@
    "loc": "San Francisco",
    "url": "https://www.mongodb.com/careers/job/?gh_jid=7523911",
    "posted": 1789155430000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-8184943",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3, Cluster-to-Cluster",
+   "loc": "Dublin",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8184943",
+   "posted": 1789155430000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-8119843",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3, Networking & Observability",
+   "loc": "Alberta; British Columbia; Ontario; Quebec",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8119843",
+   "posted": 1789155430000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-8119841",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3, Networking & Observability",
+   "loc": "New York City; United States",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8119841",
+   "posted": 1789155430000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-7235322",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3, Search Systems Replication & Routing",
+   "loc": "San Francisco",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7235322",
+   "posted": 1789155430000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:robinhood-8120094",
+   "src": "greenhouse",
+   "srcLabel": "Robinhood",
+   "company": "Robinhood",
+   "title": "Software Engineer, Enterprise Build",
+   "loc": "Menlo Park, CA",
+   "url": "https://boards.greenhouse.io/robinhood/jobs/8120094?t=gh_src=&gh_jid=8120094",
+   "posted": 1789155182000,
    "tags": [],
    "desc": "",
    "salary": "",
