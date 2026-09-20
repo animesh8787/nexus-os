@@ -1,10 +1,10 @@
 {
- "generated": "2026-09-19T07:30:25.056Z",
+ "generated": "2026-09-20T07:53:37.720Z",
  "sources": [
   {
    "name": "Himalayas",
    "ok": true,
-   "count": 93,
+   "count": 109,
    "err": null
   },
   {
@@ -28,13 +28,13 @@
   {
    "name": "Databricks",
    "ok": true,
-   "count": 878,
+   "count": 877,
    "err": null
   },
   {
    "name": "MongoDB",
    "ok": true,
-   "count": 402,
+   "count": 401,
    "err": null
   },
   {
@@ -46,13 +46,13 @@
   {
    "name": "Zscaler",
    "ok": true,
-   "count": 370,
+   "count": 369,
    "err": null
   },
   {
    "name": "Stripe",
    "ok": true,
-   "count": 667,
+   "count": 665,
    "err": null
   },
   {
@@ -94,7 +94,7 @@
   {
    "name": "Twilio",
    "ok": true,
-   "count": 144,
+   "count": 143,
    "err": null
   },
   {
@@ -130,7 +130,7 @@
   {
    "name": "Anthropic",
    "ok": true,
-   "count": 609,
+   "count": 611,
    "err": null
   },
   {
@@ -142,13 +142,13 @@
   {
    "name": "Cloudflare",
    "ok": true,
-   "count": 380,
+   "count": 379,
    "err": null
   },
   {
    "name": "Samsara",
    "ok": true,
-   "count": 267,
+   "count": 273,
    "err": null
   },
   {
@@ -178,7 +178,7 @@
   {
    "name": "Scale AI",
    "ok": true,
-   "count": 224,
+   "count": 223,
    "err": null
   },
   {
@@ -190,7 +190,7 @@
   {
    "name": "Robinhood",
    "ok": true,
-   "count": 155,
+   "count": 157,
    "err": null
   },
   {
@@ -386,32 +386,6 @@
     "software engineer"
    ],
    "score": 11
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/rapidsos/jobs/software-engineer-ii-ai",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "RapidSOS",
-   "title": "Software Engineer II, AI",
-   "loc": "Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Czechia, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Ukraine, United Kingdom, Åland Islands",
-   "url": "https://himalayas.app/companies/rapidsos/jobs/software-engineer-ii-ai",
-   "posted": 1789796357000,
-   "tags": [
-    "AI-Engineering",
-    "Voice-AI",
-    "Software-Engineer",
-    "Backend-Engineering",
-    "Full-Stack-Engineering"
-   ],
-   "desc": "In the time it takes you to read this job description, RapidSOS will have handled ~1,380 emergencies.",
-   "salary": "",
-   "hits": [
-    "ai",
-    "software engineer",
-    "backend",
-    "full stack"
-   ],
-   "score": 10
   },
   {
    "id": "gh:stripe-8031833",
@@ -678,6 +652,74 @@
     "early career"
    ],
    "score": 10
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/biointellisense/jobs/full-stack-data-engineer",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "BioIntelliSense",
+   "title": "Full Stack Data Engineer",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/biointellisense/jobs/full-stack-data-engineer",
+   "posted": 1789889361000,
+   "tags": [
+    "Data-Engineering",
+    "Cloud-Engineer",
+    "Healthcare-Technology",
+    "Fullstack-Development",
+    "R&D"
+   ],
+   "desc": "BioIntelliSense OverviewBioIntelliSense is ushering in a new era of continuous health monitoring and clinical intelligence for Remote Patient Monitoring (RPM) and Screening (COVID-19/Infection).",
+   "salary": "USD75000–80000",
+   "hits": [
+    "data engineer",
+    "full stack",
+    "fullstack"
+   ],
+   "score": 9
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/phoenixteam/jobs/full-stack-software-engineer-iii",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "PhoenixTeam",
+   "title": "Full-Stack Software Engineer III",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/phoenixteam/jobs/full-stack-software-engineer-iii",
+   "posted": 1789881385000,
+   "tags": [
+    "Federal",
+    "Fullstack-Development",
+    "Software-Engineer",
+    "Java-Development",
+    "Salesforce-Development"
+   ],
+   "desc": "OverviewThe Full-Stack Software Engineer contributes to PhoenixTeam's Federal Housing Administration (FHA) program, working with Java and Salesforce in an environment that includes AWS microservices and PostgreSQL.",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack",
+    "fullstack"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:samsara-8097345",
+   "src": "greenhouse",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "Software Engineer I (New Grad)",
+   "loc": "London - UK2",
+   "url": "https://www.samsara.com/company/careers/roles/8097345?gh_jid=8097345",
+   "posted": 1789831800000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
   },
   {
    "id": "gh:stripe-8212517",
@@ -1385,44 +1427,28 @@
    "score": 9
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/reliance-health/jobs/backend-software-engineer",
+   "id": "himalayas:https://himalayas.app/companies/t-rex-solutions-llc/jobs/full-stack-developer",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Reliance Health",
-   "title": "Backend Software Engineer",
-   "loc": "Nigeria",
-   "url": "https://himalayas.app/companies/reliance-health/jobs/backend-software-engineer",
-   "posted": 1789796233000,
+   "company": "T-Rex Solutions, LLC",
+   "title": "Full Stack Developer",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/t-rex-solutions-llc/jobs/full-stack-developer",
+   "posted": 1789881236000,
    "tags": [
-    "Backend-Development",
-    "Software-Engineer",
-    "Backend-Engineer",
-    "API-Development",
-    "NodeJS"
+    "Fullstack-Development",
+    "Java-Development",
+    "React",
+    "Web-Development",
+    "Software-Engineer"
    ],
-   "desc": "Reliance Health’s mission is to make quality healthcare delightful, affordable, and accessible in emerging markets.",
-   "salary": "",
+   "desc": "T-Rex Solutions is looking to select a Full Stack Developer to support our Internal Revenue Service (IRS) EDOS program.",
+   "salary": "USD65000–87000",
    "hits": [
     "software engineer",
-    "backend"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:airbnb-7716341",
-   "src": "greenhouse",
-   "srcLabel": "Airbnb",
-   "company": "Airbnb",
-   "title": "Machine Learning Engineer, AI Platform",
-   "loc": "China",
-   "url": "https://careers.airbnb.com/positions/7716341?gh_jid=7716341",
-   "posted": 1789721755000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning",
-    "ai"
+    "full stack",
+    "fullstack",
+    "react"
    ],
    "score": 8
   },
@@ -1641,13 +1667,30 @@
    "score": 8
   },
   {
-   "id": "gh:mongodb-8083366",
+   "id": "gh:mongodb-7993984",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3",
    "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8083366",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
+   "posted": 1789579732000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:mongodb-7597723",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7597723",
    "posted": 1789579732000,
    "tags": [],
    "desc": "",
@@ -1675,13 +1718,13 @@
    "score": 8
   },
   {
-   "id": "gh:mongodb-7993984",
+   "id": "gh:mongodb-8083366",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3",
    "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8083366",
    "posted": 1789579732000,
    "tags": [],
    "desc": "",
@@ -1699,23 +1742,6 @@
    "title": "Software Engineer 3",
    "loc": "Gurugram",
    "url": "https://www.mongodb.com/careers/job/?gh_jid=8161336",
-   "posted": 1789579732000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:mongodb-7597723",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7597723",
    "posted": 1789579732000,
    "tags": [],
    "desc": "",
@@ -1938,13 +1964,13 @@
    "score": 8
   },
   {
-   "id": "gh:stripe-8130883",
+   "id": "gh:stripe-8130867",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, Intern",
-   "loc": "Singapore",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130883",
+   "loc": "London",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130867",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -1956,13 +1982,13 @@
    "score": 7
   },
   {
-   "id": "gh:stripe-8130867",
+   "id": "gh:stripe-8130883",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, Intern",
-   "loc": "London",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130867",
+   "loc": "Singapore",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130883",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -2046,13 +2072,31 @@
    "score": 7
   },
   {
-   "id": "gh:stripe-8130930",
+   "id": "gh:stripe-8130881",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, New Grad",
-   "loc": "London",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
+   "loc": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130881",
+   "posted": 1789060318000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:stripe-8160776",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "Singapore",
+   "url": "https://stripe.com/jobs/search?gh_jid=8160776",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -2082,31 +2126,13 @@
    "score": 7
   },
   {
-   "id": "gh:stripe-8130881",
+   "id": "gh:stripe-8130930",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, New Grad",
-   "loc": "Dublin",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130881",
-   "posted": 1789060318000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "new grad"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:stripe-8160776",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, New Grad",
-   "loc": "Singapore",
-   "url": "https://stripe.com/jobs/search?gh_jid=8160776",
+   "loc": "London",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -3525,26 +3551,25 @@
    "score": 7
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/devoteam/jobs/gcp-ai-engineer-gemini-enterprise",
+   "id": "himalayas:https://himalayas.app/companies/mercor/jobs/music-producer-hindi-expert-1650590064",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Devoteam",
-   "title": "GCP AI Engineer (Gemini Enterprise)",
-   "loc": "Spain",
-   "url": "https://himalayas.app/companies/devoteam/jobs/gcp-ai-engineer-gemini-enterprise",
-   "posted": 1789794823000,
+   "company": "mercor",
+   "title": "Music Producer - Hindi Expert",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/mercor/jobs/music-producer-hindi-expert-1650590064",
+   "posted": 1789881314000,
    "tags": [
-    "AI-Engineering",
-    "Google-Cloud-AI",
-    "Conversational-AI",
-    "Generative-AI",
-    "AI-Agent-Development"
+    "Music-Production",
+    "Audio-Engineering",
+    "AI-Music-Evaluation",
+    "Music-Quality-Assurance",
+    "Bilingual-Music-Specialist"
    ],
-   "desc": "Buscamos un Ingeniero de IA de Google Cloud apasionado por la IA generativa y con experiencia en la creación de agentes conversacionales inteligentes.",
-   "salary": "",
+   "desc": "About the jobMercor connects elite creative and technical talent with leading AI research labs.",
+   "salary": "USD14–42",
    "hits": [
-    "ai",
-    "generative"
+    "ai"
    ],
    "score": 6
   },
@@ -4263,13 +4288,13 @@
    "score": 6
   },
   {
-   "id": "gh:gitlab-8778279002",
+   "id": "gh:gitlab-8775415002",
    "src": "greenhouse",
    "srcLabel": "GitLab",
    "company": "GitLab",
    "title": "Intermediate Backend Engineer, EMEA",
-   "loc": "Remote, United Kingdom",
-   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8778279002",
+   "loc": "Remote, Poland",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8775415002",
    "posted": 1789416099000,
    "tags": [],
    "desc": "",
@@ -4280,13 +4305,13 @@
    "score": 6
   },
   {
-   "id": "gh:gitlab-8775415002",
+   "id": "gh:gitlab-8778279002",
    "src": "greenhouse",
    "srcLabel": "GitLab",
    "company": "GitLab",
    "title": "Intermediate Backend Engineer, EMEA",
-   "loc": "Remote, Poland",
-   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8775415002",
+   "loc": "Remote, United Kingdom",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8778279002",
    "posted": 1789416099000,
    "tags": [],
    "desc": "",
@@ -4364,23 +4389,6 @@
    "salary": "",
    "hits": [
     "platform engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:coinbase-8105437",
-   "src": "greenhouse",
-   "srcLabel": "Coinbase",
-   "company": "Coinbase",
-   "title": "Software Engineer, Blockchain Platform Nodes",
-   "loc": "Remote - USA",
-   "url": "https://www.coinbase.com/careers/positions/8105437?gh_jid=8105437",
-   "posted": 1789198374000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
    ],
    "score": 6
   },
@@ -5434,50 +5442,42 @@
    "score": 6
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/bright-vision-technologies/jobs/go-applications-engineer-7569851310",
+   "id": "himalayas:https://himalayas.app/companies/ci-t/jobs/job-31732-squad-leader-ai-orchestrator",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Bright Vision Technologies",
-   "title": "Go Applications Engineer",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/bright-vision-technologies/jobs/go-applications-engineer-7569851310",
-   "posted": 1789796326000,
+   "company": "CI&T",
+   "title": "[Job-31732] Squad Leader / AI Orchestrator",
+   "loc": "Brazil, Colombia",
+   "url": "https://himalayas.app/companies/ci-t/jobs/job-31732-squad-leader-ai-orchestrator",
+   "posted": 1789889033000,
    "tags": [
-    "Go-Application-Engineer",
-    "Backend-Engineer",
-    "Systems-Engineer",
-    "Cloud-Engineer",
-    "Platform-Engineer"
+    "AI-Orchestration",
+    "Scrum-Master",
+    "Agile-Project-Management",
+    "Delivery-Management",
+    "Team-Leadership"
    ],
-   "desc": "Bright Vision Technologies is a technology consulting and software development company delivering cloud, AI, data, and enterprise solutions across the United States.",
-   "salary": "USD130000–145000",
+   "desc": "At CI&T, we help large enterprises transform the potential of AI into real business impact with AI Deployment, AI-native execution, and tech-integrated business solutions.",
+   "salary": "",
    "hits": [
-    "ai",
-    "backend",
-    "platform engineer"
+    "ai"
    ],
    "score": 5
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/applied-ai-engineer-ai-finance-agent-718691901",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Bjak",
-   "title": "Applied AI Engineer - AI Finance Agent",
-   "loc": "Hong Kong",
-   "url": "https://himalayas.app/companies/bjak/jobs/applied-ai-engineer-ai-finance-agent-718691901",
-   "posted": 1789794966000,
-   "tags": [
-    "Applied-AI-Agent-Engineer",
-    "AI-Agent-Engineer",
-    "Financial-AI-Engineering",
-    "Applied-AI-ML-Engineer",
-    "AI-Application-Engineer"
-   ],
-   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "id": "gh:airbnb-7716341",
+   "src": "greenhouse",
+   "srcLabel": "Airbnb",
+   "company": "Airbnb",
+   "title": "Machine Learning Engineer, Assistance Engineering",
+   "loc": "China",
+   "url": "https://careers.airbnb.com/positions/7716341?gh_jid=7716341",
+   "posted": 1789875171000,
+   "tags": [],
+   "desc": "",
    "salary": "",
    "hits": [
-    "ai"
+    "machine learning"
    ],
    "score": 5
   },
