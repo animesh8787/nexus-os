@@ -117,11 +117,11 @@ The site is deployed by **Vercel**; GitHub Actions only tests.
 
 1. On [vercel.com](https://vercel.com): **Add New → Project → import this repo**. The settings come from [`vercel.json`](vercel.json) (Framework: Other, build command `node scripts/build-site.mjs`, output `public`), so just press **Deploy**.
 2. Add the resulting origin (`https://<project>.vercel.app`, plus your custom domain if you add one) to: Firebase **Authorised domains**, the Worker's `ALLOWED_ORIGINS` (then `npx wrangler deploy`), and the Google OAuth client's **Authorised JavaScript origins**. Missing one of these is the usual reason sign-in, the AI or Gmail fail on a new domain.
-3. Every push to `main` deploys to production; branches and pull requests get preview URLs (add those origins too if you want to test sign-in on a preview).
+3. Every push to the default branch (`master`) deploys to production; branches and pull requests get preview URLs (add those origins too if you want to test sign-in on a preview).
 
 [`scripts/build-site.mjs`](scripts/build-site.mjs) copies only the site's files into `public/` (no tests, Worker or extension) and **fails if any page refers to a file that wasn't copied** - so adding a new script means adding it to `FILES` in that script. `vercel.json` also sets response headers (`frame-ancestors 'none'`, `nosniff`, referrer and permissions policies).
 
-[`ci-and-feed.yml`](.github/workflows/ci-and-feed.yml) runs **every test suite** on each push and pull request (unit, Worker, the site-build check, pinned-script hashes, browser). It publishes nothing. Note that Vercel deploys a push whether or not those tests pass, so look at the Actions tab; for a hard gate, set Vercel's *Production Branch* to a `release` branch and only merge `main` into it when Actions is green. Once a day (08:00 IST) it also refreshes `jobs-feed.json` and commits it, which makes Vercel redeploy the fresh feed.
+[`ci-and-feed.yml`](.github/workflows/ci-and-feed.yml) runs **every test suite** on each push and pull request (unit, Worker, the site-build check, pinned-script hashes, browser). It publishes nothing. Note that Vercel deploys a push whether or not those tests pass, so look at the Actions tab; for a hard gate, set Vercel's *Production Branch* to a `release` branch and only merge `master` into it when Actions is green. Once a day (08:00 IST) it also refreshes `jobs-feed.json` and commits it, which makes Vercel redeploy the fresh feed.
 
 ## What's inside
 
