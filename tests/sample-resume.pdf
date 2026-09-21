@@ -1,0 +1,53 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 5 0 R /Resources << /Font << /F1 4 0 R >> >> >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 983 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
+14 TL
+(Aarav Sharma) Tj T*
+(Bengaluru, India | aarav@example.com | github.com/aarav-dev | linkedin.com/in/aarav-sharma) Tj T*
+() Tj T*
+(EDUCATION) Tj T*
+(B.Tech in Computer Science, Example Institute of Technology, Expected 2026) Tj T*
+() Tj T*
+(SKILLS) Tj T*
+(Python, C++, JavaScript, TypeScript, React, Node.js, Express, MongoDB, PostgreSQL, Docker, Git) Tj T*
+(Machine Learning, Deep Learning, PyTorch, scikit-learn, pandas, NumPy, NLP, LLM, RAG, LangChain) Tj T*
+() Tj T*
+(PROJECTS) Tj T*
+(Resume Ranker - built an NLP pipeline in Python and PyTorch; served with FastAPI and deployed on Docker.) Tj T*
+(Trained a machine learning model with scikit-learn and PyTorch; tuned deep learning hyperparameters.) Tj T*
+(Carbon Track - full stack app using React, Node.js, Express and MongoDB with REST APIs.) Tj T*
+() Tj T*
+(EXPERIENCE) Tj T*
+(Software Engineering Intern, Acme Labs \(Jun 2025 - Aug 2025\): built React dashboards, wrote Python services.) Tj T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1345
+%%EOF

@@ -1,0 +1,35 @@
+# Nexus OS AI proxy. Deploy:  cd worker && npx wrangler deploy
+# Then set the secret:        npx wrangler secret put GROQ_API_KEY
+name = "nexus-os-ai"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Your Firebase project id (Firebase console -> Project settings). Tokens for any other project are rejected.
+FIREBASE_PROJECT_ID = "nexus-os-87"
+# Comma-separated origins allowed to call this Worker, e.g. "https://your-project.vercel.app" (add your custom domain too). No path, no trailing slash.
+ALLOWED_ORIGINS = "https://your-project.vercel.app"
+
+# --- fair use, and protection of the shared key ---------------------------------------------
+# Per signed-in user
+DAILY_LIMIT = "40"
+MINUTE_LIMIT = "6"
+# Per IP address, per minute. Many accounts from one address is what farming looks like.
+IP_MINUTE_LIMIT = "20"
+# Hard ceiling on total AI calls per day across ALL users - bounds what the key can ever cost.
+# 0 disables it. Needs the KV binding below to be reliable (in-memory counters reset on restarts).
+GLOBAL_DAILY_LIMIT = "2000"
+# Only verified email addresses may use the AI (Google sign-ins already are). Leave this on:
+# accounts are free to create, so without it per-user limits are trivially bypassed.
+REQUIRE_VERIFIED_EMAIL = "true"
+# Extra throwaway-mail domains to refuse, comma-separated (a built-in list already covers the common ones).
+BLOCKED_EMAIL_DOMAINS = ""
+# GROQ_MODEL = "llama-3.3-70b-versatile"   # optional; blank = pick the best available model automatically
+
+# Durable counters (otherwise daily and global counts reset whenever the Worker restarts).
+# Each AI call does 2 KV writes (user + global), and Cloudflare's free plan allows ~1,000 writes a day,
+# i.e. ~500 AI calls/day in total. Beyond that, use the $5 Workers plan or lower GLOBAL_DAILY_LIMIT.
+# npx wrangler kv namespace create RATE   -> paste the id below and uncomment
+# [[kv_namespaces]]
+# binding = "RATE"
+# id = "<your-kv-id>"

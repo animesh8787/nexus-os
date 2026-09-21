@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://cdnjs.cloudflare.com https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https: http://localhost:* http://127.0.0.1:*; frame-src https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Nexus OS</title>
+<meta name="description" content="What Nexus OS collects, why, who it is shared with, and how to delete it.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f46e5'/%3E%3Cpath d='M16 6l8 10-8 10-8-10z' fill='none' stroke='white' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=IBM+Plex+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="site.css">
+<script src="theme-boot.js"></script>
+</head>
+<body class="grain">
+<div class="ambient-top" aria-hidden="true"></div>
+<div class="ambient-bottom" aria-hidden="true"></div>
+
+<div class="site">
+  <nav class="s-nav" aria-label="Main">
+    <a class="s-logo" href="index.html"><span class="mk">◇</span><span>Nexus <em>OS</em></span></a>
+    <div class="s-actions">
+      <button class="theme-btn" data-theme-toggle type="button"></button>
+      <a class="btn btn-sm" href="index.html"><span data-ico="arrow-left" data-size="13"></span> Home</a>
+    </div>
+  </nav>
+
+  <main class="legal s-wrap" id="main">
+    <div class="eyebrow">Legal</div>
+    <h1 class="s-title">Privacy <em>Policy</em></h1>
+    <p class="legal-meta">Last updated 22 September 2026</p>
+    <div class="legal-warn" id="legalWarn" hidden role="alert"><strong>Setup needed:</strong> the operator name and contact address haven't been set for this deployment. Set <code>operatorName</code> and <code>contactEmail</code> in <code>firebase-config.js</code> before publishing.</div>
+
+    <p>Nexus OS is a job-search portal: a resume-matched job feed, an application tracker, and an AI coach. It is run by <strong data-operator></strong> (“we”). This policy explains what data the service handles, why, who else touches it, and how you can delete it. Questions: <span data-contact></span>.</p>
+
+    <h2>1. What we handle, and why</h2>
+    <table class="legal-table">
+      <thead><tr><th>Data</th><th>Why</th><th>Where it lives</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Account</strong>: email address, name, sign-in method (email/password or Google), a unique account ID, and whether your email is verified</td><td>To sign you in and tell you apart from other users</td><td>Firebase Authentication (Google)</td></tr>
+        <tr><td><strong>Your portal data</strong>: applications (company, role, dates, notes, timeline), profile (skills, target roles, preferences), solutions you log (problem names, your code, notes), schedule, habits, projects, settings</td><td>To provide the service on every device</td><td>Your browser, and — when you're signed in — a private copy in Cloud Firestore (Google) under your account ID</td></tr>
+        <tr><td><strong>Resume text</strong>: extracted <em>in your browser</em> from the file you choose</td><td>To build your profile</td><td>With your profile (browser + your Firestore copy) until you press “Delete resume text”. Sent to the AI provider only when you press Parse.</td></tr>
+        <tr><td><strong>AI requests</strong>: study statistics, code you ask to review, resume text, a summary of your applications (company, role, stage, dates), and &mdash; only if you turn on the optional AI email check &mdash; the sender name and domain, subject and Gmail snippet of emails our rules could not place</td><td>To generate the coach's answers</td><td>Sent through our AI service (a Cloudflare Worker) to Groq. We do not store the content of requests or answers.</td></tr>
+        <tr><td><strong>Usage counters</strong>: a per-account daily request count; your IP address for a few seconds</td><td>To enforce fair-use limits and stop abuse of the shared AI key</td><td>Counters expire within two days. The IP address is held in memory for rate-limiting and is not stored by us.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>2. Gmail (only if you choose to connect it)</h2>
+    <ul>
+      <li>Nexus OS asks Google for <strong>read-only</strong> access (<code>gmail.readonly</code>) so it can find job-related emails — application confirmations, assessment and interview invitations, offers and rejections — and record them on your tracker.</li>
+      <li>It searches your mailbox for job-related messages, and for each match reads only the <strong>sender, subject, date and the short snippet Gmail provides</strong>. It does not read full message bodies or attachments, and it never sends, deletes or changes email.</li>
+      <li>By default, reading and classifying happens <strong>in your browser</strong>. The access token lasts about an hour and is kept <strong>in memory only</strong>; it is never written to storage or sent to our servers.</li>
+      <li>What is saved to your tracker: the company, role, event type and date, the email's subject line, and Gmail's message ID (to avoid recording the same email twice). This is part of your portal data (section 1) and is deleted with it.</li>
+      <li><strong>Optional AI check for unclear emails (off by default).</strong> Nexus first sorts emails with its own rules, in your browser. If you turn on “AI check for unclear emails” in the Job Tracker, then for emails those rules could not place &mdash; at most 20 per inbox check &mdash; Nexus sends the <strong>sender's name and domain (not the email address), the subject line and Gmail's short snippet</strong> to our AI service (a Cloudflare Worker), which forwards it to <strong>Groq</strong>. If you use your own Groq key instead, it is sent from your browser straight to Groq. Groq's answer says whether each email looks like a confirmation, assessment, interview, offer or rejection, and which company and role it concerns. Nexus <strong>never</strong> sends full message bodies, attachments, your own address, or emails the rules already handled, and does not store what is sent or returned. Groq handles the data under its own terms and privacy policy, which apply to it. Before anything is sent you are shown a dialog listing exactly this and must agree; until then the switch is off. You can turn it off at any time, and it also turns off when you disconnect Gmail. Entries filed this way are labelled “AI-suggested” in the tracker so you can check or remove them.</li>
+      <li>You can disconnect at any time in the Job Tracker (this revokes the token with Google), or remove access at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.</li>
+      <li>Nexus OS's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. Gmail data is used only to provide the tracker feature you asked for; it is not used for advertising, not sold, and Nexus OS does not use it to train AI models. Apart from the optional AI check described above, which only runs if you turn it on, Gmail data is not transferred to anyone.</li>
+    </ul>
+
+    <h2>3. Other services involved</h2>
+    <ul>
+      <li><strong>Google</strong> — Firebase Authentication, Cloud Firestore, Gmail (if connected), and Google Fonts (which sees your IP address when the page loads).</li>
+      <li><strong>Cloudflare</strong> — runs the AI service and, if enabled, stores usage counters; also serves some open-source libraries (cdnjs).</li>
+      <li><strong>Groq</strong> — generates AI responses. Its own terms and privacy policy apply to what we send it, including, only if you turn on the optional AI email check, the limited email details described in section 2.</li>
+      <li><strong>GitHub</strong> — hosts this website. If you connect your GitHub account to push LeetCode solutions, your token stays in your browser and is sent only to <code>api.github.com</code>.</li>
+      <li><strong>Job boards and LeetCode data providers</strong> — your browser requests public job listings and public profile data directly from them, so they can see your IP address. No personal data from your portal is sent.</li>
+    </ul>
+    <p>We do not sell your data, show ads, or use analytics or tracking cookies.</p>
+
+    <h2>4. What is never synced or shared</h2>
+    <p>Your GitHub token and any Groq API key you enter are stored only in your browser on the device where you typed them. They are excluded from cloud sync.</p>
+
+    <h2>5. Security</h2>
+    <p>Data is encrypted in transit (HTTPS) and Google encrypts Firestore data at rest. Firestore rules restrict each account's data to that account. No system is perfectly secure; please use a strong, unique password and verify your email.</p>
+
+    <h2>6. Keeping and deleting your data</h2>
+    <ul>
+      <li><strong>Export:</strong> Settings → Data → Export JSON downloads everything stored in your browser.</li>
+      <li><strong>Delete:</strong> Settings → Danger zone → “Delete my account and data” removes your account, your Firestore copy, the copy on that device, and revokes Gmail access. It cannot be undone. Nexus OS cannot reach into <em>other</em> browsers where you used the portal: those devices are signed out, but any copy already stored there stays until you clear that browser's site data.</li>
+      <li>Usage counters expire on their own within two days. We keep no separate backups of your portal data.</li>
+    </ul>
+
+    <h2>7. Your rights</h2>
+    <p>Depending on where you live you may have the right to access, correct, export or delete your data, and to object to or restrict certain processing. Most of this you can do yourself in the portal (sections 6 above); for anything else contact <span data-contact></span>. Under EU/UK law our basis for processing is providing the service you asked for (contract), and your consent for optional features like Gmail, which you can withdraw at any time.</p>
+
+    <h2>8. Cookies and local storage</h2>
+    <p>Nexus OS uses your browser's local storage and IndexedDB to keep your data, your theme choice and your sign-in session. There are no advertising or tracking cookies.</p>
+
+    <h2>9. Children</h2>
+    <p>Nexus OS is not intended for anyone under 16, and we do not knowingly collect data from children.</p>
+
+    <h2>10. Changes</h2>
+    <p>If we change this policy in a way that matters, we will update the date above and, for significant changes, tell signed-in users in the portal.</p>
+
+    <h2>11. Contact</h2>
+    <p><strong data-operator></strong> — <span data-contact></span></p>
+  </main>
+
+  <footer class="s-foot">
+    <div class="s-wrap in">
+      <div><span class="mk">◇</span>nexus os</div>
+      <div class="mid"><a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy</a></div>
+      <div class="r">© <span id="legalYear">2026</span></div>
+    </div>
+  </footer>
+</div>
+
+<script src="firebase-config.js"></script>
+<script src="icons.js"></script>
+<script src="site.js"></script>
+<script src="legal.js"></script>
+</body>
+</html>

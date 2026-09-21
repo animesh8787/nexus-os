@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://cdnjs.cloudflare.com https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https: http://localhost:* http://127.0.0.1:*; frame-src https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nexus OS — Land the engineering job</title>
+<meta name="description" content="Nexus OS reads your resume, finds roles that fit, and tracks every application, including the replies in your inbox. Built for engineers grinding toward their next offer.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Nexus OS — Land the engineering job">
+<meta property="og:description" content="Resume-matched job feed, an application pipeline that fills itself from your inbox, and an AI coach.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f46e5'/%3E%3Cpath d='M16 6l8 10-8 10-8-10z' fill='none' stroke='white' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=IBM+Plex+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="site.css">
+<script src="theme-boot.js"></script>
+</head>
+<body class="grain">
+<div class="ambient-top" aria-hidden="true"></div>
+<div class="ambient-bottom" aria-hidden="true"></div>
+<div class="scan" aria-hidden="true"></div>
+
+<div class="site">
+
+  <!-- ============ NAV ============ -->
+  <nav class="s-nav" aria-label="Main">
+    <a class="s-logo" href="index.html"><span class="mk">◇</span><span>Nexus <em>OS</em></span></a>
+    <ul class="s-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="s-actions">
+      <button class="theme-btn" data-theme-toggle type="button"></button>
+      <a class="btn btn-sm btn-signin" href="auth.html" data-auth-link><span class="lbl">Sign in</span></a>
+      <a class="btn btn-sm btn-primary" href="auth.html?mode=signup">Get started</a>
+      <button class="theme-btn s-burger" type="button" aria-label="Menu" aria-expanded="false" data-ico="menu" data-size="16"></button>
+    </div>
+  </nav>
+  <div class="s-drawer">
+    <a class="dl" href="#features">Features</a>
+    <a class="dl" href="#how">How it works</a>
+    <a class="dl" href="#privacy">Privacy</a>
+    <a class="dl" href="#faq">FAQ</a>
+    <a class="btn" href="auth.html" data-auth-link><span class="lbl">Sign in</span></a>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-rings" aria-hidden="true"></div>
+      <div class="s-wrap" style="position:relative">
+        <div class="hero-badge reveal"><i>◆</i> Free during early access &nbsp;·&nbsp; Built for engineers</div>
+        <h1 class="reveal" style="--d:.08s">Land the <em>engineering</em> job.</h1>
+        <p class="hero-lede reveal" style="--d:.16s">Your job hunt, finally organised.</p>
+        <p class="hero-body reveal" style="--d:.22s">Nexus OS reads your resume, finds roles that actually fit, and tracks every application &mdash; including the replies that land in your inbox &mdash; while you keep grinding LeetCode.</p>
+        <div class="hero-cta reveal" style="--d:.3s">
+          <a class="btn btn-primary btn-lg" href="auth.html?mode=signup">Get started free <span data-ico="arrow-right" data-size="14"></span></a>
+          <a class="btn btn-lg" href="#how">See how it works</a>
+        </div>
+        <div class="hero-note reveal" style="--d:.36s">No card &nbsp;·&nbsp; Sign in with email or Google</div>
+
+        <!-- illustrative preview built from the real components -->
+        <div class="preview reveal" style="--d:.2s" aria-hidden="true">
+          <div class="pv-frame">
+            <div class="pv-bar"><i></i><i></i><i></i><span>nexus os &nbsp;/&nbsp; job tracker</span></div>
+            <div class="pv-body">
+              <div class="pv-side">
+                <div class="pv-nav"><span data-ico="dashboard" data-size="13"></span>Dashboard</div>
+                <div class="pv-nav"><span data-ico="user" data-size="13"></span>Profile</div>
+                <div class="pv-nav"><span data-ico="search" data-size="13"></span>Job Feed</div>
+                <div class="pv-nav on"><span data-ico="columns" data-size="13"></span>Tracker</div>
+                <div class="pv-nav"><span data-ico="sparkles" data-size="13"></span>Coach</div>
+                <div class="pv-nav"><span data-ico="terminal" data-size="13"></span>Solutions</div>
+              </div>
+              <div class="pv-main">
+                <div class="pv-stats">
+                  <div class="pv-stat"><b>5</b><span>Applied</span></div>
+                  <div class="pv-stat"><b style="color:var(--accent)">2</b><span>In progress</span></div>
+                  <div class="pv-stat"><b style="color:var(--green)">1</b><span>Offer</span></div>
+                  <div class="pv-stat"><b>60%</b><span>Response rate</span></div>
+                </div>
+                <div class="pv-board">
+                  <div class="pv-col"><h6>Applied <span>2</span></h6>
+                    <div class="pv-card"><b>Backend Engineer</b><small>Northwind Systems</small><span class="tag">Sep 18</span></div>
+                    <div class="pv-card"><b>ML Intern</b><small>Lumen AI</small><span class="tag">Sep 16</span></div>
+                  </div>
+                  <div class="pv-col"><h6>Assessment <span>1</span></h6>
+                    <div class="pv-card"><b>SDE Intern</b><small>Orbital Cloud</small><span class="tag a">from inbox · Sep 14</span></div>
+                  </div>
+                  <div class="pv-col"><h6>Interview <span>1</span></h6>
+                    <div class="pv-card"><b>Full-Stack Engineer</b><small>Helix Payments</small><span class="tag a">from inbox · Sep 12</span></div>
+                  </div>
+                  <div class="pv-col"><h6>Offer <span>1</span></h6>
+                    <div class="pv-card"><b>Research Engineer</b><small>Meridian Labs</small><span class="tag g">Sep 09</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pv-cap">Illustrative preview &nbsp;·&nbsp; sample data</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOURCES ============ -->
+    <div class="strip" aria-label="Job sources">
+      <div class="s-wrap strip-in">
+        <b>Watching</b>
+        <span>Greenhouse</span><span>Lever</span><span>Ashby</span><span>HN Who's Hiring</span><span>Remote OK</span><span>Remotive</span><span>We Work Remotely</span><span>Himalayas</span>
+      </div>
+    </div>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features" aria-labelledby="feat-title">
+      <div class="s-wrap">
+        <div class="s-head">
+          <div class="eyebrow reveal">Capabilities</div>
+          <h2 class="s-title reveal" id="feat-title" style="--d:.06s">Everything between <em>resume</em><br>and offer.</h2>
+          <p class="s-sub reveal" style="--d:.12s">One portal for the whole search: find roles, apply, follow up, and keep your skills sharp &mdash; without a dozen spreadsheets.</p>
+        </div>
+        <div class="feat-grid">
+          <article class="feat reveal">
+            <span class="fi" data-ico="search" data-size="30"></span>
+            <h3>A job feed that knows your resume</h3>
+            <p>Upload your resume once. Nexus pulls out your skills and target roles, then ranks live postings from dozens of company boards and aggregators against them. Change any skill or job type and the feed follows.</p>
+            <span class="ft">Resume parsing · editable profile</span>
+          </article>
+          <article class="feat reveal" style="--d:.06s">
+            <span class="fi" data-ico="columns" data-size="30"></span>
+            <h3>An application pipeline with dates</h3>
+            <p>Applied, assessment, interview, offer. Every application carries a dated timeline, so you always know where things stand and what has gone quiet.</p>
+            <span class="ft">Board view · per-role timeline</span>
+          </article>
+          <article class="feat reveal" style="--d:.12s">
+            <span class="fi" data-ico="mail" data-size="30"></span>
+            <h3>Your inbox updates it for you</h3>
+            <p>Connect Gmail read-only. Nexus spots confirmation, assessment, interview and rejection emails, moves the right application forward and stamps the date.</p>
+            <span class="ft">Gmail · read-only</span>
+          </article>
+          <article class="feat reveal">
+            <span class="fi" data-ico="terminal" data-size="30"></span>
+            <h3>LeetCode to GitHub, automatically</h3>
+            <p>Accepted solutions are committed to your repo by the browser extension, so your contribution graph grows while you practise.</p>
+            <span class="ft">Browser extension · one commit per solve</span>
+          </article>
+          <article class="feat reveal" style="--d:.06s">
+            <span class="fi" data-ico="sparkles" data-size="30"></span>
+            <h3>A coach that sees your real numbers</h3>
+            <p>Ask what to improve in the solution you just pushed &mdash; and how your search is going, based on your actual application funnel, not generic advice.</p>
+            <span class="ft">Code review · job-search advice</span>
+          </article>
+          <article class="feat reveal" style="--d:.12s">
+            <span class="fi" data-ico="chart" data-size="30"></span>
+            <h3>A daily system that stays measurable</h3>
+            <p>Schedule blocks, a habit checklist, streaks and analytics, so the grind is something you can look at and improve.</p>
+            <span class="ft">Schedule · streaks · analytics</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section" id="how" aria-labelledby="how-title" style="padding-top:0">
+      <div class="s-wrap">
+        <div class="s-head">
+          <div class="eyebrow reveal">How it works</div>
+          <h2 class="s-title reveal" id="how-title" style="--d:.06s">From sign-up to<br><em>first reply</em>, in four steps.</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><span class="n">01</span><h3>Create your account</h3><p>Sign up with email or Google. Your data is kept under your account.</p></div>
+          <div class="step reveal" style="--d:.06s"><span class="n">02</span><h3>Upload your resume</h3><p>Nexus extracts your skills, roles and level into a profile you can edit line by line.</p></div>
+          <div class="step reveal" style="--d:.12s"><span class="n">03</span><h3>Apply from your feed</h3><p>Hit Apply and you land on the employer's own page. When you come back, Nexus asks if you applied and logs it.</p></div>
+          <div class="step reveal" style="--d:.18s"><span class="n">04</span><h3>Let replies find you</h3><p>With Gmail connected, confirmations and responses update the tracker with dates, automatically.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRIVACY ============ -->
+    <section class="section" id="privacy" aria-labelledby="priv-title" style="padding-top:0">
+      <div class="s-wrap">
+        <div class="priv">
+          <div>
+            <div class="eyebrow reveal">Privacy</div>
+            <h2 class="s-title reveal" id="priv-title" style="--d:.06s">Built <em>local-first</em>,<br>on purpose.</h2>
+            <p class="s-sub reveal" style="--d:.12s">A job search is personal. Nexus only touches what a feature needs, and tells you exactly what that is.</p>
+          </div>
+          <ul class="priv-list">
+            <li class="reveal"><span class="pi" data-ico="lock" data-size="18"></span><div><b>Your data stays yours</b><span>Your tracker, profile and solutions live in your browser under your account &mdash; not in a shared database. Export or delete them any time.</span></div></li>
+            <li class="reveal" style="--d:.06s"><span class="pi" data-ico="mail" data-size="18"></span><div><b>Gmail is read-only and narrow</b><span>Nexus searches for job-related mail and reads only the sender, subject, date and a short snippet. The access token is never saved.</span></div></li>
+            <li class="reveal" style="--d:.12s"><span class="pi" data-ico="file" data-size="18"></span><div><b>Your resume goes nowhere by surprise</b><span>Resume text is sent to the AI provider only when you press Parse, and nothing is applied to your profile until you confirm it.</span></div></li>
+            <li class="reveal" style="--d:.18s"><span class="pi" data-ico="shield" data-size="18"></span><div><b>No auto-apply, no job-site passwords</b><span>Nexus never submits applications for you and never asks for your logins on other sites.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-title" style="padding-top:0">
+      <div class="s-wrap">
+        <div class="s-head center">
+          <div class="eyebrow reveal">Questions</div>
+          <h2 class="s-title reveal" id="faq-title" style="--d:.06s">Good things to <em>ask</em>.</h2>
+        </div>
+        <div class="faq reveal">
+          <details><summary>Does Nexus OS apply to jobs for me?<span class="chev" data-ico="chevron" data-size="18"></span></summary>
+            <div class="ans">No. Apply opens the employer's own application page, where you upload your resume and answer their questions. Nexus records the application afterwards &mdash; it never submits anything on your behalf.</div></details>
+          <details><summary>How does an application reach the tracker on its own?<span class="chev" data-ico="chevron" data-size="18"></span></summary>
+            <div class="ans">Two ways. When you return from an employer's page, Nexus asks whether you applied and logs it in one tap. And if you connect Gmail, the confirmation email each employer sends is matched to the role automatically, with the date.</div></details>
+          <details><summary>Which email providers are supported?<span class="chev" data-ico="chevron" data-size="18"></span></summary>
+            <div class="ans">Gmail, through Google's read-only access. Nexus looks for job-related messages only. You can disconnect at any time from Settings.</div></details>
+          <details><summary>Do I need my own AI key?<span class="chev" data-ico="chevron" data-size="18"></span></summary>
+            <div class="ans">No. The AI features run through a shared service with fair-use limits. If you prefer, you can plug in your own free Groq key in Settings instead.</div></details>
+          <details><summary>Where is my data stored?<span class="chev" data-ico="chevron" data-size="18"></span></summary>
+            <div class="ans">In your browser, namespaced to your account. There is a one-click JSON export and a reset in Settings. Sign-in itself is handled by Firebase Authentication.</div></details>
+          <details><summary>Is it free?<span class="chev" data-ico="chevron" data-size="18"></span></summary>
+            <div class="ans">Nexus OS is free while it is in early access.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="s-wrap">
+        <div class="cta reveal">
+          <div class="eyebrow">Ready</div>
+          <h2 class="s-title">Stop juggling tabs.<br><em>Start</em> tracking.</h2>
+          <p class="s-sub" style="margin:0 auto">Create an account, drop in your resume, and see roles that fit in minutes.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="auth.html?mode=signup">Get started free <span data-ico="arrow-right" data-size="14"></span></a>
+            <a class="btn btn-lg" href="auth.html">I have an account</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="s-foot">
+    <div class="s-wrap in">
+      <div><span class="mk">◇</span>nexus os</div>
+      <div class="mid">Built for engineers grinding toward their next offer.<br><a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy</a></div>
+      <div class="r">© 2026 · Nexus OS</div>
+    </div>
+  </footer>
+</div>
+
+<script src="firebase-config.js"></script>
+<script src="icons.js"></script>
+<script src="sri.js"></script>
+<script src="auth-core.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

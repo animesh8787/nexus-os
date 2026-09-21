@@ -1,0 +1,8 @@
+agent-log.txt
+node_modules/
+.wrangler/
+worker/.dev.vars
+e2e/test-results/
+e2e/playwright-report/
+e2e/npm-install.log
+public/

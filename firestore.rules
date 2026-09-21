@@ -1,0 +1,62 @@
+rules_version = '2';
+
+// Nexus OS - Firestore security rules.
+//
+// Everything lives under users/{uid}/... and only that user can touch it:
+//   users/{uid}/state/{core|feed|gmail|resume}     users/{uid}/apps/{id}     users/{uid}/solves/{id}
+// Every record is exactly { u: number, v: 1, json: string } - the client stores each
+// document as one JSON string (see sync-engine.js), so these rules can validate the
+// whole shape and cap the size instead of trusting the client.
+//
+// Writing requires a VERIFIED email (so throwaway accounts can't use the database as
+// free storage). Reading and deleting do not, so anyone can always fetch or erase
+// their own data, including the "delete my account" flow.
+//
+// Deploy:  firebase deploy --only firestore:rules      (or paste into Firebase console
+//          -> Firestore Database -> Rules -> Publish)
+//
+// NOTE: these rules have not been run against the Firestore emulator in this repo.
+// After publishing, use the console's Rules Playground and try: an unauthenticated read
+// (must be denied), a read of another user's path (denied), your own read/write (allowed).
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() { return request.auth != null; }
+    function isOwner(uid) { return signedIn() && request.auth.uid == uid; }
+    function verified() { return request.auth.token.email_verified == true; }
+
+    function validRecord() {
+      let d = request.resource.data;
+      return d.keys().hasOnly(['u', 'v', 'json'])
+          && d.u is number
+          && d.v == 1
+          && d.json is string
+          && d.json.size() < 1000000;
+    }
+
+    match /users/{uid}/state/{doc} {
+      allow read: if isOwner(uid);
+      allow create, update: if isOwner(uid) && verified() && validRecord()
+                            && doc in ['core', 'feed', 'gmail', 'resume'];
+      allow delete: if isOwner(uid);
+    }
+
+    match /users/{uid}/apps/{id} {
+      allow read: if isOwner(uid);
+      allow create, update: if isOwner(uid) && verified() && validRecord() && id.size() < 64;
+      allow delete: if isOwner(uid);
+    }
+
+    match /users/{uid}/solves/{id} {
+      allow read: if isOwner(uid);
+      allow create, update: if isOwner(uid) && verified() && validRecord() && id.size() < 64;
+      allow delete: if isOwner(uid);
+    }
+
+    // everything else is closed
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

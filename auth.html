@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://cdnjs.cloudflare.com https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https: http://localhost:* http://127.0.0.1:*; frame-src https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in — Nexus OS</title>
+<meta name="description" content="Sign in or create your Nexus OS account.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f46e5'/%3E%3Cpath d='M16 6l8 10-8 10-8-10z' fill='none' stroke='white' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=IBM+Plex+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="site.css">
+<script src="theme-boot.js"></script>
+</head>
+<body class="grain">
+<div class="ambient-top" aria-hidden="true"></div>
+<div class="ambient-bottom" aria-hidden="true"></div>
+<div class="scan" aria-hidden="true"></div>
+
+<div class="site">
+  <div class="auth-shell">
+
+    <aside class="auth-brand" aria-hidden="true">
+      <a class="s-logo" href="index.html"><span class="mk">◇</span><span>Nexus <em>OS</em></span></a>
+      <div>
+        <div class="eyebrow">Your portal</div>
+        <div class="auth-quote">The whole search, <em>one place.</em></div>
+        <ul class="auth-points">
+          <li><span class="pi" data-ico="search" data-size="18"></span><span>A job feed ranked against your own resume &mdash; edit any skill and it follows.</span></li>
+          <li><span class="pi" data-ico="columns" data-size="18"></span><span>A pipeline that records when you applied and every reply since.</span></li>
+          <li><span class="pi" data-ico="sparkles" data-size="18"></span><span>A coach that reads your real numbers, not generic tips.</span></li>
+        </ul>
+      </div>
+      <div class="auth-foot">Read-only inbox access &nbsp;·&nbsp; No auto-apply</div>
+    </aside>
+
+    <section class="auth-panel" aria-label="Authentication">
+      <div class="auth-top">
+        <a class="back-link" href="index.html"><span data-ico="arrow-left" data-size="13"></span> Back to home</a>
+        <button class="theme-btn" data-theme-toggle type="button"></button>
+      </div>
+
+      <div class="auth-card">
+        <!-- shown when Firebase config is still empty -->
+        <div id="setupNote" class="setup-note" hidden>
+          <b>Firebase isn't connected yet</b>
+          Add your Firebase web config to <code>firebase-config.js</code> to turn on sign-in. Until then you can use the portal in local mode &mdash; everything works, and your data stays in this browser.
+          <div><button class="btn btn-primary" id="localBtn" type="button">Continue in local mode <span data-ico="arrow-right" data-size="13"></span></button></div>
+        </div>
+
+        <div id="formArea">
+          <div class="eyebrow" id="modeEyebrow">Authentication</div>
+          <h1 id="modeTitle">Welcome back.</h1>
+          <p class="lead" id="modeLead">Sign in to open your portal.</p>
+
+          <div class="seg" id="seg" role="tablist" aria-label="Sign in or create account">
+            <button type="button" role="tab" data-mode="signin" class="on" aria-selected="true">Sign in</button>
+            <button type="button" role="tab" data-mode="signup" aria-selected="false">Create account</button>
+          </div>
+
+          <div class="auth-err" id="err" role="alert"></div>
+          <div class="auth-ok" id="ok" role="status"></div>
+
+          <form id="form" novalidate>
+            <div class="fld" id="nameFld" hidden>
+              <label for="name">Name</label>
+              <div class="in"><input id="name" type="text" autocomplete="name" placeholder="Your name"></div>
+            </div>
+            <div class="fld">
+              <label for="email">Email</label>
+              <div class="in"><input id="email" type="email" autocomplete="email" placeholder="you@email.com" required></div>
+            </div>
+            <div class="fld" id="pwFld">
+              <label for="pw">Password</label>
+              <div class="in has-eye">
+                <input id="pw" type="password" autocomplete="current-password" placeholder="••••••••" required>
+                <button class="eye" id="eye" type="button" aria-label="Show password" aria-pressed="false" data-ico="eye" data-size="16"></button>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-block" id="submit" type="submit">Sign in</button>
+          </form>
+
+          <div id="altArea">
+            <div class="or">or</div>
+            <button class="btn btn-block" id="googleBtn" type="button">
+              <svg width="16" height="16" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/><path fill="#FBBC05" d="M10.5 28.7A14.5 14.5 0 0 1 9.5 24c0-1.6.3-3.2.8-4.7l-7.9-6.1A24 24 0 0 0 0 24c0 3.9.9 7.5 2.6 10.8l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.9 2.3-8.4 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg>
+              Continue with Google
+            </button>
+          </div>
+
+          <div class="auth-links" id="links">
+            <button type="button" id="forgotBtn">Forgot password?</button>
+            <span class="acc" id="switchHint"></span>
+          </div>
+        </div>
+
+        <p class="fine">By continuing you agree to the <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>. We never apply to jobs for you and never ask for your job-site passwords.</p>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script src="firebase-config.js"></script>
+<script src="icons.js"></script>
+<script src="sri.js"></script>
+<script src="auth-core.js"></script>
+<script src="site.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<style>
+  :root{color-scheme:dark}
+  body{width:330px;margin:0;padding:16px;background:#0b0b10;color:#e7e7ee;
+       font:13.5px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+  h1{font-size:14px;margin:0 0 2px;letter-spacing:.2px}
+  .sub{color:#8b8ba3;font-size:11.5px;margin:0 0 14px}
+  .stat{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #1e1e2c}
+  .stat span:first-child{color:#8b8ba3;font-size:12px}
+  .stat b{font-variant-numeric:tabular-nums}
+  .pill{display:inline-block;padding:2px 8px;border-radius:99px;font-size:10.5px;font-weight:700}
+  .on{background:#064e3b;color:#34d399}.off{background:#3f1d1d;color:#f87171}
+  .btns{display:flex;gap:7px;margin:14px 0 10px}
+  button{flex:1;background:#4f46e5;border:0;color:#fff;font-weight:650;font-size:12.5px;
+         padding:9px;border-radius:7px;cursor:pointer}
+  button.ghost{background:#1c1c28;color:#c3c3d4;border:1px solid #2f2f45}
+  .log{margin-top:6px;max-height:170px;overflow:auto}
+  .row{display:flex;gap:7px;align-items:baseline;padding:5px 0;font-size:12px;border-top:1px solid #17172250}
+  .row .t{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .row .k{font-size:10.5px}
+  .good{color:#34d399}.bad{color:#f87171}
+  a{color:#8b83ff;text-decoration:none}
+  .empty{color:#6f6f88;font-size:12px;padding:10px 0;text-align:center}
+</style></head><body>
+
+<h1>Nexus OS &rarr; GitHub</h1>
+<p class="sub" id="repoLine">not configured</p>
+
+<div class="stat"><span>Auto-push</span><b id="autoState">-</b></div>
+<div class="stat"><span>Problems tracked</span><b id="count">0</b></div>
+<div class="stat"><span>Pushed</span><b id="pushed">0</b></div>
+
+<div class="btns">
+  <button id="push">Push current solution</button>
+  <button id="opts" class="ghost">Options</button>
+</div>
+
+<div class="log" id="log"></div>
+
+<script src="popup.js"></script>
+</body></html>

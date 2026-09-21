@@ -1,0 +1,12 @@
+{
+  "name": "nexus-os-ai",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Groq proxy for Nexus OS: verifies Firebase ID tokens, rate-limits, owns the prompts.",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test test/"
+  }
+}

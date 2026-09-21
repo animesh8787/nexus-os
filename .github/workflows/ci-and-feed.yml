@@ -1,0 +1,95 @@
+name: tests + job feed
+
+# This workflow no longer publishes anything. The site is deployed by Vercel, which builds it
+# from this repo (see vercel.json and scripts/build-site.mjs). What runs here:
+#   test  - every suite, on every push and pull request. A red run means: do not trust that commit.
+#   feed  - once a day (and on demand) refreshes jobs-feed.json and commits it; that commit makes
+#           Vercel redeploy, so the published feed stays fresh. The runner has no CORS restrictions,
+#           so it reaches the boards a browser can't (Himalayas, Working Nomads, Jobspresso, NoDesk
+#           and the company boards).
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  schedule:
+    - cron: "30 2 * * *"   # 02:30 UTC = 08:00 IST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  # Covers the merge logic, the AI proxy's auth / abuse checks, the email classifier, and real-browser
+  # flows (sign-in gate, sync between two devices, account deletion, Gmail sync, keyboard access,
+  # CSP, script integrity).
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Unit tests
+        run: |
+          node --test tests/*.test.js
+          cd worker && node --test test/*.test.js
+
+      # Every file the pages refer to must be in the published set (scripts/build-site.mjs),
+      # otherwise the deployed site 404s on it even though it works locally.
+      - name: Site build check
+        run: node scripts/build-site.mjs --check
+
+      # The pinned Subresource-Integrity hashes in sri.js must still match the CDN files.
+      - name: Third-party script hashes
+        run: python3 scripts/sri.py --check
+
+      - name: Install browser tests
+        working-directory: e2e
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Browser tests
+        working-directory: e2e
+        run: npx playwright test
+        env:
+          CI: "true"
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: |
+            e2e/playwright-report
+            e2e/test-results
+          retention-days: 7
+
+  feed:
+    # Never on a plain push or PR: editing app.js shouldn't burn 40+ board requests.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # commit the refreshed jobs-feed.json
+    concurrency:
+      group: feed
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      # feed-agent.mjs imports only node: builtins, so there is nothing to install
+
+      - name: Refresh job feed
+        run: node feed-agent.mjs
+
+      - name: Commit refreshed feed
+        run: |
+          git config user.name  "feed-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add jobs-feed.json
+          git diff --staged --quiet || git commit -m "feed: $(date -u +%F)"
+          git push
