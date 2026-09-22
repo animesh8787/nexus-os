@@ -29,6 +29,7 @@ Open <http://localhost:8000>. With `firebase-config.js` still empty the app runs
 | `privacy.html`, `terms.html`, `legal.js` | Privacy Policy and Terms (operator + contact come from config) |
 | `theme-boot.js`, `boot.js` | start-up scripts (external files so the pages can enforce a strict CSP) |
 | `vercel.json`, `.vercelignore`, `scripts/build-site.mjs` | Vercel deployment: what gets published, response headers, and the missing-file check |
+| `404.html` | on-brand not-found page; Vercel serves it automatically for any unmatched path |
 | `firebase-config.js` | **your deployment settings** — fill this in |
 | `firestore.rules`, `firebase.json` | Firestore security rules |
 | `worker/` | Cloudflare Worker: the Groq proxy |

@@ -17,7 +17,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 export const FILES = [
-  "index.html", "auth.html", "app.html", "privacy.html", "terms.html",
+  "index.html", "auth.html", "app.html", "privacy.html", "terms.html", "404.html",
   "styles.css", "site.css", "portal.css",
   "theme-boot.js", "boot.js", "legal.js", "icons.js", "sri.js", "a11y.js", "prompts.js",
   "firebase-config.js", "auth-core.js", "auth.js", "site.js",
