@@ -1020,13 +1020,15 @@ function coachData(kind) {
   return { ctx: coachContext() };
 }
 const aiReady = () => (window.NXAI ? NXAI.available() : !!S.settings.groqKey);
+/* "kind" is Coach's own UI/history key; only "job" doesn't match its prompts.js action name. */
+const PROMPT_ACTION = { job: "job_advice" };
 async function runCoach(kind) {
   const spec = COACH[kind];
   if (!spec) return;
   const box = el("coachOut");
   if (box) box.innerHTML = `<div class="faint"><span class="spin"></span> thinking…</div>`;
   try {
-    const text = await NXAI.run(kind, coachData(kind));
+    const text = await NXAI.run(PROMPT_ACTION[kind] || kind, coachData(kind));
     S.ai.history.unshift({ kind, date: new Date().toISOString(), text });
     S.ai.history = S.ai.history.slice(0, 30);
     save();

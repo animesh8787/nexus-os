@@ -93,6 +93,24 @@ test.describe("portal in local mode", () => {
     await expect(page.locator("#content .auth-err")).toContainText(/helper library/);
     expect(await page.evaluate(() => window.pdfjsLib && window.pdfjsLib.tampered)).toBeFalsy();
   });
+
+  test("every AI Coach button sends an action prompts.js actually knows - regression for 'job' vs 'job_advice'", async ({ context, page }) => {
+    await setup(context);
+    const calls = [];
+    await context.route(/api\.groq\.com\/openai\/v1\/chat\/completions/, (r) => {
+      calls.push(r.request().postDataJSON());
+      return r.fulfill({ status: 200, contentType: "application/json", body: JSON.stringify({ choices: [{ message: { content: "Looks good." } }] }) });
+    });
+    await enterLocalMode(page);
+    await page.evaluate(() => { window.NEXUS.S.settings.groqKey = "gsk_test"; window.NEXUS.S.settings.groqModel = "llama-3.3-70b-versatile"; window.NEXUS.save(); });
+    await page.evaluate(() => window.NEXUS.go("coach"));
+    for (const label of ["Daily briefing", "What to solve next", "Weekly retro", "Job search advice"]) {
+      await page.getByRole("button", { name: label }).click();
+      await expect(page.locator("#content")).not.toContainText("Unknown AI action", { timeout: 8000 });
+      await expect(page.locator("#content")).toContainText("Looks good.");
+    }
+    expect(calls.length).toBe(4);   // every click reached Groq - none was rejected client-side before the request
+  });
 });
 
 /* ---------------- tracker ---------------- */
