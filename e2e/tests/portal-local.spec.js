@@ -326,26 +326,70 @@ test.describe("job tracker", () => {
     expect(await page.evaluate(() => document.activeElement && document.activeElement.dataset && document.activeElement.dataset.s)).toBe("interview");
   });
 
-  test("dragging a card to another column moves the application", async ({ context, page }) => {
+  test("stage accordion: empty stages start collapsed, stages with cards start open, and the header toggles them", async ({ context, page }) => {
     await setup(context);
     await enterLocalMode(page);
     await page.evaluate(() => {
       window.NEXUS.S.jobs = [{ id: "j1", co: "Stripe", role: "Backend Engineer", dt: "2026-09-10", pipeline: "applied", events: [{ d: "2026-09-10", t: "applied", src: "manual" }] }];
       window.NEXUS.go("jobs");
     });
+    await expect(page.locator(".col-applied")).toHaveClass(/open/);
+    await expect(page.locator(".col-applied .col-head")).toHaveAttribute("aria-expanded", "true");
+    await expect(page.locator(".col-applied .tcard")).toBeVisible();
+    await expect(page.locator(".col-saved")).not.toHaveClass(/open/);
+    await expect(page.locator(".col-saved .col-head")).toHaveAttribute("aria-expanded", "false");
+    await expect(page.locator(".col-saved .col-body")).toBeHidden();
+
+    await page.locator(".col-saved .col-head").click();
+    await expect(page.locator(".col-saved")).toHaveClass(/open/);
+    await expect(page.locator(".col-saved .col-body")).toBeVisible();
+    await expect(page.locator(".col-saved .col-empty")).toBeVisible();
+
+    await page.locator(".col-applied .col-head").click();
+    await expect(page.locator(".col-applied")).not.toHaveClass(/open/);
+    await expect(page.locator(".col-applied .tcard")).toBeHidden();
+  });
+
+  test("dragging a card only reorders it within its own open stage - it never changes stage", async ({ context, page }) => {
+    await setup(context);
+    await enterLocalMode(page);
+    await page.evaluate(() => {
+      window.NEXUS.S.jobs = [
+        { id: "j1", co: "Stripe", role: "Backend Engineer", dt: "2026-09-12", pipeline: "applied", events: [{ d: "2026-09-12", t: "applied", src: "manual" }] },
+        { id: "j2", co: "Acme", role: "SWE", dt: "2026-09-11", pipeline: "applied", events: [{ d: "2026-09-11", t: "applied", src: "manual" }] },
+      ];
+      window.NEXUS.go("jobs");
+    });
+    await expect(page.locator(".col-applied .tcard")).toHaveCount(2);
     /* Synthesised HTML5 drag events can be dropped when the machine is busy, so drag the way a pointer
        does (small steps) and retry the gesture a bounded number of times. A real bug still fails. */
     await expect(async () => {
-      const src = await page.locator(".col-applied .tcard").boundingBox();
-      if (src) {
-        const dst = await page.locator(".col-interview .col-body").boundingBox();
+      const cards = page.locator(".col-applied .tcard");
+      const src = await cards.nth(0).boundingBox(), dst = await cards.nth(1).boundingBox();
+      if (src && dst) {
         await page.mouse.move(src.x + src.width / 2, src.y + src.height / 2);
         await page.mouse.down();
-        await page.mouse.move(dst.x + dst.width / 2, dst.y + 20, { steps: 15 });
+        await page.mouse.move(dst.x + dst.width / 2, dst.y + dst.height - 4, { steps: 15 });
         await page.mouse.up();
       }
-      await expect(page.locator(".col-interview .tcard")).toContainText("Stripe", { timeout: 2500 });
+      await expect(cards.first()).toContainText("Acme", { timeout: 2500 });
     }).toPass({ timeout: 20_000 });
-    expect(await page.evaluate(() => window.NEXUS.S.jobs[0].pipeline)).toBe("interview");
+    // still both "applied" - only their order in the same stage changed
+    const jobs = await page.evaluate(() => window.NEXUS.S.jobs.map((j) => ({ id: j.id, pipeline: j.pipeline })));
+    expect(jobs.map((j) => j.pipeline)).toEqual(["applied", "applied"]);
+    expect(jobs.map((j) => j.id)).toEqual(["j2", "j1"]);
+    await expect(page.locator(".col-applied .tcard")).toHaveCount(2);
+  });
+
+  test("a card in a collapsed stage cannot be dragged", async ({ context, page }) => {
+    await setup(context);
+    await enterLocalMode(page);
+    await page.evaluate(() => {
+      window.NEXUS.S.jobs = [{ id: "j1", co: "Stripe", role: "Backend Engineer", dt: "2026-09-10", pipeline: "applied", events: [{ d: "2026-09-10", t: "applied", src: "manual" }] }];
+      window.NEXUS.go("jobs");
+    });
+    await page.locator(".col-applied .col-head").click();                     // collapse it
+    await expect(page.locator(".col-applied .tcard")).toBeHidden();
+    expect(await page.evaluate(() => window.NEXUS.S.jobs[0].pipeline)).toBe("applied");
   });
 });

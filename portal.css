@@ -49,18 +49,30 @@
 .gb-ico{color:var(--accent);flex-shrink:0;display:inline-flex}
 .gb-text{flex:1;min-width:220px}
 
-.board{display:grid;grid-template-columns:repeat(6,minmax(184px,1fr));gap:10px;overflow-x:auto;padding-bottom:10px;align-items:start;-webkit-overflow-scrolling:touch}
-.col{border:1px solid var(--border);border-top:2px solid var(--sc,var(--border-strong));border-radius:var(--radius-sm);
-  background:color-mix(in srgb,var(--surface-2) 55%,transparent);min-height:150px;transition:background .15s,border-color .15s}
-.col.over{background:var(--accent-weak);border-color:var(--accent)}
-.col-head{display:flex;justify-content:space-between;align-items:center;padding:10px 12px 8px;font-family:var(--mono);font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
-.col-n{font-variant-numeric:tabular-nums;color:var(--faint)}
-.col-body{padding:0 8px 8px;display:flex;flex-direction:column;gap:7px}
-.col-empty{padding:18px 8px;text-align:center;font-size:11.5px;color:var(--faint);border:1px dashed var(--border);border-radius:var(--radius-sm)}
+/* Stages stack as a vertical accordion - one row per stage that pushes the rows below it
+   down when opened, rather than six mostly-empty side-by-side columns. */
+.board{display:flex;flex-direction:column;gap:8px}
+.col{border:1px solid var(--border);border-radius:var(--radius-sm);
+  background:color-mix(in srgb,var(--surface-2) 55%,transparent);overflow:hidden;transition:border-color .15s}
+.col-head{width:100%;display:flex;align-items:center;gap:10px;padding:12px 14px;background:none;border:0;
+  border-left:3px solid var(--sc,var(--border-strong));cursor:pointer;font:inherit;text-align:left;color:var(--muted)}
+.col-head:hover{color:var(--text)}
+.col-head:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.col-chev{display:inline-flex;flex-shrink:0;color:var(--faint);transition:transform .15s}
+.col.open .col-chev{transform:rotate(180deg)}
+.col-label{flex:1;font-family:var(--mono);font-size:9.5px;letter-spacing:.24em;text-transform:uppercase}
+.col-n{font-variant-numeric:tabular-nums;color:var(--faint);font-family:var(--mono);font-size:11px}
+/* display is set only on .open so the [hidden] attribute (equal specificity, but an author
+   rule always beats the UA default) isn't overridden when a stage is collapsed. */
+.col-body{padding:0 10px 10px;flex-direction:column;gap:7px}
+.col.open .col-body{display:flex}
+.col-empty{padding:14px 8px;text-align:center;font-size:11.5px;color:var(--faint)}
 .tcard{position:relative;padding:10px 11px;background:var(--surface);border:1px solid var(--border);border-left:2px solid var(--sc,var(--border-strong));
   border-radius:var(--radius-sm);cursor:pointer;transition:border-color .15s,box-shadow .15s,transform .15s}
 .tcard:hover{border-color:var(--border-strong);border-left-color:var(--sc);box-shadow:var(--shadow)}
 .tcard.dragging{opacity:.4}
+.tcard.drag-before{box-shadow:inset 0 2px 0 var(--accent)}
+.tcard.drag-after{box-shadow:inset 0 -2px 0 var(--accent)}
 .tc-role{font-family:var(--display);font-size:14px;line-height:1.28;font-weight:400;overflow-wrap:anywhere}
 .tc-role.unk{color:var(--muted);font-style:italic}
 .tc-co{font-size:12px;color:var(--muted);margin-top:2px}

@@ -29,6 +29,9 @@
   var STAGE_ORDER = ["saved", "applied", "assessment", "interview", "offer", "rejected", "withdrawn"];
 
   var openId = null, showForm = false, adviceHtml = "", adviceBusy = false, gmailMsg = "", showReview = false, reviewLimit = 15;
+  /* Which stage accordions are expanded. Unset until the first render of that stage, which
+     defaults it to "open" only if it already has cards - after that the user's own choice sticks. */
+  var openStage = {};
 
   /* ---------- helpers ---------- */
   var jobs = function () { return S().jobs; };
@@ -293,8 +296,15 @@
     var list = jobs();
     return '<div class="board">' + COLS.map(function (c) {
       var items = list.filter(function (j) { return c.stages.indexOf(j.pipeline) >= 0; });
-      return '<div class="col col-' + c.k + '" data-col="' + c.k + '"><div class="col-head"><span>' + c.label + '</span><span class="col-n">' + items.length + '</span></div>' +
-        '<div class="col-body">' + (items.length ? items.map(card).join("") : '<div class="col-empty">' + (c.k === "saved" ? "Jobs you save from the feed" : "Drag a card here") + "</div>") + "</div></div>";
+      if (openStage[c.k] == null) openStage[c.k] = items.length > 0;
+      var open = !!openStage[c.k], bodyId = "colBody-" + c.k;
+      return '<div class="col col-' + c.k + (open ? " open" : "") + '" data-col="' + c.k + '">' +
+        '<button type="button" class="col-head" data-action="trk-col-toggle" data-col="' + c.k + '" aria-expanded="' + open + '" aria-controls="' + bodyId + '">' +
+          '<span class="col-chev">' + icon("chevron", 13) + '</span><span class="col-label">' + c.label + '</span><span class="col-n">' + items.length + '</span>' +
+        '</button>' +
+        '<div class="col-body" id="' + bodyId + '" role="region" aria-label="' + esc(c.label) + '"' + (open ? "" : " hidden") + '>' +
+          (items.length ? items.map(card).join("") : '<div class="col-empty">' + (c.k === "saved" ? "Jobs you save from the feed land here." : "Nothing at this stage yet.") + "</div>") +
+        "</div></div>";
     }).join("") + "</div>";
   }
 
@@ -531,33 +541,52 @@
   };
   A["trk-advice-hide"] = function () { adviceHtml = ""; paint(); };
 
-  /* drag a card to another column */
+  A["trk-col-toggle"] = function (D) { openStage[D.col] = !openStage[D.col]; paint(); };
+
+  /* Drag a card to reorder it within its own stage - the stage must already be open (see
+     trk-col-toggle). Changing STAGE happens through the drawer's Stage buttons or an
+     automatic Gmail match, never by dragging a card into a different section. */
+  function reorder(id, targetId, before) {
+    var arr = jobs(), from = arr.findIndex(function (j) { return j.id === id; });
+    if (from < 0) return;
+    var item = arr.splice(from, 1)[0];
+    var to = arr.findIndex(function (j) { return j.id === targetId; });
+    arr.splice(to < 0 ? arr.length : (before ? to : to + 1), 0, item);
+  }
+  function clearDragMarks() { document.querySelectorAll(".tcard.drag-before,.tcard.drag-after").forEach(function (n) { n.classList.remove("drag-before", "drag-after"); }); }
   var dragId = null;
   document.addEventListener("dragstart", function (e) {
     var c = e.target.closest && e.target.closest(".tcard");
-    if (!c) return;
+    var body = c && c.closest(".col-body");
+    if (!c || !body || body.hidden) { if (c) e.preventDefault(); return; }
     dragId = c.dataset.id; c.classList.add("dragging");
     try { e.dataTransfer.setData("text/plain", dragId); e.dataTransfer.effectAllowed = "move"; } catch (x) {}
   });
   document.addEventListener("dragend", function (e) {
     var c = e.target.closest && e.target.closest(".tcard"); if (c) c.classList.remove("dragging");
-    document.querySelectorAll(".col.over").forEach(function (n) { n.classList.remove("over"); });
+    clearDragMarks(); dragId = null;
   });
   document.addEventListener("dragover", function (e) {
-    var col = e.target.closest && e.target.closest(".col");
-    if (col && dragId) { e.preventDefault(); col.classList.add("over"); }
-  });
-  document.addEventListener("dragleave", function (e) {
-    var col = e.target.closest && e.target.closest(".col"); if (col && !col.contains(e.relatedTarget)) col.classList.remove("over");
+    if (!dragId) return;
+    var over = e.target.closest && e.target.closest(".tcard");
+    if (!over || over.dataset.id === dragId) return;
+    var dragEl = document.querySelector('.tcard[data-id="' + dragId + '"]');
+    if (!dragEl || dragEl.parentElement !== over.parentElement) return;      // only within the same open stage
+    e.preventDefault();
+    var before = e.clientY < over.getBoundingClientRect().top + over.getBoundingClientRect().height / 2;
+    if (!over.classList.contains(before ? "drag-before" : "drag-after")) clearDragMarks();
+    over.classList.toggle("drag-before", before);
+    over.classList.toggle("drag-after", !before);
   });
   document.addEventListener("drop", function (e) {
-    var col = e.target.closest && e.target.closest(".col");
-    if (!col || !dragId) return;
+    if (!dragId) return;
+    var over = e.target.closest && e.target.closest(".tcard");
+    var dragEl = document.querySelector('.tcard[data-id="' + dragId + '"]');
+    var id = dragId; dragId = null;
+    if (!over || !dragEl || over === dragEl || dragEl.parentElement !== over.parentElement) { clearDragMarks(); return; }
     e.preventDefault();
-    var j = byId(dragId); dragId = null;
-    var to = col.dataset.col === "closed" ? "rejected" : col.dataset.col;
-    if (j && (COLS.filter(function (c) { return c.k === col.dataset.col; })[0].stages.indexOf(j.pipeline) < 0)) { T.setPipeline(j, to, { src: "manual" }); touch(); }
-    else paint();
+    reorder(id, over.dataset.id, over.classList.contains("drag-before"));
+    clearDragMarks(); touch();
   });
 
   /* ================= "Did you apply?" ================= */
