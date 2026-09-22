@@ -28,7 +28,7 @@ window.NEXUS_CONFIG = {
     storageBucket: "nexus-os-87.firebasestorage.app"
   },
   api: "https://nexus-os-ai.animesh8787.workers.dev",
-  googleClientId: "",
+  googleClientId: "900786677594-o27ogrpis056cupr1ij1qccmm5n82hd6.apps.googleusercontent.com",
   operatorName: "Animesh",
   contactEmail: "animeshonweb@gmail.com",
   sync: true
