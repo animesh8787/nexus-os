@@ -27,9 +27,9 @@ window.NEXUS_CONFIG = {
     messagingSenderId: "900786677594",
     storageBucket: "nexus-os-87.firebasestorage.app"
   },
-  api: "",
+  api: "https://nexus-os-ai.animesh8787.workers.dev",
   googleClientId: "",
-  operatorName: "",
-  contactEmail: "",
+  operatorName: "Animesh",
+  contactEmail: "animeshonweb@gmail.com",
   sync: true
 };
