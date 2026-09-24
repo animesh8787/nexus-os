@@ -1,16 +1,16 @@
 {
- "generated": "2026-09-22T07:54:47.287Z",
+ "generated": "2026-09-24T07:46:25.456Z",
  "sources": [
   {
    "name": "Himalayas",
    "ok": true,
-   "count": 120,
+   "count": 113,
    "err": null
   },
   {
    "name": "Working Nomads",
    "ok": true,
-   "count": 56,
+   "count": 58,
    "err": null
   },
   {
@@ -28,13 +28,13 @@
   {
    "name": "Databricks",
    "ok": true,
-   "count": 885,
+   "count": 883,
    "err": null
   },
   {
    "name": "MongoDB",
    "ok": true,
-   "count": 401,
+   "count": 398,
    "err": null
   },
   {
@@ -46,73 +46,73 @@
   {
    "name": "Zscaler",
    "ok": true,
-   "count": 371,
+   "count": 372,
    "err": null
   },
   {
    "name": "Stripe",
    "ok": true,
-   "count": 672,
+   "count": 694,
    "err": null
   },
   {
    "name": "GitLab",
    "ok": true,
-   "count": 204,
+   "count": 208,
    "err": null
   },
   {
    "name": "Rubrik",
    "ok": true,
-   "count": 133,
+   "count": 138,
    "err": null
   },
   {
    "name": "Squarepoint",
    "ok": true,
-   "count": 93,
+   "count": 89,
    "err": null
   },
   {
    "name": "Elastic",
    "ok": true,
-   "count": 364,
+   "count": 369,
    "err": null
   },
   {
    "name": "Razorpay",
    "ok": true,
-   "count": 22,
+   "count": 24,
    "err": null
   },
   {
    "name": "Coinbase",
    "ok": true,
-   "count": 218,
+   "count": 213,
    "err": null
   },
   {
    "name": "Twilio",
    "ok": true,
-   "count": 142,
+   "count": 139,
    "err": null
   },
   {
    "name": "Tower Research",
    "ok": true,
-   "count": 88,
+   "count": 90,
    "err": null
   },
   {
    "name": "IMC Trading",
    "ok": true,
-   "count": 171,
+   "count": 173,
    "err": null
   },
   {
    "name": "WorldQuant",
    "ok": true,
-   "count": 103,
+   "count": 104,
    "err": null
   },
   {
@@ -130,131 +130,131 @@
   {
    "name": "Anthropic",
    "ok": true,
-   "count": 619,
+   "count": 630,
    "err": null
   },
   {
    "name": "Airbnb",
    "ok": true,
-   "count": 157,
+   "count": 160,
    "err": null
   },
   {
    "name": "Cloudflare",
    "ok": true,
-   "count": 386,
+   "count": 382,
    "err": null
   },
   {
    "name": "Samsara",
    "ok": true,
-   "count": 266,
+   "count": 256,
    "err": null
   },
   {
    "name": "Jump Trading",
    "ok": true,
-   "count": 111,
+   "count": 113,
    "err": null
   },
   {
    "name": "Jane Street",
    "ok": true,
-   "count": 230,
+   "count": 227,
    "err": null
   },
   {
    "name": "Figma",
    "ok": true,
-   "count": 154,
+   "count": 159,
    "err": null
   },
   {
    "name": "Vercel",
    "ok": true,
-   "count": 86,
+   "count": 87,
    "err": null
   },
   {
    "name": "Scale AI",
    "ok": true,
-   "count": 222,
+   "count": 214,
    "err": null
   },
   {
    "name": "Pinterest",
    "ok": true,
-   "count": 159,
+   "count": 155,
    "err": null
   },
   {
    "name": "Robinhood",
    "ok": true,
-   "count": 161,
+   "count": 160,
    "err": null
   },
   {
    "name": "Affirm",
    "ok": true,
-   "count": 199,
+   "count": 193,
    "err": null
   },
   {
    "name": "Brex",
    "ok": true,
-   "count": 252,
+   "count": 256,
    "err": null
   },
   {
    "name": "Slice",
    "ok": true,
-   "count": 33,
+   "count": 27,
    "err": null
   },
   {
    "name": "Perplexity",
    "ok": true,
-   "count": 119,
+   "count": 121,
    "err": null
   },
   {
    "name": "Notion",
    "ok": true,
-   "count": 128,
+   "count": 129,
    "err": null
   },
   {
    "name": "Ramp",
    "ok": true,
-   "count": 151,
+   "count": 155,
    "err": null
   },
   {
    "name": "Confluent",
    "ok": true,
-   "count": 21,
+   "count": 20,
    "err": null
   },
   {
    "name": "Linear",
    "ok": true,
-   "count": 31,
+   "count": 30,
    "err": null
   },
   {
    "name": "Supabase",
    "ok": true,
-   "count": 56,
+   "count": 55,
    "err": null
   },
   {
    "name": "Navi",
    "ok": true,
-   "count": 9,
+   "count": 3,
    "err": null
   }
  ],
- "total": 779,
+ "total": 794,
  "jobs": [
   {
    "id": "gh:jumptrading-8052343",
@@ -297,64 +297,27 @@
    "score": 13
   },
   {
-   "id": "gh:mongodb-8111979",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3, AI Builder Experience ",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8111979",
-   "posted": 1789579732000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "software engineer"
-   ],
-   "score": 11
-  },
-  {
-   "id": "gh:mongodb-8127772",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3, AI Framework Integrations",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8127772",
-   "posted": 1789579732000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "software engineer"
-   ],
-   "score": 11
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/pavago/jobs/full-stack-ai-engineer-9332382",
+   "id": "himalayas:https://himalayas.app/companies/featherless-ai/jobs/machine-learning-engineer-ai-architecture-research",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Pavago",
-   "title": "Full-Stack AI Engineer",
-   "loc": "Argentina",
-   "url": "https://himalayas.app/companies/pavago/jobs/full-stack-ai-engineer-9332382",
-   "posted": 1790045927000,
+   "company": "Featherless AI",
+   "title": "Machine Learning Engineer — AI Architecture Research",
+   "loc": "Remote",
+   "url": "https://himalayas.app/companies/featherless-ai/jobs/machine-learning-engineer-ai-architecture-research",
+   "posted": 1790233200000,
    "tags": [
-    "Full-Stack-AI-Engineer",
-    "AI-Engineer",
-    "LLM-Integration-Engineer",
-    "Full-Stack-Engineer",
-    "Machine-Learning-Engineer"
+    "AI-ML-Research-Engineer",
+    "ML-AI-Research-Engineer",
+    "Machine-Learning-Architect",
+    "Machine-Learning-Research-Engineer",
+    "AI-ML-Engineer"
    ],
-   "desc": "Full-Stack AI Engineer (LLMs, AI Products & Full-Stack Development)Position Type: Full-Time, Remote Working Hours: U.",
+   "desc": "About the RoleWe’re looking for a Machine Learning Engineer focused on AI architecture research to help design, prototype, and validate next-generation model architectures.",
    "salary": "",
    "hits": [
     "machine learning",
     "ai",
-    "llm",
-    "full stack"
+    "research engineer"
    ],
    "score": 10
   },
@@ -625,6 +588,196 @@
    "score": 10
   },
   {
+   "id": "himalayas:https://himalayas.app/companies/quest-software/jobs/ai-software-engineer-identity-recovery-canada",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Quest Software",
+   "title": "AI Software Engineer - Identity Recovery (Canada)",
+   "loc": "Canada",
+   "url": "https://himalayas.app/companies/quest-software/jobs/ai-software-engineer-identity-recovery-canada",
+   "posted": 1790234441000,
+   "tags": [
+    "AI-Software-Engineering",
+    "Backend-Engineering",
+    "Cloud-Engineer",
+    "SaaS-Development",
+    "Software-Engineer"
+   ],
+   "desc": "OverviewQuest Software is looking for an experienced AI Software Engineer to help define and advance AI-first software development practices for a cloud-native SaaS product on the Microsoft Azure platform.",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "ab:ramp-a13ae586-f4cb-4385-8822-c42b9b54ed74",
+   "src": "ashby",
+   "srcLabel": "Ramp",
+   "company": "Ramp",
+   "title": "Software Engineer Internship, Frontend",
+   "loc": "New York, NY (HQ)",
+   "url": "https://jobs.ashbyhq.com/ramp/a13ae586-f4cb-4385-8822-c42b9b54ed74",
+   "posted": 1790210415975,
+   "tags": [
+    "Engineering",
+    "Intern"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "internship"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4975945101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Hardware Machine Learning PhD Research Internship",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4975945101",
+   "posted": 1790198574000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "internship"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:imc-4892687101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Quant Researcher - Digital Assets ",
+   "loc": "Zug, Switzerland",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4892687101",
+   "posted": 1790193670000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quant",
+    "graduate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:figma-6178851004",
+   "src": "greenhouse",
+   "srcLabel": "Figma",
+   "company": "Figma",
+   "title": "Data Engineer Intern (2027)",
+   "loc": "San Francisco, CA • New York, NY",
+   "url": "https://boards.greenhouse.io/figma/jobs/6178851004?gh_jid=6178851004",
+   "posted": 1790191827000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "data engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:scaleai-4736426005",
+   "src": "greenhouse",
+   "srcLabel": "Scale AI",
+   "company": "Scale AI",
+   "title": "Software Engineer, Public Sector - New Grad",
+   "loc": "San Francisco, CA",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4736426005",
+   "posted": 1790186135000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7813157003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Collections)",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7813157003",
+   "posted": 1790159239000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7813159003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Collections)",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7813159003",
+   "posted": 1790159239000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:anthropic-5425724008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Associate Applied AI, Rotational Program, London",
+   "loc": "London, UK",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5425724008",
+   "posted": 1790158433000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "associate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130883",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Intern",
+   "loc": "Singapore",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130883",
+   "posted": 1790104443000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
    "id": "gh:databricks-7011263002",
    "src": "greenhouse",
    "srcLabel": "Databricks",
@@ -823,24 +976,6 @@
    "score": 9
   },
   {
-   "id": "gh:towerresearchcapital-8212158",
-   "src": "greenhouse",
-   "srcLabel": "Tower Research",
-   "company": "Tower Research",
-   "title": "Software Engineer Intern (Summer 2027)",
-   "loc": "New York",
-   "url": "https://www.tower-research.com/open-positions/?gh_jid=8212158",
-   "posted": 1789678521000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "intern"
-   ],
-   "score": 9
-  },
-  {
    "id": "gh:vercel-5430088004",
    "src": "greenhouse",
    "srcLabel": "Vercel",
@@ -877,308 +1012,38 @@
    "score": 9
   },
   {
-   "id": "gh:pinterest-7697137",
+   "id": "gh:mongodb-8111979",
    "src": "greenhouse",
-   "srcLabel": "Pinterest",
-   "company": "Pinterest",
-   "title": "Machine Learning Engineer II, Visual AI",
-   "loc": "San Francisco, CA, US; Remote, US",
-   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7697137",
-   "posted": 1789584703000,
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3, AI Builder Experience ",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8111979",
+   "posted": 1789579732000,
    "tags": [],
    "desc": "",
    "salary": "",
    "hits": [
-    "machine learning",
-    "ai"
+    "ai",
+    "software engineer"
    ],
    "score": 9
   },
   {
-   "id": "gh:pinterest-4843547",
+   "id": "gh:mongodb-8127772",
    "src": "greenhouse",
-   "srcLabel": "Pinterest",
-   "company": "Pinterest",
-   "title": "Software Engineer II, Fullstack",
-   "loc": "San Francisco, CA, US; Remote, US",
-   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=4843547",
-   "posted": 1789584703000,
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3, AI Framework Integrations",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8127772",
+   "posted": 1789579732000,
    "tags": [],
    "desc": "",
    "salary": "",
    "hits": [
-    "software engineer",
-    "fullstack"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4751729101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Graduate Quantitative Trader",
-   "loc": "Chicago, United States",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4751729101",
-   "posted": 1789569970000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "quantitative",
-    "graduate"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:coinbase-8168315",
-   "src": "greenhouse",
-   "srcLabel": "Coinbase",
-   "company": "Coinbase",
-   "title": "Software Engineer Intern",
-   "loc": "Hybrid - San Francisco, CA",
-   "url": "https://www.coinbase.com/careers/positions/8168315?gh_jid=8168315",
-   "posted": 1789517928000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "intern"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4914883101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": " Graduate Machine Learning Researcher - London",
-   "loc": "London, United Kingdom",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4914883101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning",
-    "graduate"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4892687101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Graduate Quant Researcher - Digital Assets ",
-   "loc": "Zug, Switzerland",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4892687101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "quant",
-    "graduate"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4564480101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Graduate Software Engineer (2026)",
-   "loc": "Amsterdam, Netherlands",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4564480101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "graduate"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4667814101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Graduate Software Engineer (2027)",
-   "loc": "Amsterdam, Netherlands",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4667814101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "graduate"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4932192101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Graduate Software Engineer - Digital Assets",
-   "loc": "Zug, Switzerland",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4932192101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "graduate"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4635938101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Graduate Software Engineer (Start Date in 2026)",
-   "loc": "Aarhus, Central Denmark Region, Denmark",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4635938101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "graduate"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4917773101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Graduate Software Engineer (Start Date in 2027)",
-   "loc": "Aarhus, Central Denmark Region, Denmark",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4917773101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "graduate"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4912874101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Machine Learning Research Intern - Summer 2027 - Amsterdam",
-   "loc": "Amsterdam, Netherlands",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4912874101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning",
-    "intern"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4941208101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Quantitative Research Intern 2027",
-   "loc": "Hong Kong, Hong Kong",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4941208101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "quantitative",
-    "intern"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4936262101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Quantitative Trader Intern",
-   "loc": "Amsterdam, Netherlands",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4936262101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "quantitative",
-    "intern"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4941205101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Quantitative Trader Intern 2027",
-   "loc": "Hong Kong, Hong Kong",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4941205101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "quantitative",
-    "intern"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4667854101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Software Engineer Intern",
-   "loc": "Amsterdam, Netherlands",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4667854101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "intern"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:imc-4941206101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Software Engineer Intern 2027",
-   "loc": "Hong Kong, Hong Kong",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4941206101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "intern"
+    "ai",
+    "software engineer"
    ],
    "score": 9
   },
@@ -1222,14 +1087,139 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-7618977",
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/android-software-engineer-ai-finance-agent-4098027225",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Android Software Engineer - AI Finance Agent",
+   "loc": "Germany",
+   "url": "https://himalayas.app/companies/bjak/jobs/android-software-engineer-ai-finance-agent-4098027225",
+   "posted": 1790234449000,
+   "tags": [
+    "Android-Software-Engineer",
+    "Android-Engineer",
+    "AI-Agent-Engineer",
+    "AI-Agents-Engineer",
+    "Fintech-Software-Engineer"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/android-software-engineer-ai-finance-agent-4871113719",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Android Software Engineer - AI Finance Agent",
+   "loc": "Taiwan",
+   "url": "https://himalayas.app/companies/bjak/jobs/android-software-engineer-ai-finance-agent-4871113719",
+   "posted": 1790234124000,
+   "tags": [
+    "Android-Software-Engineer",
+    "Android-Engineer",
+    "AI-Agent-Engineer",
+    "AI-Agents-Engineer",
+    "Fintech-Software-Engineer"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/android-software-engineer-ai-finance-agent-6770263597",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Android Software Engineer - AI Finance Agent",
+   "loc": "Netherlands",
+   "url": "https://himalayas.app/companies/bjak/jobs/android-software-engineer-ai-finance-agent-6770263597",
+   "posted": 1790233871000,
+   "tags": [
+    "Android-Software-Engineer",
+    "Android-Engineer",
+    "AI-Agent-Engineer",
+    "AI-Agents-Engineer",
+    "Fintech-Software-Engineer"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:coinbase-7985187",
    "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, Core Technology",
-   "loc": "Bangalore",
-   "url": "https://stripe.com/jobs/search?gh_jid=7618977",
-   "posted": 1790049116000,
+   "srcLabel": "Coinbase",
+   "company": "Coinbase",
+   "title": "Machine Learning Engineer",
+   "loc": "Remote - India",
+   "url": "https://www.coinbase.com/careers/positions/7985187?gh_jid=7985187",
+   "posted": 1790183872000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:vercel-5474915004",
+   "src": "greenhouse",
+   "srcLabel": "Vercel",
+   "company": "Vercel",
+   "title": "Software Engineer, AI SDK",
+   "loc": "Hybrid - New York City",
+   "url": "https://job-boards.greenhouse.io/vercel/jobs/5474915004",
+   "posted": 1790176040000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:vercel-5798406004",
+   "src": "greenhouse",
+   "srcLabel": "Vercel",
+   "company": "Vercel",
+   "title": "Software Engineer, AI Gateway",
+   "loc": "Hybrid - San Francisco",
+   "url": "https://job-boards.greenhouse.io/vercel/jobs/5798406004",
+   "posted": 1790175977000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:imc-4983375101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "C++ Software Engineer",
+   "loc": "Mumbai, India",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4983375101",
+   "posted": 1790163119000,
    "tags": [],
    "desc": "",
    "salary": "",
@@ -1239,20 +1229,197 @@
    "score": 8
   },
   {
-   "id": "gh:elastic-8077634",
+   "id": "gh:imc-4983696101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Trader",
+   "loc": "Mumbai, India",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4983696101",
+   "posted": 1790162820000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:imc-4983672101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Researcher",
+   "loc": "Mumbai, India",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4983672101",
+   "posted": 1790162189000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:imc-4982638101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Java Software Engineer (Strategy Team)",
+   "loc": "Mumbai, India",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4982638101",
+   "posted": 1790162106000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:figma-5551730004",
+   "src": "greenhouse",
+   "srcLabel": "Figma",
+   "company": "Figma",
+   "title": "Software Engineer - AI Product",
+   "loc": "San Francisco, CA • New York, NY • United States",
+   "url": "https://boards.greenhouse.io/figma/jobs/5551730004?gh_jid=5551730004",
+   "posted": 1790099927000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:figma-5551697004",
+   "src": "greenhouse",
+   "srcLabel": "Figma",
+   "company": "Figma",
+   "title": "Software Engineer - AI Product (London, United Kingdom)",
+   "loc": "London, England",
+   "url": "https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004",
+   "posted": 1790099920000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:figma-6166497004",
+   "src": "greenhouse",
+   "srcLabel": "Figma",
+   "company": "Figma",
+   "title": "Software Engineer - Machine Learning (London, United Kingdom)",
+   "loc": "London, England",
+   "url": "https://boards.greenhouse.io/figma/jobs/6166497004?gh_jid=6166497004",
+   "posted": 1790086712000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:elastic-8080260",
    "src": "greenhouse",
    "srcLabel": "Elastic",
    "company": "Elastic",
-   "title": "Fullstack Software Engineer II - Admin UX - Platform Applications",
-   "loc": "United States",
-   "url": "https://jobs.elastic.co/jobs?gh_jid=8077634&gh_jid=8077634",
-   "posted": 1790028100000,
+   "title": "Software Engineer II - Full Stack - Web Engineering",
+   "loc": "Portugal",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8080260&gh_jid=8080260",
+   "posted": 1790074556000,
    "tags": [],
    "desc": "",
    "salary": "",
    "hits": [
     "software engineer",
-    "fullstack"
+    "full stack"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:elastic-8080263",
+   "src": "greenhouse",
+   "srcLabel": "Elastic",
+   "company": "Elastic",
+   "title": "Software Engineer II - Full Stack - Web Engineering",
+   "loc": "Spain",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8080263&gh_jid=8080263",
+   "posted": 1790074554000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:elastic-8080264",
+   "src": "greenhouse",
+   "srcLabel": "Elastic",
+   "company": "Elastic",
+   "title": "Software Engineer II - Full Stack - Web Engineering",
+   "loc": "Greece",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8080264&gh_jid=8080264",
+   "posted": 1790074552000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:elastic-8097064",
+   "src": "greenhouse",
+   "srcLabel": "Elastic",
+   "company": "Elastic",
+   "title": "Software Engineer II - Full Stack - Web Engineering",
+   "loc": "Ireland",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8097064&gh_jid=8097064",
+   "posted": 1790074550000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:elastic-8173414",
+   "src": "greenhouse",
+   "srcLabel": "Elastic",
+   "company": "Elastic",
+   "title": "Software Engineer II - Full Stack - Web Engineering",
+   "loc": "United Kingdom",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8173414&gh_jid=8173414",
+   "posted": 1790074548000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
    ],
    "score": 8
   },
@@ -1328,13 +1495,13 @@
    "score": 8
   },
   {
-   "id": "gh:databricks-8029666002",
+   "id": "gh:databricks-8012650002",
    "src": "greenhouse",
    "srcLabel": "Databricks",
    "company": "Databricks",
    "title": "Software Engineer - Backend",
-   "loc": "Amsterdam, Netherlands",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8029666002",
+   "loc": "Belgrade, Serbia",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012650002",
    "posted": 1790011332000,
    "tags": [],
    "desc": "",
@@ -1346,13 +1513,13 @@
    "score": 8
   },
   {
-   "id": "gh:databricks-8012650002",
+   "id": "gh:databricks-8029666002",
    "src": "greenhouse",
    "srcLabel": "Databricks",
    "company": "Databricks",
    "title": "Software Engineer - Backend",
-   "loc": "Belgrade, Serbia",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012650002",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8029666002",
    "posted": 1790011332000,
    "tags": [],
    "desc": "",
@@ -1418,24 +1585,6 @@
    "score": 8
   },
   {
-   "id": "gh:vercel-5474915004",
-   "src": "greenhouse",
-   "srcLabel": "Vercel",
-   "company": "Vercel",
-   "title": "Software Engineer, AI SDK",
-   "loc": "Hybrid - San Francisco, New York City",
-   "url": "https://job-boards.greenhouse.io/vercel/jobs/5474915004",
-   "posted": 1789993232000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
    "id": "gh:stripe-8209970",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -1488,375 +1637,296 @@
    "score": 8
   },
   {
-   "id": "gh:vercel-5798406004",
-   "src": "greenhouse",
-   "srcLabel": "Vercel",
-   "company": "Vercel",
-   "title": "Software Engineer, AI Gateway",
-   "loc": "Hybrid - San Francisco",
-   "url": "https://job-boards.greenhouse.io/vercel/jobs/5798406004",
-   "posted": 1789677614000,
-   "tags": [],
-   "desc": "",
+   "id": "himalayas:https://himalayas.app/companies/featherless-ai/jobs/machine-learning-engineer-inference-optimization",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Featherless AI",
+   "title": "Machine Learning Engineer — Inference Optimization",
+   "loc": "Remote",
+   "url": "https://himalayas.app/companies/featherless-ai/jobs/machine-learning-engineer-inference-optimization",
+   "posted": 1790234055000,
+   "tags": [
+    "AI-Inference-Engineer",
+    "AI-Optimization-Engineer",
+    "AI-Performance-Optimization-Engineer",
+    "Machine-Learning-Engineer",
+    "Mid-Level-AI-Inference-Engineer"
+   ],
+   "desc": "About the RoleWe’re looking for a Machine Learning Engineer to own and push the limits of model inference performance at scale.",
    "salary": "",
    "hits": [
-    "ai",
-    "software engineer"
+    "machine learning",
+    "ai"
    ],
-   "score": 8
+   "score": 7
   },
   {
-   "id": "gh:imc-4976994101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Software Engineer - Java",
-   "loc": "Mumbai, India",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4976994101",
-   "posted": 1789623883000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:imc-4694175101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Quantitative Researcher",
-   "loc": "Mumbai, India",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4694175101",
-   "posted": 1789623821000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "quantitative"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:brex-8815512002",
-   "src": "greenhouse",
-   "srcLabel": "Brex",
-   "company": "Brex",
-   "title": "Software Engineer II, Backend",
-   "loc": "Vancouver, British Columbia, Canada",
-   "url": "https://www.brex.com/careers/8815512002?gh_jid=8815512002",
-   "posted": 1789597531000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:brex-8815443002",
-   "src": "greenhouse",
-   "srcLabel": "Brex",
-   "company": "Brex",
-   "title": "Software Engineer II, Backend",
-   "loc": "New York, New York, United States",
-   "url": "https://www.brex.com/careers/8815443002?gh_jid=8815443002",
-   "posted": 1789594561000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:brex-8815438002",
-   "src": "greenhouse",
-   "srcLabel": "Brex",
-   "company": "Brex",
-   "title": "Software Engineer II, Backend",
-   "loc": "San Francisco, California, United States",
-   "url": "https://www.brex.com/careers/8815438002?gh_jid=8815438002",
-   "posted": 1789594560000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:pinterest-5459622",
+   "id": "gh:pinterest-7697137",
    "src": "greenhouse",
    "srcLabel": "Pinterest",
    "company": "Pinterest",
-   "title": "Software Engineer II, Full Stack",
-   "loc": "Toronto, ON, CA",
-   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=5459622",
+   "title": "Machine Learning Engineer II, Visual AI",
+   "loc": "San Francisco, CA, US; Remote, US",
+   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7697137",
    "posted": 1789584703000,
    "tags": [],
    "desc": "",
    "salary": "",
    "hits": [
-    "software engineer",
-    "full stack"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:mongodb-7597723",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7597723",
-   "posted": 1789579732000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:mongodb-7993984",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
-   "posted": 1789579732000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:mongodb-8083366",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8083366",
-   "posted": 1789579732000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:mongodb-8167389",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8167389",
-   "posted": 1789579732000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:mongodb-8161336",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8161336",
-   "posted": 1789579732000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:imc-4955625101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Python Engineer - AI",
-   "loc": "Sydney,  Australia",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4955625101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "python"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:imc-4630983101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Python Software Engineer",
-   "loc": "Amsterdam, Netherlands",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4630983101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "python",
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:imc-4637535101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Python Software Engineer - Digital Assets",
-   "loc": "Zug, Switzerland",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4637535101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "python",
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:imc-4930380101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Software Engineer - Machine Learning Frameworks",
-   "loc": "Sydney,  Australia",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4930380101",
-   "posted": 1789485715000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
     "machine learning",
-    "software engineer"
+    "ai"
    ],
-   "score": 8
+   "score": 7
   },
   {
-   "id": "gh:imc-4885477101",
+   "id": "gh:imc-4751729101",
    "src": "greenhouse",
    "srcLabel": "IMC Trading",
    "company": "IMC Trading",
-   "title": "Talent Sourcer – Machine Learning & Quantitative Research",
+   "title": "Graduate Quantitative Trader",
    "loc": "Chicago, United States",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4885477101",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4751729101",
+   "posted": 1789569970000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "graduate"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:coinbase-8168315",
+   "src": "greenhouse",
+   "srcLabel": "Coinbase",
+   "company": "Coinbase",
+   "title": "Software Engineer Intern",
+   "loc": "Hybrid - San Francisco, CA",
+   "url": "https://www.coinbase.com/careers/positions/8168315?gh_jid=8168315",
+   "posted": 1789517928000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:imc-4914883101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": " Graduate Machine Learning Researcher - London",
+   "loc": "London, United Kingdom",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4914883101",
    "posted": 1789485715000,
    "tags": [],
    "desc": "",
    "salary": "",
    "hits": [
     "machine learning",
-    "quantitative"
+    "graduate"
    ],
-   "score": 8
+   "score": 7
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/aras-corporation/jobs/software-engineer-l3-support-net-m-f-d-3868809364",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Aras Corporation",
-   "title": "Software Engineer, L3 Support (.NET) (m/f/d)",
-   "loc": "Poland",
-   "url": "https://himalayas.app/companies/aras-corporation/jobs/software-engineer-l3-support-net-m-f-d-3868809364",
-   "posted": 1790052506000,
-   "tags": [
-    "Software-Engineer",
-    "L3-Support-Engineer",
-    ".NET-Developer",
-    "Technical-Support-Engineer",
-    "Backend-Engineer"
-   ],
-   "desc": "Aras is a leading provider of digital thread solutions for product lifecycle management (PLM) and engineering AI.",
+   "id": "gh:imc-4564480101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Software Engineer (2026)",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4564480101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
    "salary": "",
    "hits": [
-    "ai",
     "software engineer",
-    "backend"
+    "graduate"
    ],
    "score": 7
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/elsevier/jobs/reactjs-java-api-software-engineer-5822876466",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Elsevier",
-   "title": "ReactJS  Java API Software Engineer",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/elsevier/jobs/reactjs-java-api-software-engineer-5822876466",
-   "posted": 1790041481000,
-   "tags": [
-    "React-Developer",
-    "Java-Developer",
-    "Full-Stack-Developer",
-    "Software-Engineer",
-    "Front-End-Developer"
-   ],
-   "desc": "Are you a collaborative ReactJS and Java API Developer looking to work for a mission driven global organization?",
-   "salary": "USD78800–131300",
+   "id": "gh:imc-4667814101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Software Engineer (2027)",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4667814101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
    "hits": [
     "software engineer",
-    "full stack",
-    "react"
+    "graduate"
    ],
    "score": 7
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/careerswift/jobs/junior-software-developer-1334449295",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Careerswift",
-   "title": "Junior Software Developer",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/careerswift/jobs/junior-software-developer-1334449295",
-   "posted": 1790041053000,
-   "tags": [
-    "Junior-Software-Developer",
-    "Junior-Software-Development",
-    "Junior-Software-Engineer",
-    "Junior-Developer",
-    "Remote-Junior-Software-Developer"
-   ],
-   "desc": "CerebriOS is a software company building B2B SaaS products that help businesses make better decisions, streamline operations, and get more value from their data.",
-   "salary": "USD60000–78000",
+   "id": "gh:imc-4932192101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Software Engineer - Digital Assets",
+   "loc": "Zug, Switzerland",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4932192101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
    "hits": [
     "software engineer",
-    "junior"
+    "graduate"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:imc-4635938101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Software Engineer (Start Date in 2026)",
+   "loc": "Aarhus, Central Denmark Region, Denmark",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4635938101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "graduate"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:imc-4917773101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Graduate Software Engineer (Start Date in 2027)",
+   "loc": "Aarhus, Central Denmark Region, Denmark",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4917773101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "graduate"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:imc-4912874101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Machine Learning Research Intern - Summer 2027 - Amsterdam",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4912874101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:imc-4941208101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Research Intern 2027",
+   "loc": "Hong Kong, Hong Kong",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4941208101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:imc-4936262101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Trader Intern",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4936262101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:imc-4941205101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Quantitative Trader Intern 2027",
+   "loc": "Hong Kong, Hong Kong",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4941205101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:imc-4667854101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Software Engineer Intern",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4667854101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:imc-4941206101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Software Engineer Intern 2027",
+   "loc": "Hong Kong, Hong Kong",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4941206101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
    ],
    "score": 7
   },
@@ -2077,24 +2147,6 @@
    "score": 7
   },
   {
-   "id": "gh:stripe-8130883",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, Intern",
-   "loc": "Singapore",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130883",
-   "posted": 1789060318000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "intern"
-   ],
-   "score": 7
-  },
-  {
    "id": "gh:stripe-8130807",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -2102,24 +2154,6 @@
    "title": "Software Engineer, Intern ",
    "loc": "Bucharest",
    "url": "https://stripe.com/jobs/search?gh_jid=8130807",
-   "posted": 1789060318000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "intern"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:stripe-8130805",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, Intern (Summer or Winter)",
-   "loc": "Toronto",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130805",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -2149,6 +2183,24 @@
    "score": 7
   },
   {
+   "id": "gh:stripe-8130805",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Intern (Summer or Winter)",
+   "loc": "Toronto",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130805",
+   "posted": 1789060318000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
    "id": "gh:stripe-8097801",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -2163,24 +2215,6 @@
    "hits": [
     "software engineer",
     "intern"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:stripe-8130881",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, New Grad",
-   "loc": "Dublin",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130881",
-   "posted": 1789060318000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "new grad"
    ],
    "score": 7
   },
@@ -2203,13 +2237,13 @@
    "score": 7
   },
   {
-   "id": "gh:stripe-8160776",
+   "id": "gh:stripe-8130922",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, New Grad",
-   "loc": "Singapore",
-   "url": "https://stripe.com/jobs/search?gh_jid=8160776",
+   "loc": "Bucharest",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130922",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -2221,13 +2255,31 @@
    "score": 7
   },
   {
-   "id": "gh:stripe-8130922",
+   "id": "gh:stripe-8130881",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, New Grad",
-   "loc": "Bucharest",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130922",
+   "loc": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130881",
+   "posted": 1789060318000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:stripe-8160776",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "Singapore",
+   "url": "https://stripe.com/jobs/search?gh_jid=8160776",
    "posted": 1789060318000,
    "tags": [],
    "desc": "",
@@ -3094,42 +3146,6 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7813157003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Collections)",
-   "loc": "Remote Spain",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7813157003",
-   "posted": 1786561931000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-7813159003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Collections)",
-   "loc": "Remote Poland",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7813159003",
-   "posted": 1786561931000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 7
-  },
-  {
    "id": "gh:affirm-7799346003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
@@ -3148,13 +3164,13 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7727320003",
+   "id": "gh:affirm-7727322003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
    "company": "Affirm",
    "title": "Software Engineer II, Backend (Test Infra)",
-   "loc": "Remote US",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727320003",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727322003",
    "posted": 1786561931000,
    "tags": [],
    "desc": "",
@@ -3166,13 +3182,13 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7727322003",
+   "id": "gh:affirm-7727320003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
    "company": "Affirm",
    "title": "Software Engineer II, Backend (Test Infra)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727322003",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727320003",
    "posted": 1786561931000,
    "tags": [],
    "desc": "",
@@ -3514,6 +3530,27 @@
    "score": 7
   },
   {
+   "id": "ab:ramp-acf6b28d-767f-483f-8ff2-114620cd7e04",
+   "src": "ashby",
+   "srcLabel": "Ramp",
+   "company": "Ramp",
+   "title": "Software Engineering Intern, Backend",
+   "loc": "New York, NY (HQ)",
+   "url": "https://jobs.ashbyhq.com/ramp/acf6b28d-767f-483f-8ff2-114620cd7e04",
+   "posted": 1775696489953,
+   "tags": [
+    "Engineering",
+    "Intern"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "backend",
+    "intern"
+   ],
+   "score": 7
+  },
+  {
    "id": "ab:perplexity-71168628-1998-47d3-87a9-be7bc56a430d",
    "src": "ashby",
    "srcLabel": "Perplexity",
@@ -3556,84 +3593,130 @@
    "score": 7
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/careerswift/jobs/ai-and-workflow-automation-specialist-2414118485",
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/software-engineer-desktop",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Careerswift",
-   "title": "AI and Workflow Automation Specialist",
-   "loc": "Remote",
-   "url": "https://himalayas.app/companies/careerswift/jobs/ai-and-workflow-automation-specialist-2414118485",
-   "posted": 1790053634000,
-   "tags": [
-    "AI-And-Automation-Specialist",
-    "AI-Workflow-Specialist",
-    "AI-Automation-Specialist",
-    "Workflow-Automation-Specialist",
-    "Automation-Workflow-Specialist"
-   ],
-   "desc": "Job DescriptionCerebriOS is a software company building B2B SaaS products that help businesses make better decisions, streamline operations, and get more value from their data.",
-   "salary": "USD75000–105000",
-   "hits": [
-    "ai"
-   ],
-   "score": 6
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/mercor/jobs/electrical-engineer-fully-remote-upto-70-hr-1004559910",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "mercor",
-   "title": "Electrical Engineer - Fully Remote | Upto $70/hr",
-   "loc": "India",
-   "url": "https://himalayas.app/companies/mercor/jobs/electrical-engineer-fully-remote-upto-70-hr-1004559910",
-   "posted": 1790048384000,
-   "tags": [
-    "Electrical-Engineering",
-    "Power-Systems-Engineering",
-    "Electrical-Design-Engineering",
-    "Protection-And-Controls-Engineering",
-    "Power-Plant-Engineering"
-   ],
-   "desc": "About the jobMercor connects elite creative and technical talent with leading AI research labs.",
-   "salary": "USD70–70",
-   "hits": [
-    "ai"
-   ],
-   "score": 6
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/mercor/jobs/ai-safety-expert-adversarial-ml-5320802282",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "mercor",
-   "title": "AI Safety Expert - Adversarial ML",
+   "company": "Bjak",
+   "title": "Software Engineer, Desktop",
    "loc": "United States",
-   "url": "https://himalayas.app/companies/mercor/jobs/ai-safety-expert-adversarial-ml-5320802282",
-   "posted": 1790041498000,
+   "url": "https://himalayas.app/companies/bjak/jobs/software-engineer-desktop",
+   "posted": 1790234020000,
    "tags": [
-    "AI-Safety",
-    "Machine-Learning-Testing",
-    "AI-Red-Team",
-    "AI-Evaluation",
-    "Adversarial-ML"
+    "Desktop-Software-Engineer",
+    "Desktop-Applications-Engineer",
+    "Desktop-Application-Engineer",
+    "Desktop-Engineer",
+    "Software-Engineer"
    ],
-   "desc": "About the jobMercor connects elite creative and technical talent with leading AI research labs.",
-   "salary": "USD16–22",
+   "desc": "About ActAI There are over 5 billion users using basic applications today such email, notes, tasks, calendar and they're not AI-native.",
+   "salary": "",
    "hits": [
-    "machine learning",
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/logicalis-com/jobs/python-developer",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Logicalis Spain",
+   "title": "Python Developer",
+   "loc": "Spain",
+   "url": "https://himalayas.app/companies/logicalis-com/jobs/python-developer",
+   "posted": 1790233031000,
+   "tags": [
+    "Python-Developer",
+    "Backend-Engineer",
+    "DevOps-Engineer",
+    "Automation-Engineer",
+    "Cloud-Engineer"
+   ],
+   "desc": "En Logicalis Spain estamos buscamos un/a Desarrollador/a Python para incorporarse al equipo de DevOps & Automation, trabajando en el desarrollo y mantenimiento de servicios backend, APIs, integraciones y despliegues en Kubernetes.",
+   "salary": "",
+   "hits": [
+    "python",
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:samsara-8024110",
+   "src": "greenhouse",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "AI Engineer, Customer Success",
+   "loc": "Remote - US",
+   "url": "https://www.samsara.com/company/careers/roles/8024110?gh_jid=8024110",
+   "posted": 1790196646000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
     "ai"
    ],
    "score": 6
   },
   {
-   "id": "gh:twilio-8026203",
+   "id": "gh:samsara-7997311",
    "src": "greenhouse",
-   "srcLabel": "Twilio",
-   "company": "Twilio",
-   "title": "Software Engineer-Platform Engineering (L3)",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "Data Engineer",
+   "loc": "Remote - Canada",
+   "url": "https://www.samsara.com/company/careers/roles/7997311?gh_jid=7997311",
+   "posted": 1790196646000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "data engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:samsara-7859702",
+   "src": "greenhouse",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "Data Engineer",
    "loc": "Remote - US",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8026203",
-   "posted": 1790013789000,
+   "url": "https://www.samsara.com/company/careers/roles/7859702?gh_jid=7859702",
+   "posted": 1790196646000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "data engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:samsara-7858719",
+   "src": "greenhouse",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "People Analytics AI Engineer",
+   "loc": "Remote - Seattle",
+   "url": "https://www.samsara.com/company/careers/roles/7858719?gh_jid=7858719",
+   "posted": 1790196646000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:samsara-7922530",
+   "src": "greenhouse",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "Software Engineer - Data Platform",
+   "loc": "Remote - US",
+   "url": "https://www.samsara.com/company/careers/roles/7922530?gh_jid=7922530",
+   "posted": 1790196646000,
    "tags": [],
    "desc": "",
    "salary": "",
@@ -3643,14 +3726,82 @@
    "score": 6
   },
   {
-   "id": "gh:twilio-7647708",
+   "id": "gh:samsara-7992889",
    "src": "greenhouse",
-   "srcLabel": "Twilio",
-   "company": "Twilio",
-   "title": "Software Engineer",
-   "loc": "Remote - Estonia",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/7647708",
-   "posted": 1790001357000,
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "Software Engineer - Data Platform",
+   "loc": "Remote - Canada",
+   "url": "https://www.samsara.com/company/careers/roles/7992889?gh_jid=7992889",
+   "posted": 1790196646000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:samsara-8210695",
+   "src": "greenhouse",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "Software Engineer I, External Platform EMEA (Poland, Remote, B2B)",
+   "loc": "Remote - Poland",
+   "url": "https://www.samsara.com/company/careers/roles/8210695?gh_jid=8210695",
+   "posted": 1790196646000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:samsara-8036387",
+   "src": "greenhouse",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "Software Engineer II",
+   "loc": "Remote - US",
+   "url": "https://www.samsara.com/company/careers/roles/8036387?gh_jid=8036387",
+   "posted": 1790196646000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:coinbase-8031260",
+   "src": "greenhouse",
+   "srcLabel": "Coinbase",
+   "company": "Coinbase",
+   "title": "Machine Learning Engineer, CX Intelligence",
+   "loc": "Remote - Brazil",
+   "url": "https://www.coinbase.com/careers/positions/8031260?gh_jid=8031260",
+   "posted": 1790183876000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:pinterest-8015490",
+   "src": "greenhouse",
+   "srcLabel": "Pinterest",
+   "company": "Pinterest",
+   "title": "Security Software Engineer II, Detection and Response",
+   "loc": "San Francisco, CA, US; Remote, US",
+   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8015490",
+   "posted": 1790180898000,
    "tags": [],
    "desc": "",
    "salary": "",
@@ -3667,7 +3818,7 @@
    "title": "Machine Learning Engineer",
    "loc": "Remote - Ireland",
    "url": "https://job-boards.greenhouse.io/twilio/jobs/7996774",
-   "posted": 1790001203000,
+   "posted": 1790173790000,
    "tags": [],
    "desc": "",
    "salary": "",
@@ -3684,12 +3835,63 @@
    "title": "Machine Learning Engineer",
    "loc": "Remote - Spain",
    "url": "https://job-boards.greenhouse.io/twilio/jobs/8007455",
-   "posted": 1790001154000,
+   "posted": 1790173778000,
    "tags": [],
    "desc": "",
    "salary": "",
    "hits": [
     "machine learning"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-7954715",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Software Engineer (L3) Data Substrate",
+   "loc": "Remote - US",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/7954715",
+   "posted": 1790118157000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:vercel-6188400004",
+   "src": "greenhouse",
+   "srcLabel": "Vercel",
+   "company": "Vercel",
+   "title": "Software Engineer - Data Platform",
+   "loc": "Remote - United States",
+   "url": "https://job-boards.greenhouse.io/vercel/jobs/6188400004",
+   "posted": 1790106818000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "nodesk:https://nodesk.co/remote-jobs/gitlab-ai-engineer/",
+   "src": "nodesk",
+   "srcLabel": "NoDesk",
+   "company": "",
+   "title": "AI Engineer at GitLab",
+   "loc": "Remote",
+   "url": "https://nodesk.co/remote-jobs/gitlab-ai-engineer/",
+   "posted": 1790056800000,
+   "tags": [],
+   "desc": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built int",
+   "salary": "",
+   "hits": [
+    "ai"
    ],
    "score": 6
   },
@@ -3830,23 +4032,6 @@
    "score": 6
   },
   {
-   "id": "gh:twilio-7954715",
-   "src": "greenhouse",
-   "srcLabel": "Twilio",
-   "company": "Twilio",
-   "title": "Software Engineer (L3) Data Substrate",
-   "loc": "Remote - US",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/7954715",
-   "posted": 1789766611000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
    "id": "gh:twilio-7661919",
    "src": "greenhouse",
    "srcLabel": "Twilio",
@@ -3877,23 +4062,6 @@
    "salary": "",
    "hits": [
     "ai"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:samsara-8210695",
-   "src": "greenhouse",
-   "srcLabel": "Samsara",
-   "company": "Samsara",
-   "title": "Software Engineer I, External Platform EMEA (Poland, Remote)",
-   "loc": "Remote - Poland",
-   "url": "https://www.samsara.com/company/careers/roles/8210695?gh_jid=8210695",
-   "posted": 1789745069000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
    ],
    "score": 6
   },
@@ -4000,14 +4168,14 @@
    "score": 6
   },
   {
-   "id": "gh:samsara-7992889",
+   "id": "gh:imc-4976994101",
    "src": "greenhouse",
-   "srcLabel": "Samsara",
-   "company": "Samsara",
-   "title": "Software Engineer - Data Platform",
-   "loc": "Remote - Canada",
-   "url": "https://www.samsara.com/company/careers/roles/7992889?gh_jid=7992889",
-   "posted": 1789589884000,
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Software Engineer - Java",
+   "loc": "Mumbai, India",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4976994101",
+   "posted": 1789623883000,
    "tags": [],
    "desc": "",
    "salary": "",
@@ -4017,172 +4185,249 @@
    "score": 6
   },
   {
-   "id": "gh:samsara-7922530",
+   "id": "gh:brex-8815512002",
    "src": "greenhouse",
-   "srcLabel": "Samsara",
-   "company": "Samsara",
-   "title": "Software Engineer - Data Platform",
-   "loc": "Remote - US",
-   "url": "https://www.samsara.com/company/careers/roles/7922530?gh_jid=7922530",
-   "posted": 1789589884000,
+   "srcLabel": "Brex",
+   "company": "Brex",
+   "title": "Software Engineer II, Backend",
+   "loc": "Vancouver, British Columbia, Canada",
+   "url": "https://www.brex.com/careers/8815512002?gh_jid=8815512002",
+   "posted": 1789597531000,
    "tags": [],
    "desc": "",
    "salary": "",
    "hits": [
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:pinterest-6121450",
-   "src": "greenhouse",
-   "srcLabel": "Pinterest",
-   "company": "Pinterest",
-   "title": "Machine Learning Engineer, Core Engineering",
-   "loc": "San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; Remote, US",
-   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=6121450",
-   "posted": 1789584703000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:pinterest-7782546",
-   "src": "greenhouse",
-   "srcLabel": "Pinterest",
-   "company": "Pinterest",
-   "title": "Software Engineer II, Big Data, tvScientific",
-   "loc": "San Francisco, CA, US; Remote, US",
-   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7782546",
-   "posted": 1789584703000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:samsara-8024110",
-   "src": "greenhouse",
-   "srcLabel": "Samsara",
-   "company": "Samsara",
-   "title": "AI Engineer, Customer Success",
-   "loc": "Remote - US",
-   "url": "https://www.samsara.com/company/careers/roles/8024110?gh_jid=8024110",
-   "posted": 1789582239000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:samsara-7859702",
-   "src": "greenhouse",
-   "srcLabel": "Samsara",
-   "company": "Samsara",
-   "title": "Data Engineer",
-   "loc": "Remote - US",
-   "url": "https://www.samsara.com/company/careers/roles/7859702?gh_jid=7859702",
-   "posted": 1789582239000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "data engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:samsara-7997311",
-   "src": "greenhouse",
-   "srcLabel": "Samsara",
-   "company": "Samsara",
-   "title": "Data Engineer",
-   "loc": "Remote - Canada",
-   "url": "https://www.samsara.com/company/careers/roles/7997311?gh_jid=7997311",
-   "posted": 1789582239000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "data engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:samsara-7858719",
-   "src": "greenhouse",
-   "srcLabel": "Samsara",
-   "company": "Samsara",
-   "title": "People Analytics AI Engineer",
-   "loc": "Remote - Seattle",
-   "url": "https://www.samsara.com/company/careers/roles/7858719?gh_jid=7858719",
-   "posted": 1789582239000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:samsara-8036387",
-   "src": "greenhouse",
-   "srcLabel": "Samsara",
-   "company": "Samsara",
-   "title": "Software Engineer II",
-   "loc": "Remote - US",
-   "url": "https://www.samsara.com/company/careers/roles/8036387?gh_jid=8036387",
-   "posted": 1789582239000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:coinbase-8207374",
-   "src": "greenhouse",
-   "srcLabel": "Coinbase",
-   "company": "Coinbase",
-   "title": "Software Engineer",
-   "loc": "Remote - Canada",
-   "url": "https://www.coinbase.com/careers/positions/8207374?gh_jid=8207374",
-   "posted": 1789552397000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:stripe-6692166",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Backend Engineer, Payments",
-   "loc": "Toronto, Canada Remote",
-   "url": "https://stripe.com/jobs/search?gh_jid=6692166",
-   "posted": 1789505517000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
+    "software engineer",
     "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:brex-8815443002",
+   "src": "greenhouse",
+   "srcLabel": "Brex",
+   "company": "Brex",
+   "title": "Software Engineer II, Backend",
+   "loc": "New York, New York, United States",
+   "url": "https://www.brex.com/careers/8815443002?gh_jid=8815443002",
+   "posted": 1789594561000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:brex-8815438002",
+   "src": "greenhouse",
+   "srcLabel": "Brex",
+   "company": "Brex",
+   "title": "Software Engineer II, Backend",
+   "loc": "San Francisco, California, United States",
+   "url": "https://www.brex.com/careers/8815438002?gh_jid=8815438002",
+   "posted": 1789594560000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:pinterest-5459622",
+   "src": "greenhouse",
+   "srcLabel": "Pinterest",
+   "company": "Pinterest",
+   "title": "Software Engineer II, Full Stack",
+   "loc": "Toronto, ON, CA",
+   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=5459622",
+   "posted": 1789584703000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:mongodb-8167389",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8167389",
+   "posted": 1789579732000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:mongodb-7597723",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7597723",
+   "posted": 1789579732000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:mongodb-8083366",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8083366",
+   "posted": 1789579732000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:mongodb-8161336",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8161336",
+   "posted": 1789579732000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:mongodb-7993984",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
+   "posted": 1789579732000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:imc-4955625101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Python Engineer - AI",
+   "loc": "Sydney,  Australia",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4955625101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "python"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:imc-4630983101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Python Software Engineer",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4630983101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:imc-4637535101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Python Software Engineer - Digital Assets",
+   "loc": "Zug, Switzerland",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4637535101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:imc-4930380101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Software Engineer - Machine Learning Frameworks",
+   "loc": "Sydney,  Australia",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4930380101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:imc-4885477101",
+   "src": "greenhouse",
+   "srcLabel": "IMC Trading",
+   "company": "IMC Trading",
+   "title": "Talent Sourcer – Machine Learning & Quantitative Research",
+   "loc": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4885477101",
+   "posted": 1789485715000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "quantitative"
    ],
    "score": 6
   },
@@ -4201,23 +4446,6 @@
    "hits": [
     "software engineer",
     "backend"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:coinbase-7985187",
-   "src": "greenhouse",
-   "srcLabel": "Coinbase",
-   "company": "Coinbase",
-   "title": "Machine Learning Engineer",
-   "loc": "Remote - India",
-   "url": "https://www.coinbase.com/careers/positions/7985187?gh_jid=7985187",
-   "posted": 1789418353000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning"
    ],
    "score": 6
   },
@@ -4287,24 +4515,6 @@
    "salary": "",
    "hits": [
     "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:stripe-8079132",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Treasury Finance AI and Quantitative Analytics, Americas",
-   "loc": "NYC",
-   "url": "https://stripe.com/jobs/search?gh_jid=8079132",
-   "posted": 1789060318000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "quantitative"
    ],
    "score": 6
   },
@@ -4530,24 +4740,6 @@
    "score": 6
   },
   {
-   "id": "gh:worldquant-4443948006",
-   "src": "greenhouse",
-   "srcLabel": "WorldQuant",
-   "company": "WorldQuant",
-   "title": "AI Software Engineer",
-   "loc": "Ramat Gan",
-   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4443948006",
-   "posted": 1788259305000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
    "id": "gh:coinbase-8165441",
    "src": "greenhouse",
    "srcLabel": "Coinbase",
@@ -4597,24 +4789,6 @@
    "hits": [
     "machine learning",
     "research engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:figma-5551697004",
-   "src": "greenhouse",
-   "srcLabel": "Figma",
-   "company": "Figma",
-   "title": "Software Engineer - AI Product (London, United Kingdom)",
-   "loc": "London, England",
-   "url": "https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004",
-   "posted": 1787826255000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "software engineer"
    ],
    "score": 6
   },
@@ -4779,24 +4953,6 @@
    "score": 6
   },
   {
-   "id": "gh:figma-5551730004",
-   "src": "greenhouse",
-   "srcLabel": "Figma",
-   "company": "Figma",
-   "title": "Software Engineer - AI Product",
-   "loc": "San Francisco, CA • New York, NY • United States",
-   "url": "https://boards.greenhouse.io/figma/jobs/5551730004?gh_jid=5551730004",
-   "posted": 1786493081000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
    "id": "gh:figma-5691886004",
    "src": "greenhouse",
    "srcLabel": "Figma",
@@ -4887,24 +5043,6 @@
    "score": 6
   },
   {
-   "id": "gh:scaleai-4591300005",
-   "src": "greenhouse",
-   "srcLabel": "Scale AI",
-   "company": "Scale AI",
-   "title": "Software Engineer, Gen AI",
-   "loc": "San Francisco, CA; New York, NY",
-   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4591300005",
-   "posted": 1785819872000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
    "id": "gh:scaleai-4363623005",
    "src": "greenhouse",
    "srcLabel": "Scale AI",
@@ -4976,27 +5114,6 @@
    "hits": [
     "python",
     "quantitative"
-   ],
-   "score": 6
-  },
-  {
-   "id": "ab:notion-a9d4a192-d31c-48d2-8156-e2a75d98eec1",
-   "src": "ashby",
-   "srcLabel": "Notion",
-   "company": "Notion",
-   "title": "Software Engineer, AI Platform",
-   "loc": "San Francisco, California",
-   "url": "https://jobs.ashbyhq.com/notion/a9d4a192-d31c-48d2-8156-e2a75d98eec1",
-   "posted": 1784039011706,
-   "tags": [
-    "Engineering",
-    "FullTime"
-   ],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "software engineer"
    ],
    "score": 6
   },
@@ -5135,27 +5252,6 @@
    "score": 6
   },
   {
-   "id": "ab:notion-17330e14-83db-49a4-ae31-411690d97dba",
-   "src": "ashby",
-   "srcLabel": "Notion",
-   "company": "Notion",
-   "title": "Software Engineer, AI Workflows",
-   "loc": "San Francisco, California",
-   "url": "https://jobs.ashbyhq.com/notion/17330e14-83db-49a4-ae31-411690d97dba",
-   "posted": 1779805792238,
-   "tags": [
-    "Engineering",
-    "FullTime"
-   ],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
    "id": "ab:ramp-428f41e2-48e8-409d-b5e3-8053f7fc7a27",
    "src": "ashby",
    "srcLabel": "Ramp",
@@ -5251,47 +5347,22 @@
    "score": 6
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/bright-vision-technologies/jobs/reinforcement-learning-engineer-258197988",
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/mobile-engineer-ai-finance-agent-8729542312",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Bright Vision Technologies",
-   "title": "Reinforcement Learning Engineer",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/bright-vision-technologies/jobs/reinforcement-learning-engineer-258197988",
-   "posted": 1790055972000,
-   "tags": [
-    "Reinforcement-Learning-Engineering",
-    "Machine-Learning-Engineering",
-    "AI-Research",
-    "Deep-Learning",
-    "Applied-AI"
-   ],
-   "desc": "Reinforcement Learning Engineer - Remote Bright Vision Technologies is a technology consulting and software development company delivering cloud, AI, data, and enterprise solutions across the United States.",
-   "salary": "USD100000–150000",
-   "hits": [
-    "machine learning",
-    "deep learning",
-    "ai"
-   ],
-   "score": 5
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/newbridge/jobs/chief-commercial-officer-cco-ai-product-company",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Newbridge",
-   "title": "Chief Commercial Officer (CCO) | AI Product Company",
+   "company": "Bjak",
+   "title": "Mobile Engineer - AI Finance Agent",
    "loc": "Singapore",
-   "url": "https://himalayas.app/companies/newbridge/jobs/chief-commercial-officer-cco-ai-product-company",
-   "posted": 1790044798000,
+   "url": "https://himalayas.app/companies/bjak/jobs/mobile-engineer-ai-finance-agent-8729542312",
+   "posted": 1790234480000,
    "tags": [
-    "Chief-Commercial-Officer",
-    "Commercial-Leadership",
-    "Sales-Leadership",
-    "Revenue-Operations",
-    "Business-Development"
+    "Mobile-Engineer",
+    "Mobile-AI-Engineering",
+    "AI-Agent-Engineer",
+    "AI-Agents-Engineer",
+    "AI-Agentic-Engineer"
    ],
-   "desc": "Our client is a high-growth AI Product company building category-defining AI products for global markets.",
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
    "salary": "",
    "hits": [
     "ai"
@@ -5299,37 +5370,442 @@
    "score": 5
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/directv/jobs/it-software-engineer-2",
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/ios-developer-ai-finance-agent-3143449554",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "DIRECTV",
-   "title": "IT Software Engineer 2",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/directv/jobs/it-software-engineer-2",
-   "posted": 1790043937000,
+   "company": "Bjak",
+   "title": "iOS Developer - AI Finance Agent",
+   "loc": "Germany",
+   "url": "https://himalayas.app/companies/bjak/jobs/ios-developer-ai-finance-agent-3143449554",
+   "posted": 1790234468000,
    "tags": [
-    "Software-Engineer",
-    "Cloud-Engineer",
-    "Contact-Center-Engineering",
-    "AWS-Engineering",
-    "CX-Platform-Engineering"
+    "iOS-Developer",
+    "Developer",
+    "Full Time"
    ],
-   "desc": "The IT Software Engineer 2 is a self-managed, emerging IT professional responsible for feature development within specific domains or component sets.",
-   "salary": "USD111122–201653",
+   "desc": "About DoitWe are focused on reinventing how people spend, save, invest, exchange, travel, and more.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/ios-developer-ai-finance-agent-1470692508",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "iOS Developer - AI Finance Agent",
+   "loc": "Taiwan",
+   "url": "https://himalayas.app/companies/bjak/jobs/ios-developer-ai-finance-agent-1470692508",
+   "posted": 1790234452000,
+   "tags": [
+    "AI-Agent-Developer",
+    "AI-Agents-Developer",
+    "Finance-AI",
+    "AI-Finance",
+    "AI-Finance-Specialist"
+   ],
+   "desc": "About KIRAOur mission is to make money smart, reliable and within reach for everyone.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/android-developer-ai-finance-agent-3700378805",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Android Developer - AI Finance Agent",
+   "loc": "Spain",
+   "url": "https://himalayas.app/companies/bjak/jobs/android-developer-ai-finance-agent-3700378805",
+   "posted": 1790234389000,
+   "tags": [
+    "Android-Developer",
+    "AI-Developer",
+    "Developer",
+    "Full Time"
+   ],
+   "desc": "About DoitWe are focused on reinventing how people spend, save, invest, exchange, travel, and more.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/mobile-application-developer-ai-finance-agent-8418074628",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Mobile Application Developer - AI Finance Agent",
+   "loc": "Taiwan",
+   "url": "https://himalayas.app/companies/bjak/jobs/mobile-application-developer-ai-finance-agent-8418074628",
+   "posted": 1790234385000,
+   "tags": [
+    "Mobile-AI-Developer",
+    "AI-Agent-Developer",
+    "AI-Agents-Developer",
+    "AI-Application-Developer",
+    "AI-ML-Application-Developer"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/mobile-engineer-ai-finance-agent-6387085180",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Mobile Engineer - AI Finance Agent",
+   "loc": "China",
+   "url": "https://himalayas.app/companies/bjak/jobs/mobile-engineer-ai-finance-agent-6387085180",
+   "posted": 1790234358000,
+   "tags": [
+    "Mobile-Engineer",
+    "Mobile-AI-Engineering",
+    "AI-Agent-Engineer",
+    "AI-Agents-Engineer",
+    "AI-Agentic-Engineer"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/mobile-engineer-ai-finance-agent-4670556949",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Mobile Engineer - AI Finance Agent",
+   "loc": "Poland",
+   "url": "https://himalayas.app/companies/bjak/jobs/mobile-engineer-ai-finance-agent-4670556949",
+   "posted": 1790234327000,
+   "tags": [
+    "Mobile-Engineer",
+    "Mobile-AI-Engineering",
+    "AI-Agent-Engineer",
+    "AI-Agents-Engineer",
+    "AI-Agentic-Engineer"
+   ],
+   "desc": "About DoitWe are focused on reinventing how people spend, save, invest, exchange, travel, and more.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/mobile-application-developer-ai-finance-agent-4967001801",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Mobile Application Developer - AI Finance Agent",
+   "loc": "Japan",
+   "url": "https://himalayas.app/companies/bjak/jobs/mobile-application-developer-ai-finance-agent-4967001801",
+   "posted": 1790234306000,
+   "tags": [
+    "Mobile-AI-Developer",
+    "AI-Agent-Developer",
+    "AI-Agents-Developer",
+    "AI-Application-Developer",
+    "AI-ML-Application-Developer"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/mobile-application-developer-ai-finance-agent-4324388956",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Mobile Application Developer - AI Finance Agent",
+   "loc": "Spain",
+   "url": "https://himalayas.app/companies/bjak/jobs/mobile-application-developer-ai-finance-agent-4324388956",
+   "posted": 1790234274000,
+   "tags": [
+    "Mobile-AI-Developer",
+    "AI-Agent-Developer",
+    "AI-Agents-Developer",
+    "AI-Application-Developer",
+    "Mobile-Application-Developer"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/mobile-application-developer-ai-finance-agent-6738271791",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Mobile Application Developer - AI Finance Agent",
+   "loc": "China",
+   "url": "https://himalayas.app/companies/bjak/jobs/mobile-application-developer-ai-finance-agent-6738271791",
+   "posted": 1790234265000,
+   "tags": [
+    "Mobile-AI-Developer",
+    "AI-Agent-Developer",
+    "AI-Agents-Developer",
+    "AI-Application-Developer",
+    "AI-ML-Application-Developer"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/android-developer-ai-finance-agent-7184368503",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Android Developer - AI Finance Agent",
+   "loc": "Vietnam",
+   "url": "https://himalayas.app/companies/bjak/jobs/android-developer-ai-finance-agent-7184368503",
+   "posted": 1790234254000,
+   "tags": [
+    "Android-Developer",
+    "AI-Agent-Developer",
+    "AI-Agents-Developer",
+    "AI-Agentic-Developer",
+    "AI-Agent-Development"
+   ],
+   "desc": "About DoitWe are focused on reinventing how people spend, save, invest, exchange, travel, and more.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/mobile-engineer-ai-finance-agent-651953483",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Mobile Engineer - AI Finance Agent",
+   "loc": "Spain",
+   "url": "https://himalayas.app/companies/bjak/jobs/mobile-engineer-ai-finance-agent-651953483",
+   "posted": 1790234220000,
+   "tags": [
+    "Mobile-Engineer",
+    "Mobile-AI-Engineering",
+    "AI-Agent-Engineer",
+    "AI-Agents-Engineer",
+    "AI-Agentic-Engineer"
+   ],
+   "desc": "About DoitWe are focused on reinventing how people spend, save, invest, exchange, travel, and more.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/ios-developer-ai-finance-agent-7630353513",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "iOS Developer - AI Finance Agent",
+   "loc": "Sweden",
+   "url": "https://himalayas.app/companies/bjak/jobs/ios-developer-ai-finance-agent-7630353513",
+   "posted": 1790234097000,
+   "tags": [
+    "iOS-Developer",
+    "AI-Agent-Developer",
+    "AI-Agents-Developer",
+    "Finance-AI",
+    "AI-Finance"
+   ],
+   "desc": "About DoitWe are focused on reinventing how people spend, save, invest, exchange, travel, and more.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/mobile-developer-ai-finance-agent-875563608",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Mobile Developer - AI Finance Agent",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/bjak/jobs/mobile-developer-ai-finance-agent-875563608",
+   "posted": 1790233932000,
+   "tags": [
+    "Mobile-AI-Developer",
+    "AI-Agent-Developer",
+    "AI-Agents-Developer",
+    "AI-Agentic-Developer",
+    "Mobile-AI-Development"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/android-developer-ai-finance-agent-8668206581",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Android Developer - AI Finance Agent",
+   "loc": "Australia",
+   "url": "https://himalayas.app/companies/bjak/jobs/android-developer-ai-finance-agent-8668206581",
+   "posted": 1790233858000,
+   "tags": [
+    "Android-Developer",
+    "AI-Agent-Developer",
+    "AI-Agents-Developer",
+    "AI-Agentic-Developer",
+    "AI-Agent-Development"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/mobile-application-developer-ai-finance-agent-203291313",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Mobile Application Developer - AI Finance Agent",
+   "loc": "Germany",
+   "url": "https://himalayas.app/companies/bjak/jobs/mobile-application-developer-ai-finance-agent-203291313",
+   "posted": 1790233186000,
+   "tags": [
+    "Mobile-AI-Developer",
+    "AI-Agent-Developer",
+    "AI-Agents-Developer",
+    "AI-Application-Developer",
+    "Mobile-Application-Developer"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/android-developer-ai-finance-agent-8753347890",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Android Developer - AI Finance Agent",
+   "loc": "Poland",
+   "url": "https://himalayas.app/companies/bjak/jobs/android-developer-ai-finance-agent-8753347890",
+   "posted": 1790233142000,
+   "tags": [
+    "AI-Agent-Developer",
+    "AI-Agents-Developer",
+    "AI-Agentic-Developer",
+    "Android-Developer",
+    "AI-Agent-Development"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/ios-developer-ai-finance-agent-6816334586",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "iOS Developer - AI Finance Agent",
+   "loc": "Vietnam",
+   "url": "https://himalayas.app/companies/bjak/jobs/ios-developer-ai-finance-agent-6816334586",
+   "posted": 1790233133000,
+   "tags": [
+    "Finance-AI",
+    "AI-Finance",
+    "AI-Finance-Specialist",
+    "iOS-Developer",
+    "Developer"
+   ],
+   "desc": "About DoitWe are focused on reinventing how people spend, save, invest, exchange, travel, and more.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bjak/jobs/android-developer-ai-finance-agent-1249644143",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Bjak",
+   "title": "Android Developer - AI Finance Agent",
+   "loc": "Sweden",
+   "url": "https://himalayas.app/companies/bjak/jobs/android-developer-ai-finance-agent-1249644143",
+   "posted": 1790233035000,
+   "tags": [
+    "Android-Developer",
+    "AI-Agent-Developer",
+    "AI-Agents-Developer",
+    "AI-Agentic-Developer",
+    "AI-Agent-Development"
+   ],
+   "desc": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money.",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:stripe-7975725",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Core Infrastructure",
+   "loc": "Sydney, Australia",
+   "url": "https://stripe.com/jobs/search?gh_jid=7975725",
+   "posted": 1790223563000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
    "hits": [
     "software engineer"
    ],
    "score": 5
   },
   {
-   "id": "ab:ramp-7cd46077-05fe-4cd7-816f-5528638342f1",
+   "id": "ab:notion-ab383335-1dd5-4d6a-971f-439cebf48a9d",
    "src": "ashby",
-   "srcLabel": "Ramp",
-   "company": "Ramp",
-   "title": "Software Engineer, Frontend, Growth",
-   "loc": "New York, NY (HQ)",
-   "url": "https://jobs.ashbyhq.com/ramp/7cd46077-05fe-4cd7-816f-5528638342f1",
-   "posted": 1790030317920,
+   "srcLabel": "Notion",
+   "company": "Notion",
+   "title": "Software Engineer, Model Capabilities",
+   "loc": "San Francisco, California",
+   "url": "https://jobs.ashbyhq.com/notion/ab383335-1dd5-4d6a-971f-439cebf48a9d",
+   "posted": 1790206204563,
    "tags": [
     "Engineering",
     "FullTime"
@@ -5338,380 +5814,6 @@
    "salary": "",
    "hits": [
     "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:elastic-8114249",
-   "src": "greenhouse",
-   "srcLabel": "Elastic",
-   "company": "Elastic",
-   "title": "Strategic Account Executive - AI Natives - West",
-   "loc": "Washington, United States",
-   "url": "https://jobs.elastic.co/jobs?gh_jid=8114249&gh_jid=8114249",
-   "posted": 1790029346000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:stripe-8221776",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "AI Solutions Developer",
-   "loc": "SEA. SF, NYC, CHI",
-   "url": "https://stripe.com/jobs/search?gh_jid=8221776",
-   "posted": 1790027095000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:rubrik-8209928",
-   "src": "greenhouse",
-   "srcLabel": "Rubrik",
-   "company": "Rubrik",
-   "title": "Software Engineer - Cloud Infrastructure ",
-   "loc": "Palo Alto, CA",
-   "url": "https://www.rubrik.com/company/careers/departments/job.8209928?gh_jid=8209928",
-   "posted": 1790022084000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:figma-6201407004",
-   "src": "greenhouse",
-   "srcLabel": "Figma",
-   "company": "Figma",
-   "title": "Data Platform Engineer",
-   "loc": "San Francisco, CA • New York, NY • United States",
-   "url": "https://boards.greenhouse.io/figma/jobs/6201407004?gh_jid=6201407004",
-   "posted": 1790022077000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "platform engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:imc-4660792101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Quantitative Researcher - Data Curation",
-   "loc": "Chicago, United States",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4660792101",
-   "posted": 1790018975000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "quantitative"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:anthropic-5389305008",
-   "src": "greenhouse",
-   "srcLabel": "Anthropic",
-   "company": "Anthropic",
-   "title": "Software Engineer, Education",
-   "loc": "San Francisco, CA | New York City, NY",
-   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5389305008",
-   "posted": 1790016287000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:imc-4945646101",
-   "src": "greenhouse",
-   "srcLabel": "IMC Trading",
-   "company": "IMC Trading",
-   "title": "Data Engineer - Infrastructure",
-   "loc": "Chicago, United States",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4945646101",
-   "posted": 1790014834000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "data engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:databricks-8574655002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "AI Engineer - FDE (Forward Deployed Engineer)",
-   "loc": "Seoul, South Korea",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8574655002",
-   "posted": 1790011332000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:databricks-8546367002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "AI Engineer – Forward Deployed Engineering (AI FDE)",
-   "loc": "United States",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8546367002",
-   "posted": 1790011332000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:databricks-8760167002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "AI Engineer – Forward Deployed Engineering (AI FDE), U.S. Public Sector (Federal Focus)",
-   "loc": "Maryland; Virginia; Washington, D.C.",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8760167002",
-   "posted": 1790011332000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:databricks-8593713002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "AI Forward Deployed Engineer - London",
-   "loc": "London, United Kingdom",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8593713002",
-   "posted": 1790011332000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:databricks-7803651002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "AI Transformation Leader",
-   "loc": "United States",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7803651002",
-   "posted": 1790011332000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:databricks-8643542002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "Partner Engineer: Partner Intelligence, AI & Apps",
-   "loc": "San Francisco, California",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8643542002",
-   "posted": 1790011332000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:databricks-8012658002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "Software Engineer - Database Engine Internals",
-   "loc": "Belgrade, Serbia",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012658002",
-   "posted": 1790011332000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:databricks-8012691002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "Software Engineer - Distributed Data Systems",
-   "loc": "Belgrade, Serbia",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012691002",
-   "posted": 1790011332000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:databricks-8635225002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "Software Engineer, Web Products",
-   "loc": "Mountain View, California",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8635225002",
-   "posted": 1790011332000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:databricks-8560779002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "Software Engineer, Web Products",
-   "loc": "Mountain View, California",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8560779002",
-   "posted": 1790011332000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:databricks-8482037002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "Systems PhD - Software Engineer ",
-   "loc": "Mountain View, California; San Francisco, California",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8482037002",
-   "posted": 1790011332000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:databricks-8482086002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "Systems PhD - Software Engineer ",
-   "loc": "Bellevue, Washington; Seattle, Washington",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002",
-   "posted": 1790011332000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:stripe-8197886",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Machine Learning Engineer, Link",
-   "loc": "New York City ",
-   "url": "https://stripe.com/jobs/search?gh_jid=8197886",
-   "posted": 1790009554000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:janestreet-8754684002",
-   "src": "greenhouse",
-   "srcLabel": "Jane Street",
-   "company": "Jane Street",
-   "title": "Quantitative Researcher",
-   "loc": "Hong Kong, Hong Kong",
-   "url": "https://www.janestreet.com/join-jane-street/apply/8754684002?gh_jid=8754684002",
-   "posted": 1790003808000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "quantitative"
-   ],
-   "score": 5
-  },
-  {
-   "id": "gh:janestreet-8648474002",
-   "src": "greenhouse",
-   "srcLabel": "Jane Street",
-   "company": "Jane Street",
-   "title": "Machine Learning Engineer",
-   "loc": "London, England, United Kingdom",
-   "url": "https://www.janestreet.com/join-jane-street/apply/8648474002?gh_jid=8648474002",
-   "posted": 1790003806000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning"
    ],
    "score": 5
   }
