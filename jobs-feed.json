@@ -1,16 +1,16 @@
 {
- "generated": "2026-09-26T07:57:59.034Z",
+ "generated": "2026-09-27T08:29:51.116Z",
  "sources": [
   {
    "name": "Himalayas",
    "ok": true,
-   "count": 120,
+   "count": 100,
    "err": null
   },
   {
    "name": "Working Nomads",
    "ok": true,
-   "count": 58,
+   "count": 57,
    "err": null
   },
   {
@@ -28,7 +28,7 @@
   {
    "name": "Databricks",
    "ok": true,
-   "count": 888,
+   "count": 887,
    "err": null
   },
   {
@@ -52,19 +52,19 @@
   {
    "name": "Stripe",
    "ok": true,
-   "count": 703,
+   "count": 702,
    "err": null
   },
   {
    "name": "GitLab",
    "ok": true,
-   "count": 198,
+   "count": 199,
    "err": null
   },
   {
    "name": "Rubrik",
    "ok": true,
-   "count": 141,
+   "count": 140,
    "err": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Razorpay",
    "ok": true,
-   "count": 25,
+   "count": 26,
    "err": null
   },
   {
@@ -130,7 +130,7 @@
   {
    "name": "Anthropic",
    "ok": true,
-   "count": 619,
+   "count": 618,
    "err": null
   },
   {
@@ -142,7 +142,7 @@
   {
    "name": "Cloudflare",
    "ok": true,
-   "count": 395,
+   "count": 394,
    "err": null
   },
   {
@@ -214,7 +214,7 @@
   {
    "name": "Perplexity",
    "ok": true,
-   "count": 122,
+   "count": 123,
    "err": null
   },
   {
@@ -226,7 +226,7 @@
   {
    "name": "Ramp",
    "ok": true,
-   "count": 157,
+   "count": 158,
    "err": null
   },
   {
@@ -254,7 +254,7 @@
    "err": null
   }
  ],
- "total": 766,
+ "total": 763,
  "jobs": [
   {
    "id": "gh:jumptrading-8052343",
@@ -599,27 +599,20 @@
    "score": 10
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/zillow-group/jobs/software-development-engineer-backend-python-kubernetes",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Zillow Group",
-   "title": "Software Development Engineer, Backend (Python /Kubernetes)",
-   "loc": "Mexico",
-   "url": "https://himalayas.app/companies/zillow-group/jobs/software-development-engineer-backend-python-kubernetes",
-   "posted": 1790386230000,
-   "tags": [
-    "Backend-Engineer",
-    "Software-Engineer",
-    "Software-Developer",
-    "Senior-Backend-Python-Developer",
-    "Python-Backend-Developer"
-   ],
-   "desc": "About the teamThe Senior Specialist, Software Engineering, Back End designs, builds, and operates scalable, reliable backend services and platforms that power Zillow’s consumer and partner experiences.",
+   "id": "gh:coinbase-8168315",
+   "src": "greenhouse",
+   "srcLabel": "Coinbase",
+   "company": "Coinbase",
+   "title": "Software Engineer Intern",
+   "loc": "Hybrid - San Francisco, CA",
+   "url": "https://www.coinbase.com/careers/positions/8168315?gh_jid=8168315",
+   "posted": 1790487228000,
+   "tags": [],
+   "desc": "",
    "salary": "",
    "hits": [
-    "python",
     "software engineer",
-    "backend"
+    "intern"
    ],
    "score": 9
   },
@@ -786,24 +779,6 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8130922",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, New Grad",
-   "loc": "Bucharest",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130922",
-   "posted": 1790369095000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "new grad"
-   ],
-   "score": 9
-  },
-  {
    "id": "gh:stripe-8130881",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -829,6 +804,24 @@
    "title": "Software Engineer, New Grad",
    "loc": "London",
    "url": "https://stripe.com/jobs/search?gh_jid=8130930",
+   "posted": 1790369095000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130922",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "Bucharest",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130922",
    "posted": 1790369095000,
    "tags": [],
    "desc": "",
@@ -1366,31 +1359,6 @@
    "salary": "",
    "hits": [
     "backend"
-   ],
-   "score": 8
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/powerprozesse/jobs/fullstack-developer-100-remote",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Powerprozesse",
-   "title": "Fullstack-Developer (100% Remote)",
-   "loc": "Remote",
-   "url": "https://himalayas.app/companies/powerprozesse/jobs/fullstack-developer-100-remote",
-   "posted": 1790385915000,
-   "tags": [
-    "Full-Stack-Developer",
-    "Software-Developer",
-    "Web-Developer",
-    "Backend-Engineer",
-    "Remote-Full-Stack-Developer"
-   ],
-   "desc": "We're looking for Junior and Senior Developers to join our fully remote team.",
-   "salary": "USD1000–3000",
-   "hits": [
-    "backend",
-    "full stack",
-    "fullstack"
    ],
    "score": 8
   },
@@ -2047,26 +2015,27 @@
    "score": 8
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/iwconnect/jobs/b2b-data-engineer",
+   "id": "himalayas:https://himalayas.app/companies/oversight/jobs/machine-learning-engineer-llms-and-agentic",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "IWConnect",
-   "title": "B2B Data Engineer*",
-   "loc": "Remote",
-   "url": "https://himalayas.app/companies/iwconnect/jobs/b2b-data-engineer",
-   "posted": 1790384597000,
+   "company": "Oversight",
+   "title": "Machine Learning Engineer - LLMs and Agentic",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/oversight/jobs/machine-learning-engineer-llms-and-agentic",
+   "posted": 1790491742000,
    "tags": [
-    "Data-Engineer",
-    "Data-Pipeline-Engineer",
-    "ETL-Engineer",
-    "Cloud-Data-Engineer",
-    "Data-Architect"
+    "Machine-Learning-Engineer",
+    "LLM-Engineer",
+    "AI-Engineer",
+    "AI-Research-Scientist",
+    "Applied-AI-Researcher"
    ],
-   "desc": "We are building a network of Data Engineers (Python, PySpark, Airflow, dbt, Databricks, AWS, Azure, GCP, SQL) interested in B2B collaboration on upcoming data-driven initiatives.",
+   "desc": "About OversightOversight is the world’s leading provider of AI-based spend management and risk mitigation solutions for large enterprises.",
    "salary": "",
    "hits": [
-    "data engineer",
-    "python"
+    "machine learning",
+    "ai",
+    "llm"
    ],
    "score": 7
   },
@@ -2182,24 +2151,6 @@
    "hits": [
     "quantitative",
     "graduate"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:coinbase-8168315",
-   "src": "greenhouse",
-   "srcLabel": "Coinbase",
-   "company": "Coinbase",
-   "title": "Software Engineer Intern",
-   "loc": "Hybrid - San Francisco, CA",
-   "url": "https://www.coinbase.com/careers/positions/8168315?gh_jid=8168315",
-   "posted": 1789517928000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "intern"
    ],
    "score": 7
   },
@@ -3725,52 +3676,26 @@
    "score": 7
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/micro1/jobs/gmail-google-calendar-ai-assistant-evaluator",
+   "id": "himalayas:https://himalayas.app/companies/biogen/jobs/co-op-data-science-ai-innovation",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "micro1",
-   "title": "Gmail & Google Calendar AI Assistant Evaluator",
+   "company": "Biogen",
+   "title": "Co-op, Data Science & AI Innovation",
    "loc": "United States",
-   "url": "https://himalayas.app/companies/micro1/jobs/gmail-google-calendar-ai-assistant-evaluator",
-   "posted": 1790401136000,
+   "url": "https://himalayas.app/companies/biogen/jobs/co-op-data-science-ai-innovation",
+   "posted": 1790490715000,
    "tags": [
-    "AI-Evaluator",
-    "AI-Chatbot-Evaluator",
-    "AI-Feedback-Evaluator",
-    "Generative-AI-Evaluator",
-    "AI-Evaluation-Analyst"
-   ],
-   "desc": "Role Title: Gmail & Google Calendar AI Assistant Evaluator Role Type: Contractor, Remote Location: United States only micro1 is engaging Gmail & Google Calendar AI Assistant Evaluators to collaborate on a customer-driven project enhancing AI assistant quality through real-world task evaluation.",
-   "salary": "USD15–30",
-   "hits": [
-    "ai",
-    "generative"
-   ],
-   "score": 6
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/bright-vision-technologies/jobs/foundation-model-engineer-3297783546",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Bright Vision Technologies",
-   "title": "Foundation Model Engineer",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/bright-vision-technologies/jobs/foundation-model-engineer-3297783546",
-   "posted": 1790384892000,
-   "tags": [
+    "Data-Scientist",
     "Machine-Learning-Engineer",
+    "Data-Science-Intern",
     "AI-Engineer",
-    "Foundation-Model-Engineer",
-    "LLM-Engineer",
-    "NLP-Engineer"
+    "Research-Scientist"
    ],
-   "desc": "Bright Vision Technologies is a technology consulting and software development company delivering cloud, AI, data, and enterprise solutions across the United States.",
-   "salary": "USD200000–230000",
+   "desc": "About the Role:This application is for a 6-month student role from January - June 2027.",
+   "salary": "USD29–29",
    "hits": [
     "machine learning",
-    "ai",
-    "llm",
-    "nlp"
+    "ai"
    ],
    "score": 6
   },
@@ -3877,13 +3802,13 @@
    "score": 6
   },
   {
-   "id": "gh:samsara-7997311",
+   "id": "gh:samsara-7859702",
    "src": "greenhouse",
    "srcLabel": "Samsara",
    "company": "Samsara",
    "title": "Data Engineer",
-   "loc": "Remote - Canada",
-   "url": "https://www.samsara.com/company/careers/roles/7997311?gh_jid=7997311",
+   "loc": "Remote - US",
+   "url": "https://www.samsara.com/company/careers/roles/7859702?gh_jid=7859702",
    "posted": 1790366876000,
    "tags": [],
    "desc": "",
@@ -3894,13 +3819,13 @@
    "score": 6
   },
   {
-   "id": "gh:samsara-7859702",
+   "id": "gh:samsara-7997311",
    "src": "greenhouse",
    "srcLabel": "Samsara",
    "company": "Samsara",
    "title": "Data Engineer",
-   "loc": "Remote - US",
-   "url": "https://www.samsara.com/company/careers/roles/7859702?gh_jid=7859702",
+   "loc": "Remote - Canada",
+   "url": "https://www.samsara.com/company/careers/roles/7997311?gh_jid=7997311",
    "posted": 1790366876000,
    "tags": [],
    "desc": "",
@@ -3928,13 +3853,13 @@
    "score": 6
   },
   {
-   "id": "gh:samsara-7992889",
+   "id": "gh:samsara-7922530",
    "src": "greenhouse",
    "srcLabel": "Samsara",
    "company": "Samsara",
    "title": "Software Engineer - Data Platform",
-   "loc": "Remote - Canada",
-   "url": "https://www.samsara.com/company/careers/roles/7992889?gh_jid=7992889",
+   "loc": "Remote - US",
+   "url": "https://www.samsara.com/company/careers/roles/7922530?gh_jid=7922530",
    "posted": 1790366876000,
    "tags": [],
    "desc": "",
@@ -3945,13 +3870,13 @@
    "score": 6
   },
   {
-   "id": "gh:samsara-7922530",
+   "id": "gh:samsara-7992889",
    "src": "greenhouse",
    "srcLabel": "Samsara",
    "company": "Samsara",
    "title": "Software Engineer - Data Platform",
-   "loc": "Remote - US",
-   "url": "https://www.samsara.com/company/careers/roles/7922530?gh_jid=7922530",
+   "loc": "Remote - Canada",
+   "url": "https://www.samsara.com/company/careers/roles/7992889?gh_jid=7992889",
    "posted": 1790366876000,
    "tags": [],
    "desc": "",
@@ -5271,6 +5196,46 @@
    "score": 6
   },
   {
+   "id": "himalayas:https://himalayas.app/companies/mercor/jobs/ai-safety-expert-red-team-2373411036",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "mercor",
+   "title": "AI Safety Expert - Red Team",
+   "loc": "United Arab Emirates",
+   "url": "https://himalayas.app/companies/mercor/jobs/ai-safety-expert-red-team-2373411036",
+   "posted": 1790491587000,
+   "tags": [
+    "Red-Teamer",
+    "AI-Safety-Specialist",
+    "Security-Researcher",
+    "Penetration-Tester",
+    "AI-Researcher"
+   ],
+   "desc": "About the jobMercor connects elite creative and technical talent with leading AI research labs.",
+   "salary": "USD20–22",
+   "hits": [
+    "ai"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:janestreet-6302325002",
+   "src": "greenhouse",
+   "srcLabel": "Jane Street",
+   "company": "Jane Street",
+   "title": "Quantitative Researcher",
+   "loc": "New York, New York, United States",
+   "url": "https://www.janestreet.com/join-jane-street/apply/6302325002?gh_jid=6302325002",
+   "posted": 1790451331000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative"
+   ],
+   "score": 5
+  },
+  {
    "id": "gh:stripe-8204645",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -5692,6 +5657,23 @@
    "salary": "",
    "hits": [
     "backend"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:stripe-7436086",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Full Stack Engineer, Web Presence and Platform",
+   "loc": "N/A",
+   "url": "https://stripe.com/jobs/search?gh_jid=7436086",
+   "posted": 1790369076000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "full stack"
    ],
    "score": 5
   }
