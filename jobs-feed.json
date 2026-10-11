@@ -1,16 +1,16 @@
 {
- "generated": "2026-10-10T08:51:56.227Z",
+ "generated": "2026-10-11T09:12:45.281Z",
  "sources": [
   {
    "name": "Himalayas",
    "ok": true,
-   "count": 114,
+   "count": 103,
    "err": null
   },
   {
    "name": "Working Nomads",
    "ok": true,
-   "count": 54,
+   "count": 53,
    "err": null
   },
   {
@@ -28,7 +28,7 @@
   {
    "name": "Databricks",
    "ok": true,
-   "count": 892,
+   "count": 886,
    "err": null
   },
   {
@@ -148,7 +148,7 @@
   {
    "name": "Samsara",
    "ok": true,
-   "count": 236,
+   "count": 240,
    "err": null
   },
   {
@@ -178,7 +178,7 @@
   {
    "name": "Scale AI",
    "ok": true,
-   "count": 183,
+   "count": 182,
    "err": null
   },
   {
@@ -254,7 +254,7 @@
    "err": null
   }
  ],
- "total": 787,
+ "total": 792,
  "jobs": [
   {
    "id": "gh:databricks-7955594002",
@@ -314,6 +314,33 @@
     "intern"
    ],
    "score": 13
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/engen/jobs/full-stack-software-engineer-5016468904",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "EnGen",
+   "title": "Full-Stack Software Engineer",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/engen/jobs/full-stack-software-engineer-5016468904",
+   "posted": 1791700185000,
+   "tags": [
+    "Fullstack-Development",
+    "Backend-Engineering",
+    "Frontend-Engineer",
+    "AI-LLM-Integration",
+    "Product-Engineering"
+   ],
+   "desc": "About the Organization EnGen offers an at-scale, AI-powered approach to English instruction, designed to solve a systemic access issue: Adult English learners now represent 1 in 10 working-age adults in the U.",
+   "salary": "USD120000–150000",
+   "hits": [
+    "ai",
+    "llm",
+    "software engineer",
+    "backend",
+    "full stack"
+   ],
+   "score": 12
   },
   {
    "id": "gh:affirm-8008645003",
@@ -711,6 +738,31 @@
    "score": 10
   },
   {
+   "id": "himalayas:https://himalayas.app/companies/affirm/jobs/software-engineer-ii-backend-online-storage",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Online Storage)",
+   "loc": "Canada",
+   "url": "https://himalayas.app/companies/affirm/jobs/software-engineer-ii-backend-online-storage",
+   "posted": 1791707660000,
+   "tags": [
+    "Backend-Engineer",
+    "Software-Engineer",
+    "Platform-Engineer",
+    "Database-Engineer",
+    "Infrastructure-Engineer"
+   ],
+   "desc": "At Affirm, we exist for the moments that matter—giving people a clear, predictable way to pay over time, with no hidden fees, no surprises, and no tradeoffs on what matters most.",
+   "salary": "CAD133000–183000",
+   "hits": [
+    "software engineer",
+    "backend",
+    "platform engineer"
+   ],
+   "score": 9
+  },
+  {
    "id": "gh:imc-4975945101",
    "src": "greenhouse",
    "srcLabel": "IMC Trading",
@@ -945,13 +997,13 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8212508",
+   "id": "gh:stripe-8212517",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, Early Career — Immediate Start",
-   "loc": "San Francisco, Seattle, New York",
-   "url": "https://stripe.com/jobs/search?gh_jid=8212508",
+   "loc": "Toronto",
+   "url": "https://stripe.com/jobs/search?gh_jid=8212517",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -963,13 +1015,13 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8212517",
+   "id": "gh:stripe-8212508",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, Early Career — Immediate Start",
-   "loc": "Toronto",
-   "url": "https://stripe.com/jobs/search?gh_jid=8212517",
+   "loc": "San Francisco, Seattle, New York",
+   "url": "https://stripe.com/jobs/search?gh_jid=8212508",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -1035,24 +1087,6 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8130805",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, Intern (Summer or Winter)",
-   "loc": "Toronto",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130805",
-   "posted": 1791414147000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "intern"
-   ],
-   "score": 9
-  },
-  {
    "id": "gh:stripe-8097801",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -1089,6 +1123,42 @@
    "score": 9
   },
   {
+   "id": "gh:stripe-8130805",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Intern (Summer or Winter)",
+   "loc": "Toronto",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130805",
+   "posted": 1791414147000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130930",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "London",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
+   "posted": 1791414147000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
    "id": "gh:stripe-8160776",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -1096,6 +1166,24 @@
    "title": "Software Engineer, New Grad",
    "loc": "Singapore",
    "url": "https://stripe.com/jobs/search?gh_jid=8160776",
+   "posted": 1791414147000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130881",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130881",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -1125,24 +1213,6 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8130930",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, New Grad",
-   "loc": "London",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
-   "posted": 1791414147000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "new grad"
-   ],
-   "score": 9
-  },
-  {
    "id": "gh:stripe-8130922",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -1150,24 +1220,6 @@
    "title": "Software Engineer, New Grad",
    "loc": "Bucharest",
    "url": "https://stripe.com/jobs/search?gh_jid=8130922",
-   "posted": 1791414147000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "new grad"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:stripe-8130881",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, New Grad",
-   "loc": "Dublin",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130881",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -1956,6 +2008,56 @@
    "score": 9
   },
   {
+   "id": "himalayas:https://himalayas.app/companies/pro-global-search-gmbh/jobs/chief-artificial-intelligence-ai-officer",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "PRO-Global Search GmbH",
+   "title": "Chief Artificial Intelligence (AI) Officer",
+   "loc": "Portugal",
+   "url": "https://himalayas.app/companies/pro-global-search-gmbh/jobs/chief-artificial-intelligence-ai-officer",
+   "posted": 1791708193000,
+   "tags": [
+    "Chief-AI-Officer",
+    "Chief-Technology-Officer",
+    "VP-Data-Science",
+    "AI-Director",
+    "Chief-Product-Officer"
+   ],
+   "desc": "We are seeking a visionary leader fluent in Russian and English to spearhead our AI journey across architecture, transformation, and product innovation.",
+   "salary": "",
+   "hits": [
+    "artificial intelligence",
+    "ai"
+   ],
+   "score": 8
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/brillio/jobs/ai-builder-ai-solutions-engineer-r01572121",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Brillio",
+   "title": "AI Builder (AI Solutions Engineer) - R01572121",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/brillio/jobs/ai-builder-ai-solutions-engineer-r01572121",
+   "posted": 1791707459000,
+   "tags": [
+    "AI-Engineer",
+    "AI-Solutions-Engineer",
+    "Generative-AI-Engineer",
+    "Machine-Learning-Engineer",
+    "Software-Engineer"
+   ],
+   "desc": "AI Builder (AI Solutions Engineer) | BrillioAbout BrillioBrillio is one of the fastest-growing digital technology service providers, helping Fortune 1000 organizations turn disruption into competitive advantage through innovative digital adoption.",
+   "salary": "USD150000–200000",
+   "hits": [
+    "machine learning",
+    "ai",
+    "generative",
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
    "id": "gh:robinhood-8220757",
    "src": "greenhouse",
    "srcLabel": "Robinhood",
@@ -2025,13 +2127,13 @@
    "score": 8
   },
   {
-   "id": "gh:mongodb-7993984",
+   "id": "gh:mongodb-8239047",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3",
    "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8239047",
    "posted": 1791554592000,
    "tags": [],
    "desc": "",
@@ -2042,13 +2144,13 @@
    "score": 8
   },
   {
-   "id": "gh:mongodb-8239047",
+   "id": "gh:mongodb-7993984",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3",
    "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8239047",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
    "posted": 1791554592000,
    "tags": [],
    "desc": "",
@@ -2602,55 +2704,6 @@
    "score": 8
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/push-operations/jobs/full-stack-engineer-ii-4843376788",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Push Operations",
-   "title": "Full Stack Engineer II",
-   "loc": "Canada",
-   "url": "https://himalayas.app/companies/push-operations/jobs/full-stack-engineer-ii-4843376788",
-   "posted": 1791614010000,
-   "tags": [
-    "Full-Stack-Developer",
-    "Full-Stack-Engineer",
-    "Software-Engineer",
-    "React-Developer",
-    "Mobile-Application-Developer"
-   ],
-   "desc": "DescriptionThe Company: Push is an all-in-one platform that helps businesses grow and scale their companies by simplifying HR, payroll, time tracking, and scheduling.",
-   "salary": "CAD90000–130000",
-   "hits": [
-    "software engineer",
-    "full stack",
-    "react"
-   ],
-   "score": 7
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/vulcury/jobs/pr-social-media-intern",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Vulcury",
-   "title": "PR / Social Media Intern",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/vulcury/jobs/pr-social-media-intern",
-   "posted": 1791613797000,
-   "tags": [
-    "Social-Media",
-    "Marketing-Communications",
-    "Digital-Marketing",
-    "Marketing",
-    "Public-Relations-Intern"
-   ],
-   "desc": "This is a remote position. PR & Social Media Intern Vulcury Venture Studio | Remote | Full-Time | 12 Weeks About VulcuryVulcury is a California-based venture studio building and scaling companies at the intersection of AI, advanced manufacturing, asset management, real estate, and education.",
-   "salary": "",
-   "hits": [
-    "ai",
-    "intern"
-   ],
-   "score": 7
-  },
-  {
    "id": "gh:cloudflare-8199958",
    "src": "greenhouse",
    "srcLabel": "Cloudflare",
@@ -3071,13 +3124,13 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7807506003",
+   "id": "gh:affirm-7807508003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
    "company": "Affirm",
    "title": "Software Engineer I, Backend (Collections)",
-   "loc": "Remote Spain",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807506003",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807508003",
    "posted": 1789983612000,
    "tags": [],
    "desc": "",
@@ -3089,13 +3142,13 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7807508003",
+   "id": "gh:affirm-7807506003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
    "company": "Affirm",
    "title": "Software Engineer I, Backend (Collections)",
-   "loc": "Remote Poland",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807508003",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807506003",
    "posted": 1789983612000,
    "tags": [],
    "desc": "",
@@ -4181,74 +4234,49 @@
    "score": 7
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/grupo-boticario/jobs/pessoa-desenvolvedora-backend-iii-vaga-afirmativa-para-talentos-diversos",
+   "id": "himalayas:https://himalayas.app/companies/best10/jobs/ai-builder",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Grupo Boticário",
-   "title": "Pessoa Desenvolvedora BackEnd III (Vaga Afirmativa para Talentos Diversos)",
-   "loc": "Brazil",
-   "url": "https://himalayas.app/companies/grupo-boticario/jobs/pessoa-desenvolvedora-backend-iii-vaga-afirmativa-para-talentos-diversos",
-   "posted": 1791614803000,
+   "company": "Best10",
+   "title": "AI Builder",
+   "loc": "South Africa",
+   "url": "https://himalayas.app/companies/best10/jobs/ai-builder",
+   "posted": 1791700196000,
    "tags": [
-    "Backend-Engineer",
-    "Desenvolvedor-Back-End",
-    "Software-Engineer",
-    "Systems-Developer",
-    "Senior-Backend-Developer-(Java-Spring-AWS)"
+    "AI-Engineering",
+    "Applied-AI",
+    "Machine-Learning-Engineering",
+    "Health-Technology",
+    "Product-Development"
    ],
-   "desc": "Um dos maiores grupos de beleza do mundo, o Grupo Boticário é uma empresa brasileira presente em mais de 40 países.",
+   "desc": "AI Builder (6-Month Contract)Best10 | Remote | Reports to CEO, working alongside our Product Manager About Best10Best10 delivers online, highly personalised diet and lifestyle coaching through WhatsApp and our own platform.",
    "salary": "",
    "hits": [
-    "software engineer",
-    "backend"
+    "machine learning",
+    "ai"
    ],
    "score": 6
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/bright-vision-technologies/jobs/virtual-platform-engineer",
+   "id": "himalayas:https://himalayas.app/companies/neuraflash/jobs/trying-to-submit-a-referral-for-a-role-not-currently-posted-on-our-job-site-sub",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Bright Vision Technologies",
-   "title": "Virtual Platform Engineer",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/bright-vision-technologies/jobs/virtual-platform-engineer",
-   "posted": 1791614612000,
+   "company": "NeuraFlash",
+   "title": "Trying to submit a referral for a role not currently posted on our job site? Sub",
+   "loc": "Canada, India",
+   "url": "https://himalayas.app/companies/neuraflash/jobs/trying-to-submit-a-referral-for-a-role-not-currently-posted-on-our-job-site-sub",
+   "posted": 1791700153000,
    "tags": [
-    "Virtual-Platform-Engineer",
-    "Vmware-Engineer",
-    "Systems-Engineer",
-    "Infrastructure-Engineer",
-    "Cloud-Infrastructure-Engineer"
+    "Referral-Submission",
+    "Refer-A-Candidate",
+    "Hiring-Referral",
+    "Referral-Hiring",
+    "Talent-Referral"
    ],
-   "desc": "Bright Vision Technologies is a technology consulting and software development company delivering cloud, AI, data, and enterprise solutions across the United States.",
-   "salary": "USD125000–145000",
-   "hits": [
-    "ai",
-    "platform engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/uvation/jobs/frontend-developer-react-js-next-js-9927506967",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "uvation",
-   "title": "Frontend Developer (React Js / Next Js)",
-   "loc": "Poland",
-   "url": "https://himalayas.app/companies/uvation/jobs/frontend-developer-react-js-next-js-9927506967",
-   "posted": 1791613791000,
-   "tags": [
-    "Front-End-Developer",
-    "React-Developer",
-    "UI-Developer",
-    "Web-Developer",
-    "Software-Engineer"
-   ],
-   "desc": "Job Overview React and Next. js | 4 to 6 yearsThis role is responsible for building reliable, responsive user interfaces from approved designs and API contracts.",
+   "desc": "Why NeuraFlash, Part of Accenture:At NeuraFlash, Part of Accenture, we are redefining the future of business through the power of AI and groundbreaking technologies like Agentforce.",
    "salary": "",
    "hits": [
-    "software engineer",
-    "react"
+    "ai"
    ],
    "score": 6
   },
@@ -4270,13 +4298,13 @@
    "score": 6
   },
   {
-   "id": "gh:twilio-8007455",
+   "id": "gh:twilio-7996774",
    "src": "greenhouse",
    "srcLabel": "Twilio",
    "company": "Twilio",
    "title": "Machine Learning Engineer",
-   "loc": "Remote - Spain",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8007455",
+   "loc": "Remote - Ireland",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/7996774",
    "posted": 1791571277000,
    "tags": [],
    "desc": "",
@@ -4287,13 +4315,13 @@
    "score": 6
   },
   {
-   "id": "gh:twilio-7996774",
+   "id": "gh:twilio-8007455",
    "src": "greenhouse",
    "srcLabel": "Twilio",
    "company": "Twilio",
    "title": "Machine Learning Engineer",
-   "loc": "Remote - Ireland",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/7996774",
+   "loc": "Remote - Spain",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8007455",
    "posted": 1791571277000,
    "tags": [],
    "desc": "",
@@ -5660,53 +5688,48 @@
    "score": 6
   },
   {
-   "id": "gh:mongodb-8119841",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3, Networking & Observability",
-   "loc": "New York City; United States",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8119841",
-   "posted": 1791567612000,
-   "tags": [],
-   "desc": "",
+   "id": "himalayas:https://himalayas.app/companies/nice/jobs/ai-solution-strategist",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "NICE",
+   "title": "AI Solution Strategist",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/nice/jobs/ai-solution-strategist",
+   "posted": 1791700149000,
+   "tags": [
+    "CX-Agentic-Experience-Automation",
+    "AI-Product-Management",
+    "Conversational-AI",
+    "AI-Strategy",
+    "Customer-Success"
+   ],
+   "desc": "At NiCE, we don’t limit our challenges. We challenge our limits.",
    "salary": "",
    "hits": [
-    "software engineer"
+    "ai"
    ],
    "score": 5
   },
   {
-   "id": "gh:mongodb-8119843",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3, Networking & Observability",
-   "loc": "Alberta; British Columbia; Ontario; Quebec",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8119843",
-   "posted": 1791567612000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
+   "id": "himalayas:https://himalayas.app/companies/pro-global-search-gmbh/jobs/chief-transformation-officer-ai-integration",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "PRO-Global Search GmbH",
+   "title": "Chief Transformation Officer, AI Integration",
+   "loc": "United Arab Emirates",
+   "url": "https://himalayas.app/companies/pro-global-search-gmbh/jobs/chief-transformation-officer-ai-integration",
+   "posted": 1791700145000,
+   "tags": [
+    "Chief-Transformation-Officer",
+    "Chief-AI-Officer",
+    "Transformation-Director",
+    "Digital-Transformation-Officer",
+    "AI-Executive"
    ],
-   "score": 5
-  },
-  {
-   "id": "gh:stripe-8178879",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, Operator Tooling",
-   "loc": "Bucharest",
-   "url": "https://stripe.com/jobs/search?gh_jid=8178879",
-   "posted": 1791567527000,
-   "tags": [],
-   "desc": "",
+   "desc": "OverviewWe're seeking a Russian-speaking senior executive to lead transformation across a diverse group of companies.",
    "salary": "",
    "hits": [
-    "software engineer"
+    "ai"
    ],
    "score": 5
   }
