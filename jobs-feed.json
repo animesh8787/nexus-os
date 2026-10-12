@@ -1,16 +1,16 @@
 {
- "generated": "2026-10-11T09:12:45.281Z",
+ "generated": "2026-10-12T09:37:57.753Z",
  "sources": [
   {
    "name": "Himalayas",
    "ok": true,
-   "count": 103,
+   "count": 120,
    "err": null
   },
   {
    "name": "Working Nomads",
    "ok": true,
-   "count": 53,
+   "count": 50,
    "err": null
   },
   {
@@ -28,13 +28,13 @@
   {
    "name": "Databricks",
    "ok": true,
-   "count": 886,
+   "count": 890,
    "err": null
   },
   {
    "name": "MongoDB",
    "ok": true,
-   "count": 392,
+   "count": 388,
    "err": null
   },
   {
@@ -46,13 +46,13 @@
   {
    "name": "Zscaler",
    "ok": true,
-   "count": 378,
+   "count": 376,
    "err": null
   },
   {
    "name": "Stripe",
    "ok": true,
-   "count": 729,
+   "count": 725,
    "err": null
   },
   {
@@ -76,37 +76,37 @@
   {
    "name": "Elastic",
    "ok": true,
-   "count": 409,
+   "count": 407,
    "err": null
   },
   {
    "name": "Razorpay",
    "ok": true,
-   "count": 26,
+   "count": 25,
    "err": null
   },
   {
    "name": "Coinbase",
    "ok": true,
-   "count": 222,
+   "count": 223,
    "err": null
   },
   {
    "name": "Twilio",
    "ok": true,
-   "count": 144,
+   "count": 143,
    "err": null
   },
   {
    "name": "Tower Research",
    "ok": true,
-   "count": 94,
+   "count": 93,
    "err": null
   },
   {
    "name": "IMC Trading",
    "ok": true,
-   "count": 175,
+   "count": 176,
    "err": null
   },
   {
@@ -118,7 +118,7 @@
   {
    "name": "Groww",
    "ok": true,
-   "count": 9,
+   "count": 10,
    "err": null
   },
   {
@@ -130,43 +130,43 @@
   {
    "name": "Anthropic",
    "ok": true,
-   "count": 645,
+   "count": 646,
    "err": null
   },
   {
    "name": "Airbnb",
    "ok": true,
-   "count": 160,
+   "count": 159,
    "err": null
   },
   {
    "name": "Cloudflare",
    "ok": true,
-   "count": 424,
+   "count": 423,
    "err": null
   },
   {
    "name": "Samsara",
    "ok": true,
-   "count": 240,
+   "count": 238,
    "err": null
   },
   {
    "name": "Jump Trading",
    "ok": true,
-   "count": 107,
+   "count": 106,
    "err": null
   },
   {
    "name": "Jane Street",
    "ok": true,
-   "count": 231,
+   "count": 230,
    "err": null
   },
   {
    "name": "Figma",
    "ok": true,
-   "count": 150,
+   "count": 151,
    "err": null
   },
   {
@@ -184,13 +184,13 @@
   {
    "name": "Pinterest",
    "ok": true,
-   "count": 180,
+   "count": 179,
    "err": null
   },
   {
    "name": "Robinhood",
    "ok": true,
-   "count": 182,
+   "count": 180,
    "err": null
   },
   {
@@ -254,7 +254,7 @@
    "err": null
   }
  ],
- "total": 792,
+ "total": 782,
  "jobs": [
   {
    "id": "gh:databricks-7955594002",
@@ -314,33 +314,6 @@
     "intern"
    ],
    "score": 13
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/engen/jobs/full-stack-software-engineer-5016468904",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "EnGen",
-   "title": "Full-Stack Software Engineer",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/engen/jobs/full-stack-software-engineer-5016468904",
-   "posted": 1791700185000,
-   "tags": [
-    "Fullstack-Development",
-    "Backend-Engineering",
-    "Frontend-Engineer",
-    "AI-LLM-Integration",
-    "Product-Engineering"
-   ],
-   "desc": "About the Organization EnGen offers an at-scale, AI-powered approach to English instruction, designed to solve a systemic access issue: Adult English learners now represent 1 in 10 working-age adults in the U.",
-   "salary": "USD120000–150000",
-   "hits": [
-    "ai",
-    "llm",
-    "software engineer",
-    "backend",
-    "full stack"
-   ],
-   "score": 12
   },
   {
    "id": "gh:affirm-8008645003",
@@ -416,6 +389,33 @@
     "intern"
    ],
    "score": 12
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/hawodtech-solutions-inc/jobs/fullstack-developer-django-python",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "HawodTech Solutions Inc.",
+   "title": "FullStack Developer (Django -Python)",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/hawodtech-solutions-inc/jobs/fullstack-developer-django-python",
+   "posted": 1791796755000,
+   "tags": [
+    "Full-Stack-Developer",
+    "Full-Stack-Engineer",
+    "Backend-Engineer",
+    "Front-End-Developer",
+    "Python-Developer"
+   ],
+   "desc": "Competencies of the following: • Vue. js • React • Django Nice-to-have Experience: • Nuxt.",
+   "salary": "",
+   "hits": [
+    "python",
+    "backend",
+    "full stack",
+    "fullstack",
+    "react"
+   ],
+   "score": 11
   },
   {
    "id": "gh:mongodb-8111979",
@@ -738,31 +738,6 @@
    "score": 10
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/affirm/jobs/software-engineer-ii-backend-online-storage",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Online Storage)",
-   "loc": "Canada",
-   "url": "https://himalayas.app/companies/affirm/jobs/software-engineer-ii-backend-online-storage",
-   "posted": 1791707660000,
-   "tags": [
-    "Backend-Engineer",
-    "Software-Engineer",
-    "Platform-Engineer",
-    "Database-Engineer",
-    "Infrastructure-Engineer"
-   ],
-   "desc": "At Affirm, we exist for the moments that matter—giving people a clear, predictable way to pay over time, with no hidden fees, no surprises, and no tradeoffs on what matters most.",
-   "salary": "CAD133000–183000",
-   "hits": [
-    "software engineer",
-    "backend",
-    "platform engineer"
-   ],
-   "score": 9
-  },
-  {
    "id": "gh:imc-4975945101",
    "src": "greenhouse",
    "srcLabel": "IMC Trading",
@@ -979,20 +954,20 @@
    "score": 9
   },
   {
-   "id": "gh:jumptrading-7975026",
+   "id": "gh:stripe-8212508",
    "src": "greenhouse",
-   "srcLabel": "Jump Trading",
-   "company": "Jump Trading",
-   "title": "Campus Software Engineer (Intern)",
-   "loc": "London",
-   "url": "https://www.jumptrading.com/hr/job?gh_jid=7975026",
-   "posted": 1791479158000,
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Early Career — Immediate Start",
+   "loc": "San Francisco, Seattle, New York",
+   "url": "https://stripe.com/jobs/search?gh_jid=8212508",
+   "posted": 1791414147000,
    "tags": [],
    "desc": "",
    "salary": "",
    "hits": [
     "software engineer",
-    "intern"
+    "early career"
    ],
    "score": 9
   },
@@ -1015,31 +990,13 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8212508",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, Early Career — Immediate Start",
-   "loc": "San Francisco, Seattle, New York",
-   "url": "https://stripe.com/jobs/search?gh_jid=8212508",
-   "posted": 1791414147000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "early career"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:stripe-8130883",
+   "id": "gh:stripe-8130867",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, Intern",
-   "loc": "Singapore",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130883",
+   "loc": "London",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130867",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -1051,13 +1008,13 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8130867",
+   "id": "gh:stripe-8130883",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, Intern",
-   "loc": "London",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130867",
+   "loc": "Singapore",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130883",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -1141,42 +1098,6 @@
    "score": 9
   },
   {
-   "id": "gh:stripe-8130930",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, New Grad",
-   "loc": "London",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
-   "posted": 1791414147000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "new grad"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:stripe-8160776",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, New Grad",
-   "loc": "Singapore",
-   "url": "https://stripe.com/jobs/search?gh_jid=8160776",
-   "posted": 1791414147000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "new grad"
-   ],
-   "score": 9
-  },
-  {
    "id": "gh:stripe-8130881",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -1184,24 +1105,6 @@
    "title": "Software Engineer, New Grad",
    "loc": "Dublin",
    "url": "https://stripe.com/jobs/search?gh_jid=8130881",
-   "posted": 1791414147000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "new grad"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:stripe-8157838",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, New Grad",
-   "loc": "Toronto",
-   "url": "https://stripe.com/jobs/search?gh_jid=8157838",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -1231,6 +1134,24 @@
    "score": 9
   },
   {
+   "id": "gh:stripe-8160776",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "Singapore",
+   "url": "https://stripe.com/jobs/search?gh_jid=8160776",
+   "posted": 1791414147000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
    "id": "gh:stripe-8128744",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -1238,6 +1159,42 @@
    "title": "Software Engineer, New Grad",
    "loc": "San Francisco, Seattle, New York",
    "url": "https://stripe.com/jobs/search?gh_jid=8128744",
+   "posted": 1791414147000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8157838",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "Toronto",
+   "url": "https://stripe.com/jobs/search?gh_jid=8157838",
+   "posted": 1791414147000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:stripe-8130930",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "London",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -2008,56 +1965,6 @@
    "score": 9
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/pro-global-search-gmbh/jobs/chief-artificial-intelligence-ai-officer",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "PRO-Global Search GmbH",
-   "title": "Chief Artificial Intelligence (AI) Officer",
-   "loc": "Portugal",
-   "url": "https://himalayas.app/companies/pro-global-search-gmbh/jobs/chief-artificial-intelligence-ai-officer",
-   "posted": 1791708193000,
-   "tags": [
-    "Chief-AI-Officer",
-    "Chief-Technology-Officer",
-    "VP-Data-Science",
-    "AI-Director",
-    "Chief-Product-Officer"
-   ],
-   "desc": "We are seeking a visionary leader fluent in Russian and English to spearhead our AI journey across architecture, transformation, and product innovation.",
-   "salary": "",
-   "hits": [
-    "artificial intelligence",
-    "ai"
-   ],
-   "score": 8
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/brillio/jobs/ai-builder-ai-solutions-engineer-r01572121",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Brillio",
-   "title": "AI Builder (AI Solutions Engineer) - R01572121",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/brillio/jobs/ai-builder-ai-solutions-engineer-r01572121",
-   "posted": 1791707459000,
-   "tags": [
-    "AI-Engineer",
-    "AI-Solutions-Engineer",
-    "Generative-AI-Engineer",
-    "Machine-Learning-Engineer",
-    "Software-Engineer"
-   ],
-   "desc": "AI Builder (AI Solutions Engineer) | BrillioAbout BrillioBrillio is one of the fastest-growing digital technology service providers, helping Fortune 1000 organizations turn disruption into competitive advantage through innovative digital adoption.",
-   "salary": "USD150000–200000",
-   "hits": [
-    "machine learning",
-    "ai",
-    "generative",
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
    "id": "gh:robinhood-8220757",
    "src": "greenhouse",
    "srcLabel": "Robinhood",
@@ -2093,23 +2000,6 @@
    "score": 8
   },
   {
-   "id": "gh:twilio-8079801",
-   "src": "greenhouse",
-   "srcLabel": "Twilio",
-   "company": "Twilio",
-   "title": "Software Engineer L3",
-   "loc": "Remote - India",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8079801",
-   "posted": 1791571277000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
    "id": "gh:mongodb-8208074",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
@@ -2127,13 +2017,13 @@
    "score": 8
   },
   {
-   "id": "gh:mongodb-8239047",
+   "id": "gh:mongodb-8083366",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3",
    "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8239047",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8083366",
    "posted": 1791554592000,
    "tags": [],
    "desc": "",
@@ -2161,13 +2051,13 @@
    "score": 8
   },
   {
-   "id": "gh:mongodb-8083366",
+   "id": "gh:mongodb-8239047",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
    "company": "MongoDB",
    "title": "Software Engineer 3",
    "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8083366",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8239047",
    "posted": 1791554592000,
    "tags": [],
    "desc": "",
@@ -2208,23 +2098,6 @@
    "salary": "",
    "hits": [
     "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:elastic-8247206",
-   "src": "greenhouse",
-   "srcLabel": "Elastic",
-   "company": "Elastic",
-   "title": "Agentic AI Engineer",
-   "loc": "Bangalore, India",
-   "url": "https://jobs.elastic.co/jobs?gh_jid=8247206&gh_jid=8247206",
-   "posted": 1791520194000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai"
    ],
    "score": 8
   },
@@ -2702,6 +2575,79 @@
     "university"
    ],
    "score": 8
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/toplent/jobs/ai-ml-engineer",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Toplent",
+   "title": "AI/ML Engineer",
+   "loc": "Argentina",
+   "url": "https://himalayas.app/companies/toplent/jobs/ai-ml-engineer",
+   "posted": 1791794680000,
+   "tags": [
+    "AI-ML-Engineer",
+    "Machine-Learning-Engineer",
+    "AI-Engineer",
+    "Data-Scientist",
+    "Python-Developer"
+   ],
+   "desc": "🌟 About the JobToplent helps companies scale faster by connecting them with exceptional remote professionals from SEA, LATAM, and South Africa.",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "ai",
+    "python"
+   ],
+   "score": 7
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/bsi-business-systems-integration/jobs/junior-cloud-operations-engineer-all-genders-ch",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "BSI Business Systems Integration",
+   "title": "Junior Cloud Operations Engineer (all genders) CH",
+   "loc": "Switzerland",
+   "url": "https://himalayas.app/companies/bsi-business-systems-integration/jobs/junior-cloud-operations-engineer-all-genders-ch",
+   "posted": 1791794206000,
+   "tags": [
+    "Cloud-Operations-Engineer",
+    "Site-Reliability-Engineer",
+    "DevOps-Engineer",
+    "Systems-Administrator",
+    "Cloud-Engineer"
+   ],
+   "desc": "Alle reden von Digitalisierung – Wir machen es. Als Hersteller von Europas #1 CRM/CX-Plattform entwickeln wir innovative Softwareprodukte in den Bereichen Kundenbeziehungsmanagement, Marketing Automation und Machine Learning.",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "junior"
+   ],
+   "score": 7
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/analytica/jobs/2027-summer-intern-associate",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Analytica",
+   "title": "2027 Summer Intern Associate",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/analytica/jobs/2027-summer-intern-associate",
+   "posted": 1791794106000,
+   "tags": [
+    "Data-Scientist",
+    "Data-Engineer",
+    "Financial-Analyst",
+    "Business-Analyst",
+    "Human-Resources-Specialist"
+   ],
+   "desc": "Analytica is seeking motivated students and early-career professionals to join our 2027 Summer Associate Internship Program an open opportunity designed to provide hands-on experience across multiple functional areas of the organization.",
+   "salary": "",
+   "hits": [
+    "data engineer",
+    "intern"
+   ],
+   "score": 7
   },
   {
    "id": "gh:cloudflare-8199958",
@@ -4234,49 +4180,25 @@
    "score": 7
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/best10/jobs/ai-builder",
+   "id": "himalayas:https://himalayas.app/companies/vrinda-international/jobs/salesforce-data-cloud-engineer-audience-activation",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Best10",
-   "title": "AI Builder",
-   "loc": "South Africa",
-   "url": "https://himalayas.app/companies/best10/jobs/ai-builder",
-   "posted": 1791700196000,
+   "company": "Vrinda International",
+   "title": "Salesforce Data Cloud Engineer – Audience & Activation",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/vrinda-international/jobs/salesforce-data-cloud-engineer-audience-activation",
+   "posted": 1791794553000,
    "tags": [
-    "AI-Engineering",
-    "Applied-AI",
-    "Machine-Learning-Engineering",
-    "Health-Technology",
-    "Product-Development"
+    "Salesforce-Data-Cloud-Engineer",
+    "Data-Engineer",
+    "Salesforce-Engineer",
+    "Cloud-Data-Engineer",
+    "Salesforce-Data-Cloud-Developer"
    ],
-   "desc": "AI Builder (6-Month Contract)Best10 | Remote | Reports to CEO, working alongside our Product Manager About Best10Best10 delivers online, highly personalised diet and lifestyle coaching through WhatsApp and our own platform.",
+   "desc": "Salesforce Data Cloud Engineer – Audience & Activation Summary We are seeking a skilled Salesforce Data Cloud Engineer to drive our audience and activation initiatives within the IT Services sector.",
    "salary": "",
    "hits": [
-    "machine learning",
-    "ai"
-   ],
-   "score": 6
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/neuraflash/jobs/trying-to-submit-a-referral-for-a-role-not-currently-posted-on-our-job-site-sub",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "NeuraFlash",
-   "title": "Trying to submit a referral for a role not currently posted on our job site? Sub",
-   "loc": "Canada, India",
-   "url": "https://himalayas.app/companies/neuraflash/jobs/trying-to-submit-a-referral-for-a-role-not-currently-posted-on-our-job-site-sub",
-   "posted": 1791700153000,
-   "tags": [
-    "Referral-Submission",
-    "Refer-A-Candidate",
-    "Hiring-Referral",
-    "Referral-Hiring",
-    "Talent-Referral"
-   ],
-   "desc": "Why NeuraFlash, Part of Accenture:At NeuraFlash, Part of Accenture, we are redefining the future of business through the power of AI and groundbreaking technologies like Agentforce.",
-   "salary": "",
-   "hits": [
-    "ai"
+    "data engineer"
    ],
    "score": 6
   },
@@ -5014,13 +4936,13 @@
    "score": 6
   },
   {
-   "id": "gh:databricks-8012650002",
+   "id": "gh:databricks-8029666002",
    "src": "greenhouse",
    "srcLabel": "Databricks",
    "company": "Databricks",
    "title": "Software Engineer - Backend",
-   "loc": "Belgrade, Serbia",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012650002",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8029666002",
    "posted": 1790011332000,
    "tags": [],
    "desc": "",
@@ -5032,13 +4954,13 @@
    "score": 6
   },
   {
-   "id": "gh:databricks-8029666002",
+   "id": "gh:databricks-8012650002",
    "src": "greenhouse",
    "srcLabel": "Databricks",
    "company": "Databricks",
    "title": "Software Engineer - Backend",
-   "loc": "Amsterdam, Netherlands",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8029666002",
+   "loc": "Belgrade, Serbia",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012650002",
    "posted": 1790011332000,
    "tags": [],
    "desc": "",
@@ -5688,48 +5610,110 @@
    "score": 6
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/nice/jobs/ai-solution-strategist",
+   "id": "gh:jumptrading-7495806",
+   "src": "greenhouse",
+   "srcLabel": "Jump Trading",
+   "company": "Jump Trading",
+   "title": "Software Engineer | Post Trade Analytics",
+   "loc": "Hong Kong",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=7495806",
+   "posted": 1791797425000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/mindrift/jobs/physician-ai-clinical-reviewer",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "NICE",
-   "title": "AI Solution Strategist",
+   "company": "Mindrift",
+   "title": "Physician - AI Clinical Reviewer",
    "loc": "United States",
-   "url": "https://himalayas.app/companies/nice/jobs/ai-solution-strategist",
-   "posted": 1791700149000,
+   "url": "https://himalayas.app/companies/mindrift/jobs/physician-ai-clinical-reviewer",
+   "posted": 1791795036000,
    "tags": [
-    "CX-Agentic-Experience-Automation",
-    "AI-Product-Management",
-    "Conversational-AI",
-    "AI-Strategy",
-    "Customer-Success"
+    "Physician-Reviewer",
+    "AI-Clinical-Reviewer",
+    "Medical-Reviewer",
+    "Clinical-Assessor",
+    "Healthcare-AI-Specialist"
    ],
-   "desc": "At NiCE, we don’t limit our challenges. We challenge our limits.",
-   "salary": "",
+   "desc": "Please submit your CV in English and indicate your level of English proficiency.",
+   "salary": "USD130–130",
    "hits": [
     "ai"
    ],
    "score": 5
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/pro-global-search-gmbh/jobs/chief-transformation-officer-ai-integration",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "PRO-Global Search GmbH",
-   "title": "Chief Transformation Officer, AI Integration",
-   "loc": "United Arab Emirates",
-   "url": "https://himalayas.app/companies/pro-global-search-gmbh/jobs/chief-transformation-officer-ai-integration",
-   "posted": 1791700145000,
-   "tags": [
-    "Chief-Transformation-Officer",
-    "Chief-AI-Officer",
-    "Transformation-Director",
-    "Digital-Transformation-Officer",
-    "AI-Executive"
-   ],
-   "desc": "OverviewWe're seeking a Russian-speaking senior executive to lead transformation across a diverse group of companies.",
+   "id": "gh:mongodb-8119843",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3, Networking & Observability",
+   "loc": "Alberta; British Columbia; Ontario; Quebec",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8119843",
+   "posted": 1791567612000,
+   "tags": [],
+   "desc": "",
    "salary": "",
    "hits": [
-    "ai"
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:mongodb-8119841",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3, Networking & Observability",
+   "loc": "New York City; United States",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8119841",
+   "posted": 1791567612000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:stripe-8178879",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Operator Tooling",
+   "loc": "Bucharest",
+   "url": "https://stripe.com/jobs/search?gh_jid=8178879",
+   "posted": 1791567527000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 5
+  },
+  {
+   "id": "gh:stripe-6176758",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Backend/API Engineer, Money as a Service",
+   "loc": "US",
+   "url": "https://stripe.com/jobs/search?gh_jid=6176758",
+   "posted": 1791566652000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "backend"
    ],
    "score": 5
   }
