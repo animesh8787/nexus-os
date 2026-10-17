@@ -1,16 +1,16 @@
 {
- "generated": "2026-10-16T07:28:18.205Z",
+ "generated": "2026-10-17T07:09:09.269Z",
  "sources": [
   {
    "name": "Himalayas",
    "ok": true,
-   "count": 112,
+   "count": 116,
    "err": null
   },
   {
    "name": "Working Nomads",
    "ok": true,
-   "count": 51,
+   "count": 49,
    "err": null
   },
   {
@@ -28,13 +28,13 @@
   {
    "name": "Databricks",
    "ok": true,
-   "count": 899,
+   "count": 898,
    "err": null
   },
   {
    "name": "MongoDB",
    "ok": true,
-   "count": 402,
+   "count": 401,
    "err": null
   },
   {
@@ -52,19 +52,19 @@
   {
    "name": "Stripe",
    "ok": true,
-   "count": 726,
+   "count": 731,
    "err": null
   },
   {
    "name": "GitLab",
    "ok": true,
-   "count": 221,
+   "count": 232,
    "err": null
   },
   {
    "name": "Rubrik",
    "ok": true,
-   "count": 132,
+   "count": 143,
    "err": null
   },
   {
@@ -82,19 +82,19 @@
   {
    "name": "Razorpay",
    "ok": true,
-   "count": 26,
+   "count": 24,
    "err": null
   },
   {
    "name": "Coinbase",
    "ok": true,
-   "count": 230,
+   "count": 226,
    "err": null
   },
   {
    "name": "Twilio",
    "ok": true,
-   "count": 137,
+   "count": 133,
    "err": null
   },
   {
@@ -106,7 +106,7 @@
   {
    "name": "IMC Trading",
    "ok": true,
-   "count": 174,
+   "count": 172,
    "err": null
   },
   {
@@ -130,25 +130,25 @@
   {
    "name": "Anthropic",
    "ok": true,
-   "count": 654,
+   "count": 656,
    "err": null
   },
   {
    "name": "Airbnb",
    "ok": true,
-   "count": 165,
+   "count": 173,
    "err": null
   },
   {
    "name": "Cloudflare",
    "ok": true,
-   "count": 438,
+   "count": 435,
    "err": null
   },
   {
    "name": "Samsara",
    "ok": true,
-   "count": 262,
+   "count": 261,
    "err": null
   },
   {
@@ -160,73 +160,73 @@
   {
    "name": "Jane Street",
    "ok": true,
-   "count": 226,
+   "count": 221,
    "err": null
   },
   {
    "name": "Figma",
    "ok": true,
-   "count": 142,
+   "count": 139,
    "err": null
   },
   {
    "name": "Vercel",
    "ok": true,
-   "count": 92,
+   "count": 93,
    "err": null
   },
   {
    "name": "Scale AI",
    "ok": true,
-   "count": 179,
+   "count": 182,
    "err": null
   },
   {
    "name": "Pinterest",
    "ok": true,
-   "count": 156,
+   "count": 157,
    "err": null
   },
   {
    "name": "Robinhood",
    "ok": true,
-   "count": 154,
+   "count": 153,
    "err": null
   },
   {
    "name": "Affirm",
    "ok": true,
-   "count": 211,
+   "count": 214,
    "err": null
   },
   {
    "name": "Brex",
    "ok": true,
-   "count": 256,
+   "count": 260,
    "err": null
   },
   {
    "name": "Slice",
    "ok": true,
-   "count": 27,
+   "count": 26,
    "err": null
   },
   {
    "name": "Perplexity",
    "ok": true,
-   "count": 131,
+   "count": 133,
    "err": null
   },
   {
    "name": "Notion",
    "ok": true,
-   "count": 129,
+   "count": 128,
    "err": null
   },
   {
    "name": "Ramp",
    "ok": true,
-   "count": 163,
+   "count": 167,
    "err": null
   },
   {
@@ -238,7 +238,7 @@
   {
    "name": "Linear",
    "ok": true,
-   "count": 31,
+   "count": 29,
    "err": null
   },
   {
@@ -254,7 +254,7 @@
    "err": null
   }
  ],
- "total": 775,
+ "total": 782,
  "jobs": [
   {
    "id": "gh:jumptrading-8052343",
@@ -295,6 +295,25 @@
     "intern"
    ],
    "score": 13
+  },
+  {
+   "id": "gh:affirm-8008645003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer (Machine Learning) Intern (Summer 2027)",
+   "loc": "San Francisco, California, United States",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8008645003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "software engineer",
+    "intern"
+   ],
+   "score": 12
   },
   {
    "id": "gh:gitlab-8704363002",
@@ -372,32 +391,6 @@
    "score": 12
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/national-laboratory-of-the-rockies/jobs/graduate-3-12-month-intern-artificial-intelligence-for-power-system-operatio-7726522164",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "National Laboratory of the Rockies",
-   "title": "Graduate (3-12 month) Intern - Artificial Intelligence for Power System Operatio",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/national-laboratory-of-the-rockies/jobs/graduate-3-12-month-intern-artificial-intelligence-for-power-system-operatio-7726522164",
-   "posted": 1792128810000,
-   "tags": [
-    "AI-Research-Intern",
-    "Machine-Learning-Intern",
-    "Power-Systems-Intern",
-    "Research-Intern",
-    "Artificial-Intelligence-Intern"
-   ],
-   "desc": "Posting TitleGraduate (3-12 month) Intern - Artificial Intelligence for Power System Operations.",
-   "salary": "USD51200–81900",
-   "hits": [
-    "machine learning",
-    "artificial intelligence",
-    "ai",
-    "intern"
-   ],
-   "score": 11
-  },
-  {
    "id": "gh:mongodb-8111979",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
@@ -405,7 +398,7 @@
    "title": "Software Engineer 3, AI Builder Experience ",
    "loc": "Gurugram",
    "url": "https://www.mongodb.com/careers/job/?gh_jid=8111979",
-   "posted": 1792083388000,
+   "posted": 1792187956000,
    "tags": [],
    "desc": "",
    "salary": "",
@@ -423,7 +416,7 @@
    "title": "Software Engineer 3, AI Framework Integrations",
    "loc": "Gurugram",
    "url": "https://www.mongodb.com/careers/job/?gh_jid=8127772",
-   "posted": 1792083388000,
+   "posted": 1792187956000,
    "tags": [],
    "desc": "",
    "salary": "",
@@ -432,25 +425,6 @@
     "software engineer"
    ],
    "score": 11
-  },
-  {
-   "id": "gh:affirm-8008645003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer (Machine Learning) Intern (Summer 2027)",
-   "loc": "San Francisco, California, United States",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8008645003",
-   "posted": 1791508374000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning",
-    "software engineer",
-    "intern"
-   ],
-   "score": 10
   },
   {
    "id": "gh:stripe-8031833",
@@ -683,6 +657,138 @@
    "score": 10
   },
   {
+   "id": "himalayas:https://himalayas.app/companies/american-institutes-for-research/jobs/quantitative-research-associate-human-and-community-development",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "American Institutes for Research",
+   "title": "Quantitative Research Associate, Human and Community Development",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/american-institutes-for-research/jobs/quantitative-research-associate-human-and-community-development",
+   "posted": 1792218085000,
+   "tags": [
+    "Research-Associate",
+    "Quantitative-Analyst",
+    "Research-Analyst",
+    "Data-Analyst",
+    "Research-and-Evaluation-Specialist"
+   ],
+   "desc": "AIR is seeking a Quantitative Research Associate to support applied research, evaluation, and technical assistance projects within the Human and Community Development program.",
+   "salary": "USD31–35",
+   "hits": [
+    "quantitative",
+    "associate"
+   ],
+   "score": 9
+  },
+  {
+   "id": "nodesk:https://nodesk.co/remote-jobs/askable-software-engineer-ai-coding-tasks/",
+   "src": "nodesk",
+   "srcLabel": "NoDesk",
+   "company": "",
+   "title": "Software Engineer, AI Coding Tasks at Askable",
+   "loc": "Remote",
+   "url": "https://nodesk.co/remote-jobs/askable-software-engineer-ai-coding-tasks/",
+   "posted": 1792199070000,
+   "tags": [],
+   "desc": "We're looking for experienced software engineers to build AI coding tasks from a codebase they know well. US$1,000 per task, and you can do as many tasks as you want. You turn a real change from a repository you know into a task that today's best AI coding models struggle with: hard for the models, but fair for a skilled engineer. Your tasks are used to measure and train AI coding models.",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:mongodb-8258279",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "2027 - Software Engineer Intern, Dublin - 6 Month Internship",
+   "loc": "Dublin",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8258279",
+   "posted": 1792187956000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8008649003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer, Early Career (NYC)",
+   "loc": "New York, New York, United States",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8008649003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "early career"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8010617003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer, Early Career (SF)",
+   "loc": "San Francisco, California, United States",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8010617003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "early career"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7807506003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer I, Backend (Collections)",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807506003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7807508003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer I, Backend (Collections)",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807508003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
    "id": "gh:affirm-8017342003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
@@ -690,7 +796,7 @@
    "title": "Software Engineer I, Fullstack (Search)",
    "loc": "Remote Canada",
    "url": "https://job-boards.greenhouse.io/affirm/jobs/8017342003",
-   "posted": 1792099871000,
+   "posted": 1792185227000,
    "tags": [],
    "desc": "",
    "salary": "",
@@ -708,13 +814,463 @@
    "title": "Software Engineer I, Fullstack (Search)",
    "loc": "Remote US",
    "url": "https://job-boards.greenhouse.io/affirm/jobs/8017340003",
-   "posted": 1792099869000,
+   "posted": 1792185227000,
    "tags": [],
    "desc": "",
    "salary": "",
    "hits": [
     "software engineer",
     "fullstack"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8003030003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Batch Developer Experience)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8003030003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8003028003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Batch Developer Experience)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8003028003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8006331003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Card)",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8006331003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8006329003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Card) ",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8006329003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8003016003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Decisions Orchestration)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8003016003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8003018003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Decisions Orchestration)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8003018003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7799346003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II , Backend, (Furnishing Platform) ",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7799346003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7799348003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Furnishing Platform) ",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7799348003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7985860003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Identity Decisioning)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7985860003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7985862003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Identity Decisioning)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7985862003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8012043003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Online Storage)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8012043003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7590373003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Partner Merchant Interface)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7590373003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8003020003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Streaming)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8003020003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8003022003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Streaming)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8003022003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7727320003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Test Infra)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727320003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7727322003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Backend (Test Infra)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727322003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "backend"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8016868003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Fullstack (Ads Platform)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8016868003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "fullstack"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8016866003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Fullstack (Ads Platform)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8016866003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "fullstack"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7819445003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Fullstack (App Experience)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7819445003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "fullstack"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7819447003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Fullstack (App Experience)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7819447003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "fullstack"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8032175003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Full Stack (Card Acquisition)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8032175003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8032173003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Full Stack (Card Acquisition)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8032173003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "full stack"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-7854835003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer II, Fullstack (International)",
+   "loc": "Remote UK",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7854835003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "fullstack"
+   ],
+   "score": 9
+  },
+  {
+   "id": "gh:affirm-8011590003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer Intern (Summer 2027)",
+   "loc": "San Francisco, California, United States",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8011590003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "intern"
+   ],
+   "score": 9
+  },
+  {
+   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=163452",
+   "src": "jobspresso",
+   "srcLabel": "Jobspresso",
+   "company": "",
+   "title": "Software Engineer, AI/ML",
+   "loc": "Remote",
+   "url": "https://jobspresso.co/job/software-engineer-ai-ml/",
+   "posted": 1792151133000,
+   "tags": [],
+   "desc": "Working for a company like Smile Digital Health means supporting our mandate for #BetterGlobalHealth. We strive towards this goal every day, and the results can be seen in the impact of our innovative health data platform and data management solutions, which are used in over 20 countries. We were #19 on Deloitte s Technology Fast 50",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
    ],
    "score": 9
   },
@@ -750,24 +1306,6 @@
    "salary": "",
    "hits": [
     "machine learning",
-    "intern"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:mongodb-8258279",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "2027 - Software Engineer Intern, Dublin - 6 Month Internship",
-   "loc": "Dublin",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8258279",
-   "posted": 1792083388000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
     "intern"
    ],
    "score": 9
@@ -1385,13 +1923,13 @@
    "score": 9
   },
   {
-   "id": "gh:scaleai-4730851005",
+   "id": "gh:scaleai-4730836005",
    "src": "greenhouse",
    "srcLabel": "Scale AI",
    "company": "Scale AI",
    "title": "Software Engineer - New Grad",
-   "loc": "Doha, Qatar ",
-   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4730851005",
+   "loc": "San Francisco, CA",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4730836005",
    "posted": 1791839171000,
    "tags": [],
    "desc": "",
@@ -1421,13 +1959,13 @@
    "score": 9
   },
   {
-   "id": "gh:scaleai-4730836005",
+   "id": "gh:scaleai-4730851005",
    "src": "greenhouse",
    "srcLabel": "Scale AI",
    "company": "Scale AI",
    "title": "Software Engineer - New Grad",
-   "loc": "San Francisco, CA",
-   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4730836005",
+   "loc": "Doha, Qatar ",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4730851005",
    "posted": 1791839171000,
    "tags": [],
    "desc": "",
@@ -1453,96 +1991,6 @@
    "hits": [
     "software engineer",
     "new grad"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:affirm-8016868003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Fullstack (Ads Platform)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8016868003",
-   "posted": 1791573918000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "fullstack"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:affirm-8016866003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Fullstack (Ads Platform)",
-   "loc": "Remote US",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8016866003",
-   "posted": 1791573916000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "fullstack"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:affirm-7590373003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Partner Merchant Interface)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7590373003",
-   "posted": 1791569112000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:affirm-8003030003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Batch Developer Experience)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8003030003",
-   "posted": 1791566595000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 9
-  },
-  {
-   "id": "gh:affirm-8003028003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Batch Developer Experience)",
-   "loc": "Remote US",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8003028003",
-   "posted": 1791552053000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
    ],
    "score": 9
   },
@@ -1584,6 +2032,142 @@
     "platform engineer"
    ],
    "score": 9
+  },
+  {
+   "id": "gh:mongodb-8239047",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8239047",
+   "posted": 1792187956000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:mongodb-7993984",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
+   "posted": 1792187956000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:mongodb-8208074",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8208074",
+   "posted": 1792187956000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:mongodb-8083366",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8083366",
+   "posted": 1792187956000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:mongodb-7597723",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3, Atlas Agent Engine",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7597723",
+   "posted": 1792187956000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:mongodb-8221290",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Software Engineer 3 - Enterprise Architecture",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8221290",
+   "posted": 1792187956000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:gitlab-8894531002",
+   "src": "greenhouse",
+   "srcLabel": "GitLab",
+   "company": "GitLab",
+   "title": "Intermediate Backend Engineer - Code Security",
+   "loc": "Bangalore, India",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8894531002",
+   "posted": 1792162441000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "backend"
+   ],
+   "score": 8
+  },
+  {
+   "id": "gh:twilio-8258587",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Machine Learning Engineer (L3)",
+   "loc": "Remote - India",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8258587",
+   "posted": 1792160836000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 8
   },
   {
    "id": "gh:stripe-7618977",
@@ -1637,108 +2221,6 @@
    "score": 8
   },
   {
-   "id": "gh:mongodb-8083366",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8083366",
-   "posted": 1792083388000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:mongodb-7993984",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7993984",
-   "posted": 1792083388000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:mongodb-8208074",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8208074",
-   "posted": 1792083388000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:mongodb-8239047",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8239047",
-   "posted": 1792083388000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:mongodb-7597723",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3, Atlas Agent Engine",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7597723",
-   "posted": 1792083388000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:mongodb-8221290",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Software Engineer 3 - Enterprise Architecture",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8221290",
-   "posted": 1792083388000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 8
-  },
-  {
    "id": "gh:robinhood-7263592",
    "src": "greenhouse",
    "srcLabel": "Robinhood",
@@ -1771,23 +2253,6 @@
    "hits": [
     "software engineer",
     "backend"
-   ],
-   "score": 8
-  },
-  {
-   "id": "gh:twilio-8258587",
-   "src": "greenhouse",
-   "srcLabel": "Twilio",
-   "company": "Twilio",
-   "title": "Machine Learning Engineer (L3)",
-   "loc": "Remote - India",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8258587",
-   "posted": 1792074413000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning"
    ],
    "score": 8
   },
@@ -2233,27 +2698,26 @@
    "score": 8
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/knowmad-mood/jobs/microsoft-engineer-ia-azure-ai-foundry-azure-openai-remoto",
+   "id": "himalayas:https://himalayas.app/companies/opensesame/jobs/security-analyst-internship",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "knowmad mood",
-   "title": "Microsoft Engineer + IA - Azure AI Foundry/Azure OpenAI (Remoto)",
-   "loc": "Spain",
-   "url": "https://himalayas.app/companies/knowmad-mood/jobs/microsoft-engineer-ia-azure-ai-foundry-azure-openai-remoto",
-   "posted": 1792131004000,
+   "company": "OpenSesame",
+   "title": "Security Analyst Internship",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/opensesame/jobs/security-analyst-internship",
+   "posted": 1792218218000,
    "tags": [
-    "AI-Engineer",
-    "Generative-AI-Engineer",
-    "Azure-AI-Engineer",
-    "Microsoft-Engineer",
-    "Machine-Learning-Engineer"
+    "Security-Analyst",
+    "Cybersecurity-Internship",
+    "Information-Systems",
+    "Compliance-Analyst",
+    "GRC-Analyst"
    ],
-   "desc": "We are knowmad mood! Buscamos un/a Ingeniero/a Microsoft con experiencia en IA para incorporarse y participar en una célula especializada centrada en el desarrollo de soluciones de Inteligencia Artificial Generativa dentro de un entorno Microsoft, para un importante cliente del sector Seguros.",
-   "salary": "",
+   "desc": "About OpenSesameOpenSesame is transforming workforce development with an AI-powered marketplace of skill-building courses and learning pathways.",
+   "salary": "USD18–18",
    "hits": [
-    "machine learning",
     "ai",
-    "generative"
+    "internship"
    ],
    "score": 7
   },
@@ -2276,38 +2740,20 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-8011590003",
+   "id": "gh:stripe-8212508",
    "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer Intern (Summer 2027)",
-   "loc": "San Francisco, California, United States",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8011590003",
-   "posted": 1791508338000,
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, Early Career — Immediate Start",
+   "loc": "San Francisco, Seattle, New York",
+   "url": "https://stripe.com/jobs/search?gh_jid=8212508",
+   "posted": 1791414147000,
    "tags": [],
    "desc": "",
    "salary": "",
    "hits": [
     "software engineer",
-    "intern"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-8012043003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Online Storage)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8012043003",
-   "posted": 1791489230000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
+    "early career"
    ],
    "score": 7
   },
@@ -2330,31 +2776,13 @@
    "score": 7
   },
   {
-   "id": "gh:stripe-8212508",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, Early Career — Immediate Start",
-   "loc": "San Francisco, Seattle, New York",
-   "url": "https://stripe.com/jobs/search?gh_jid=8212508",
-   "posted": 1791414147000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "early career"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:stripe-8130883",
+   "id": "gh:stripe-8130867",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, Intern",
-   "loc": "Singapore",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130883",
+   "loc": "London",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130867",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -2366,13 +2794,13 @@
    "score": 7
   },
   {
-   "id": "gh:stripe-8130867",
+   "id": "gh:stripe-8130883",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, Intern",
-   "loc": "London",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130867",
+   "loc": "Singapore",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130883",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -2402,13 +2830,13 @@
    "score": 7
   },
   {
-   "id": "gh:stripe-8097801",
+   "id": "gh:stripe-8130805",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, Intern (Summer or Winter)",
-   "loc": "Dublin",
-   "url": "https://stripe.com/jobs/search?gh_jid=8097801",
+   "loc": "Toronto",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130805",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -2438,13 +2866,13 @@
    "score": 7
   },
   {
-   "id": "gh:stripe-8130805",
+   "id": "gh:stripe-8097801",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, Intern (Summer or Winter)",
-   "loc": "Toronto",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130805",
+   "loc": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8097801",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -2456,13 +2884,13 @@
    "score": 7
   },
   {
-   "id": "gh:stripe-8128744",
+   "id": "gh:stripe-8130930",
    "src": "greenhouse",
    "srcLabel": "Stripe",
    "company": "Stripe",
    "title": "Software Engineer, New Grad",
-   "loc": "San Francisco, Seattle, New York",
-   "url": "https://stripe.com/jobs/search?gh_jid=8128744",
+   "loc": "London",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -2492,6 +2920,24 @@
    "score": 7
   },
   {
+   "id": "gh:stripe-8160776",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "Singapore",
+   "url": "https://stripe.com/jobs/search?gh_jid=8160776",
+   "posted": 1791414147000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 7
+  },
+  {
    "id": "gh:stripe-8130881",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -2499,6 +2945,24 @@
    "title": "Software Engineer, New Grad",
    "loc": "Dublin",
    "url": "https://stripe.com/jobs/search?gh_jid=8130881",
+   "posted": 1791414147000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer",
+    "new grad"
+   ],
+   "score": 7
+  },
+  {
+   "id": "gh:stripe-8128744",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Software Engineer, New Grad",
+   "loc": "San Francisco, Seattle, New York",
+   "url": "https://stripe.com/jobs/search?gh_jid=8128744",
    "posted": 1791414147000,
    "tags": [],
    "desc": "",
@@ -2528,42 +2992,6 @@
    "score": 7
   },
   {
-   "id": "gh:stripe-8130930",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, New Grad",
-   "loc": "London",
-   "url": "https://stripe.com/jobs/search?gh_jid=8130930",
-   "posted": 1791414147000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "new grad"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:stripe-8160776",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Software Engineer, New Grad",
-   "loc": "Singapore",
-   "url": "https://stripe.com/jobs/search?gh_jid=8160776",
-   "posted": 1791414147000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "new grad"
-   ],
-   "score": 7
-  },
-  {
    "id": "gh:stripe-8130927",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -2582,42 +3010,6 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-8008649003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer, Early Career (NYC)",
-   "loc": "New York, New York, United States",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8008649003",
-   "posted": 1791328651000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "early career"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-8010617003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer, Early Career (SF)",
-   "loc": "San Francisco, California, United States",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8010617003",
-   "posted": 1791328632000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "early career"
-   ],
-   "score": 7
-  },
-  {
    "id": "gh:jumptrading-8027860",
    "src": "greenhouse",
    "srcLabel": "Jump Trading",
@@ -2632,42 +3024,6 @@
    "hits": [
     "software engineer",
     "intern"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-8003018003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Decisions Orchestration)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8003018003",
-   "posted": 1791295036000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-8003016003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Decisions Orchestration)",
-   "loc": "Remote US",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8003016003",
-   "posted": 1791295034000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
    ],
    "score": 7
   },
@@ -2870,42 +3226,6 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-8003022003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Streaming)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8003022003",
-   "posted": 1790807224000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-8003020003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Streaming)",
-   "loc": "Remote US",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8003020003",
-   "posted": 1790807221000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 7
-  },
-  {
    "id": "gh:coinbase-8168315",
    "src": "greenhouse",
    "srcLabel": "Coinbase",
@@ -2963,42 +3283,6 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7985862003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Identity Decisioning)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7985862003",
-   "posted": 1790267377000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-7985860003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Identity Decisioning)",
-   "loc": "Remote US",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7985860003",
-   "posted": 1790267376000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 7
-  },
-  {
    "id": "gh:figma-6178851004",
    "src": "greenhouse",
    "srcLabel": "Figma",
@@ -3013,42 +3297,6 @@
    "hits": [
     "data engineer",
     "intern"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-7807506003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer I, Backend (Collections)",
-   "loc": "Remote Spain",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807506003",
-   "posted": 1789983612000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-7807508003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer I, Backend (Collections)",
-   "loc": "Remote Poland",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7807508003",
-   "posted": 1789983612000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
    ],
    "score": 7
   },
@@ -3290,42 +3538,6 @@
    "score": 7
   },
   {
-   "id": "gh:affirm-7819447003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Fullstack (App Experience)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7819447003",
-   "posted": 1787333300000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "fullstack"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-7819445003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Fullstack (App Experience)",
-   "loc": "Remote US",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7819445003",
-   "posted": 1787333295000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "fullstack"
-   ],
-   "score": 7
-  },
-  {
    "id": "gh:anthropic-5198108008",
    "src": "greenhouse",
    "srcLabel": "Anthropic",
@@ -3340,24 +3552,6 @@
    "hits": [
     "machine learning",
     "research engineer"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-7799348003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Furnishing Platform) ",
-   "loc": "Remote Poland",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7799348003",
-   "posted": 1787133516000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
    ],
    "score": 7
   },
@@ -3601,78 +3795,6 @@
    "hits": [
     "software engineer",
     "intern"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-7854835003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Fullstack (International)",
-   "loc": "Remote UK",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7854835003",
-   "posted": 1786625311000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "fullstack"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-7799346003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II , Backend, (Furnishing Platform) ",
-   "loc": "Remote Spain",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7799346003",
-   "posted": 1786561931000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-7727322003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Test Infra)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727322003",
-   "posted": 1786561931000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 7
-  },
-  {
-   "id": "gh:affirm-7727320003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Backend (Test Infra)",
-   "loc": "Remote US",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/7727320003",
-   "posted": 1786561931000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
    ],
    "score": 7
   },
@@ -4073,123 +4195,304 @@
    "score": 7
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/wiselywise/jobs/online-trainer-web-development",
+   "id": "himalayas:https://himalayas.app/companies/isee/jobs/research-scientist-machine-learning",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "WiselyWise",
-   "title": "Online Trainer - Web Development",
-   "loc": "India",
-   "url": "https://himalayas.app/companies/wiselywise/jobs/online-trainer-web-development",
-   "posted": 1792129829000,
-   "tags": [
-    "Online-Trainer",
-    "Web-Development-Training",
-    "Fullstack-Development",
-    "EdTech-Instructor",
-    "Technical-Trainer"
-   ],
-   "desc": "Category: Education Location: India About Us:WiselyWiseis a leading Global EdTech Startup from Singapore.",
-   "salary": "",
-   "hits": [
-    "fullstack"
-   ],
-   "score": 6
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/wiselywise/jobs/zoho-transformation-engineer",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "WiselyWise",
-   "title": "Zoho Transformation Engineer",
-   "loc": "India",
-   "url": "https://himalayas.app/companies/wiselywise/jobs/zoho-transformation-engineer",
-   "posted": 1792129269000,
-   "tags": [
-    "Zoho-Developer",
-    "CRM-Developer",
-    "Software-Engineer",
-    "Digital-Transformation-Engineer",
-    "Transformation-Engineer"
-   ],
-   "desc": "Category: IT Services Location: India WiselyWise, is a leader in digital transformation and an authorized partner of Zoho.",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/bright-vision-technologies/jobs/chip-software-engineer-9196108698",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Bright Vision Technologies",
-   "title": "Chip Software Engineer",
+   "company": "ISEE",
+   "title": "Research Scientist - Machine Learning",
    "loc": "United States",
-   "url": "https://himalayas.app/companies/bright-vision-technologies/jobs/chip-software-engineer-9196108698",
-   "posted": 1792128910000,
+   "url": "https://himalayas.app/companies/isee/jobs/research-scientist-machine-learning",
+   "posted": 1792218467000,
    "tags": [
-    "Chip-Software-Engineer",
-    "Firmware-Engineer",
-    "Software-Engineer",
-    "Semiconductor-Engineer",
-    "EDA-Engineer"
+    "Machine-Learning",
+    "Robotics-Research",
+    "AI",
+    "Research-Scientist",
+    "Autonomous-Systems"
    ],
-   "desc": "Chip Software Engineer – Remote Bright Vision Technologies is a technology consulting and software development company delivering cloud, AI, data, and enterprise solutions across the United States.",
-   "salary": "USD80000–100000",
+   "desc": "ISEE is seeking full-time Research Scientists to join our team.",
+   "salary": "",
+   "hits": [
+    "machine learning",
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/thrive/jobs/microsoft-ai-solutions-developer",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Thrive",
+   "title": "Microsoft AI Solutions Developer",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/thrive/jobs/microsoft-ai-solutions-developer",
+   "posted": 1792218457000,
+   "tags": [
+    "AI-Developer",
+    "Azure-Developer",
+    "AI-Engineer",
+    "Data-Engineer",
+    "Solutions-Developer"
+   ],
+   "desc": "About UsThrive delivers upon the promise of technology by enabling our clients’ digital transformation journeys with best practices on an AI, cybersecurity and cloud focused NextGen managed services platform.",
+   "salary": "",
    "hits": [
     "ai",
-    "software engineer"
+    "data engineer"
    ],
    "score": 6
   },
   {
-   "id": "gh:affirm-8032175003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Mobile (Card Acquisition)",
-   "loc": "Remote Canada",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8032175003",
-   "posted": 1792113013000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
+   "id": "himalayas:https://himalayas.app/companies/celara/jobs/software-engineer-qb-net-20260713-2107336759",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Celara",
+   "title": "Software Engineer (QB - .Net - 20260713)",
+   "loc": "Argentina",
+   "url": "https://himalayas.app/companies/celara/jobs/software-engineer-qb-net-20260713-2107336759",
+   "posted": 1792218451000,
+   "tags": [
+    "Software-Engineer",
+    ".NET-Development",
+    "Backend-Development",
+    "REST-API-Development",
+    "Cloud-Development"
+   ],
+   "desc": "We employ talented and ambitious engineers to use the latest technologies and tools to build innovative cloud and app based software products in rapid fashion.",
+   "salary": "USD95000–140000",
    "hits": [
-    "software engineer"
+    "software engineer",
+    "backend"
    ],
    "score": 6
   },
   {
-   "id": "gh:affirm-8032173003",
-   "src": "greenhouse",
-   "srcLabel": "Affirm",
-   "company": "Affirm",
-   "title": "Software Engineer II, Mobile (Card Acquisition)",
-   "loc": "Remote US",
-   "url": "https://job-boards.greenhouse.io/affirm/jobs/8032173003",
-   "posted": 1792113011000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
+   "id": "himalayas:https://himalayas.app/companies/miratech/jobs/devops-engineer-2267916989",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Miratech",
+   "title": "DevOps Engineer",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/miratech/jobs/devops-engineer-2267916989",
+   "posted": 1792217730000,
+   "tags": [
+    "DevOps-Engineer",
+    "Cloud-Engineer",
+    "Platform-Engineer",
+    "Cloud-Infrastructure-Engineer",
+    "Site-Reliability-Engineer"
    ],
-   "score": 6
-  },
-  {
-   "id": "gh:gitlab-8889193002",
-   "src": "greenhouse",
-   "srcLabel": "GitLab",
-   "company": "GitLab",
-   "title": "Cloud Platform Engineer",
-   "loc": "Remote, Canada; Remote, United States",
-   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8889193002",
-   "posted": 1792105901000,
-   "tags": [],
-   "desc": "",
+   "desc": "We are seeking a skilled and experienced DevOps Engineer with 4+ years of experience to join our dynamic team.",
    "salary": "",
    "hits": [
     "platform engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:affirm-7916080003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Analytics Engineer II, Full Stack (Revenue Analytics)",
+   "loc": "Remote Spain",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7916080003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "full stack"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:affirm-7813362003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Analytics Engineer II, Full Stack (Revenue Analytics)",
+   "loc": "Remote Poland",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7813362003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "full stack"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:affirm-8033261003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Machine Learning Engineer II (ROA + LTV ML)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/8033261003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:affirm-7822389003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Machine Learning Engineer II (Underwriting ML)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7822389003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:affirm-7822387003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Machine Learning Engineer II (Underwriting ML)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7822387003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:affirm-7815954003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Quantitative Analyst II (Capital Structuring & Analytics)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7815954003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:affirm-7815952003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Quantitative Analyst II (Capital Structuring & Analytics)",
+   "loc": "Remote US",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7815952003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "quantitative"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:affirm-7985907003",
+   "src": "greenhouse",
+   "srcLabel": "Affirm",
+   "company": "Affirm",
+   "title": "Software Engineer I, Frontend (Upfunnel)",
+   "loc": "Remote Canada",
+   "url": "https://job-boards.greenhouse.io/affirm/jobs/7985907003",
+   "posted": 1792185227000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:stripe-8198323",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Solutions Engineer, AI Build Team ",
+   "loc": "US-SF, US-NYC, US-Remote",
+   "url": "https://stripe.com/jobs/search?gh_jid=8198323",
+   "posted": 1792179470000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai"
+   ],
+   "score": 6
+  },
+  {
+   "id": "ab:supabase-b65287c7-2071-4bc6-8717-58c090e2a372",
+   "src": "ashby",
+   "srcLabel": "Supabase",
+   "company": "Supabase",
+   "title": "SDK Engineer - Python",
+   "loc": "Remote, Global",
+   "url": "https://jobs.ashbyhq.com/supabase/b65287c7-2071-4bc6-8717-58c090e2a372",
+   "posted": 1792165297459,
+   "tags": [
+    "Engineering",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "python"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-7996774",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Machine Learning Engineer",
+   "loc": "Remote - Ireland",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/7996774",
+   "posted": 1792161204000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
+   ],
+   "score": 6
+  },
+  {
+   "id": "gh:twilio-8007455",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Machine Learning Engineer",
+   "loc": "Remote - Spain",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8007455",
+   "posted": 1792161197000,
+   "tags": [],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "machine learning"
    ],
    "score": 6
   },
@@ -4219,23 +4522,6 @@
    "loc": "Remote - US",
    "url": "https://www.samsara.com/company/careers/roles/7922530?gh_jid=7922530",
    "posted": 1792096436000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:twilio-8247182",
-   "src": "greenhouse",
-   "srcLabel": "Twilio",
-   "company": "Twilio",
-   "title": "Software Engineer (L2) Messaging Channels Team ",
-   "loc": "Remote - US",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8247182",
-   "posted": 1792095404000,
    "tags": [],
    "desc": "",
    "salary": "",
@@ -4377,40 +4663,6 @@
    "salary": "",
    "hits": [
     "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:twilio-7996774",
-   "src": "greenhouse",
-   "srcLabel": "Twilio",
-   "company": "Twilio",
-   "title": "Machine Learning Engineer",
-   "loc": "Remote - Ireland",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/7996774",
-   "posted": 1792074761000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:twilio-8007455",
-   "src": "greenhouse",
-   "srcLabel": "Twilio",
-   "company": "Twilio",
-   "title": "Machine Learning Engineer",
-   "loc": "Remote - Spain",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8007455",
-   "posted": 1792074753000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "machine learning"
    ],
    "score": 6
   },
@@ -4588,23 +4840,6 @@
    "score": 6
   },
   {
-   "id": "gh:coinbase-8207374",
-   "src": "greenhouse",
-   "srcLabel": "Coinbase",
-   "company": "Coinbase",
-   "title": "Software Engineer",
-   "loc": "Remote - Canada",
-   "url": "https://www.coinbase.com/careers/positions/8207374?gh_jid=8207374",
-   "posted": 1791935664000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
    "id": "gh:coinbase-8177619",
    "src": "greenhouse",
    "srcLabel": "Coinbase",
@@ -4715,63 +4950,6 @@
    "loc": "Remote, Global",
    "url": "https://jobs.ashbyhq.com/supabase/6b314e83-6617-49fc-8c73-021ebae9a757",
    "posted": 1791907925591,
-   "tags": [
-    "Engineering",
-    "FullTime"
-   ],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "platform engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:pinterest-8227344",
-   "src": "greenhouse",
-   "srcLabel": "Pinterest",
-   "company": "Pinterest",
-   "title": "Software Engineer II, EPD Ads",
-   "loc": "San Francisco, CA; Palo Alto, CA; Seattle, WA; New York, NY; Remote, US",
-   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8227344",
-   "posted": 1791570275000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "ab:supabase-9073c0cd-2545-473a-b2ac-63e4615c69b5",
-   "src": "ashby",
-   "srcLabel": "Supabase",
-   "company": "Supabase",
-   "title": "Platform Engineer, Managed Postgres",
-   "loc": "Remote, Global",
-   "url": "https://jobs.ashbyhq.com/supabase/9073c0cd-2545-473a-b2ac-63e4615c69b5",
-   "posted": 1791566259437,
-   "tags": [
-    "Engineering",
-    "FullTime"
-   ],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "platform engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "ab:supabase-5d09daeb-2d7e-42de-9151-81a1341195c4",
-   "src": "ashby",
-   "srcLabel": "Supabase",
-   "company": "Supabase",
-   "title": "Cloud Platform Engineer",
-   "loc": "Remote, Global",
-   "url": "https://jobs.ashbyhq.com/supabase/5d09daeb-2d7e-42de-9151-81a1341195c4",
-   "posted": 1791534995363,
    "tags": [
     "Engineering",
     "FullTime"
@@ -4997,13 +5175,13 @@
    "score": 6
   },
   {
-   "id": "gh:janestreet-6802323002",
+   "id": "gh:janestreet-7437779002",
    "src": "greenhouse",
    "srcLabel": "Jane Street",
    "company": "Jane Street",
    "title": "Machine Learning Research Engineer",
-   "loc": "Hong Kong, Hong Kong",
-   "url": "https://www.janestreet.com/join-jane-street/apply/6802323002?gh_jid=6802323002",
+   "loc": "London, England, United Kingdom",
+   "url": "https://www.janestreet.com/join-jane-street/apply/7437779002?gh_jid=7437779002",
    "posted": 1790604359000,
    "tags": [],
    "desc": "",
@@ -5015,13 +5193,13 @@
    "score": 6
   },
   {
-   "id": "gh:janestreet-7437779002",
+   "id": "gh:janestreet-6802323002",
    "src": "greenhouse",
    "srcLabel": "Jane Street",
    "company": "Jane Street",
    "title": "Machine Learning Research Engineer",
-   "loc": "London, England, United Kingdom",
-   "url": "https://www.janestreet.com/join-jane-street/apply/7437779002?gh_jid=7437779002",
+   "loc": "Hong Kong, Hong Kong",
+   "url": "https://www.janestreet.com/join-jane-street/apply/6802323002?gh_jid=6802323002",
    "posted": 1790604359000,
    "tags": [],
    "desc": "",
@@ -5141,13 +5319,13 @@
    "score": 6
   },
   {
-   "id": "gh:databricks-8029666002",
+   "id": "gh:databricks-8012650002",
    "src": "greenhouse",
    "srcLabel": "Databricks",
    "company": "Databricks",
    "title": "Software Engineer - Backend",
-   "loc": "Amsterdam, Netherlands",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8029666002",
+   "loc": "Belgrade, Serbia",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012650002",
    "posted": 1790011332000,
    "tags": [],
    "desc": "",
@@ -5159,13 +5337,13 @@
    "score": 6
   },
   {
-   "id": "gh:databricks-8012650002",
+   "id": "gh:databricks-8029666002",
    "src": "greenhouse",
    "srcLabel": "Databricks",
    "company": "Databricks",
    "title": "Software Engineer - Backend",
-   "loc": "Belgrade, Serbia",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012650002",
+   "loc": "Amsterdam, Netherlands",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8029666002",
    "posted": 1790011332000,
    "tags": [],
    "desc": "",
@@ -5338,6 +5516,27 @@
    "score": 6
   },
   {
+   "id": "ab:notion-1fc309c8-da20-4ff2-84c7-8b863ece2b0a",
+   "src": "ashby",
+   "srcLabel": "Notion",
+   "company": "Notion",
+   "title": "Software Engineer, AI Connections (Developer Platform)",
+   "loc": "San Francisco, California",
+   "url": "https://jobs.ashbyhq.com/notion/1fc309c8-da20-4ff2-84c7-8b863ece2b0a",
+   "posted": 1787582689699,
+   "tags": [
+    "Engineering",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": "",
+   "hits": [
+    "ai",
+    "software engineer"
+   ],
+   "score": 6
+  },
+  {
    "id": "gh:anthropic-5186067008",
    "src": "greenhouse",
    "srcLabel": "Anthropic",
@@ -5493,215 +5692,6 @@
    "hits": [
     "deep learning",
     "research engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:squarepointcapital-953511",
-   "src": "greenhouse",
-   "srcLabel": "Squarepoint",
-   "company": "Squarepoint",
-   "title": "Software Developer - Data Pipelines (Python) ",
-   "loc": "London, Montreal, Madrid, Bangalore",
-   "url": "https://www.squarepoint-capital.com/open-opportunities?id=953511&gh_jid=953511",
-   "posted": 1786014040000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "python"
-   ],
-   "score": 6
-  },
-  {
-   "id": "ab:ramp-b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
-   "src": "ashby",
-   "srcLabel": "Ramp",
-   "company": "Ramp",
-   "title": "Software Engineer, Forward Deployed AI Solutions",
-   "loc": "New York, NY (HQ)",
-   "url": "https://jobs.ashbyhq.com/ramp/b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
-   "posted": 1785261417225,
-   "tags": [
-    "Engineering",
-    "FullTime"
-   ],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:figma-5707966004",
-   "src": "greenhouse",
-   "srcLabel": "Figma",
-   "company": "Figma",
-   "title": "AI Applied Scientist",
-   "loc": "San Francisco, CA • New York, NY • United States",
-   "url": "https://boards.greenhouse.io/figma/jobs/5707966004?gh_jid=5707966004",
-   "posted": 1784713028000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "applied scientist"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:towerresearchcapital-6384976",
-   "src": "greenhouse",
-   "srcLabel": "Tower Research",
-   "company": "Tower Research",
-   "title": "Quantitative Developer, Python",
-   "loc": "New York",
-   "url": "https://www.tower-research.com/open-positions/?gh_jid=6384976",
-   "posted": 1784232274000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "python",
-    "quantitative"
-   ],
-   "score": 6
-  },
-  {
-   "id": "ab:ramp-6a7e382f-240a-4952-b9e5-7fe2b3856bc9",
-   "src": "ashby",
-   "srcLabel": "Ramp",
-   "company": "Ramp",
-   "title": "Applied AI Engineer, Fullstack",
-   "loc": "New York, NY (HQ)",
-   "url": "https://jobs.ashbyhq.com/ramp/6a7e382f-240a-4952-b9e5-7fe2b3856bc9",
-   "posted": 1782311442943,
-   "tags": [
-    "Engineering",
-    "FullTime"
-   ],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "fullstack"
-   ],
-   "score": 6
-  },
-  {
-   "id": "ab:notion-49bdf081-6e20-4323-8c73-6d6b19544ff5",
-   "src": "ashby",
-   "srcLabel": "Notion",
-   "company": "Notion",
-   "title": "Software Engineer, Developer Experience",
-   "loc": "Hyderabad, India",
-   "url": "https://jobs.ashbyhq.com/notion/49bdf081-6e20-4323-8c73-6d6b19544ff5",
-   "posted": 1782289615883,
-   "tags": [
-    "Engineering",
-    "FullTime"
-   ],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:towerresearchcapital-7102180",
-   "src": "greenhouse",
-   "srcLabel": "Tower Research",
-   "company": "Tower Research",
-   "title": "Quantitative Developer ",
-   "loc": "Gurgaon",
-   "url": "https://www.tower-research.com/open-positions/?gh_jid=7102180",
-   "posted": 1781845449000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "quantitative"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:worldquant-4673030006",
-   "src": "greenhouse",
-   "srcLabel": "WorldQuant",
-   "company": "WorldQuant",
-   "title": "Quantitative Researcher",
-   "loc": "Mumbai",
-   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4673030006",
-   "posted": 1781793358000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "quantitative"
-   ],
-   "score": 6
-  },
-  {
-   "id": "ab:notion-def3f337-5593-491c-b34d-e0b53f2a5cac",
-   "src": "ashby",
-   "srcLabel": "Notion",
-   "company": "Notion",
-   "title": "Software Engineer, AI Product Security",
-   "loc": "San Francisco, California",
-   "url": "https://jobs.ashbyhq.com/notion/def3f337-5593-491c-b34d-e0b53f2a5cac",
-   "posted": 1781039272334,
-   "tags": [
-    "Engineering",
-    "FullTime"
-   ],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "ai",
-    "software engineer"
-   ],
-   "score": 6
-  },
-  {
-   "id": "ab:ramp-428f41e2-48e8-409d-b5e3-8053f7fc7a27",
-   "src": "ashby",
-   "srcLabel": "Ramp",
-   "company": "Ramp",
-   "title": "Software Engineer, Backend, Growth",
-   "loc": "New York, NY (HQ)",
-   "url": "https://jobs.ashbyhq.com/ramp/428f41e2-48e8-409d-b5e3-8053f7fc7a27",
-   "posted": 1778714997643,
-   "tags": [
-    "Engineering",
-    "FullTime"
-   ],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "software engineer",
-    "backend"
-   ],
-   "score": 6
-  },
-  {
-   "id": "gh:worldquant-4570052006",
-   "src": "greenhouse",
-   "srcLabel": "WorldQuant",
-   "company": "WorldQuant",
-   "title": "Python Software Engineer",
-   "loc": "Budapest",
-   "url": "https://job-boards.greenhouse.io/worldquant/jobs/4570052006",
-   "posted": 1777915210000,
-   "tags": [],
-   "desc": "",
-   "salary": "",
-   "hits": [
-    "python",
-    "software engineer"
    ],
    "score": 6
   }
