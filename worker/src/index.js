@@ -17,7 +17,8 @@
      DAILY_LIMIT, MINUTE_LIMIT, IP_MINUTE_LIMIT, GLOBAL_DAILY_LIMIT,
      REQUIRE_VERIFIED_EMAIL, BLOCKED_EMAIL_DOMAINS, GROQ_MODEL (optional)
    Secret:  GROQ_API_KEY            (wrangler secret put GROQ_API_KEY)
-   Optional KV binding RATE for daily counters that survive restarts.
+   KV binding RATE (required): daily and global counters. Without it the Worker refuses AI calls
+   (503 not_configured) unless ALLOW_MEMORY_RATE=true, which is for tests / local dev only.
    ============================================================ */
 import "../../prompts.js";            // defines globalThis.NXPrompts (same file the browser uses)
 
@@ -225,6 +226,12 @@ export default {
       if (req.method !== "POST") throw new HttpError(405, "Use POST");
       if (origin && !cors.ok) throw new HttpError(403, "This site isn't allowed to use the AI service.");
       if (!env.GROQ_API_KEY) throw new HttpError(500, "The AI service is not configured.");
+      /* Without the KV binding the daily and global caps are per-instance memory, i.e. not real caps.
+         Fail closed rather than quietly run an uncapped key; ALLOW_MEMORY_RATE=true is for tests / wrangler dev only. */
+      if (!env.RATE && !truthy(env.ALLOW_MEMORY_RATE, false)) {
+        console.error("nexus-os-ai: RATE KV namespace is not bound, refusing AI calls. Run 'wrangler kv namespace create RATE', add the [[kv_namespaces]] block to wrangler.toml and redeploy.");
+        throw new HttpError(503, "The AI service isn't fully set up yet (usage counters are missing). Please try again later.", "not_configured");
+      }
 
       const raw = await req.text();
       if (raw.length > MAX_BODY) throw new HttpError(413, "That request is too large.");

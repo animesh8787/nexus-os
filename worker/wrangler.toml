@@ -26,7 +26,9 @@ REQUIRE_VERIFIED_EMAIL = "true"
 BLOCKED_EMAIL_DOMAINS = ""
 # GROQ_MODEL = "llama-3.3-70b-versatile"   # optional; blank = pick the best available model automatically
 
-# Durable counters (otherwise daily and global counts reset whenever the Worker restarts).
+# REQUIRED durable counters. Without this binding the Worker refuses AI calls (503 "not_configured")
+# instead of falling back to per-instance memory counters, which are not real caps.
+# For local 'wrangler dev' only, put ALLOW_MEMORY_RATE=true in worker/.dev.vars; never set it in production.
 # Each AI call does 2 KV writes (user + global), and Cloudflare's free plan allows ~1,000 writes a day,
 # i.e. ~500 AI calls/day in total. Beyond that, use the $5 Workers plan or lower GLOBAL_DAILY_LIMIT.
 # npx wrangler kv namespace create RATE   -> paste the id below and uncomment

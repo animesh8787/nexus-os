@@ -5,7 +5,7 @@ import assert from "node:assert";
 import worker from "../src/index.js";
 
 const PROJECT = "nexus-test";
-const ENV = { FIREBASE_PROJECT_ID: PROJECT, ALLOWED_ORIGINS: "https://me.github.io", GROQ_API_KEY: "test-groq-key", DAILY_LIMIT: "3", MINUTE_LIMIT: "50" };
+const ENV = { FIREBASE_PROJECT_ID: PROJECT, ALLOWED_ORIGINS: "https://me.github.io", GROQ_API_KEY: "test-groq-key", DAILY_LIMIT: "3", MINUTE_LIMIT: "50", ALLOW_MEMORY_RATE: "true" };
 
 /* ---------- token helpers ---------- */
 const b64u = (buf) => Buffer.from(buf).toString("base64url");
@@ -238,6 +238,19 @@ test("wrong method / path", async () => {
 test("missing GROQ_API_KEY is a clean 500, not a crash", async () => {
   const r = await call(BRIEF, { env: { ...ENV, GROQ_API_KEY: "" } });
   assert.strictEqual(r.status, 500);
+});
+
+test("production without the RATE KV binding fails closed instead of using per-instance counters", async () => {
+  const { ALLOW_MEMORY_RATE, ...prod } = ENV;
+  const logged = []; const orig = console.error; console.error = (...a) => logged.push(a.join(" "));
+  try {
+    const r = await call(BRIEF, { env: prod });
+    assert.strictEqual(r.status, 503);
+    assert.strictEqual((await r.json()).code, "not_configured");
+    assert.strictEqual(groqCalls.length, 0);
+    assert.ok(logged.some((l) => /RATE KV namespace is not bound/.test(l)));
+    assert.strictEqual((await call(BRIEF, { env: { ...prod, RATE: freshKV() } })).status, 200);   // with the binding it works
+  } finally { console.error = orig; }
 });
 
 /* ---------- Groq failures ---------- */
