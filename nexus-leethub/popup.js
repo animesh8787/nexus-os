@@ -9,11 +9,11 @@ const ago = (ts) => {
   return Math.floor(s / 86400) + "d ago";
 };
 const esc = (s) => String(s == null ? "" : s)
-  .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 api.runtime.sendMessage({ type: "GET_STATE" }, (c) => {
   if (!c) return;
-  $("repoLine").textContent = c.ghToken
+  $("repoLine").textContent = c.hasToken
     ? c.ghRepo
     : "no token set - open Options";
   $("autoState").innerHTML = c.autoPush

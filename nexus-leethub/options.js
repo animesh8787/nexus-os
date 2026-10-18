@@ -13,6 +13,15 @@ api.storage.local.get(Object.keys(DEFAULTS), (s) => {
   $("ghPrivate").checked = !!s.ghPrivate;
 });
 
+/* build the status line from nodes, never from strings: messages can echo server text */
+function show(cls, text, extra) {
+  const s = document.createElement("span");
+  s.className = cls;
+  s.textContent = text;
+  if (extra) s.appendChild(extra);
+  out.replaceChildren(s);
+}
+
 function save() {
   return new Promise((res) => {
     api.storage.local.set({
@@ -26,7 +35,7 @@ function save() {
 
 $("save").addEventListener("click", async () => {
   await save();
-  out.innerHTML = '<span class="ok">Saved.</span>';
+  show("ok", "Saved.");
 });
 
 $("test").addEventListener("click", async () => {
@@ -34,14 +43,15 @@ $("test").addEventListener("click", async () => {
   out.textContent = "Testing...";
   api.runtime.sendMessage({ type: "TEST_GH" }, (r) => {
     if (api.runtime.lastError) {
-      out.innerHTML = '<span class="err">' + api.runtime.lastError.message + "</span>";
+      show("err", api.runtime.lastError.message);
       return;
     }
     if (r && r.ok) {
-      out.innerHTML = '<span class="ok">Connected as ' + r.login +
-        ' &mdash; <a href="' + r.url + '" target="_blank" rel="noopener">' + r.repo + "</a></span>";
+      const a = document.createElement("a");
+      a.href = r.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = r.repo;
+      show("ok", "Connected as " + r.login + " — ", a);
     } else {
-      out.innerHTML = '<span class="err">' + ((r && r.error) || "failed") + "</span>";
+      show("err", (r && r.error) || "failed");
     }
   });
 });

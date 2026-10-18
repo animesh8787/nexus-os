@@ -114,6 +114,44 @@ const putFile = (owner, repo, path, content, message, token, sha) =>
     body: Object.assign({ message, content: b64(content) }, sha ? { sha } : {}),
   });
 
+/* One commit for any number of files, via the Git Data API: tree (with inline file
+   contents, which GitHub stores as blobs) -> commit -> move the branch ref.
+   Retries once if the branch moved underneath us. */
+async function commitFiles(owner, repo, branch, files, message, token, attempt) {
+  const base = "/repos/" + owner + "/" + repo + "/git";
+  const refPath = base + "/ref/heads/" + encodeURIComponent(branch);
+  let ref;
+  try { ref = await gh(refPath, { token }); }
+  catch (e) {
+    if (e.status !== 409) throw e;                                // brand-new empty repo: seed one commit so there is a branch to extend
+    await putFile(owner, repo, "README.md", "# LeetCode Solutions" + NL, "Initialise repository", token);
+    ref = await gh(refPath, { token });
+  }
+  const parent = await gh(base + "/commits/" + ref.object.sha, { token });
+  const tree = await gh(base + "/trees", {
+    method: "POST", token,
+    body: {
+      base_tree: parent.tree.sha,
+      tree: files.map((f) => ({ path: f.path, mode: "100644", type: "blob", content: f.content })),
+    },
+  });
+  if (tree.sha === parent.tree.sha) return null;                  // nothing changed, don't add an empty commit
+  const commit = await gh(base + "/commits", {
+    method: "POST", token, body: { message, tree: tree.sha, parents: [ref.object.sha] },
+  });
+  try {
+    await gh(base + "/refs/heads/" + encodeURIComponent(branch), {
+      method: "PATCH", token, body: { sha: commit.sha },
+    });
+  } catch (e) {
+    if (!attempt && (e.status === 409 || e.status === 422)) {
+      return commitFiles(owner, repo, branch, files, message, token, 1);
+    }
+    throw e;
+  }
+  return commit;
+}
+
 async function ensureRepo(owner, repo, token, priv) {
   try {
     return await gh("/repos/" + owner + "/" + repo, { token });
@@ -195,18 +233,16 @@ async function pushSolve(solve) {
   if (!c.ghToken) throw new Error("Add a GitHub token in the extension options");
 
   const me = await gh("/user", { token: c.ghToken });
-  await ensureRepo(me.login, c.ghRepo, c.ghToken, c.ghPrivate);
+  const repoInfo = await ensureRepo(me.login, c.ghRepo, c.ghToken, c.ghPrivate);
+  const branch = repoInfo.default_branch || "main";
 
   const ext = extOf(solve.lang);
   const topic = slugify((solve.topics && solve.topics[0]) || "misc");
   const path = "solutions/" + topic + "/" + pad4(solve.qid) + "-" + solve.slug + "." + ext;
   const body = header(solve, ext) + solve.code.trim() + NL;
 
-  const existing = await getFile(me.login, c.ghRepo, path, c.ghToken);
   const msg = "Solve: " + (solve.qid ? solve.qid + ". " : "") + solve.title +
               " (" + (solve.difficulty || "?") + ")";
-  const res = await putFile(me.login, c.ghRepo, path, body, msg, c.ghToken,
-    existing && existing.sha);
 
   /* merge into the shared index, then regenerate the README from it */
   const idx = await readIndex(me.login, c.ghRepo, c.ghToken);
@@ -216,14 +252,15 @@ async function pushSolve(solve) {
     solvedAt: solve.solvedAt, lang: solve.lang,
   };
   const idxJson = JSON.stringify({ updated: new Date().toISOString(), entries: idx.entries }, null, 1);
-  await putFile(me.login, c.ghRepo, "solutions/index.json", idxJson,
-    "Update solution index", c.ghToken, idx.sha);
 
-  const rm = await getFile(me.login, c.ghRepo, "README.md", c.ghToken);
-  await putFile(me.login, c.ghRepo, "README.md", buildReadme(idx.entries),
-    "Update README index", c.ghToken, rm && rm.sha);
+  /* solution + index + README land together in a single commit */
+  const res = await commitFiles(me.login, c.ghRepo, branch, [
+    { path, content: body },
+    { path: "solutions/index.json", content: idxJson },
+    { path: "README.md", content: buildReadme(idx.entries) },
+  ], msg, c.ghToken);
 
-  return { path, commit: res.commit && res.commit.html_url, owner: me.login, repo: c.ghRepo };
+  return { path, commit: res && res.html_url, owner: me.login, repo: c.ghRepo };
 }
 
 /* ---------- message handling ---------- */
@@ -272,7 +309,11 @@ async function onSolve(solve) {
 api.runtime.onMessage.addListener((msg, sender, reply) => {
   if (!msg) return;
   if (msg.type === "SOLVE_ACCEPTED") { onSolve(msg.solve).then(reply); return true; }
-  if (msg.type === "GET_STATE") { cfg().then(reply); return true; }
+  /* the token never leaves this worker: content scripts and the popup only learn whether one is set */
+  if (msg.type === "GET_STATE") {
+    cfg().then((c) => { const { ghToken, ...safe } = c; reply({ ...safe, hasToken: !!ghToken }); });
+    return true;
+  }
   if (msg.type === "TEST_GH") {
     (async () => {
       try {

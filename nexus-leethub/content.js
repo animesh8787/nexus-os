@@ -250,27 +250,12 @@ window.addEventListener("message", (ev) => {
   pushNow(false, ev.data.payload || {});
 });
 
-/* --- detector 2: DOM fallback, in case the endpoint shape changes --- */
-const seenNodes = new WeakSet();
-function watchDom() {
-  new MutationObserver((muts) => {
-    for (const mu of muts) {
-      for (const node of mu.addedNodes) {
-        if (node.nodeType !== 1) continue;
-        const txt = (node.textContent || "").trim();
-        if (txt === "Accepted" && !seenNodes.has(node)) {
-          seenNodes.add(node);
-          pushNow(false, {});
-        }
-      }
-    }
-  }).observe(document.body, { childList: true, subtree: true });
-}
+/* No DOM "Accepted" fallback: that text also appears on the submissions list and
+   old results, which pushed code nobody had just submitted. */
 
 /* --- boot --- */
 function boot() {
   ensureButton();
-  watchDom();
 }
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", boot);
@@ -307,6 +292,6 @@ api.runtime.onMessage.addListener((msg, _s, reply) => {
   if (msg && msg.type === "PUSH_CURRENT") {
     pushNow(true);
     reply({ ok: true });
+    return true;
   }
-  return true;
 });
