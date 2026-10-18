@@ -209,9 +209,8 @@
         await e.wipe();                                                // cloud copy first, while we can still authenticate
       }
       deleting = true; N.onSave = null;
-      clearLocal();
-      if (local) { try { localStorage.removeItem("nexus-os:local-mode"); } catch (e2) {} location.replace("index.html?deleted=1"); }
-      else await NexusAuth.deleteAccount();
+      if (local) { clearLocal(); try { localStorage.removeItem("nexus-os:local-mode"); } catch (e2) {} location.replace("index.html?deleted=1"); }
+      else await NexusAuth.deleteAccount(clearLocal);   // delete the account first, then the device copy
     } catch (err) {
       deleting = false; N.onSave = N.onSave || onSaveHook;
       N.toast((window.NexusAuth && NexusAuth.friendly ? NexusAuth.friendly(err) : err.message) || "Couldn't delete the account.", "err");

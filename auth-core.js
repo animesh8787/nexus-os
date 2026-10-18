@@ -196,10 +196,11 @@
       }
     },
     /* Permanently removes the Firebase account, then leaves the portal. */
-    deleteAccount: async function () {
+    deleteAccount: async function (afterDelete) {
       var a = await need(), u = a.currentUser;
       if (!u) throw new Error("You're not signed in.");
       await u.delete();
+      try { if (afterDelete) afterDelete(); } catch (e) {}   // local wipe runs only once the account is really gone
       try { localStorage.removeItem(LOCAL_FLAG); } catch (e) {}
       location.replace("index.html?deleted=1");
     },

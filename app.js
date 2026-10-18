@@ -44,9 +44,12 @@ const langLine = (ext) => LANG_COMMENT[ext] || "//";
 const b64enc = (str) => btoa(unescape(encodeURIComponent(str)));
 const b64dec = (str) => { try { return decodeURIComponent(escape(atob(str))); } catch (e) { return atob(str); } };
 
+/* feed/imported URLs end up in href: only plain web links, never javascript: or data: */
+const safeUrl = (u) => (/^https?:\/\//i.test(String(u || "")) ? String(u) : "");
+
 /* minimal markdown -> html for AI Coach output */
 function mdToHtml(md) {
-  const E = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const E = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   const inline = (s) => E(s)
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/(^|[^*])\*([^*\n]+)\*/g, "$1<em>$2</em>")
@@ -107,49 +110,10 @@ function toast(msg, kind = "") {
 /* ============================================================
    DEFAULT DATA
    ============================================================ */
-const DEFAULT_SCHEDULE = [
-  { icon: "sun", label: "Wake Up",            st: "05:00", en: "05:10" },
-  { icon: "dumbbell", label: "Morning Workout",    st: "05:10", en: "06:40" },
-  { icon: "droplet", label: "Bath + Breakfast",   st: "06:40", en: "07:20" },
-  { icon: "book", label: "DSA Lecture",        st: "07:20", en: "08:40" },
-  { icon: "code", label: "DSA / LeetCode",     st: "08:40", en: "13:20" },
-  { icon: "utensils", label: "Lunch",              st: "13:30", en: "14:10" },
-  { icon: "code", label: "DSA / LeetCode",     st: "14:10", en: "15:10" },
-  { icon: "cpu", label: "Project Dev",        st: "15:10", en: "17:20" },
-  { icon: "dumbbell", label: "Evening Gym",        st: "17:35", en: "18:50" },
-  { icon: "terminal", label: "Full Stack Session", st: "19:10", en: "20:00" },
-  { icon: "utensils", label: "Dinner",             st: "20:00", en: "20:40" },
-  { icon: "terminal", label: "Full Stack Session", st: "20:50", en: "21:20" },
-  { icon: "github", label: "GitHub + LinkedIn",  st: "21:20", en: "21:45" },
-  { icon: "sparkles", label: "AI / ML Concepts",   st: "21:45", en: "22:30" },
-  { icon: "moon", label: "Wind Down",          st: "22:30", en: "23:00" },
-  { icon: "moon", label: "Sleep",              st: "23:00", en: "05:00" },
-];
-
-const DEFAULT_TASKS = [
-  { id: "wake",    icon: "sun", label: "Wake up at 5:00 AM",        cat: "Routine" },
-  { id: "wm",      icon: "dumbbell", label: "Morning workout",           cat: "Fitness" },
-  { id: "dsa_lec", icon: "book", label: "DSA lecture",               cat: "Study" },
-  { id: "dsa",     icon: "code", label: "DSA / LeetCode solving",    cat: "Study" },
-  { id: "proj",    icon: "cpu", label: "Project development",       cat: "Build" },
-  { id: "gym",     icon: "dumbbell", label: "Evening gym",               cat: "Fitness" },
-  { id: "fs",      icon: "terminal", label: "Full stack session",        cat: "Study" },
-  { id: "github",  icon: "github", label: "GitHub commit + LinkedIn",  cat: "Career" },
-  { id: "ai",      icon: "sparkles", label: "AI / ML revision",          cat: "Study" },
-  { id: "sleep",   icon: "moon", label: "Sleep by 11:00 PM",         cat: "Routine" },
-];
-
-const DEFAULT_PROJECTS = [
-  { id: uid(), emoji: "cpu", name: "AI Desktop Assistant", desc: "JARVIS-style AI for Windows",
-    tech: ["Python", "PyQt5", "OpenAI"],
-    tasks: ["Voice recognition module", "LLM integration", "Assistant UI", "System command executor", "File management", "Packaging & deploy"].map((t) => ({ t, done: false })) },
-  { id: uid(), emoji: "file", name: "AI Resume Ranker", desc: "NLP resume scoring system",
-    tech: ["Python", "NLP", "FastAPI"],
-    tasks: ["Resume parsing", "Skill extraction (NLP)", "Ranking algorithm", "REST API", "Frontend dashboard"].map((t) => ({ t, done: false })) },
-  { id: uid(), emoji: "sprout", name: "Carbon Track + Time Bank", desc: "Sustainability gamification platform",
-    tech: ["React", "Node.js", "MongoDB"],
-    tasks: ["Architecture design", "Carbon calc engine", "Time bank system", "Dashboard UI", "Gamification"].map((t) => ({ t, done: false })) },
-];
+/* Generic starting point: users build their own routine, tasks and projects. */
+const DEFAULT_SCHEDULE = [];
+const DEFAULT_TASKS = [];
+const DEFAULT_PROJECTS = [];
 
 const DEFAULT_SKILLS = {
   fullstack: ["HTML & CSS", "JavaScript (Adv.)", "React.js", "Node + Express", "MongoDB / SQL", "REST APIs", "Auth & Security", "Deployment / CI-CD"].map((n) => ({ n, v: 0 })),
@@ -288,8 +252,8 @@ function loadState() {
     const p = JSON.parse(raw);
     S = Object.assign(freshState(), p);
     S.settings = Object.assign(freshState().settings, p.settings || {});
-    if (!Array.isArray(S.taskDefs) || !S.taskDefs.length) S.taskDefs = clone(DEFAULT_TASKS);
-    if (!Array.isArray(S.schedule) || !S.schedule.length) S.schedule = clone(DEFAULT_SCHEDULE);
+    if (!Array.isArray(S.taskDefs)) S.taskDefs = clone(DEFAULT_TASKS);
+    if (!Array.isArray(S.schedule)) S.schedule = clone(DEFAULT_SCHEDULE);
     if (!Array.isArray(S.projects)) S.projects = clone(DEFAULT_PROJECTS);
     if (!S.skills || !S.skills.fullstack) S.skills = clone(DEFAULT_SKILLS);
     if (!S.practice || !Array.isArray(S.practice.log)) S.practice = { log: [] };
@@ -1238,6 +1202,7 @@ async function refreshFeed(opts = {}) {
   const byId = new Map();
   for (const list of batches) {
     for (const job of list) {
+      if (job) job.url = safeUrl(job.url);
       if (!job || !job.url || !job.title) continue;
       if (jf.dismissed[job.id]) continue;
       const sc = scoreJob(job, f);
@@ -2077,7 +2042,7 @@ function feedCard(j) {
   <div class="job-card${j.isNew ? " is-new" : ""}">
     <div class="job-main">
       <div class="job-top">
-        <a class="job-title" href="${esc(j.url)}" target="_blank" rel="noopener"
+        <a class="job-title" href="${esc(safeUrl(j.url))}" target="_blank" rel="noopener"
            data-action="feed-open" data-id="${esc(j.id)}">${esc(j.title)}</a>
         ${j.isNew ? `<span class="badge b-green">NEW</span>` : ""}
         ${tracked ? `<span class="badge b-muted">tracked</span>` : ""}
@@ -2093,7 +2058,7 @@ function feedCard(j) {
     </div>
     <div class="job-actions">
       <span class="job-score" title="match score">${j.score}</span>
-      <a class="btn btn-sm btn-primary" href="${esc(j.url)}" target="_blank" rel="noopener"
+      <a class="btn btn-sm btn-primary" href="${esc(safeUrl(j.url))}" target="_blank" rel="noopener"
          data-action="feed-open" data-id="${esc(j.id)}">Apply ↗</a>
       <button class="btn btn-sm" data-action="feed-track" data-id="${esc(j.id)}" ${tracked ? "disabled" : ""}>${tracked ? "Tracked" : "Track"}</button>
       <button class="icon-btn" style="width:26px;height:26px;font-size:11px" data-action="feed-dismiss" data-id="${esc(j.id)}" title="Hide this posting forever">✕</button>
@@ -2201,7 +2166,7 @@ ROUTES.jobs = function () {
   <div class="card">
     <table class="mini-table"><thead><tr><th>Company</th><th>Role</th><th>Date</th><th>Stage</th><th>Comp</th><th></th></tr></thead><tbody>
       ${j.map((x) => `<tr>
-        <td style="font-weight:700">${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.co)}</a>` : esc(x.co)}</td>
+        <td style="font-weight:700">${safeUrl(x.url) ? `<a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener">${esc(x.co)}</a>` : esc(x.co)}</td>
         <td class="mut">${esc(x.role)}</td>
         <td class="faint">${esc((x.dt || "").slice(5))}</td>
         <td><span class="badge ${badgeFor(x.status)}">${esc(x.stage)}</span></td>
@@ -2422,7 +2387,7 @@ const NEXUS = window.NEXUS = {
   actions: {}, changes: {}, inputs: {}, onStart: [],
   ROUTES, ROUTES_AFTER, NAV,
   get S() { return S; },
-  save, toast, rerender, go, esc, icon, stat, empty, progress, ring, barChart,
+  save, toast, rerender, go, esc, safeUrl, icon, stat, empty, progress, ring, barChart,
   iso, addDays, ago, uid, clone, pct, clamp, titleCase, slugify, mdToHtml, fetchJSON,
   streakFrom, activityCal, solveStats, todayTaskState, practiceStats, solvedTotal,
   el, $, $$, b64enc, scoreJob, normTerm, hasTerm, IN_CITY,
@@ -2786,7 +2751,10 @@ document.addEventListener("click", (ev) => {
     case "data-export": exportData(); break;
     case "data-import": el("importFile").click(); break;
     case "data-reset":
-      if (confirm("This wipes ALL local data. Continue?")) { localStorage.removeItem(LS_KEY); S = freshState(); save(); applyTheme(); go("overview"); toast("Reset done"); }
+      if (confirm("This wipes ALL data on this device. Your cloud copy is untouched and syncs back; use Delete account to erase it. Continue?")) {
+        /* drop the sync marker first, otherwise the next sync would push every deletion to the cloud and your other devices */
+        try { if (NEXUS.user && NEXUS.user.uid) localStorage.removeItem("nexus-os:sync:" + NEXUS.user.uid); } catch (e) {}
+        localStorage.removeItem(LS_KEY); S = freshState(); save(); applyTheme(); go("overview"); toast("Reset done"); }
       break;
     default:
       if (NEXUS.actions[a]) NEXUS.actions[a](D, t, ev);
@@ -2852,7 +2820,9 @@ document.addEventListener("mousemove", (ev) => {
    IMPORT / EXPORT
    ============================================================ */
 function exportData() {
-  const blob = new Blob([JSON.stringify(S, null, 2)], { type: "application/json" });
+  const out = Object.assign({}, S, { settings: Object.assign({}, S.settings) });   // never write the GitHub token / Groq key into a file
+  for (const k of ["ghToken", "groqKey"]) delete out.settings[k];
+  const blob = new Blob([JSON.stringify(out, null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
@@ -2869,6 +2839,9 @@ el("importFile").addEventListener("change", (e) => {
     try {
       const data = JSON.parse(r.result);
       if (!data || typeof data !== "object") throw new Error("bad file");
+      const keep = {};                                   // backups carry no secrets: keep this device's keys
+      for (const k of ["ghToken", "groqKey"]) keep[k] = S.settings[k];
+      data.settings = Object.assign({}, data.settings, keep);
       localStorage.setItem(LS_KEY, JSON.stringify(data));
       loadState(); applyTheme(); buildNav(); go("overview");
       toast("Data imported ✓", "ok");

@@ -359,7 +359,7 @@
       '<input class="input" type="date" id="evD" value="' + N.iso() + '"><input class="input" id="evN" placeholder="Details (optional)" data-enter="trk-evt-add" data-id="' + esc(j.id) + '"><button class="btn btn-sm" data-action="trk-evt-add" data-id="' + esc(j.id) + '">Add</button></div>' +
       '<label class="field-label" style="margin-top:16px">Notes</label><textarea class="code-area" rows="3" data-action="trk-field" data-k="notes" data-id="' + esc(j.id) + '" placeholder="Recruiter name, prep notes, next steps...">' + esc(j.notes || "") + '</textarea>' +
       '<div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap">' +
-        (j.url ? '<a class="btn btn-sm" href="' + esc(j.url) + '" target="_blank" rel="noopener">Open posting ' + icon("arrow-up-right", 12) + "</a>" : "") +
+        (N.safeUrl(j.url) ? '<a class="btn btn-sm" href="' + esc(N.safeUrl(j.url)) + '" target="_blank" rel="noopener">Open posting ' + icon("arrow-up-right", 12) + "</a>" : "") +
         '<button class="btn btn-sm btn-danger right" data-action="trk-del" data-id="' + esc(j.id) + '">' + icon("trash", 12) + " Delete</button></div></div></div></div>";
   }
 

@@ -177,6 +177,19 @@ test("deleteAccount removes the Firebase user, clears the local-mode flag and le
   assert.deepStrictEqual(env.replaced, ["index.html?deleted=1"]);
 });
 
+test("deleteAccount runs the local wipe only after the account is deleted", async () => {
+  const user = verifiedUser();
+  const env = makeEnv({ user });
+  let sawDeleted = null;
+  await env.auth.deleteAccount(() => { sawDeleted = user._deleted; });
+  assert.strictEqual(sawDeleted, true);
+  const failing = verifiedUser();
+  failing.delete = async () => { throw new Error("requires-recent-login"); };
+  let wiped = false;
+  await assert.rejects(makeEnv({ user: failing }).auth.deleteAccount(() => { wiped = true; }), /requires-recent-login/);
+  assert.strictEqual(wiped, false);
+});
+
 test("deleteAccount when nobody is signed in fails cleanly", async () => {
   const env = makeEnv({ user: null });
   await assert.rejects(env.auth.deleteAccount(), /not signed in/);

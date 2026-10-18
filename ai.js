@@ -19,8 +19,8 @@
   function signedIn() { return !!(N.user && !N.user.local && window.NexusAuth && NexusAuth.configured); }
 
   function mode() {
+    if (N.S.settings.groqKey) return "own";   // a key the user typed always wins over the shared proxy
     if (apiUrl() && signedIn()) return "proxy";
-    if (N.S.settings.groqKey) return "own";
     return "none";
   }
 

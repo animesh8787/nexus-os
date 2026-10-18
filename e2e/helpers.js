@@ -13,7 +13,14 @@ function cloudHandler(cloud) {
   const okShape = (d) => d && typeof d === "object" && Object.keys(d).every((k) => ["u", "v", "json"].includes(k)) && typeof d.u === "number" && d.v === 1 && typeof d.json === "string" && d.json.length < 1_000_000;
   return async (op, p, data, meta) => {
     meta = meta || {};
-    const own = (x) => meta.uid && x.startsWith("users/" + meta.uid + "/");
+    /* same path rules as firestore.rules: users/{uid}/state/{core|feed|gmail|resume}, users/{uid}/apps/{id}, users/{uid}/solves/{id} (id < 64 chars); everything else closed */
+    const STATE_DOCS = ["core", "feed", "gmail", "resume"];
+    const own = (x) => {
+      const [root, uid, col, id, ...rest] = x.split("/");
+      if (!meta.uid || root !== "users" || uid !== meta.uid || rest.length || !id) return false;
+      if (col === "state") return STATE_DOCS.includes(id);
+      return (col === "apps" || col === "solves") && id.length < 64;
+    };
     if (op === "batch") {
       for (const [k, pp, d] of data) {
         if (!own(pp)) return deny();
@@ -24,7 +31,7 @@ function cloudHandler(cloud) {
       return {};
     }
     if (op === "list") {
-      if (!meta.uid || !(p + "/").startsWith("users/" + meta.uid + "/")) return deny();
+      if (!meta.uid || !["state", "apps", "solves"].some((c) => p === "users/" + meta.uid + "/" + c)) return deny();
       const docs = [];
       for (const [k, v] of cloud.store) if (k.startsWith(p + "/") && !k.slice(p.length + 1).includes("/")) docs.push({ id: k.slice(p.length + 1), data: v });
       return { docs };

@@ -314,7 +314,7 @@
 
   /* ---------- parse -> draft ---------- */
   async function parse(text, name) {
-    text = String(text || "").replace(/ /g, "").trim();
+    text = String(text || "").replace(/\u0000/g, "").trim();
     if (text.length < 120) throw new Error("Couldn't read much text from that. If it's a scanned PDF, paste the text instead.");
     var p = P();
     p.resumeName = name || "pasted text";
