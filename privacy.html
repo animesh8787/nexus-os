@@ -31,7 +31,7 @@
   <main class="legal s-wrap" id="main">
     <div class="eyebrow">Legal</div>
     <h1 class="s-title">Privacy <em>Policy</em></h1>
-    <p class="legal-meta">Last updated 22 September 2026</p>
+    <p class="legal-meta">Last updated 18 October 2026</p>
     <div class="legal-warn" id="legalWarn" hidden role="alert"><strong>Setup needed:</strong> the operator name and contact address haven't been set for this deployment. Set <code>operatorName</code> and <code>contactEmail</code> in <code>firebase-config.js</code> before publishing.</div>
 
     <p>Nexus OS is a job-search portal: a resume-matched job feed, an application tracker, and an AI coach. It is run by <strong data-operator></strong> (“we”). This policy explains what data the service handles, why, who else touches it, and how you can delete it. Questions: <span data-contact></span>.</p>
@@ -64,7 +64,8 @@
       <li><strong>Google</strong> — Firebase Authentication, Cloud Firestore, Gmail (if connected), and Google Fonts (which sees your IP address when the page loads).</li>
       <li><strong>Cloudflare</strong> — runs the AI service and, if enabled, stores usage counters; also serves some open-source libraries (cdnjs).</li>
       <li><strong>Groq</strong> — generates AI responses. Its own terms and privacy policy apply to what we send it, including, only if you turn on the optional AI email check, the limited email details described in section 2.</li>
-      <li><strong>GitHub</strong> — hosts this website. If you connect your GitHub account to push LeetCode solutions, your token stays in your browser and is sent only to <code>api.github.com</code>.</li>
+      <li><strong>Vercel</strong> — hosts and serves this website (it processes request data such as your IP address to deliver the pages). It does not receive your portal data.</li>
+      <li><strong>GitHub</strong> — hosts the source code and publishes the daily job list. If you connect your GitHub account to push LeetCode solutions, your token stays in your browser and is sent only to <code>api.github.com</code>.</li>
       <li><strong>Job boards and LeetCode data providers</strong> — your browser requests public job listings and public profile data directly from them, so they can see your IP address. No personal data from your portal is sent.</li>
     </ul>
     <p>We do not sell your data, show ads, or use analytics or tracking cookies.</p>
@@ -77,7 +78,7 @@
 
     <h2>6. Keeping and deleting your data</h2>
     <ul>
-      <li><strong>Export:</strong> Settings → Data → Export JSON downloads everything stored in your browser.</li>
+      <li><strong>Export:</strong> Settings → Data → Export JSON downloads your portal data from your browser (your GitHub token and Groq key are left out).</li>
       <li><strong>Delete:</strong> Settings → Danger zone → “Delete my account and data” removes your account, your Firestore copy, the copy on that device, and revokes Gmail access. It cannot be undone. Nexus OS cannot reach into <em>other</em> browsers where you used the portal: those devices are signed out, but any copy already stored there stays until you clear that browser's site data.</li>
       <li>Usage counters expire on their own within two days. We keep no separate backups of your portal data.</li>
     </ul>

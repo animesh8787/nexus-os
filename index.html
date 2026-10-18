@@ -190,7 +190,7 @@
             <p class="s-sub reveal" style="--d:.12s">A job search is personal. Nexus only touches what a feature needs, and tells you exactly what that is.</p>
           </div>
           <ul class="priv-list">
-            <li class="reveal"><span class="pi" data-ico="lock" data-size="18"></span><div><b>Your data stays yours</b><span>Your tracker, profile and solutions live in your browser under your account &mdash; not in a shared database. Export or delete them any time.</span></div></li>
+            <li class="reveal"><span class="pi" data-ico="lock" data-size="18"></span><div><b>Your data stays yours</b><span>Your tracker, profile and solutions are kept in your browser and synced to your own private space in Google Firestore, readable only by your account. Your GitHub token and Groq key stay on the device you typed them on and are never synced. Export or delete everything any time.</span></div></li>
             <li class="reveal" style="--d:.06s"><span class="pi" data-ico="mail" data-size="18"></span><div><b>Gmail is read-only and narrow</b><span>Nexus searches for job-related mail and reads only the sender, subject, date and a short snippet. The access token is never saved.</span></div></li>
             <li class="reveal" style="--d:.12s"><span class="pi" data-ico="file" data-size="18"></span><div><b>Your resume goes nowhere by surprise</b><span>Resume text is sent to the AI provider only when you press Parse, and nothing is applied to your profile until you confirm it.</span></div></li>
             <li class="reveal" style="--d:.18s"><span class="pi" data-ico="shield" data-size="18"></span><div><b>No auto-apply, no job-site passwords</b><span>Nexus never submits applications for you and never asks for your logins on other sites.</span></div></li>
@@ -216,7 +216,7 @@
           <details><summary>Do I need my own AI key?<span class="chev" data-ico="chevron" data-size="18"></span></summary>
             <div class="ans">No. The AI features run through a shared service with fair-use limits. If you prefer, you can plug in your own free Groq key in Settings instead.</div></details>
           <details><summary>Where is my data stored?<span class="chev" data-ico="chevron" data-size="18"></span></summary>
-            <div class="ans">In your browser, namespaced to your account. There is a one-click JSON export and a reset in Settings. Sign-in itself is handled by Firebase Authentication.</div></details>
+            <div class="ans">In your browser, and, when cloud sync is on, in Google Firestore under your account (users/&lt;your id&gt;), so your devices stay in step. Security rules let only your account read or write it. Your GitHub token and Groq key are never synced. There is a one-click JSON export (without those keys) and a &ldquo;Delete my account and data&rdquo; button in Settings. Sign-in is handled by Firebase Authentication.</div></details>
           <details><summary>Is it free?<span class="chev" data-ico="chevron" data-size="18"></span></summary>
             <div class="ans">Nexus OS is free while it is in early access.</div></details>
         </div>

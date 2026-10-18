@@ -83,11 +83,13 @@ What the Worker enforces:
 
 - **Identity:** RS256 signature check against Google's keys, `aud`/`iss`/`exp` claims, and a **verified email** (`email_verified` must be exactly `true`). Anonymous sign-ins and throwaway-mail domains (a built-in list, extendable with `BLOCKED_EMAIL_DOMAINS`) are refused.
 - **Limits:** per user per minute and per day (`MINUTE_LIMIT`, `DAILY_LIMIT`), per **IP** per minute (`IP_MINUTE_LIMIT`), and a **global daily ceiling** (`GLOBAL_DAILY_LIMIT`) that bounds what the key can ever cost. Checks run before anything is counted, so a refused request never burns a quota.
-- **No free chatbot:** a client sends `{action, data}`, never a prompt; the prompts live in `prompts.js`. Origin allow-list, 90 KB body cap, provider errors never forwarded.
+- **No free chatbot:** a client sends `{action, data}`, never a prompt; the prompts live in `prompts.js`. 90 KB body cap, provider errors never forwarded. The prompt text is fixed, but the *data* a signed-in user supplies (resume text, code, job titles) is interpolated into it, so prompt injection inside that data is possible; it is bounded by the per-action length and token caps and the per-user/IP/global limits, and the model has no tools or secrets to abuse.
+- **Origin allow-list:** browsers send an `Origin` header and a mismatching one is refused (and gets no CORS headers). Non-browser clients can omit it, so the allow-list is not authentication; the Firebase token check and the limits are the real controls.
+- **Quotas need KV:** the daily and global counters are stored in the `RATE` KV namespace. Without that binding the Worker refuses AI calls (`503 not_configured`, logged) instead of falling back to per-instance memory, which would not be a real cap. `ALLOW_MEMORY_RATE=true` (in `worker/.dev.vars`) re-enables the in-memory counters for local `wrangler dev` only. The per-minute burst limits are still best-effort in-memory, per Worker instance.
 
 Why verified-email rather than a CAPTCHA on sign-up: sign-up goes straight to Firebase's public API, so a bot can skip any widget on our page. The checks that can't be bypassed are the ones the Worker makes on every call.
 
-Optional: bind a KV namespace named `RATE` (see `wrangler.toml`) so counters survive restarts. Each call does two KV writes and Cloudflare's free plan allows ~1,000 writes/day, i.e. ~500 AI calls/day in total; for more, use the $5 Workers plan.
+Required: create the KV namespace (`npx wrangler kv namespace create RATE`), paste its id into the `[[kv_namespaces]]` block in `wrangler.toml` (binding `RATE`) and redeploy. Each call does two KV writes and Cloudflare's free plan allows ~1,000 writes/day, i.e. ~500 AI calls/day in total; for more, use the $5 Workers plan.
 
 ### 4. Gmail sync (the tracker fills itself)
 
@@ -122,11 +124,11 @@ The site is deployed by **Vercel**; GitHub Actions only tests.
 
 [`scripts/build-site.mjs`](scripts/build-site.mjs) copies only the site's files into `public/` (no tests, Worker or extension) and **fails if any page refers to a file that wasn't copied** - so adding a new script means adding it to `FILES` in that script. `vercel.json` also sets response headers (`frame-ancestors 'none'`, `nosniff`, referrer and permissions policies).
 
-[`ci-and-feed.yml`](.github/workflows/ci-and-feed.yml) runs **every test suite** on each push and pull request (unit, Worker, the site-build check, pinned-script hashes, browser). It publishes nothing. Note that Vercel deploys a push whether or not those tests pass, so look at the Actions tab; for a hard gate, set Vercel's *Production Branch* to a `release` branch and only merge `master` into it when Actions is green. Once a day (08:00 IST) it also refreshes `jobs-feed.json` and commits it, which makes Vercel redeploy the fresh feed.
+[`ci-and-feed.yml`](.github/workflows/ci-and-feed.yml) runs **every test suite** on each push and pull request (unit, Worker, the site-build check, pinned-script hashes, browser). It publishes nothing. Note that Vercel deploys a push whether or not those tests pass, so look at the Actions tab; for a hard gate, set Vercel's *Production Branch* to a `release` branch and only merge `master` into it when Actions is green. Once a day (08:00 IST) it also refreshes `jobs-feed.json` and commits it only if the job list actually changed (rebasing on the latest commit before the push), which makes Vercel redeploy the fresh feed.
 
 ## What's inside
 
-**Profile & job feed.** Upload a PDF/DOCX/TXT (text is extracted in your browser) or paste it. A local scanner always runs; with AI available it's enriched. You review the extracted skills/roles/level as a *draft* and apply it. Then edit anything — skill importance, job types, locations, remote/India-only — and the feed re-ranks. Core skills outweigh listed ones. Sources: 38 company boards (Greenhouse/Lever/Ashby), aggregators, and the agent's `jobs-feed.json`.
+**Profile & job feed.** Upload a PDF/DOCX/TXT (text is extracted in your browser) or paste it. A local scanner always runs; with AI available it's enriched. You review the extracted skills/roles/level as a *draft* and apply it. Then edit anything — skill importance, job types, locations, remote/India-only — and the feed re-ranks. Core skills outweigh listed ones. Sources: 44 company boards (Greenhouse/Lever/Ashby; 27 on by default), aggregators, and the agent's `jobs-feed.json`.
 
 **Job Tracker.** A board — Saved → Applied → Assessment → Interview → Offer → Closed — with drag-and-drop and a per-application dated timeline. Applications arrive three ways: press **Apply** in the feed and Nexus asks "Did you apply?" when you return; **Track** saves a job for later; and Gmail sync turns confirmation, assessment, interview, offer and rejection emails into dated events (creating the application if it wasn't tracked). Nexus never applies on your behalf.
 
@@ -138,8 +140,9 @@ The site is deployed by **Vercel**; GitHub Actions only tests.
 
 ## Data & privacy
 
-- Portal data lives in `localStorage`, namespaced per account, and — when signed in and Firestore is set up — is synced to that account's private area (see step 2). Settings → Export/Import JSON for backups.
-- **Delete my account and data** (Settings → Danger zone) re-checks your password, then erases the Firestore copy, revokes Gmail access, clears this device and deletes the Firebase account. A wrong password aborts before anything is removed. Other browsers where you used the portal keep their local copy until you clear their site data — Nexus can't reach into them.
+- Portal data lives in `localStorage`, namespaced per account, and — when signed in, email-verified and Firestore is set up (`sync: true`) — is also stored in Google Firestore under `users/{uid}`, readable only by that account (see step 2); it is not purely local. Settings → Export/Import JSON for backups; exports leave out the GitHub token and Groq key, and importing keeps the keys already on this device.
+- **Settings → Reset** wipes this device only: it clears the sync marker first, so the cloud copy and your other devices are untouched and sync back in. Use *Delete my account and data* to erase the cloud copy.
+- **Delete my account and data** (Settings → Danger zone) re-checks your password, then erases the Firestore copy, revokes Gmail access and deletes the Firebase account; this device's copy is cleared only after the account is gone. A wrong password aborts before anything is removed. Other browsers where you used the portal keep their local copy until you clear their site data — Nexus can't reach into them.
 - Resume text goes to the AI provider only when you press Parse. Nothing is applied to your profile until you confirm the draft.
 - Gmail: read-only, job-related mail only, headers + snippet only, token in memory only, *Disconnect* revokes it.
 - The GitHub token (for pushing solutions) is stored in the browser and sent only to `api.github.com` — use a fine-grained token scoped to one repo.
@@ -161,13 +164,13 @@ cd e2e && npm ci && npx playwright install chromium && npx playwright test    # 
 python scripts/sri.py --check           # pinned script hashes still match the CDN (needs network)
 ```
 
-The browser tests run the real pages in Chromium. Signed-in behaviour uses a stand-in for Firebase and an in-memory Firestore that enforces the same rules as `firestore.rules`, shared between two browser contexts — so two-device sync, verified-email gating and account deletion are exercised through the real UI. They also fail on any CSP violation. CI runs everything before every deploy.
+The browser tests run the real pages in Chromium. Signed-in behaviour uses a stand-in for Firebase and an in-memory Firestore that enforces the same rules as `firestore.rules`, shared between two browser contexts — so two-device sync, verified-email gating and account deletion are exercised through the real UI. They also fail on any CSP violation. CI runs these suites on every push and pull request, but it does not gate deploys: Vercel deploys each push to `master` regardless of the result (see step 6).
 
 Not covered by automated tests (do these once after setup): the real Firebase sign-in success path, real Google/Gmail consent, real Groq calls, and the security rules against the Firestore emulator.
 
 ## The daily job agent
 
-`feed-agent.mjs` fetches sources a browser can't reach (Himalayas, Working Nomads, Jobspresso, NoDesk) plus all company boards and writes `jobs-feed.json`, which the feed merges in.
+`feed-agent.mjs` fetches sources a browser can't reach (Himalayas, Working Nomads, Jobspresso, NoDesk) plus all company boards and writes `jobs-feed.json`, which the feed merges in. The agent is deliberately neutral: it keeps the newest postings per source (minus data-labelling gig spam) and applies no role, seniority or location preference. Each user's own profile ranks them in the browser. It exits non-zero without touching the file if every source fails.
 
 ```bash
 node feed-agent.mjs

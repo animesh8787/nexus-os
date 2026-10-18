@@ -44,15 +44,20 @@ reload underneath you.
 
 ### Firefox
 
-1. Rename the manifests — Firefox needs its own:
-   ```bash
-   cd nexus-leethub && mv manifest.json manifest.chrome.json && mv manifest.firefox.json manifest.json
-   ```
-2. Go to `about:debugging#/runtime/this-firefox`.
-3. Click **Load Temporary Add-on** and pick any file in this folder.
+Firefox needs its own manifest, and it only loads a file named `manifest.json`. Build a
+Firefox copy instead of renaming files in the repo:
 
-> Firefox unloads temporary add-ons when it restarts; reload it from the same page.
-> Keep both manifest files — swap them back to use the Chrome build again.
+1. ```bash
+   cp -r nexus-leethub nexus-leethub-firefox
+   cp nexus-leethub-firefox/manifest.firefox.json nexus-leethub-firefox/manifest.json
+   ```
+2. Go to `about:debugging#/runtime/this-firefox` and click **Load Temporary Add-on**.
+3. Pick `manifest.json` inside `nexus-leethub-firefox`.
+4. Firefox treats MV3 host access as opt-in: open `about:addons` → Nexus OS → **Permissions**
+   and allow access to `leetcode.com` and `api.github.com`, otherwise nothing is detected or pushed.
+
+> Firefox unloads temporary add-ons when it restarts; load it again from the same page.
+> The Firefox build has not been tested end to end; the Chromium build is the supported one.
 
 ## Set up
 
@@ -75,14 +80,15 @@ to `api.github.com`.
 |---|---|
 | You submit on LeetCode | A page-realm hook watches the `/submissions/detail/<id>/check/` response. |
 | Verdict is **Accepted** | The code is read from the page's own Monaco editor, with runtime and memory stats. |
-| Push | Commits `solutions/<topic>/<id>-<slug>.<ext>`, updates `solutions/index.json`, regenerates `README.md`. |
+| Push | One commit (Git Data API: tree, commit, branch update) containing `solutions/<topic>/<id>-<slug>.<ext>`, the updated `solutions/index.json` and the regenerated `README.md`. |
 | Result | A toast on the LeetCode page confirms the commit. |
 
 **Push rule: first Accept per problem.** Re-solving the same problem only commits
 again if the code actually changed, so repeat submissions don't spam your history.
 
-Two independent detectors run — the network hook plus a DOM watcher — and the popup
-has a **Push current solution** button as a manual backstop.
+The only automatic trigger is the network hook on the submission check response. The
+popup has a **Push current solution** button as a manual backstop if LeetCode changes
+that endpoint.
 
 ## Staying in sync with the dashboard
 
@@ -98,7 +104,7 @@ has already pushed.
 | File | Role |
 |---|---|
 | `inject.js` | Page-realm hook: patches `fetch`/XHR, reads Monaco |
-| `content.js` | Isolated world: injects the hook, assembles the solve, DOM fallback detector |
+| `content.js` | Isolated world: injects the hook, assembles the solve |
 | `background.js` | Holds the token, does the GitHub commits and index/README merge |
 | `options.*` | Token and repo setup |
 | `popup.*` | Status, recent pushes, manual push |
