@@ -50,6 +50,8 @@ const BOARDS = [
   ["ashby", "notion", "Notion"], ["ashby", "ramp", "Ramp"],
   ["ashby", "confluent", "Confluent"], ["ashby", "linear", "Linear"],
   ["ashby", "supabase", "Supabase"], ["ashby", "navi", "Navi"],
+  ["lever", "meesho", "Meesho"], ["lever", "cred", "CRED"], ["lever", "zeta", "Zeta"],
+  ["lever", "palantir", "Palantir"], ["lever", "spotify", "Spotify"], ["lever", "paytm", "Paytm"],
 ];
 
 const BOARD_URL = (ats, slug) =>
@@ -77,47 +79,22 @@ function normBoard(ats, slug, name, d) {
   }));
 }
 
-/* ---------- matching (mirrors the in-app filter) ---------- */
-const INCLUDE = ["machine learning", "deep learning", "artificial intelligence", "ai", "genai",
-  "generative", "llm", "nlp", "computer vision", "data scien", "data engineer", "python",
-  "pytorch", "tensorflow", "software engineer", "sde", "swe", "backend", "full stack",
-  "fullstack", "react", "typescript", "fastapi", "research engineer", "quantitative", "quant",
-  "platform engineer", "applied scientist"];
-const EXCLUDE = ["senior", "sr", "staff", "principal", "director", "head of", "vp",
-  "vice president", "manager", "architect", "lead", "sales", "marketing", "recruiter",
-  "driver", "nurse", "warehouse", "picker", "accountant", "teacher", "designer", "postdoc",
-  /* data-labelling gig noise that floods the remote boards */
-  "ai trainer", "annotation", "annotator", "transcription", "transcriber", "data collection",
-  "voice recording", "video recording", "no experience required", "content analyst",
-  "survey", "rater", "tutor", "freelance writer"];
-const LEVELS = ["intern", "internship", "new grad", "new graduate", "university", "campus",
-  "graduate", "entry level", "junior", "associate", "trainee", "fresher", "early career"];
-const IN_CITY = /\b(india|bengaluru|bangalore|hyderabad|pune|gurgaon|gurugram|noida|mumbai|delhi|chennai)\b/;
+/* ---------- neutral pool ----------
+   The agent deliberately knows nothing about any one person: no role, seniority or
+   location preferences. It only drops data-labelling gig spam and keeps the newest
+   postings from each source; the app ranks them against each user's own resume
+   (scoreJob in app.js). */
+const SPAM = ["ai trainer", "annotation", "annotator", "transcription", "transcriber", "data collection",
+  "voice recording", "video recording", "no experience required", "survey", "rater", "freelance writer"];
+/* company boards are also fetched live by the app, so a few of the newest postings each is plenty;
+   the CORS-blocked aggregators only reach users through this file, so they get more room */
+const PER_BOARD = 20, PER_AGGREGATOR = 60, TOTAL = 1000;
 
 const norm = (s) => " " + String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim() + " ";
-const has = (hay, term) => { const t = norm(term); return t.length > 2 && hay.includes(t); };
 const strip = (h) => String(h || "").replace(/<[^>]*>/g, " ").replace(/&[a-z#0-9]+;/gi, " ").replace(/\s+/g, " ").trim();
-
-function score(job) {
-  const title = norm(job.title);
-  const hay = norm([job.title, job.tags?.join(" "), job.desc].join(" "));
-  const loc = (job.loc || "").toLowerCase();
-  for (const bad of EXCLUDE) if (has(title, bad)) return -1;
-
-  let skill = 0; const hits = [];
-  for (const k of INCLUDE) {
-    if (has(title, k)) { skill += 3; hits.push(k); }
-    else if (has(hay, k)) { skill += 1; hits.push(k); }
-  }
-  if (skill === 0) return -1;                       // must match a real skill
-  let s = skill;
-  for (const lv of LEVELS) if (has(title, lv)) { s += 4; hits.push(lv); break; }
-  if (IN_CITY.test(loc)) s += 3;
-  else if (/\b(remote|anywhere|worldwide)\b/.test(loc)) s += 1;
-  if (Date.now() - job.posted < 7 * 864e5) s += 2;
-  job.hits = [...new Set(hits)].slice(0, 5);
-  return s;
-}
+const isSpam = (job) => { const t = norm(job.title); return SPAM.some((k) => t.includes(norm(k))); };
+/* only plain web links are ever published; the app re-checks, this keeps the file clean */
+const isWebUrl = (u) => /^https?:\/\//i.test(String(u || ""));
 
 /* ---------- tiny RSS parser (no deps) ---------- */
 function parseRss(xml, srcName, key) {
@@ -204,7 +181,7 @@ async function grab(src) {
 async function grabBoard([ats, slug, name]) {
   try {
     const d = JSON.parse(await getText(BOARD_URL(ats, slug)));
-    return { ok: true, name, jobs: normBoard(ats, slug, name, d) };
+    return { ok: true, board: true, name, jobs: normBoard(ats, slug, name, d) };
   } catch (e) {
     return { ok: false, name, err: e.message, jobs: [] };
   }
@@ -219,49 +196,47 @@ const failed = results.filter((r) => !r.ok);
 
 const matched = [];
 for (const r of results) {
-  for (const job of r.jobs) {
-    if (!job.url || !job.title) continue;
-    const s = score(job);
-    if (s < 2) continue;
-    job.score = s;
-    matched.push(job);
-  }
+  const keep = r.jobs.filter((job) => isWebUrl(job.url) && job.title && !isSpam(job))
+    .sort((a, b) => b.posted - a.posted).slice(0, r.board ? PER_BOARD : PER_AGGREGATOR);
+  matched.push(...keep);
 }
-matched.sort((a, b) => b.score - a.score || b.posted - a.posted);
+matched.sort((a, b) => b.posted - a.posted);
+matched.splice(TOTAL);
+
+/* never replace a good feed with an empty or mostly-failed one */
+if (!matched.length || failed.length === results.length) {
+  console.error("feed agent: " + (failed.length === results.length ? "every source failed" : "no jobs collected") + "; keeping the existing jobs-feed.json");
+  process.exit(1);
+}
 
 /* diff against the previous run so the digest only shows genuinely new roles */
-let prevIds = new Set();
+let prevIds = new Set(), prevJobs = null;
 try {
   const prev = JSON.parse(await readFile(OUT, "utf8"));
-  prevIds = new Set((prev.jobs || []).map((j) => j.id));
+  prevJobs = prev.jobs || [];
+  prevIds = new Set(prevJobs.map((j) => j.id));
 } catch { /* first run */ }
 const fresh = matched.filter((j) => !prevIds.has(j.id));
 
-await writeFile(OUT, JSON.stringify({
+/* identical job list: leave the file alone so the workflow has nothing to commit (the "generated" stamp alone is not a change) */
+const unchanged = prevJobs && JSON.stringify(prevJobs) === JSON.stringify(matched);
+if (!unchanged) await writeFile(OUT, JSON.stringify({
   generated: new Date().toISOString(),
   sources: results.map((r) => ({ name: r.name, ok: r.ok, count: r.jobs.length, err: r.err || null })),
   total: matched.length,
-  jobs: matched.slice(0, 300),
+  jobs: matched,
 }, null, 1), "utf8");
 
 if (!QUIET) {
-  const isIn = (j) => IN_CITY.test((j.loc || "").toLowerCase());
-  const india = matched.filter(isIn);
   console.log(`\nNexus OS job agent - ${new Date().toLocaleString()}`);
-  console.log(`${matched.length} matches | ${fresh.length} new | ${india.length} in India`);
+  console.log(`${matched.length} postings | ${fresh.length} new`);
   if (failed.length) console.log(`unreachable: ${failed.map((f) => `${f.name} (${f.err})`).join(", ")}`);
-
-  const show = (label, list) => {
-    if (!list.length) return;
-    console.log(`\n--- ${label} ---`);
-    for (const j of list) {
-      console.log(`[${String(j.score).padStart(2)}] ${j.title}`);
-      console.log(`     ${j.company || j.srcLabel} | ${j.loc || "-"} | ${j.srcLabel}`);
-      console.log(`     ${j.url}`);
-    }
-  };
-  show("NEW IN INDIA", fresh.filter(isIn).slice(0, 15));
-  show("NEW ELSEWHERE", fresh.filter((j) => !isIn(j)).slice(0, 10));
+  if (fresh.length) console.log("\n--- NEWEST ---");
+  for (const j of fresh.slice(0, 15)) {
+    console.log(`${j.title}`);
+    console.log(`     ${j.company || j.srcLabel} | ${j.loc || "-"} | ${j.srcLabel}`);
+    console.log(`     ${j.url}`);
+  }
   if (!fresh.length) console.log("\n(nothing new since the last run)");
   console.log(`\nwrote ${OUT}`);
 }

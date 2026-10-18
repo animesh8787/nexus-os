@@ -163,7 +163,14 @@ const DEFAULT_BOARDS = [
   { ats: "ashby",      slug: "linear",                         name: "Linear",         on: false },
   { ats: "ashby",      slug: "supabase",                       name: "Supabase",       on: false },
   { ats: "ashby",      slug: "navi",                           name: "Navi",           on: false },
+  { ats: "lever",      slug: "meesho",                         name: "Meesho",         on: true },
+  { ats: "lever",      slug: "cred",                           name: "CRED",           on: true },
+  { ats: "lever",      slug: "zeta",                           name: "Zeta",           on: true },
+  { ats: "lever",      slug: "palantir",                       name: "Palantir",       on: true },
+  { ats: "lever",      slug: "spotify",                        name: "Spotify",        on: false },
+  { ats: "lever",      slug: "paytm",                          name: "Paytm",          on: false },
 ];
+const BOARDS_VER = 2;               // bump when DEFAULT_BOARDS gains entries existing users should be offered once
 
 /* aggregate boards — all verified CORS-open */
 const DEFAULT_AGGREGATORS = {
@@ -225,7 +232,7 @@ function freshState() {
     pmeta: {},                   // slug -> {qid, difficulty, topics}  cache
     ai: { history: [] },         // [{kind, date, text}]
     jobfeed: {
-      boards: clone(DEFAULT_BOARDS),
+      boards: clone(DEFAULT_BOARDS), boardsVer: BOARDS_VER,
       aggregators: clone(DEFAULT_AGGREGATORS),
       filters: clone(DEFAULT_FILTERS),
       cache: [],                 // normalized jobs from last fetch
@@ -265,6 +272,11 @@ function loadState() {
     const jfDefault = freshState().jobfeed;
     S.jobfeed = Object.assign(jfDefault, p.jobfeed || {});
     if (!Array.isArray(S.jobfeed.boards) || !S.jobfeed.boards.length) S.jobfeed.boards = clone(DEFAULT_BOARDS);
+    if ((S.jobfeed.boardsVer || 0) < BOARDS_VER) {      // one-time: offer boards added since this copy was created
+      const have = new Set(S.jobfeed.boards.map((b) => b.ats + ":" + b.slug));
+      for (const b of DEFAULT_BOARDS) if (!have.has(b.ats + ":" + b.slug)) S.jobfeed.boards.push(clone(b));
+      S.jobfeed.boardsVer = BOARDS_VER;
+    }
     S.jobfeed.aggregators = Object.assign(clone(DEFAULT_AGGREGATORS), S.jobfeed.aggregators || {});
     S.jobfeed.filters = Object.assign(clone(DEFAULT_FILTERS), S.jobfeed.filters || {});
     for (const k of ["seen", "dismissed", "tracked"]) if (!S.jobfeed[k]) S.jobfeed[k] = {};
