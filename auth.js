@@ -1,5 +1,5 @@
 /* ============================================================
-   Nexus OS — sign-in page controller.
+   Nexus OS, sign-in page controller.
    modes: signin | signup | reset
    ============================================================ */
 (function () {
@@ -43,7 +43,7 @@
     f.textContent = mode === "reset" ? "Back to sign in" : "Forgot password?";
     $("switchHint").textContent = "";
     clearMsgs();
-    document.title = (mode === "signup" ? "Create account" : mode === "reset" ? "Reset password" : "Sign in") + " — Nexus OS";
+    document.title = (mode === "signup" ? "Create account" : mode === "reset" ? "Reset password" : "Sign in") + " | Nexus OS";
   }
 
   function setBusy(v, label) {

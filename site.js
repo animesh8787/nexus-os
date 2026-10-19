@@ -43,28 +43,6 @@
     });
   }
 
-  /* reveal on scroll */
-  var items = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
-    }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
-    items.forEach(function (n) { io.observe(n); });
-  } else {
-    items.forEach(function (n) { n.classList.add("in"); });
-  }
-
-  /* cursor glare on feature cards */
-  if (matchMedia("(pointer: fine)").matches && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    document.addEventListener("mousemove", function (e) {
-      var c = e.target.closest && e.target.closest(".feat");
-      if (!c) return;
-      var r = c.getBoundingClientRect();
-      c.style.setProperty("--glare-x", ((e.clientX - r.left) / r.width) * 100 + "%");
-      c.style.setProperty("--glare-y", ((e.clientY - r.top) / r.height) * 100 + "%");
-    }, { passive: true });
-  }
-
   /* after "delete my account" the portal sends people here with ?deleted=1 */
   if (/[?&]deleted=1\b/.test(location.search)) {
     var bar = document.createElement("div");

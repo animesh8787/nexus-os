@@ -22,7 +22,8 @@ export const FILES = [
   "theme-boot.js", "boot.js", "legal.js", "icons.js", "sri.js", "a11y.js", "prompts.js",
   "firebase-config.js", "auth-core.js", "auth.js", "site.js",
   "sync-engine.js", "sync.js", "app.js", "ai.js", "profile.js", "tracker.js", "tracker-ui.js",
-  "jobs-feed.json"
+  "jobs-feed.json",
+  "assets/screens/dashboard.webp", "assets/screens/feed.webp", "assets/screens/tracker.webp", "assets/screens/profile.webp"
 ];
 
 const isLocal = (u) => u && !/^(?:[a-z][a-z0-9+.-]*:|\/\/|#)/i.test(u);   // not http:, data:, mailto:, //cdn, #anchor
@@ -33,7 +34,10 @@ export function build(outDir) {
   fs.mkdirSync(outDir, { recursive: true });
   const missingSource = FILES.filter((f) => !fs.existsSync(path.join(ROOT, f)));
   if (missingSource.length) throw new Error("Listed in build-site.mjs but not in the repo: " + missingSource.join(", "));
-  for (const f of FILES) fs.copyFileSync(path.join(ROOT, f), path.join(outDir, f));
+  for (const f of FILES) {
+    fs.mkdirSync(path.dirname(path.join(outDir, f)), { recursive: true });
+    fs.copyFileSync(path.join(ROOT, f), path.join(outDir, f));
+  }
 
   /* every local reference in the published pages and scripts must resolve inside the output */
   const problems = [];
