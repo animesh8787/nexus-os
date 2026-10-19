@@ -13,16 +13,9 @@ const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const pct = (v, max) => (max > 0 ? clamp(Math.round((v / max) * 100), 0, 100) : 0);
 /* icon by name (see icons.js); falls back to plain text so nothing renders blank */
-const icon = (n, s) => (window.NXI && NXI.has(n) ? NXI.svg(n, s || 16) : esc(n || ""));
-// Older saved data stored an emoji here; show the matching line icon instead.
-const LEGACY_GLYPH = { "🌅": "sun", "💪": "dumbbell", "🚿": "droplet", "🎓": "book", "⚡": "code", "🍱": "utensils", "🤖": "cpu",
-  "🏋": "dumbbell", "💻": "terminal", "🍽": "utensils", "🐙": "github", "🧠": "sparkles", "🌙": "moon", "💤": "moon",
-  "📄": "file", "🌱": "sprout", "🚀": "rocket", "•": "dot", "◆": "dot" };
-const glyph = (g, size) => {
-  if (window.NXI && NXI.has(g)) return NXI.svg(g, size || 15);
-  const k = String(g || "").replace(/\uFE0F/g, "");
-  return window.NXI ? NXI.svg(LEGACY_GLYPH[k] || "dot", size || 15) : "";
-};
+const icon = (n, s) => (window.NXI && NXI.has(n) ? NXI.svg(n, s || 16) : "");
+// Saved schedule/task rows may still carry an icon name or emoji; those were decorative, so nothing is drawn for them.
+const glyph = () => "";
 const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
 const fmt = (n) => (typeof n === "number" ? n.toLocaleString("en-US") : n);
 const pad4 = (n) => String(n || 0).padStart(4, "0");
@@ -103,7 +96,7 @@ function toast(msg, kind = "") {
   t.className = "toast " + kind;
   t.textContent = msg;              // plain text on purpose: messages can contain third-party names
   box.appendChild(t);
-  setTimeout(() => { t.style.opacity = "0"; t.style.transform = "translateY(6px)"; }, 3200);
+  setTimeout(() => { t.style.opacity = "0"; }, 3200);
   setTimeout(() => t.remove(), 3600);
 }
 
@@ -121,7 +114,7 @@ const DEFAULT_SKILLS = {
 };
 
 /* ============================================================
-   JOB FEED — verified sources
+   JOB FEED, verified sources
    Every board below was probed live; `in` = India-located roles at probe time.
    ============================================================ */
 const DEFAULT_BOARDS = [
@@ -285,7 +278,7 @@ function loadState() {
 }
 function save() {
   try { localStorage.setItem(LS_KEY, JSON.stringify(S)); }
-  catch (e) { toast("Could not save — storage may be full", "err"); }
+  catch (e) { toast("Could not save, storage may be full", "err"); }
   updateChrome();
   if (window.NEXUS && NEXUS.onSave) NEXUS.onSave();
 }
@@ -435,15 +428,20 @@ function heatmap(cal, opts = {}) {
 /* reusable bits */
 const stat = (label, value, sub, opts = {}) => `
   <div class="stat">
-    ${opts.icon ? `<span class="stat-ico" style="color:${opts.color || "var(--faint)"}">${icon(opts.icon, 16)}</span>` : ""}
     <div class="stat-label">${esc(label)}</div>
     <div class="stat-value" style="color:${opts.color || "var(--text)"}">${value}</div>
     ${sub ? `<div class="stat-sub">${sub}</div>` : ""}
   </div>`;
 const progress = (v, max, opts = {}) =>
   `<div class="progress ${opts.sm ? "sm" : ""}"><div class="progress-fill" style="width:${pct(v, max)}%;background:${opts.color || "var(--accent)"}"></div></div>`;
+/* skeleton placeholders shown while data loads */
+const skelLines = (n) => `<div class="skel-stack" aria-hidden="true">${Array.from({ length: n || 3 }, (_, i) => `<span class="skel skel-line ${["w80", "", "w60", "w40"][i % 4]}"></span>`).join("")}</div>`;
+const skelCards = (n) => `<div class="stack" role="status" aria-label="Loading"><div class="skel-stack">${Array.from({ length: n || 5 }, () =>
+  `<div class="skel-card"><span class="skel skel-line w60"></span><span class="skel skel-line w40"></span></div>`).join("")}</div></div>`;
+const skelBoard = () => `<div class="board" role="status" aria-label="Loading">${Array.from({ length: 4 }, () =>
+  `<div class="skel-col"><span class="skel skel-line w40" style="margin:0;flex:1"></span><span class="skel skel-line" style="width:24px;margin:0"></span></div>`).join("")}</div>`;
 const empty = (ico, title, sub) =>
-  `<div class="empty"><div class="e-ico">${icon(ico, 28)}</div><div class="e-title">${esc(title)}</div><div class="e-sub">${esc(sub)}</div></div>`;
+  `<div class="empty"><div class="e-title">${esc(title)}</div><div class="e-sub">${esc(sub)}</div></div>`;
 
 /* ============================================================
    API  LAYER
@@ -535,7 +533,7 @@ async function fetchGitHub(user) {
   const u = encodeURIComponent(user.trim());
   const prof = await fetchJSON(`https://api.github.com/users/${u}`);
   if (prof.message === "Not Found") throw new Error("user not found");
-  if (prof.message && /rate limit/i.test(prof.message)) throw new Error("GitHub rate limit — try later");
+  if (prof.message && /rate limit/i.test(prof.message)) throw new Error("GitHub rate limit, try later");
   const repos = await fetchJSON(`https://api.github.com/users/${u}/repos?per_page=100&sort=pushed`).catch(() => []);
   const events = await fetchJSON(`https://api.github.com/users/${u}/events/public?per_page=30`).catch(() => []);
   let contributions = [], contribTotal = 0;
@@ -613,7 +611,7 @@ async function ingestRecentSolves(recent) {
 }
 
 /* ============================================================
-   GITHUB  PUSH  (piece 2)  — needs a fine-grained PAT
+   GITHUB  PUSH  (piece 2) , needs a fine-grained PAT
    ============================================================ */
 async function ghApi(path, { method = "GET", token, body } = {}) {
   const r = await fetch("https://api.github.com" + path, {
@@ -651,7 +649,7 @@ async function ghEnsureRepo(owner, repo, token, priv) {
     if (!/not found/i.test(e.message)) throw e;
     return ghApi("/user/repos", {
       method: "POST", token,
-      body: { name: repo, private: !!priv, auto_init: true, description: "LeetCode solutions — auto-committed by Nexus OS" },
+      body: { name: repo, private: !!priv, auto_init: true, description: "LeetCode solutions, auto-committed by Nexus OS" },
     });
   }
 }
@@ -729,7 +727,7 @@ function buildReadme(entries) {
 |---|---|---|---|
 `;
     for (const e of byT[topic]) {
-      md += `| ${e.qid || ""} | [${e.title}](https://leetcode.com/problems/${e.slug}/) | ${e.difficulty || "—"} | [${e.ext}](${e.path}) |
+      md += `| ${e.qid || ""} | [${e.title}](https://leetcode.com/problems/${e.slug}/) | ${e.difficulty || "–"} | [${e.ext}](${e.path}) |
 `;
     }
     md += `
@@ -810,7 +808,7 @@ async function pushSolve(id, opts = {}) {
 async function backfillPush() {
   if (pushBusy) return;
   const list = S.solves.filter((s) => !s.pushed && (s.code || "").trim());
-  if (!list.length) return toast("Nothing to push — add code to your solve entries first");
+  if (!list.length) return toast("Nothing to push, add code to your solve entries first");
   pushBusy = true;
   let ok = 0, fail = 0;
   for (const s of list) {
@@ -828,7 +826,7 @@ async function backfillPush() {
 }
 
 /* ============================================================
-   AI  COACH  (piece 4)  — Groq, OpenAI-compatible
+   AI  COACH  (piece 4) , Groq, OpenAI-compatible
    ============================================================ */
 /* Groq retires model ids periodically, so the id is never hard-coded:
    it is resolved from the account's own /models list and re-resolved
@@ -976,10 +974,10 @@ function nextProblemPool() {
 
 /* Prompts live in prompts.js (shared with the AI proxy). Here: labels + the data each one sends. */
 const COACH = {
-  brief: { label: "Daily briefing",      icon: "file" },
-  next:  { label: "What to solve next",  icon: "target" },
-  retro: { label: "Weekly retro",        icon: "calendar" },
-  job:   { label: "Job search advice",   icon: "briefcase" },
+  brief: { label: "Daily briefing" },
+  next:  { label: "What to solve next" },
+  retro: { label: "Weekly retro" },
+  job:   { label: "Job search advice" },
 };
 function coachData(kind) {
   if (kind === "next") {
@@ -1002,7 +1000,7 @@ async function runCoach(kind) {
   const spec = COACH[kind];
   if (!spec) return;
   const box = el("coachOut");
-  if (box) box.innerHTML = `<div class="faint"><span class="spin"></span> thinking…</div>`;
+  if (box) box.innerHTML = `<div role="status" aria-label="Loading">${skelLines(4)}</div>`;
   try {
     const text = await NXAI.run(PROMPT_ACTION[kind] || kind, coachData(kind));
     S.ai.history.unshift({ kind, date: new Date().toISOString(), text });
@@ -1019,7 +1017,7 @@ async function reviewSolution() {
   const code = (codeEl && codeEl.value || "").trim();
   const prob = (el("revProb") && el("revProb").value || "").trim();
   if (!code) return toast("Paste your solution first");
-  if (out) out.innerHTML = `<div class="faint"><span class="spin"></span> reviewing…</div>`;
+  if (out) out.innerHTML = `<div role="status" aria-label="Loading">${skelLines(4)}</div>`;
   try {
     const text = await NXAI.run("review", { problem: prob, code });
     if (out) out.innerHTML = `<div class="md-body">${mdToHtml(text)}</div>
@@ -1031,7 +1029,7 @@ async function reviewSolution() {
 }
 
 /* ============================================================
-   JOB FEED — fetch · normalize · score
+   JOB FEED, fetch · normalize · score
    ============================================================ */
 const jid = (src, id) => src + ":" + id;
 const stripTags = (h) => String(h || "").replace(/<[^>]*>/g, " ").replace(/&[a-z]+;/gi, " ").replace(/\s+/g, " ").trim();
@@ -1263,11 +1261,11 @@ async function syncAll(opts = {}) {
       results.push("LeetCode ✓");
       try { newSolves = await ingestRecentSolves(S.lc.recent); } catch (e) { /* non-fatal */ }
     }
-    catch (e) { results.push("LeetCode ✗"); if (!opts.silent) toast("LeetCode sync failed — " + e.message + ". You can enter numbers manually on the LeetCode page.", "err"); }
+    catch (e) { results.push("LeetCode ✗"); if (!opts.silent) toast("LeetCode sync failed: " + e.message + ". You can enter numbers manually on the LeetCode page.", "err"); }
   }
   if (wantGH) {
     try { S.gh = await fetchGitHub(S.settings.github); results.push("GitHub ✓"); }
-    catch (e) { results.push("GitHub ✗"); if (!opts.silent) toast("GitHub sync failed — " + e.message, "err"); }
+    catch (e) { results.push("GitHub ✗"); if (!opts.silent) toast("GitHub sync failed: " + e.message, "err"); }
   }
   syncing = false;
   save();
@@ -1297,7 +1295,7 @@ const NAV = [
     { id: "github", label: "GitHub", icon: "branch" },
   ]},
   { group: "AI", items: [
-    { id: "coach", label: "Coach", icon: "sparkles" },
+    { id: "coach", label: "Coach", icon: "message" },
   ]},
   { group: "Build", items: [
     { id: "skills", label: "Skills", icon: "layers" },
@@ -1380,7 +1378,7 @@ ROUTES.overview = function () {
 
   ${!S.settings.leetcode && !S.settings.github ? `
     <div class="card" style="border-color:color-mix(in srgb,var(--accent) 30%,transparent);background:var(--accent-weak)">
-      <div class="card-head" style="margin-bottom:8px"><div class="card-title" style="display:flex;align-items:center;gap:8px"><span style="color:var(--accent);display:inline-flex">${icon("user", 16)}</span>Connect your accounts</div></div>
+      <div class="card-head" style="margin-bottom:8px"><div class="card-title" style="display:flex;align-items:center;gap:8px">Connect your accounts</div></div>
       <p class="mut" style="font-size:13px;margin-bottom:12px">Add your LeetCode and GitHub usernames to pull real solved counts, streaks and contribution graphs automatically.</p>
       <button class="btn btn-primary" data-action="nav" data-view="settings">Open Settings →</button>
     </div>` : ""}
@@ -1388,16 +1386,16 @@ ROUTES.overview = function () {
   ${cur ? `<div class="now-strip">
     <span class="pulse"></span>
     <span class="faint" style="font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase">Now</span>
-    <span class="now-ico">${glyph(cur.icon, 15)}</span>
+    
     <strong style="font-size:14px">${esc(cur.label)}</strong>
     <span class="right faint tabnum" style="font-size:12px">${cur.st} – ${cur.en}</span>
   </div>` : ""}
 
   <div class="grid g-4" style="margin-bottom:14px">
-    ${stat("Problems Solved", solved, `of ${goal} goal · ${pct(solved, goal)}%`, { icon: "code", color: solved ? "var(--accent)" : "var(--faint)" })}
-    ${stat("Day Streak", streak || 0, streak ? "keep it alive" : "solve today to start", { icon: streak ? "flame" : "dot", color: streak ? "var(--amber)" : "var(--faint)" })}
-    ${stat("Tasks Today", tt.done + "/" + tt.total, tt.pct + "% complete", { icon: "check", color: tt.done ? "var(--green)" : "var(--faint)" })}
-    ${stat("Solved Today", ps.today, ps.today >= 5 ? "target hit" : "target: 5/day", { icon: "chart", color: ps.today ? "var(--accent)" : "var(--faint)" })}
+    ${stat("Problems Solved", solved, `of ${goal} goal · ${pct(solved, goal)}%`, { color: solved ? "var(--accent)" : "var(--faint)" })}
+    ${stat("Day Streak", streak || 0, streak ? "keep it alive" : "solve today to start", { color: streak ? "var(--amber)" : "var(--faint)" })}
+    ${stat("Tasks Today", tt.done + "/" + tt.total, tt.pct + "% complete", { color: tt.done ? "var(--green)" : "var(--faint)" })}
+    ${stat("Solved Today", ps.today, ps.today >= 5 ? "target hit" : "target: 5/day", { color: ps.today ? "var(--accent)" : "var(--faint)" })}
   </div>
 
   <div class="grid g-2" style="margin-bottom:14px">
@@ -1438,7 +1436,7 @@ ROUTES.overview = function () {
     const bits = [];
     if (ssd.needCode) bits.push(`<button class="btn btn-sm" data-action="nav" data-view="solves">${icon("edit", 13)} ${ssd.needCode} synced solve${ssd.needCode === 1 ? "" : "s"} need code</button>`);
     if (ssd.readyToPush && S.settings.ghToken) bits.push(`<button class="btn btn-sm btn-primary" data-action="solve-backfill">${icon("upload", 13)} Push ${ssd.readyToPush} to GitHub</button>`);
-    if (aiReady()) bits.push(`<button class="btn btn-sm" data-action="coach-run" data-kind="brief">${icon("sparkles", 13)} Daily briefing</button>`);
+    if (aiReady()) bits.push(`<button class="btn btn-sm" data-action="coach-run" data-kind="brief">Daily briefing</button>`);
     return bits.length ? `<div class="card" style="margin-bottom:14px"><div class="wrap" style="align-items:center">
       <span class="section-label" style="margin:0">Quick actions</span>${bits.join("")}</div><div id="coachOut"></div></div>` : "";
   })()}
@@ -1470,13 +1468,13 @@ ROUTES.schedule = function () {
   const cur = S.schedule.find((s) => state(s) === "live");
   return `
   <div class="page-title">Daily Schedule</div>
-  <div class="page-sub">Your routine, block by block. Edit any row — it's yours to shape.</div>
+  <div class="page-sub">Your routine, block by block. Edit any row, it's yours to shape.</div>
 
   <div class="card" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
     <div><div class="section-label" style="margin:0 0 4px">Current time</div>
       <div class="clock" id="schClock">--:--</div></div>
     ${cur ? `<div style="text-align:right"><div class="section-label" style="margin:0 0 4px">Active block</div>
-      <div style="font-weight:700;display:flex;align-items:center;gap:7px;justify-content:flex-end">${glyph(cur.icon, 15)} ${esc(cur.label)}</div>
+      <div style="font-weight:700;display:flex;align-items:center;gap:7px;justify-content:flex-end">${esc(cur.label)}</div>
       <div class="sched-time">${cur.st} – ${cur.en}</div></div>` : `<span class="badge b-muted">Off schedule</span>`}
   </div>
 
@@ -1487,7 +1485,7 @@ ROUTES.schedule = function () {
       ${S.schedule.map((s, i) => {
         const st = state(s);
         return `<div class="sched-item ${st}">
-          <span class="sched-ico">${glyph(s.icon, 15)}</span>
+          
           <input class="input" style="max-width:130px;padding:5px 8px" value="${esc(s.label)}" data-action="sched-edit" data-i="${i}" data-k="label">
           <input class="input tabnum" style="max-width:70px;padding:5px 6px" value="${s.st}" data-action="sched-edit" data-i="${i}" data-k="st">
           <span class="faint">–</span>
@@ -1526,7 +1524,7 @@ ROUTES.daily = function () {
         const done = !!tt.map[t.id];
         return `<div class="row-item ${done ? "done" : ""}" data-action="task-toggle" data-id="${t.id}">
           <span class="check">${done ? "✓" : ""}</span>
-          <span class="ri-ico">${glyph(t.icon, 14)}</span>
+          
           <span class="ri-text">${esc(t.label)}</span>
           <span class="badge b-muted">${esc(t.cat)}</span>
           <button class="icon-btn" style="width:24px;height:24px;font-size:11px" data-action="task-del" data-id="${t.id}" title="Remove">✕</button>
@@ -1562,7 +1560,7 @@ ROUTES.leetcode = function () {
 
   return `
   <div class="page-title">LeetCode</div>
-  <div class="page-sub">${lc ? `Synced from <strong>${esc(lc.source)}</strong> · ${ago(lc.lastSync)}` : "Not synced — connect your username or enter numbers manually."}</div>
+  <div class="page-sub">${lc ? `Synced from <strong>${esc(lc.source)}</strong> · ${ago(lc.lastSync)}` : "Not synced, connect your username or enter numbers manually."}</div>
 
   <div class="card" style="margin-bottom:14px">
     <div class="card-head"><div class="card-title">Account</div>
@@ -1585,17 +1583,17 @@ ROUTES.leetcode = function () {
   </div>
 
   <div class="grid g-4" style="margin-bottom:14px">
-    ${stat("Total Solved", solved, "goal " + goal, { icon: "code", color: "var(--accent)" })}
-    ${stat("Easy", e, "", { icon: "circle", color: "var(--green)" })}
-    ${stat("Medium", m, "", { icon: "circle", color: "var(--amber)" })}
-    ${stat("Hard", h, "", { icon: "circle", color: "var(--red)" })}
+    ${stat("Total Solved", solved, "goal " + goal, { color: "var(--accent)" })}
+    ${stat("Easy", e, "", { color: "var(--green)" })}
+    ${stat("Medium", m, "", { color: "var(--amber)" })}
+    ${stat("Hard", h, "", { color: "var(--red)" })}
   </div>
 
   ${lc ? `<div class="grid g-4" style="margin-bottom:14px">
-    ${stat("Ranking", lc.ranking ? "#" + lc.ranking.toLocaleString() : "—", "global", { icon: "trophy" })}
-    ${stat("Acceptance", lc.acceptance != null ? lc.acceptance + "%" : "—", "", { icon: "check" })}
-    ${stat("Total Questions", lc.totalQ ? lc.totalQ.toLocaleString() : "—", "on LeetCode", { icon: "hash" })}
-    ${stat("Streak", streakFrom(cal) + "d", "consecutive", { icon: "flame", color: "var(--amber)" })}
+    ${stat("Ranking", lc.ranking ? "#" + lc.ranking.toLocaleString() : "–", "global")}
+    ${stat("Acceptance", lc.acceptance != null ? lc.acceptance + "%" : "–", "")}
+    ${stat("Total Questions", lc.totalQ ? lc.totalQ.toLocaleString() : "–", "on LeetCode")}
+    ${stat("Streak", streakFrom(cal) + "d", "consecutive", { color: "var(--amber)" })}
   </div>` : ""}
 
   <div class="card" style="margin-bottom:14px">
@@ -1636,25 +1634,25 @@ ROUTES.solves = function () {
 
   return `
   <div class="page-title">Solutions</div>
-  <div class="page-sub">Every solve you log here can be committed to a GitHub repo — your contribution graph grows with your practice.</div>
+  <div class="page-sub">Every solve you log here can be committed to a GitHub repo, your contribution graph grows with your practice.</div>
 
   <div class="grid g-4" style="margin-bottom:14px">
-    ${stat("Logged", ss.count, "solve entries", { icon: "terminal", color: ss.count ? "var(--accent)" : "var(--faint)" })}
-    ${stat("On GitHub", ss.pushed, ss.count ? Math.round(ss.pushed / ss.count * 100) + "% of log" : "none yet", { icon: "upload", color: ss.pushed ? "var(--green)" : "var(--faint)" })}
-    ${stat("Ready to push", ss.readyToPush, "code saved here", { icon: "dot", color: ss.readyToPush ? "var(--amber)" : "var(--faint)" })}
-    ${stat("Older solves", ss.needCode, "no code stored", { icon: "clock", color: "var(--faint)" })}
+    ${stat("Logged", ss.count, "solve entries", { color: ss.count ? "var(--accent)" : "var(--faint)" })}
+    ${stat("On GitHub", ss.pushed, ss.count ? Math.round(ss.pushed / ss.count * 100) + "% of log" : "none yet", { color: ss.pushed ? "var(--green)" : "var(--faint)" })}
+    ${stat("Ready to push", ss.readyToPush, "code saved here", { color: ss.readyToPush ? "var(--amber)" : "var(--faint)" })}
+    ${stat("Older solves", ss.needCode, "no code stored", { color: "var(--faint)" })}
   </div>
 
   ${ss.needCode ? `<div class="note-line">
     <strong>${ss.needCode}</strong> of these were pulled from your LeetCode history, so no code is stored for them.
-    They can't be committed from here — open one on LeetCode and press <em>Push to GitHub</em>, or just leave them as a record.
+    They can't be committed from here, open one on LeetCode and press <em>Push to GitHub</em>, or just leave them as a record.
   </div>` : ""}
 
   <div class="card" style="margin-bottom:14px">
     <div class="card-head"><div class="card-title">GitHub push</div>
       ${connected ? `<span class="badge b-green">repo set</span>` : `<span class="badge b-muted">not set up</span>`}</div>
     ${connected
-      ? `<div class="mut" style="font-size:12.5px">Committing to <strong>${esc(st.ghRepo)}</strong>. Each solve writes <code>solutions/&lt;topic&gt;/&lt;id&gt;-&lt;slug&gt;.&lt;ext&gt;</code> plus a README index — one commit each.</div>
+      ? `<div class="mut" style="font-size:12.5px">Committing to <strong>${esc(st.ghRepo)}</strong>. Each solve writes <code>solutions/&lt;topic&gt;/&lt;id&gt;-&lt;slug&gt;.&lt;ext&gt;</code> plus a README index, one commit each.</div>
          <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
            <button class="btn btn-primary" data-action="solve-backfill">${icon("upload", 13)} Push all with code (${ss.readyToPush})</button>
            <button class="btn" data-action="repo-pull" title="Import what the browser extension already pushed">${icon("download", 13)} Pull from repo</button>
@@ -1674,7 +1672,7 @@ ROUTES.solves = function () {
     <p class="faint" style="font-size:11.5px;margin:-4px 0 12px">
       Solutions arrive here on their own once the
       <a href="./nexus-leethub/README.md" target="_blank" rel="noopener">browser extension</a>
-      is installed — or press <strong>↓ Pull from repo</strong> above.
+      is installed, or press <strong>↓ Pull from repo</strong> above.
     </p>
 
     ${_showSolveForm ? `<div class="card" style="background:var(--surface-2);margin-bottom:12px">
@@ -1710,7 +1708,7 @@ function solveRow(s, connected) {
 
   return `<div class="solve-row${open ? " open" : ""}${s.pushed ? " is-pushed" : ""}">
     <div class="solve-head" data-action="solve-expand" data-id="${s.id}">
-      <span class="sh-id">${s.qid ? "#" + s.qid : "—"}</span>
+      <span class="sh-id">${s.qid ? "#" + s.qid : "–"}</span>
       <a class="sh-title" href="https://leetcode.com/problems/${esc(s.slug)}/" target="_blank"
          rel="noopener" data-stop="1" title="${esc(s.title)}">${esc(s.title)}</a>
       <span class="badge ${dbadge}">${esc(s.difficulty || "?")}</span>
@@ -1720,7 +1718,7 @@ function solveRow(s, connected) {
     </div>
     ${open ? `<div class="solve-body">
       ${!hasCode ? `<div class="hint-row">
-        <span>No code stored — solved before the extension was set up.</span>
+        <span>No code stored, solved before the extension was set up.</span>
         <a class="btn btn-sm btn-primary" href="https://leetcode.com/problems/${esc(s.slug)}/"
            target="_blank" rel="noopener">Open on LeetCode &amp; push ↗</a>
       </div>` : ""}
@@ -1729,7 +1727,7 @@ function solveRow(s, connected) {
         <div><label class="field-label">Topic folder</label><input class="input" id="topic-${s.id}" value="${esc(topic)}"></div>
       </div>
       ${s.review ? `<div class="review-box">
-        <div class="review-head"><span class="badge b-accent">${icon("sparkles", 11)} AI review</span>
+        <div class="review-head"><span class="badge b-accent">AI review</span>
           <span class="faint" style="font-size:11px">${ago(new Date(s.review.date).getTime())}</span>
           <button class="btn btn-sm btn-ghost right" data-action="review-clear" data-id="${s.id}">Dismiss</button></div>
         <div class="md-body">${mdToHtml(s.review.text)}</div></div>` : ""}
@@ -1740,7 +1738,7 @@ function solveRow(s, connected) {
       <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
         <button class="btn btn-primary" data-action="solve-save" data-id="${s.id}">Save</button>
         <button class="btn" data-action="solve-save" data-id="${s.id}" data-push="1" ${connected ? "" : "disabled"}>Save &amp; push</button>
-        <button class="btn btn-ghost" data-action="solve-advise" data-id="${s.id}" ${hasCode && aiReady() ? "" : "disabled"} title="${hasCode ? "Code feedback plus job-search advice" : "Needs stored code"}">${icon("sparkles", 13)} What can I do better?</button>
+        <button class="btn btn-ghost" data-action="solve-advise" data-id="${s.id}" ${hasCode && aiReady() ? "" : "disabled"} title="${hasCode ? "Code feedback plus job-search advice" : "Needs stored code"}">What can I do better?</button>
         <button class="btn btn-ghost" data-action="coach-review-fill" data-id="${s.id}">Send to Coach review</button>
         <button class="btn btn-danger right" data-action="solve-del" data-id="${s.id}">Delete</button>
       </div>
@@ -1758,7 +1756,7 @@ function feedSourcesPanel() {
       <button class="btn btn-sm ${a.on ? "btn-primary" : "btn-ghost"}" data-action="feed-agg" data-k="${k}">${a.on ? "✓ " : ""}${esc(a.name)}</button>`).join("")}
   </div>
 
-  <div class="section-label">Company boards <span class="faint">— ${jf.boards.filter((b) => b.on).length} of ${jf.boards.length} on</span></div>
+  <div class="section-label">Company boards <span class="faint">(${jf.boards.filter((b) => b.on).length} of ${jf.boards.length} on)</span></div>
   <div class="wrap" style="margin-bottom:10px">
     ${jf.boards.map((b, i) => `
       <button class="btn btn-sm ${b.on ? "btn-primary" : "btn-ghost"}" data-action="feed-board" data-i="${i}" title="${esc(b.ats)}/${esc(b.slug)}">${b.on ? "✓ " : ""}${esc(b.name)}</button>`).join("")}
@@ -1824,10 +1822,10 @@ ROUTES.github = function () {
   </div>
 
   <div class="grid g-4" style="margin:14px 0">
-    ${stat("Contributions", g.contribTotal || 0, "past year", { icon: "branch", color: g.contribTotal ? "var(--green)" : "var(--faint)" })}
-    ${stat("Public repos", p.publicRepos || 0, "on your profile", { icon: "box", color: "var(--accent)" })}
-    ${stat("Stars earned", g.stars || 0, "across your repos", { icon: "star", color: g.stars ? "var(--amber)" : "var(--faint)" })}
-    ${stat("Followers", p.followers || 0, `following ${p.following || 0}`, { icon: "user", color: "var(--faint)" })}
+    ${stat("Contributions", g.contribTotal || 0, "past year", { color: g.contribTotal ? "var(--green)" : "var(--faint)" })}
+    ${stat("Public repos", p.publicRepos || 0, "on your profile", { color: "var(--accent)" })}
+    ${stat("Stars earned", g.stars || 0, "across your repos", { color: g.stars ? "var(--amber)" : "var(--faint)" })}
+    ${stat("Followers", p.followers || 0, `following ${p.following || 0}`, { color: "var(--faint)" })}
   </div>
 
   <div class="card" style="margin-bottom:14px">
@@ -1835,7 +1833,7 @@ ROUTES.github = function () {
       <span class="faint tabnum" style="font-size:12px">synced ${ago(g.lastSync)}</span></div>
     ${g.contributions.length
       ? heatmap(calFromContrib(g.contributions), { weeks: 52, palette: ["var(--gh0)", "var(--gh1)", "var(--gh2)", "var(--gh3)", "var(--gh4)"] })
-      : empty("branch", "No contribution data", "The contributions proxy may be down — sync again later")}
+      : empty("branch", "No contribution data", "The contributions proxy may be down, sync again later")}
   </div>
 
   <div class="grid g-2" style="margin-bottom:14px">
@@ -1870,7 +1868,7 @@ ROUTES.github = function () {
     ${g.events.length ? g.events.map((e) => `
       <div class="list-line">
         <span class="badge b-muted">${esc(GH_EVENT[e.type] || String(e.type).replace("Event", ""))}</span>
-        <span class="mut" style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(e.repo || "—")}</span>
+        <span class="mut" style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(e.repo || "–")}</span>
         <span class="faint" style="font-size:11px">${ago(e.ts)}</span>
       </div>`).join("") : empty("clock", "No recent public activity", "")}
   </div>
@@ -1887,8 +1885,8 @@ ROUTES.coach = function () {
 
   ${!hasKey ? `
   <div class="card" style="margin-bottom:14px;border-color:color-mix(in srgb,var(--amber) 30%,transparent);background:var(--amber-weak)">
-    <div class="card-head" style="margin-bottom:8px"><div class="card-title" style="display:flex;align-items:center;gap:8px"><span style="color:var(--amber);display:inline-flex">${icon("key", 16)}</span>Turn on the AI coach</div></div>
-    <p class="mut" style="font-size:13px;margin-bottom:12px">The coach runs on Groq. Add a free key in Settings to switch it on — everything below stays disabled until then.</p>
+    <div class="card-head" style="margin-bottom:8px"><div class="card-title" style="display:flex;align-items:center;gap:8px">Turn on the AI coach</div></div>
+    <p class="mut" style="font-size:13px;margin-bottom:12px">The coach runs on Groq. Add a free key in Settings to switch it on, everything below stays disabled until then.</p>
     <button class="btn btn-primary" data-action="nav" data-view="settings">Open Settings →</button>
   </div>` : ""}
 
@@ -1910,7 +1908,7 @@ ROUTES.coach = function () {
     <label class="field-label">Your code</label>
     <textarea id="revCode" rows="9" class="code-area" placeholder="Paste your accepted solution…"></textarea>
     <div style="margin-top:10px">
-      <button class="btn btn-primary" data-action="coach-review"${hasKey ? "" : " disabled"}>${icon("sparkles", 13)} Review my solution</button>
+      <button class="btn btn-primary" data-action="coach-review"${hasKey ? "" : " disabled"}>Review my solution</button>
     </div>
     <div id="revOut" style="margin-top:12px"></div>
   </div>
@@ -1918,7 +1916,7 @@ ROUTES.coach = function () {
   <div class="card">
     <div class="card-head"><div class="card-title">History</div>
       ${h.length ? `<button class="btn btn-sm btn-ghost" data-action="coach-clear">Clear</button>` : ""}</div>
-    ${!h.length ? empty("sparkles", "Nothing yet", "Run a briefing or a retro and it lands here") : h.map((x, i) => `
+    ${!h.length ? empty("", "Nothing yet", "Run a briefing or a retro and it lands here") : h.map((x, i) => `
       <div class="list-line" style="display:block">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
           <span class="badge b-accent">${esc((COACH[x.kind] && COACH[x.kind].label) || x.kind)}</span>
@@ -1944,18 +1942,18 @@ ROUTES.skills = function () {
 
   return `
   <div class="page-title">Skills</div>
-  <div class="page-sub">Rate yourself honestly — the gaps are your syllabus.</div>
+  <div class="page-sub">Rate yourself honestly, the gaps are your syllabus.</div>
 
   <div class="grid g-4" style="margin:14px 0">
-    ${stat("Overall", avg(all) + "%", "across every skill", { icon: "layers", color: avg(all) ? "var(--accent)" : "var(--faint)" })}
-    ${groups.map((g) => stat(meta(g).label, avg(S.skills[g]) + "%", `${S.skills[g].length} tracked`, { icon: meta(g).icon, color: avg(S.skills[g]) ? "var(--green)" : "var(--faint)" })).join("")}
-    ${stat("Solid", all.filter((s) => (s.v || 0) >= 70).length, `of ${all.length} at 70%+`, { icon: "check", color: "var(--green)" })}
+    ${stat("Overall", avg(all) + "%", "across every skill", { color: avg(all) ? "var(--accent)" : "var(--faint)" })}
+    ${groups.map((g) => stat(meta(g).label, avg(S.skills[g]) + "%", `${S.skills[g].length} tracked`, { color: avg(S.skills[g]) ? "var(--green)" : "var(--faint)" })).join("")}
+    ${stat("Solid", all.filter((s) => (s.v || 0) >= 70).length, `of ${all.length} at 70%+`, { color: "var(--green)" })}
   </div>
 
   ${groups.map((g) => `
     <div class="card" style="margin-bottom:14px">
       <div class="card-head">
-        <div class="card-title" style="display:flex;align-items:center;gap:8px"><span style="color:var(--accent);display:inline-flex">${icon(meta(g).icon, 16)}</span>${esc(meta(g).label)}</div>
+        <div class="card-title" style="display:flex;align-items:center;gap:8px">${esc(meta(g).label)}</div>
         <span class="badge b-accent">${avg(S.skills[g])}%</span>
       </div>
       ${S.skills[g].length ? S.skills[g].map((s, i) => `
@@ -1984,24 +1982,24 @@ ROUTES.projects = function () {
   <div class="topline" style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap">
     <div>
       <div class="page-title">Projects</div>
-      <div class="page-sub">Portfolio work — this is what interviews actually talk about.</div>
+      <div class="page-sub">Portfolio work, this is what interviews actually talk about.</div>
     </div>
     <button class="btn btn-primary btn-sm" data-action="proj-add">+ New project</button>
   </div>
 
   <div class="grid g-3" style="margin:14px 0">
-    ${stat("Projects", ps.length, "in the portfolio", { icon: "box", color: ps.length ? "var(--accent)" : "var(--faint)" })}
-    ${stat("Tasks done", doneTasks + "/" + totalTasks, pct(doneTasks, totalTasks) + "% complete", { icon: "check", color: doneTasks ? "var(--green)" : "var(--faint)" })}
-    ${stat("Shipped", shipped, "fully complete", { icon: "rocket", color: shipped ? "var(--green)" : "var(--faint)" })}
+    ${stat("Projects", ps.length, "in the portfolio", { color: ps.length ? "var(--accent)" : "var(--faint)" })}
+    ${stat("Tasks done", doneTasks + "/" + totalTasks, pct(doneTasks, totalTasks) + "% complete", { color: doneTasks ? "var(--green)" : "var(--faint)" })}
+    ${stat("Shipped", shipped, "fully complete", { color: shipped ? "var(--green)" : "var(--faint)" })}
   </div>
 
-  ${!ps.length ? `<div class="card">${empty("box", "No projects yet", "Add one — a shipped project beats a hundred tutorials")}</div>`
+  ${!ps.length ? `<div class="card">${empty("box", "No projects yet", "Add one, a shipped project beats a hundred tutorials")}</div>`
   : `<div class="stack">${ps.map((p) => {
       const d = doneOf(p), t = p.tasks.length;
       return `
       <div class="card">
         <div class="card-head">
-          <div class="card-title" style="display:flex;align-items:center;gap:8px">${glyph(p.emoji, 16)} ${esc(p.name)}</div>
+          <div class="card-title" style="display:flex;align-items:center;gap:8px">${esc(p.name)}</div>
           <div style="display:flex;align-items:center;gap:8px">
             <span class="badge ${t && d === t ? "b-green" : "b-accent"}">${d}/${t}</span>
             <button class="icon-btn" style="width:24px;height:24px;font-size:11px" data-action="proj-del" data-id="${esc(p.id)}" title="Delete project">✕</button>
@@ -2015,7 +2013,7 @@ ROUTES.projects = function () {
             <div class="row-item ${tk.done ? "done" : ""}" data-action="proj-task" data-id="${esc(p.id)}" data-i="${i}">
               <span class="check">${tk.done ? "✓" : ""}</span>
               <span class="ri-text">${esc(tk.t)}</span>
-            </div>`).join("") : `<div class="faint" style="font-size:12.5px;padding:4px 2px">No tasks yet — break the work down.</div>`}
+            </div>`).join("") : `<div class="faint" style="font-size:12.5px;padding:4px 2px">No tasks yet, break the work down.</div>`}
         </div>
         <div style="margin-top:10px"><button class="btn btn-sm" data-action="proj-task-add" data-id="${esc(p.id)}">+ Add task</button></div>
       </div>`;
@@ -2060,7 +2058,7 @@ function feedCard(j) {
         ${tracked ? `<span class="badge b-muted">tracked</span>` : ""}
       </div>
       <div class="job-meta">
-        <strong>${esc(j.company || j.srcLabel || "—")}</strong>
+        <strong>${esc(j.company || j.srcLabel || "–")}</strong>
         <span class="${inIndia ? "job-loc-in" : ""}">${esc(j.loc || "Location not listed")}</span>
         ${j.salary ? `<span style="color:var(--green);font-weight:600">${esc(j.salary)}</span>` : ""}
         ${j.srcLabel ? `<span class="faint">via ${esc(j.srcLabel)}</span>` : ""}
@@ -2095,13 +2093,13 @@ ROUTES.jobfeed = function () {
 
   return `
   <div class="page-title">Job Feed</div>
-  <div class="page-sub">Live postings matched to your profile — apply on the employer's own page.</div>
+  <div class="page-sub">Live postings matched to your profile, apply on the employer's own page.</div>
 
   <div class="grid g-4" style="margin-bottom:14px">
-    ${stat("Matches", counts.all, "after your filters", { icon: "user", color: counts.all ? "var(--accent)" : "var(--faint)" })}
-    ${stat("New", counts.new, "since last check", { icon: "sparkles", color: counts.new ? "var(--green)" : "var(--faint)" })}
-    ${stat("In India", counts.india, "on-site or hybrid", { icon: "pin", color: counts.india ? "var(--accent)" : "var(--faint)" })}
-    ${stat("Entry level", counts.entry, "intern / new grad", { icon: "sprout", color: counts.entry ? "var(--green)" : "var(--faint)" })}
+    ${stat("Matches", counts.all, "after your filters", { color: counts.all ? "var(--accent)" : "var(--faint)" })}
+    ${stat("New", counts.new, "since last check", { color: counts.new ? "var(--green)" : "var(--faint)" })}
+    ${stat("In India", counts.india, "on-site or hybrid", { color: counts.india ? "var(--accent)" : "var(--faint)" })}
+    ${stat("Entry level", counts.entry, "intern / new grad", { color: counts.entry ? "var(--green)" : "var(--faint)" })}
   </div>
 
   <div class="card" style="margin-bottom:14px">
@@ -2126,10 +2124,10 @@ ROUTES.jobfeed = function () {
     ${_showSources ? feedSourcesPanel() : ""}
   </div>
 
-  ${!all.length
+  ${feedBusy ? skelCards(6) : !all.length
     ? `<div class="card">${empty("search", "No jobs loaded yet", "Press “Fetch jobs” to pull live postings from your boards")}</div>`
     : !jobs.length
-    ? `<div class="card">${empty("check", "Nothing in this tab", "You're caught up here — try “All”, or loosen your filters under Sources & filters")}</div>`
+    ? `<div class="card">${empty("check", "Nothing in this tab", "You're caught up here, try “All”, or loosen your filters under Sources & filters")}</div>`
     : `<div class="stack">${jobs.map(feedCard).join("")}</div>
        ${matched.length > jobs.length ? `<div style="text-align:center;margin-top:14px">
          <button class="btn" data-action="feed-more">Show ${Math.min(40, matched.length - jobs.length)} more <span class="faint">- ${matched.length - jobs.length} left</span></button></div>` : ""}`}
@@ -2150,10 +2148,10 @@ ROUTES.jobs = function () {
   <div class="page-sub">Log every application. The numbers keep you honest.</div>
 
   <div class="grid g-4" style="margin-bottom:14px">
-    ${stat("Applied", total, "total sent", { icon: "send", color: total ? "var(--accent)" : "var(--faint)" })}
-    ${stat("Responses", resp, "interviews / OA", { icon: "message", color: resp ? "var(--green)" : "var(--faint)" })}
-    ${stat("Rejected", rej, "data, not failure", { icon: "bars", color: "var(--faint)" })}
-    ${stat("Response Rate", rr + "%", "industry avg ~10%", { icon: "chart", color: rr > 10 ? "var(--green)" : "var(--faint)" })}
+    ${stat("Applied", total, "total sent", { color: total ? "var(--accent)" : "var(--faint)" })}
+    ${stat("Responses", resp, "interviews / OA", { color: resp ? "var(--green)" : "var(--faint)" })}
+    ${stat("Rejected", rej, "data, not failure", { color: "var(--faint)" })}
+    ${stat("Response Rate", rr + "%", "industry avg ~10%", { color: rr > 10 ? "var(--green)" : "var(--faint)" })}
   </div>
 
   <div style="display:flex;justify-content:flex-end;margin-bottom:12px">
@@ -2174,7 +2172,7 @@ ROUTES.jobs = function () {
     <button class="btn btn-primary" style="width:100%;justify-content:center" data-action="job-save">Save application</button>
   </div>` : ""}
 
-  ${!total ? `<div class="card">${empty("target", "No applications yet", "Track every send — momentum compounds")}</div>` : `
+  ${!total ? `<div class="card">${empty("target", "No applications yet", "Track every send, momentum compounds")}</div>` : `
   <div class="card">
     <table class="mini-table"><thead><tr><th>Company</th><th>Role</th><th>Date</th><th>Stage</th><th>Comp</th><th></th></tr></thead><tbody>
       ${j.map((x) => `<tr>
@@ -2182,7 +2180,7 @@ ROUTES.jobs = function () {
         <td class="mut">${esc(x.role)}</td>
         <td class="faint">${esc((x.dt || "").slice(5))}</td>
         <td><span class="badge ${badgeFor(x.status)}">${esc(x.stage)}</span></td>
-        <td style="color:var(--green);font-weight:600">${esc(x.sal || "—")}</td>
+        <td style="color:var(--green);font-weight:600">${esc(x.sal || "–")}</td>
         <td><button class="icon-btn" style="width:24px;height:24px;font-size:11px" data-action="job-del" data-id="${x.id}">✕</button></td>
       </tr>`).join("")}
     </tbody></table>
@@ -2220,13 +2218,13 @@ ROUTES.analytics = function () {
 
   return `
   <div class="page-title">Analytics</div>
-  <div class="page-sub">Your real numbers — nothing here is faked.</div>
+  <div class="page-sub">Your real numbers, nothing here is faked.</div>
 
   <div class="grid g-4" style="margin-bottom:14px">
-    ${stat("Solved", solved, pct(solved, goal) + "% of goal", { icon: "code", color: "var(--accent)" })}
-    ${stat("Streak", streak + "d", "current", { icon: "flame", color: streak ? "var(--amber)" : "var(--faint)" })}
-    ${stat("FS Mastery", fsAvg + "%", "full stack", { icon: "code", color: fsAvg ? "var(--accent)" : "var(--faint)" })}
-    ${stat("AI/ML Mastery", aiAvg + "%", "avg", { icon: "cpu", color: aiAvg ? "var(--green)" : "var(--faint)" })}
+    ${stat("Solved", solved, pct(solved, goal) + "% of goal", { color: "var(--accent)" })}
+    ${stat("Streak", streak + "d", "current", { color: streak ? "var(--amber)" : "var(--faint)" })}
+    ${stat("FS Mastery", fsAvg + "%", "full stack", { color: fsAvg ? "var(--accent)" : "var(--faint)" })}
+    ${stat("AI/ML Mastery", aiAvg + "%", "avg", { color: aiAvg ? "var(--green)" : "var(--faint)" })}
   </div>
 
   <div class="grid g-2" style="margin-bottom:14px">
@@ -2245,11 +2243,11 @@ ROUTES.analytics = function () {
   <div class="card">
     <div class="card-head"><div class="card-title">Projections (at current pace)</div></div>
     ${[
-      [`Problem goal (${goal})`, solved > 0 ? `~${Math.ceil((goal - solved) / 5)} days` : "—", "zap"],
-      ["Full stack → 80%", fsAvg > 0 ? `~${Math.max(0, Math.ceil((80 - fsAvg) * 1.5))} days` : "—", "code"],
-      ["AI/ML → 70%", aiAvg > 0 ? `~${Math.max(0, Math.ceil((70 - aiAvg) * 2))} days` : "—", "cpu"],
+      [`Problem goal (${goal})`, solved > 0 ? `~${Math.ceil((goal - solved) / 5)} days` : "–", "zap"],
+      ["Full stack → 80%", fsAvg > 0 ? `~${Math.max(0, Math.ceil((80 - fsAvg) * 1.5))} days` : "–", "code"],
+      ["AI/ML → 70%", aiAvg > 0 ? `~${Math.max(0, Math.ceil((70 - aiAvg) * 2))} days` : "–", "cpu"],
       ["10 applications", `${Math.max(0, 10 - appliedJobs().length)} to go`, "target"],
-    ].map((r) => `<div class="list-line"><span style="color:var(--accent);display:inline-flex">${icon(r[2], 15)}</span><span class="ri-text">${r[0]}</span>
+    ].map((r) => `<div class="list-line"><span class="ri-text">${r[0]}</span>
       <span class="num right" style="color:var(--accent)">${r[1]}</span></div>`).join("")}
   </div>`;
 };
@@ -2267,7 +2265,7 @@ ROUTES.settings = function () {
     <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
       <span class="uc-avatar" style="width:38px;height:38px;font-size:18px">${esc((NEXUS.user.name || "?").trim()[0] || "?").toUpperCase()}</span>
       <div style="flex:1;min-width:160px"><div style="font-weight:600">${esc(NEXUS.user.name || "")}</div>
-        <div class="faint" style="font-size:12px">${NEXUS.user.local ? "No sign-in — data stays in this browser only" : esc(NEXUS.user.email)}</div></div>
+        <div class="faint" style="font-size:12px">${NEXUS.user.local ? "No sign-in, data stays in this browser only" : esc(NEXUS.user.email)}</div></div>
       ${!NEXUS.user.local && !NEXUS.user.verified ? `<button class="btn btn-sm" data-action="resend-verify">Resend verification</button>` : ""}
       <button class="btn btn-sm" data-action="sign-out">${icon("logout", 13)} ${NEXUS.user.local ? "Exit" : "Sign out"}</button>
     </div>
@@ -2298,8 +2296,8 @@ ROUTES.settings = function () {
     <div class="section-label">GitHub auto-push</div>
     <p class="faint" style="font-size:12px;margin-bottom:12px">Commits your logged solutions to a repo so your contribution graph tracks your practice.
       Use a <strong>fine-grained PAT</strong> scoped to <em>one repo</em>, permission <strong>Contents: read/write</strong> only
-      (add <em>Administration: write</em> only if you want the app to create the repo). The token is stored in this browser and sent only to api.github.com —
-      don't enable this on a shared/public deployment.</p>
+      (add <em>Administration: write</em> only if you want the app to create the repo). The token is stored in this browser and sent only to api.github.com. Do not enable this on a shared or public deployment.</p>
+
     <div class="grid g-2" style="gap:12px">
       <div><label class="field-label">Solutions repo name</label>
         <input class="input" id="setGhRepo" value="${esc(s.ghRepo)}" placeholder="leetcode-solutions"></div>
@@ -2362,10 +2360,10 @@ function updateChrome() {
   const fl = el("streakFlame"), nu = el("streakNum"), su = el("streakSub");
   if (nu) {
     if (streak > 0) {
-      fl.innerHTML = icon("flame", 20); fl.style.color = "var(--amber)"; nu.textContent = streak + " day" + (streak > 1 ? "s" : "");
+      fl.innerHTML = ""; nu.textContent = streak + " day" + (streak > 1 ? "s" : "");
       su.textContent = "keep it going"; nu.style.color = "var(--amber)";
     } else {
-      fl.innerHTML = icon("zap", 20); fl.style.color = "var(--accent)"; nu.textContent = "No streak yet";
+      fl.innerHTML = ""; nu.textContent = "No streak yet";
       su.textContent = "log practice to start"; nu.style.color = "var(--text)";
     }
   }
@@ -2399,7 +2397,7 @@ const NEXUS = window.NEXUS = {
   actions: {}, changes: {}, inputs: {}, onStart: [],
   ROUTES, ROUTES_AFTER, NAV,
   get S() { return S; },
-  save, toast, rerender, go, esc, safeUrl, icon, stat, empty, progress, ring, barChart,
+  save, toast, rerender, go, esc, safeUrl, icon, stat, empty, skelLines, skelCards, skelBoard, progress, ring, barChart,
   iso, addDays, ago, uid, clone, pct, clamp, titleCase, slugify, mdToHtml, fetchJSON,
   streakFrom, activityCal, solveStats, todayTaskState, practiceStats, solvedTotal,
   el, $, $$, b64enc, scoreJob, normTerm, hasTerm, IN_CITY,
@@ -2474,7 +2472,7 @@ document.addEventListener("click", (ev) => {
       S.settings.leetcode = v; save();
       setSync("busy", `<span class="spin"></span> Syncing…`);
       fetchLeetCode(v).then((r) => { S.lc = r; save(); toast("LeetCode synced ✓", "ok"); rerender(); })
-        .catch((e) => { toast("Sync failed — " + e.message + ". Use manual entry below.", "err"); rerender(); });
+        .catch((e) => { toast("Sync failed: " + e.message + ". Use manual entry below.", "err"); rerender(); });
       break;
     }
     case "lc-disconnect": S.lc = null; S.settings.leetcode = ""; save(); rerender(); break;
@@ -2499,7 +2497,7 @@ document.addEventListener("click", (ev) => {
       S.settings.github = v; save();
       setSync("busy", `<span class="spin"></span> Syncing…`);
       fetchGitHub(v).then((r) => { S.gh = r; save(); toast("GitHub synced ✓", "ok"); rerender(); })
-        .catch((e) => { toast("GitHub sync failed — " + e.message, "err"); rerender(); });
+        .catch((e) => { toast("GitHub sync failed: " + e.message, "err"); rerender(); });
       break;
     }
     case "gh-disconnect": S.gh = null; S.settings.github = ""; save(); rerender(); break;
@@ -2565,7 +2563,7 @@ document.addEventListener("click", (ev) => {
         if (!n) throw new Error("board exists but has no open roles");
         S.jobfeed.boards.push({ ats, slug, name: titleCase(slug), on: true });
         save();
-        toast(`Added ${slug} — ${n} open roles`, "ok");
+        toast(`Added ${slug}: ${n} open roles`, "ok");
         rerender();
       }).catch((e) => { if (out) out.innerHTML = `<span class="badge b-red">${esc(slug)}: ${esc(e.message)}</span>`; });
       break;
@@ -2597,7 +2595,7 @@ document.addEventListener("click", (ev) => {
       if (el("fExcl")) f.exclude = split(el("fExcl").value);
       if (el("fMin")) f.minScore = clamp(+el("fMin").value || 0, 0, 20);
       if (el("fIndia")) f.indiaOnly = el("fIndia").checked;
-      save(); toast("Filters saved — re-fetching", "ok"); refreshFeed();
+      save(); toast("Filters saved, re-fetching", "ok"); refreshFeed();
       break;
     }
     case "feed-filters-reset":
@@ -2664,7 +2662,7 @@ document.addEventListener("click", (ev) => {
       save();
       if (out) out.innerHTML = `<span class="spin"></span> testing…`;
       ghTestConnection()
-        .then((r) => { if (out) out.innerHTML = `<span class="badge b-green">OK — ${esc(r.login)} · <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.repo)}</a></span>`; })
+        .then((r) => { if (out) out.innerHTML = `<span class="badge b-green">OK: ${esc(r.login)} · <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.repo)}</a></span>`; })
         .catch((e) => { if (out) out.innerHTML = `<span class="badge b-red">${esc(e.message)}</span>`; });
       break;
     }
@@ -2724,7 +2722,7 @@ document.addEventListener("click", (ev) => {
     case "repo-pull":
       toast("Reading solutions/index.json…");
       pullRepoIndex()
-        .then((r) => { toast(`Repo has ${r.total} solutions — ${r.added} new, ${r.updated} marked pushed`, "ok"); rerender(); })
+        .then((r) => { toast(`Repo has ${r.total} solutions, ${r.added} new, ${r.updated} marked pushed`, "ok"); rerender(); })
         .catch((e) => toast(e.message, "err"));
       break;
 
@@ -2799,19 +2797,8 @@ let sdTimer = null;
 function saveDebounced() { clearTimeout(sdTimer); sdTimer = setTimeout(save, 400); }
 
 /* ============================================================
-   VISUAL FLOURISHES  (glare under the cursor, scroll progress)
+   SCROLL PROGRESS
    ============================================================ */
-const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-const finePointer = window.matchMedia("(pointer: fine)");
-document.addEventListener("mousemove", (ev) => {
-  if (reducedMotion.matches || !finePointer.matches) return;
-  const c = ev.target.closest && ev.target.closest(".card, .stat, .job-card");
-  if (!c) return;
-  const r = c.getBoundingClientRect();
-  c.style.setProperty("--glare-x", ((ev.clientX - r.left) / r.width) * 100 + "%");
-  c.style.setProperty("--glare-y", ((ev.clientY - r.top) / r.height) * 100 + "%");
-}, { passive: true });
-
 (function scrollProgress() {
   const bar = el("scrollProgress");
   if (!bar) return;
@@ -2857,7 +2844,7 @@ el("importFile").addEventListener("change", (e) => {
       localStorage.setItem(LS_KEY, JSON.stringify(data));
       loadState(); applyTheme(); buildNav(); go("overview");
       toast("Data imported ✓", "ok");
-    } catch (err) { toast("Import failed — " + err.message, "err"); }
+    } catch (err) { toast("Import failed: " + err.message, "err"); }
   };
   r.readAsText(f);
   e.target.value = "";

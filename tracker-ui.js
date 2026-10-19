@@ -1,5 +1,5 @@
 /* ============================================================
-   Nexus OS — Job Tracker UI: board, detail drawer, "did you apply?"
+   Nexus OS, Job Tracker UI: board, detail drawer, "did you apply?"
    prompt and the read-only Gmail connection.  Logic lives in tracker.js.
 
    Gmail: Google Identity Services gives the browser a short-lived
@@ -325,10 +325,10 @@
     var f = N.funnel(), st = f.stages;
     var prog = st.assessment + st.interview;
     return '<div class="grid g-4" style="margin-bottom:14px">' +
-      N.stat("Applied", f.applied, f.saved ? f.saved + " more saved" : "applications sent", { icon: "send", color: f.applied ? "var(--accent)" : "var(--faint)" }) +
-      N.stat("In progress", prog, "assessment + interview", { icon: "columns", color: prog ? "var(--amber)" : "var(--faint)" }) +
-      N.stat("Offers", st.offer, st.rejected + " closed as rejected", { icon: "trophy", color: st.offer ? "var(--green)" : "var(--faint)" }) +
-      N.stat("Response rate", f.responseRate + "%", f.medianDaysToReply != null ? "median reply in " + f.medianDaysToReply + " days" : "no replies yet", { icon: "chart", color: f.responseRate >= 10 ? "var(--green)" : "var(--faint)" }) + "</div>";
+      N.stat("Applied", f.applied, f.saved ? f.saved + " more saved" : "applications sent", { color: f.applied ? "var(--accent)" : "var(--faint)" }) +
+      N.stat("In progress", prog, "assessment + interview", { color: prog ? "var(--amber)" : "var(--faint)" }) +
+      N.stat("Offers", st.offer, st.rejected + " closed as rejected", { color: st.offer ? "var(--green)" : "var(--faint)" }) +
+      N.stat("Response rate", f.responseRate + "%", f.medianDaysToReply != null ? "median reply in " + f.medianDaysToReply + " days" : "no replies yet", { color: f.responseRate >= 10 ? "var(--green)" : "var(--faint)" }) + "</div>";
   }
 
   /* ================= detail drawer ================= */
@@ -370,10 +370,10 @@
     var ai = window.NXAI && NXAI.available();
     return '<div class="topline" style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px 16px;flex-wrap:wrap;margin-bottom:16px">' +
       '<div><div class="page-title">Job Tracker</div><div class="page-sub" style="margin-bottom:0">Every application, its stage, and the date each thing happened.</div></div>' +
-      '<div class="wrap"><button class="btn btn-sm" data-action="trk-advice"' + (ai && !adviceBusy ? "" : " disabled") + ' title="' + (ai ? "" : "Turn on the AI coach in Settings") + '">' + icon("sparkles", 13) + (adviceBusy ? " Thinking..." : " Job-search advice") + '</button>' +
+      '<div class="wrap"><button class="btn btn-sm" data-action="trk-advice"' + (ai && !adviceBusy ? "" : " disabled") + ' title="' + (ai ? "" : "Turn on the AI coach in Settings") + '">' + (adviceBusy ? " Thinking..." : " Job-search advice") + '</button>' +
       '<button class="btn btn-primary btn-sm" data-action="trk-add-form">' + (showForm ? "Cancel" : icon("plus", 13) + " Add application") + "</button></div></div>" +
       stats() + '<div id="trkAdvice">' + adviceHtml + "</div>" + gmailBar() + reviewCard() + formCard() +
-      (has ? board() : '<div class="card">' + N.empty("target", "No applications yet", "Hit Apply on a job in your feed - Nexus will ask if you applied and log it. Or add one by hand.") + "</div>") +
+      (has ? (G.busy && !jobs().length ? N.skelBoard() : board()) : G.busy ? N.skelBoard() : '<div class="card">' + N.empty("target", "No applications yet", "Hit Apply on a job in your feed - Nexus will ask if you applied and log it. Or add one by hand.") + "</div>") +
       drawer();
   }
   var releaseTrap = null, opener = null;
@@ -532,7 +532,7 @@
       S().ai.history.unshift({ kind: "job", date: new Date().toISOString(), text: text });
       S().ai.history = S().ai.history.slice(0, 30);
       N.save();
-      adviceHtml = '<div class="card review-box" style="margin-bottom:14px"><div class="review-head"><span class="badge b-accent">' + icon("sparkles", 11) + ' Job-search advice</span>' +
+      adviceHtml = '<div class="card review-box" style="margin-bottom:14px"><div class="review-head"><span class="badge b-accent">Job-search advice</span>' +
         '<button class="btn btn-sm btn-ghost right" data-action="trk-advice-hide">Dismiss</button></div><div class="md-body">' + N.mdToHtml(text) + "</div></div>";
     } catch (e) {
       adviceHtml = '<div class="auth-err show" style="margin-bottom:14px">' + esc(e.message) + "</div>";

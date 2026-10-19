@@ -1,5 +1,5 @@
 /* ============================================================
-   Nexus OS — cloud sync (Firestore) + account deletion.  Portal only.
+   Nexus OS, cloud sync (Firestore) + account deletion.  Portal only.
 
    The merge logic lives in sync-engine.js (unit-tested). This file:
      - adapts Firestore to the engine's backend interface

@@ -1,5 +1,5 @@
 /* ============================================================
-   Nexus OS — Profile: resume parsing + editable preferences that drive
+   Nexus OS, Profile: resume parsing + editable preferences that drive
    the Job Feed.
 
    Flow:  file / pasted text -> extractLocal() (always, instant, offline)
