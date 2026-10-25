@@ -1,16 +1,16 @@
 {
- "generated": "2026-10-24T07:33:27.169Z",
+ "generated": "2026-10-25T07:47:08.481Z",
  "sources": [
   {
    "name": "Himalayas",
    "ok": true,
-   "count": 110,
+   "count": 114,
    "err": null
   },
   {
    "name": "Working Nomads",
    "ok": true,
-   "count": 41,
+   "count": 39,
    "err": null
   },
   {
@@ -28,13 +28,13 @@
   {
    "name": "Databricks",
    "ok": true,
-   "count": 896,
+   "count": 897,
    "err": null
   },
   {
    "name": "MongoDB",
    "ok": true,
-   "count": 383,
+   "count": 381,
    "err": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "Stripe",
    "ok": true,
-   "count": 720,
+   "count": 719,
    "err": null
   },
   {
@@ -64,7 +64,7 @@
   {
    "name": "Rubrik",
    "ok": true,
-   "count": 149,
+   "count": 148,
    "err": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Razorpay",
    "ok": true,
-   "count": 26,
+   "count": 25,
    "err": null
   },
   {
@@ -130,7 +130,7 @@
   {
    "name": "Anthropic",
    "ok": true,
-   "count": 681,
+   "count": 682,
    "err": null
   },
   {
@@ -142,13 +142,13 @@
   {
    "name": "Cloudflare",
    "ok": true,
-   "count": 453,
+   "count": 454,
    "err": null
   },
   {
    "name": "Samsara",
    "ok": true,
-   "count": 285,
+   "count": 284,
    "err": null
   },
   {
@@ -184,7 +184,7 @@
   {
    "name": "Pinterest",
    "ok": true,
-   "count": 161,
+   "count": 163,
    "err": null
   },
   {
@@ -202,7 +202,7 @@
   {
    "name": "Brex",
    "ok": true,
-   "count": 254,
+   "count": 259,
    "err": null
   },
   {
@@ -214,7 +214,7 @@
   {
    "name": "Perplexity",
    "ok": true,
-   "count": 131,
+   "count": 132,
    "err": null
   },
   {
@@ -244,7 +244,7 @@
   {
    "name": "Supabase",
    "ok": true,
-   "count": 59,
+   "count": 61,
    "err": null
   },
   {
@@ -286,442 +286,1813 @@
   {
    "name": "Paytm",
    "ok": true,
-   "count": 197,
+   "count": 196,
    "err": null
   }
  ],
- "total": 911,
+ "total": 909,
  "jobs": [
   {
-   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164165",
+   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164256",
    "src": "jobspresso",
    "srcLabel": "Jobspresso",
    "company": "",
-   "title": "Senior Brand Marketing Manager, Social and Community",
+   "title": "Field Marketing Manager",
    "loc": "Remote",
-   "url": "https://jobspresso.co/job/senior-brand-marketing-manager-social-community/",
-   "posted": 1792826797000,
+   "url": "https://jobspresso.co/job/field-marketing-manager/",
+   "posted": 1792913594000,
    "tags": [],
-   "desc": "Who we are Splice is a creative platform for people who make music. Serious producers choose Splice Sounds to bring their ideas to life. A subscription to Splice inspires and accelerates creative success for digital music creators with an industry-leading catalog of sounds and samples and an expanding AI stack. With a rent-to-own marketplace of",
+   "desc": "At Linear, we re building the product development system for teams and agents. AI is fundamentally changing how software gets built, and we re shaping the tools this new era requires. Founded in 2019, Linear has become the platform of choice for more than 40,000 companies (including OpenAI, Coinbase, and Ramp) to plan, build, and ship their",
    "salary": ""
   },
   {
-   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164163",
+   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164254",
    "src": "jobspresso",
    "srcLabel": "Jobspresso",
    "company": "",
-   "title": "Senior Product Security Consultant, Advisory",
+   "title": "Business Development Representative",
    "loc": "Remote",
-   "url": "https://jobspresso.co/job/senior-product-security-consultant-advisory/",
-   "posted": 1792826118000,
+   "url": "https://jobspresso.co/job/business-development-representative/",
+   "posted": 1792912989000,
    "tags": [],
-   "desc": "Finite State partners with product security teams, the guardians of our connected world, to create transparency for their connected devices and supply chains. Our platform handles connected devices and embedded systems across all industries, including those found in enterprises, healthcare, utilities, connected vehicles, manufacturing facilities, critical infrastructure, and government entities. W",
+   "desc": "Who We Are Help Scout started in 2011 with a simple premise: support software should treat customers like people, not tickets. 3+ billion conversations later, more than 10,000 companies use Help Scout to grow relationships with customers of all types, from clients to patients and beyond. Now we re in a new chapter: not only building",
    "salary": ""
   },
   {
-   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164161",
+   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164252",
    "src": "jobspresso",
    "srcLabel": "Jobspresso",
    "company": "",
-   "title": "Team Lead, Customer Care",
+   "title": "Director of Product Design",
    "loc": "Remote",
-   "url": "https://jobspresso.co/job/team-lead-customer-care/",
-   "posted": 1792825845000,
+   "url": "https://jobspresso.co/job/director-product-design/",
+   "posted": 1792912620000,
    "tags": [],
-   "desc": "Who we are At ZayZoon, we are on a mission to save 10 million hardworking employees 10 billion dollars. We have created a financial empowerment platform that helps businesses of all sizes make a big impact on employee financial wellness. We offer a variety of financial wellness services, like earned wage access, that allows employees",
+   "desc": "Who We Are Help Scout started in 2011 with a simple premise: support software should treat customers like people, not tickets. 3+ billion conversations later, more than 10,000 companies use Help Scout to grow relationships with customers of all types, from clients to patients and beyond. Now we’re in a new chapter: not only building",
    "salary": ""
   },
   {
-   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164159",
+   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164250",
    "src": "jobspresso",
    "srcLabel": "Jobspresso",
    "company": "",
-   "title": "Customer Success Specialist",
+   "title": "Staff Product Manager",
    "loc": "Remote",
-   "url": "https://jobspresso.co/job/customer-success-specialist/",
-   "posted": 1792825667000,
+   "url": "https://jobspresso.co/job/staff-product-manager/",
+   "posted": 1792911986000,
    "tags": [],
-   "desc": "We are on a mission to modernize insurance, making it simpler, more accessible, and customer-first. The insurance industry is a $1T market that has remained largely untouched by the digital revolution, and PolicyMe is here to change that. As a remote-first, Toronto-based startup with big ambitions, we are looking for a Customer Success Specialist to",
+   "desc": "Hi, I’m Geo, Ashby’s VP of Product. I joined Ashby August ’26; read more about why I joined here. I’m hiring for multiple Product Managers who will report directly to me. More on the specific product areas below. At Ashby, we have a unique approach to building products. As a PM, your primary goal is",
    "salary": ""
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/hook-ladder-digital/jobs/content-strategist-8810514095",
+   "id": "himalayas:https://himalayas.app/companies/cavallo/jobs/senior-product-designer",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Hook + Ladder Digital",
-   "title": "Content Strategist",
-   "loc": "Colombia",
-   "url": "https://himalayas.app/companies/hook-ladder-digital/jobs/content-strategist-8810514095?utm_source=api",
-   "posted": 1792824232000,
-   "tags": [
-    "Content-Strategist",
-    "Digital-Marketing-Strategist",
-    "Content-Marketing-Manager",
-    "Social-Media-Strategist",
-    "Brand-Content-Strategist"
-   ],
-   "desc": "We’re Hiring a Content Strategist ✍️We don't just run marketing.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/veriday/jobs/senior-automation-engineer",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Veriday",
-   "title": "Senior Automation Engineer",
-   "loc": "Canada",
-   "url": "https://himalayas.app/companies/veriday/jobs/senior-automation-engineer?utm_source=api",
-   "posted": 1792824217000,
-   "tags": [
-    "Automation-Engineer",
-    "QA-Automation-Engineer",
-    "Automation-Testing",
-    "SDET",
-    "Quality-Assurance-Engineer"
-   ],
-   "desc": "Veriday Inc. is seeking a Senior QA Automation Engineer with strong hands-on experience in Playwright-based test automation within Agile delivery environments.",
-   "salary": "CAD70–80"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/launch-potato/jobs/lead-data-scientist-adtech-1215660509",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Launch Potato",
-   "title": "Lead Data Scientist, AdTech",
-   "loc": "Mexico",
-   "url": "https://himalayas.app/companies/launch-potato/jobs/lead-data-scientist-adtech-1215660509?utm_source=api",
-   "posted": 1792824217000,
-   "tags": [
-    "Data-Scientist",
-    "Machine-Learning-Scientist",
-    "Applied-Data-Scientist",
-    "Quantitative-Analyst",
-    "AdTech-Data-Science"
-   ],
-   "desc": "WHO ARE WE? Launch Potato is the discovery and conversion company.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/dvt-co/jobs/senior-ios-developer-ic-2240485316",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "DVT",
-   "title": "Senior iOS Developer (IC)",
-   "loc": "South Africa",
-   "url": "https://himalayas.app/companies/dvt-co/jobs/senior-ios-developer-ic-2240485316?utm_source=api",
-   "posted": 1792824184000,
-   "tags": [
-    "Senior-IOS-Developer",
-    "iOS-Developer",
-    "Mobile-Software-Developer",
-    "Senior-IOS-Engineer",
-    "Contractor"
-   ],
-   "desc": "Job Title: Senior iOS Developer ROLE OVERVIEWThe employed individual will be challenged with access to a range of projects at clients across industries, working with other experienced technologists whose single pursuit is optimal value creation for our customers through the construction of peerless solutions.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/humana/jobs/senior-process-improvement-professional-procurement-digital-ai-enablement-4870925161",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Humana",
-   "title": "Senior Process Improvement Professional (Procurement Digital & AI Enablement)",
+   "company": "Cavallo",
+   "title": "Senior Product Designer",
    "loc": "United States",
-   "url": "https://himalayas.app/companies/humana/jobs/senior-process-improvement-professional-procurement-digital-ai-enablement-4870925161?utm_source=api",
-   "posted": 1792824142000,
+   "url": "https://himalayas.app/companies/cavallo/jobs/senior-product-designer?utm_source=api",
+   "posted": 1792910716000,
    "tags": [
-    "Process-Improvement-Specialist",
-    "Business-Process-Manager",
-    "Procurement-Technology-Manager",
-    "Procurement-Systems-Specialist",
-    "Digital-Transformation-Manager"
+    "Product-Designer",
+    "UX-Designer",
+    "UI-Designer",
+    "Interaction-Designer",
+    "Senior-Staff-Product-Designer"
    ],
-   "desc": "Become a part of our caring community The Senior Process Improvement Professional plays a critical role within the Procurement Systems Optimization team, leading enterprise-wide procurement systems, processes, digital transformation, and AI-driven initiatives across procurement and supplier management platforms.",
-   "salary": "USD78400–107800"
+   "desc": "Cavallo is looking for a Product Designer to create intuitive, high-impact experiences for distributors navigating complex operational challenges.",
+   "salary": ""
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/circular-materials/jobs/qa-tester-data-integration-canada-remote-12-month-contract",
+   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164248",
+   "src": "jobspresso",
+   "srcLabel": "Jobspresso",
+   "company": "",
+   "title": "Backend Engineer, Knowledge Graph (Rust)",
+   "loc": "Remote",
+   "url": "https://jobspresso.co/job/backend-engineer-knowledge-graph-rust/",
+   "posted": 1792910682000,
+   "tags": [],
+   "desc": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built int",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/mitchell-whale-insurance-brokers/jobs/account-manager-commercial-lines",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Circular Materials",
-   "title": "QA Tester, Data Integration - Canada Remote 12 Month Contract",
+   "company": "Mitchell & Whale Insurance Brokers",
+   "title": "Account Manager, Commercial Lines",
    "loc": "Canada",
-   "url": "https://himalayas.app/companies/circular-materials/jobs/qa-tester-data-integration-canada-remote-12-month-contract?utm_source=api",
-   "posted": 1792824142000,
+   "url": "https://himalayas.app/companies/mitchell-whale-insurance-brokers/jobs/account-manager-commercial-lines?utm_source=api",
+   "posted": 1792910649000,
    "tags": [
-    "QA-Tester",
-    "Quality-Assurance-Engineer",
-    "Data-Integration-Tester",
-    "Software-Test-Engineer",
-    "Data-Quality-Analyst"
+    "Commercial-Lines-Account-Manager",
+    "Commercial-Account-Manager",
+    "Insurance-Account-Manager",
+    "Commercial-Insurance-Broker",
+    "Commercial-Insurance-Account-Manager"
    ],
-   "desc": "OVERVIEWReporting to Manager, IT Quality Assurance and working closely with the QA Lead, the 12-month Contract position of QA Tester performs hands-on testing for a new enterprise data platform that integrates and consolidates data from multiple source systems, including SAP and CRM, into a single, centralized source on AWS.",
-   "salary": "CAD70000–85000"
+   "desc": "Commercial Lines Account Manager Mitch is a leading insurance brokerage on a mission to make insurance lovable through exceptional experiences.",
+   "salary": "CAD65000–75000"
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/mckesson/jobs/sr-manager-customer-success",
+   "id": "himalayas:https://himalayas.app/companies/xage-security/jobs/sr-engineer-6059434754",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "McKesson",
-   "title": "Sr. Manager, Customer Success",
+   "company": "Xage Security",
+   "title": "Sr. Engineer",
+   "loc": "Malaysia",
+   "url": "https://himalayas.app/companies/xage-security/jobs/sr-engineer-6059434754?utm_source=api",
+   "posted": 1792910638000,
+   "tags": [
+    "Technical-Customer-Success",
+    "Solutions-Engineering",
+    "Cybersecurity",
+    "Industrial-Automation",
+    "Customer-Success-Management"
+   ],
+   "desc": "The Role & The Candidate ProfileXage is looking for a Technical Customer Success Manager with in-depth knowledge of Industrial Control System, Industrial networking, Identity and Access Management, Privilege Access, and experience of working in large projects.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/korber/jobs/techniker-m-w-d-als-2nd-level-remote-support-automation-software-markt-sc",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Körber",
+   "title": "Techniker (m/w/d) als 2nd Level & Remote Support Automation & Software (Markt Sc",
+   "loc": "Germany",
+   "url": "https://himalayas.app/companies/korber/jobs/techniker-m-w-d-als-2nd-level-remote-support-automation-software-markt-sc?utm_source=api",
+   "posted": 1792910632000,
+   "tags": [
+    "2nd-Level-Support",
+    "Remote-Support",
+    "Technical-Support",
+    "Automation-Support",
+    "Customer-Support"
+   ],
+   "desc": "Ihre Rolle in unserem Team• Sie verantworten den Bereich des technischen Kundensupports (2nd Level & Remote Support) • Zudem gehört zu Ihren Aufgaben die Steuerung, Kontrolle und das Nachhalten des technischen Kundensupports mit Hilfe von KPI-Dashboards • Von der Spezifizierung, über die Analyse von Supportanfragen bis hin zum Verifizieren von Lösungsvorschlägen - die Betreuung unserer Kunden gehö",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/malbek/jobs/technical-analyst-8328962976",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Malbek",
+   "title": "Technical Analyst",
    "loc": "United States",
-   "url": "https://himalayas.app/companies/mckesson/jobs/sr-manager-customer-success?utm_source=api",
-   "posted": 1792824130000,
+   "url": "https://himalayas.app/companies/malbek/jobs/technical-analyst-8328962976?utm_source=api",
+   "posted": 1792910631000,
    "tags": [
-    "Customer-Success-Manager",
-    "Account-Manager",
-    "Implementation-Manager",
-    "Healthcare-Customer-Success-Manager",
-    "Sr.-Manager-Of-Customer-Success"
+    "Technical-Analyst",
+    "Business-Analyst",
+    "Implementation-Consultant",
+    "Integration-Consultant",
+    "Contract-Management-Consultant"
    ],
-   "desc": "McKesson is an impact-driven, Fortune 10 company that touches virtually every aspect of healthcare.",
-   "salary": "USD98600–164400"
+   "desc": "Malbek is seeking a highly motivated and energetic individual with a passion for ensuring customer success and experience in enterprise software implementation to join our Customer Experience team as a Business Analyst.",
+   "salary": ""
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/vrinda-international/jobs/sap-s-4hana-mm-consultant-pharma",
+   "id": "himalayas:https://himalayas.app/companies/jupe/jobs/ux-ui-digital-product-designer",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Vrinda International",
-   "title": "SAP S/4HANA MM CONSULTANT (PHARMA)",
+   "company": "Jupe",
+   "title": "🍭👾 UX/UI DIGITAL PRODUCT DESIGNER",
+   "loc": "Remote",
+   "url": "https://himalayas.app/companies/jupe/jobs/ux-ui-digital-product-designer?utm_source=api",
+   "posted": 1792910630000,
+   "tags": [
+    "Product-Designer",
+    "UX-Designer",
+    "UI-Designer",
+    "Digital-Designer",
+    "Web-Designer"
+   ],
+   "desc": "👋 Why we're doing this…We’ll make this brief. 1.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/slang-ai/jobs/client-experience-manager-smb-2406266288",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Slang.ai",
+   "title": "Client Experience Manager - SMB",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/slang-ai/jobs/client-experience-manager-smb-2406266288?utm_source=api",
+   "posted": 1792910630000,
+   "tags": [
+    "Client-Experience",
+    "Customer-Success-Management",
+    "Account-Management",
+    "SMB-Customer-Success",
+    "Customer-Retention"
+   ],
+   "desc": "Company Summary:Slang AI is redefining customer engagement through conversational AI, making every interaction seamless and efficient.",
+   "salary": "USD105000–110000"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/armstrong-world-industries/jobs/national-sales-director-arktura-job-remote-remote-us",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Armstrong World Industries",
+   "title": "National Sales Director (Arktura) Job (Remote,  Remote, US)",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/armstrong-world-industries/jobs/national-sales-director-arktura-job-remote-remote-us?utm_source=api",
+   "posted": 1792910629000,
+   "tags": [
+    "National-Sales-Director",
+    "Sales-Director",
+    "Sales-Manager",
+    "Sales-Executive",
+    "Remote-Director-Of-Sales"
+   ],
+   "desc": "​Primary location: Remote (Los Angeles area preferred) Relocation offered: No Employment status: Full-Time Travel: >50% Non-compete: No The estimated base salary range for this role is $160,000 to $200,000 per year plus additional incentives Individual pay is based upon location, skills and expertise, experience and other relevant factors ​What does it mean to work at Arktura LLC, a subsidiary of ",
+   "salary": "USD160000–200000"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/lingaro/jobs/cloud-solution-architect",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Lingaro",
+   "title": "Cloud Solution Architect",
    "loc": "India",
-   "url": "https://himalayas.app/companies/vrinda-international/jobs/sap-s-4hana-mm-consultant-pharma?utm_source=api",
-   "posted": 1792824130000,
+   "url": "https://himalayas.app/companies/lingaro/jobs/cloud-solution-architect?utm_source=api",
+   "posted": 1792910629000,
+   "tags": [
+    "Cloud-Solution-Architect",
+    "Solutions-Architect",
+    "Cloud-Architecture",
+    "Data-Engineering",
+    "Enterprise-Architecture"
+   ],
+   "desc": "1 Key Task:• Leading delivery of Data Integration and Analytics solutions for our customers provided within major cloud platforms (Azure/AWS/GCP) • Preparing a complete solution design • Taking responsibility for critical technological decisions • Providing continuous architectural and technical design support to the application development team-Leading application development at all lifecycle sta",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/low-battery/jobs/campaign-manager-music-partnerships-5116446460",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Low Battery",
+   "title": "Campaign Manager, Music Partnerships",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/low-battery/jobs/campaign-manager-music-partnerships-5116446460?utm_source=api",
+   "posted": 1792910627000,
+   "tags": [
+    "Campaign-Manager",
+    "Account-Manager",
+    "Brand-Partnerships-Manager",
+    "Music-Industry-Manager",
+    "Digital-Marketing-Manager"
+   ],
+   "desc": "Low BatteryVisionWe will be the definitive home for next-generation superfans of music & culture.",
+   "salary": "USD60000–70000"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/slang-ai/jobs/account-executive-ii-4877185023",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Slang.ai",
+   "title": "Account Executive II",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/slang-ai/jobs/account-executive-ii-4877185023?utm_source=api",
+   "posted": 1792910625000,
+   "tags": [
+    "Account-Executive",
+    "SaaS-Sales",
+    "B2B-Sales",
+    "Business-Development",
+    "Sales"
+   ],
+   "desc": "Company Summary:Slang is redefining customer engagement through conversational AI, making every interaction seamless and efficient.",
+   "salary": "USD85000–85000"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/jetbridge/jobs/senior-fullstack-engineer-typescript",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "JetBridge",
+   "title": "Senior Fullstack Engineer (TypeScript)",
+   "loc": "Brazil",
+   "url": "https://himalayas.app/companies/jetbridge/jobs/senior-fullstack-engineer-typescript?utm_source=api",
+   "posted": 1792910624000,
+   "tags": [
+    "Full-Stack-Engineering",
+    "TypeScript-Development",
+    "Frontend-Engineer",
+    "Analytics-Engineering",
+    "Backend-Engineering"
+   ],
+   "desc": "Referring a Candidate for a bounty? Please visit Refer a Dev to submit.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/zus-health/jobs/future-zusers-2456319870",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Zus Health",
+   "title": "Future Zusers",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/zus-health/jobs/future-zusers-2456319870?utm_source=api",
+   "posted": 1792910624000,
+   "tags": [
+    "Healthcare-Technology",
+    "General-Applications",
+    "Future-Opportunities",
+    "Health-Tech",
+    "Future-Zusers"
+   ],
+   "desc": "Who we areZus is a shared health data platform designed to accelerate healthcare data interoperability by providing easy-to-use patient data via API, embedded components, and direct EHR integrations.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/westinghouse-electric-company/jobs/principal-engineer-probabilistic-risk-assessments-remote-based-cranberry-tow",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Westinghouse Electric Company",
+   "title": "Principal Engineer, Probabilistic Risk Assessments - Remote Based (Cranberry Tow",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/westinghouse-electric-company/jobs/principal-engineer-probabilistic-risk-assessments-remote-based-cranberry-tow?utm_source=api",
+   "posted": 1792910623000,
+   "tags": [
+    "Nuclear-Safety-Engineer",
+    "Risk-Analyst",
+    "Principal-Engineer",
+    "Nuclear-Engineer",
+    "Principal-Risk-Engineer"
+   ],
+   "desc": "Are you interested in being part of an innovative team that supports Westinghouse's mission to provide clean energy solutions?",
+   "salary": "USD103200–129000"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/diversified-radiology/jobs/overnight-neuroradiologist-partner-track-10p-7a-mst-7-on-14-off",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Diversified Radiology",
+   "title": "Overnight Neuroradiologist Partner-Track 10p-7a MST, 7 on/14 off",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/diversified-radiology/jobs/overnight-neuroradiologist-partner-track-10p-7a-mst-7-on-14-off?utm_source=api",
+   "posted": 1792910623000,
+   "tags": [
+    "Neuroradiology",
+    "Radiology",
+    "Teleradiology",
+    "Medical-Imaging",
+    "Physician"
+   ],
+   "desc": "Join Diversified Radiology's Sub-Specialized Overnight Neuroradiology SectionDiversified Radiology is seeking a board-certified or board-eligible fellowship-trained Neuroradiologist to join our fully remote overnight neuroradiology section.",
+   "salary": "USD575000–900000"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/ahead/jobs/senior-technical-consultant-network-cloud",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "AHEAD",
+   "title": "Senior Technical Consultant - Network Cloud",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/ahead/jobs/senior-technical-consultant-network-cloud?utm_source=api",
+   "posted": 1792910622000,
+   "tags": [
+    "Cloud-Networking",
+    "Network-Consulting",
+    "Network-Architecture",
+    "Technical-Consulting",
+    "Network-Engineer"
+   ],
+   "desc": "AHEAD builds platforms for digital business. By weaving together advances in cloud infrastructure, automation and analytics, and software delivery, we help enterprises deliver on the promise of digital transformation.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/lingaro/jobs/sap-data-analytics-developer",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Lingaro",
+   "title": "SAP Data & Analytics Developer",
+   "loc": "Poland",
+   "url": "https://himalayas.app/companies/lingaro/jobs/sap-data-analytics-developer?utm_source=api",
+   "posted": 1792910622000,
+   "tags": [
+    "SAP-Data-and-Analytics-Developer",
+    "SAP-Analytics-Cloud-Developer",
+    "BI-Developer",
+    "SAP-BW-Developer",
+    "Data-Engineering"
+   ],
+   "desc": "Growth through diversity, equity, and inclusion. As an ethical business, we do what is right — including ensuring equal opportunities and fostering a safe, respectful workplace for each of us.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/contactout/jobs/join-our-talent-community",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "ContactOut",
+   "title": "Join our Talent Community!",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/contactout/jobs/join-our-talent-community?utm_source=api",
+   "posted": 1792910622000,
+   "tags": [
+    "Product-Management",
+    "Growth-Marketing",
+    "Sales",
+    "Engineering",
+    "Join-Our-Talent-Network!"
+   ],
+   "desc": "We’re ContactOut. We’re here to help recruiters connect with the right candidates the way they want.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/docsumo/jobs/account-manager-north-america-7498921696",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Docsumo",
+   "title": "Account Manager – North America",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/docsumo/jobs/account-manager-north-america-7498921696?utm_source=api",
+   "posted": 1792910617000,
+   "tags": [
+    "Account-Management",
+    "B2B-Sales",
+    "Enterprise-Sales",
+    "Customer-Success",
+    "Expansion-Sales"
+   ],
+   "desc": "Account Manager – North AmericaLocationIndia (Remote)Working Hours: 5:30 PM – 2:30 AM IST (8am to 5pm EST overlap) About Docsumo: Docsumo is your go-to Document AI solution for streamlining business operations.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/one-impression/jobs/video-editor-contractual-2478321291",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "One Impression",
+   "title": "Video Editor (Contractual)",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/one-impression/jobs/video-editor-contractual-2478321291?utm_source=api",
+   "posted": 1792910617000,
+   "tags": [
+    "Video-Editor",
+    "Content-Creator",
+    "Video-Editing",
+    "Social-Media-Content-Creator",
+    "Motion-Graphics-Designer"
+   ],
+   "desc": "About HexCodedHexCoded is an AI video studio: you should be able to make anything you can imagine.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/spine-media/jobs/manager-revops-yield-100-remote",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Spine Media",
+   "title": "Manager RevOps/Yield -100% Remote",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/spine-media/jobs/manager-revops-yield-100-remote?utm_source=api",
+   "posted": 1792910617000,
+   "tags": [
+    "Revenue-Operations",
+    "Ad-Operations",
+    "Yield-Management",
+    "Programmatic-Advertising",
+    "Digital-Media"
+   ],
+   "desc": "About Spine MediaSpine Media is an audience growth technology company leveraging its Machine Learning and AI technology to acquire the most valuable audiences.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/docsumo/jobs/senior-ui-ux-designer-5-years-291543529",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Docsumo",
+   "title": "Senior UI UX Designer (5+ years)",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/docsumo/jobs/senior-ui-ux-designer-5-years-291543529?utm_source=api",
+   "posted": 1792910614000,
+   "tags": [
+    "UI-UX-Designer",
+    "Product-Design",
+    "UX-Design",
+    "User-Interface-Design",
+    "Senior-Designer"
+   ],
+   "desc": "About Docsumo:Docsumo is your go-to Document AI solution for streamlining business operations.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/lingaro/jobs/data-scientist-time-series-and-forecasting",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Lingaro",
+   "title": "Data Scientist - Time series and forecasting",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/lingaro/jobs/data-scientist-time-series-and-forecasting?utm_source=api",
+   "posted": 1792910612000,
+   "tags": [
+    "Data-Science",
+    "Machine-Learning",
+    "Forecasting",
+    "Time-Series-Analysis",
+    "Business-Analytics"
+   ],
+   "desc": "Data Scientist - Time series, Forecasting India, RemoteGrowth through diversity, equity, and inclusion.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/one-impression/jobs/ai-generalist-intern",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "One Impression",
+   "title": "AI Generalist Intern",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/one-impression/jobs/ai-generalist-intern?utm_source=api",
+   "posted": 1792910611000,
+   "tags": [
+    "Growth-Marketing",
+    "Product-Management",
+    "Go-To-Market",
+    "Founders-Office",
+    "AI-Operations"
+   ],
+   "desc": "About HexCodedHexCoded is an AI video studio: you should be able to make anything you can imagine.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/telefonica-tech/jobs/lead-data-consultant",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Telefonica Tech",
+   "title": "Lead Data Consultant",
+   "loc": "United Kingdom",
+   "url": "https://himalayas.app/companies/telefonica-tech/jobs/lead-data-consultant?utm_source=api",
+   "posted": 1792910610000,
+   "tags": [
+    "Data-Engineering",
+    "Data-Consulting",
+    "Azure-Data-Solutions",
+    "Business-Intelligence",
+    "Data-Architecture"
+   ],
+   "desc": "Lead / Principal Data ConsultantTHE ROLEThe primary focus for you will be the design and delivery of enterprise-level data solutions from the earliest discovery phases of projects through prototyping, architectural design and delivery.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/low-battery/jobs/social-editor-pop-hive-5103123689",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Low Battery",
+   "title": "Social Editor (Pop Hive)",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/low-battery/jobs/social-editor-pop-hive-5103123689?utm_source=api",
+   "posted": 1792910608000,
+   "tags": [
+    "Social-Media-Editor",
+    "Content-Creator",
+    "Pop-Culture-Writer",
+    "Digital-Content-Editor",
+    "Social-Media-Content-Editor"
+   ],
+   "desc": "About Low BatteryVision We will be the definitive home for next-generation superfans of music & culture.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/global-payments/jobs/head-of-product-central-europe",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Global Payments",
+   "title": "Head of Product - Central Europe",
+   "loc": "Poland",
+   "url": "https://himalayas.app/companies/global-payments/jobs/head-of-product-central-europe?utm_source=api",
+   "posted": 1792910603000,
+   "tags": [
+    "Head-of-Product",
+    "Director-of-Product",
+    "Payments-Product-Manager",
+    "Fintech-Product-Manager",
+    "EMEA-Product-Management"
+   ],
+   "desc": "Ready to take your career global? Make your mark at one of the biggest names in payments.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/lingaro/jobs/fullstack-java-developer",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Lingaro",
+   "title": "Fullstack Java Developer",
+   "loc": "Poland",
+   "url": "https://himalayas.app/companies/lingaro/jobs/fullstack-java-developer?utm_source=api",
+   "posted": 1792910603000,
+   "tags": [
+    "Fullstack-Development",
+    "Java-Development",
+    "Backend-Development",
+    "Frontend-Development",
+    "Software-Development"
+   ],
+   "desc": "Growth through diversity, equity, and inclusion. As an ethical business, we do what is right — including ensuring equal opportunities and fostering a safe, respectful workplace for each of us.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/willow/jobs/building-management-system-coordinator-customer-engineer-coordinator",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Willow",
+   "title": "Building Management System Coordinator (Customer Engineer Coordinator)",
+   "loc": "Philippines",
+   "url": "https://himalayas.app/companies/willow/jobs/building-management-system-coordinator-customer-engineer-coordinator?utm_source=api",
+   "posted": 1792910602000,
+   "tags": [
+    "Customer-Engineering",
+    "Building-Management-Systems",
+    "MEP-Engineering",
+    "BIM-coordination",
+    "Project-Coordinator"
+   ],
+   "desc": "About WillowWillow is building the leading Operational AI platform for the built world.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/ahead/jobs/senior-technical-consultant-enterprise-wireless-networking",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "AHEAD",
+   "title": "Senior Technical Consultant, Enterprise Wireless Networking",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/ahead/jobs/senior-technical-consultant-enterprise-wireless-networking?utm_source=api",
+   "posted": 1792910601000,
+   "tags": [
+    "Technical-Consultant",
+    "Network-Engineer",
+    "Enterprise-Wireless-Engineer",
+    "Network-Architecture",
+    "Wireless-Engineering"
+   ],
+   "desc": "AHEAD builds platforms for digital business. By weaving together advances in cloud infrastructure, automation and analytics, and software delivery, we help enterprises deliver on the promise of digital transformation.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/ahead/jobs/agentic-solutions-architect",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "AHEAD",
+   "title": "Agentic Solutions Architect",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/ahead/jobs/agentic-solutions-architect?utm_source=api",
+   "posted": 1792910599000,
+   "tags": [
+    "Solutions-Architect",
+    "AI-Architect",
+    "Technical-Architect",
+    "Software-Architect",
+    "Cloud-Architect"
+   ],
+   "desc": "We are hiring an Agentic Solutions Architect to design production-grade agentic solutions on our internal platform across multiple delivery squads.",
+   "salary": "USD160000–180000"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/atos/jobs/growth-marketing-manager-remote-home-gb",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Atos",
+   "title": "Growth Marketing Manager (Remote Home, GB)",
+   "loc": "United Kingdom",
+   "url": "https://himalayas.app/companies/atos/jobs/growth-marketing-manager-remote-home-gb?utm_source=api",
+   "posted": 1792910596000,
+   "tags": [
+    "Growth-Marketing",
+    "B2B-Marketing",
+    "Campaign-Management",
+    "Marketing-Management",
+    "Account-Based-Marketing"
+   ],
+   "desc": "Atos is the Atos Group brand dedicated to AI-powered, secure, end-to-end digital services.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/korber/jobs/sap-ewm-developer-fully-remote-possible-barcelona-es-163181346",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Körber",
+   "title": "SAP EWM Developer - fully remote possible (Barcelona, ES)",
+   "loc": "Spain",
+   "url": "https://himalayas.app/companies/korber/jobs/sap-ewm-developer-fully-remote-possible-barcelona-es-163181346?utm_source=api",
+   "posted": 1792910594000,
+   "tags": [
+    "SAP-EWM-Developer",
+    "Sap-Developer",
+    "SAP-Consultant",
+    "SAP-ABAP-Developer",
+    "Warehouse-Management-Consultant"
+   ],
+   "desc": "Your new home base at Körber is the Körber Supply Chain Consulting team.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/remedy-product-studio/jobs/data-engineer-74206016",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Remedy Product Studio",
+   "title": "Data Engineer",
+   "loc": "Brazil, Georgia, Poland, Serbia",
+   "url": "https://himalayas.app/companies/remedy-product-studio/jobs/data-engineer-74206016?utm_source=api",
+   "posted": 1792910593000,
+   "tags": [
+    "Data-Engineer",
+    "Data-Engineering",
+    "Cloud-Data-Engineering",
+    "Big-Data-Engineering",
+    "ETL-ELT-Engineering"
+   ],
+   "desc": "Who we areProduct Strategy. Technology Execution.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/lingaro/jobs/backend-developer-8685255589",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Lingaro",
+   "title": "Backend developer",
+   "loc": "Mexico",
+   "url": "https://himalayas.app/companies/lingaro/jobs/backend-developer-8685255589?utm_source=api",
+   "posted": 1792910592000,
+   "tags": [
+    "Software-Engineer",
+    "Backend-Development",
+    "Python-Development",
+    "Cloud-Engineer",
+    "Backend-Engineer"
+   ],
+   "desc": "We are looking for a skilled Software Engineer with strong backend expertise and cloud experience to join our team.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/one-impression/jobs/social-media-marketing-intern-3395939952",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "One Impression",
+   "title": "Social Media Marketing Intern",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/one-impression/jobs/social-media-marketing-intern-3395939952?utm_source=api",
+   "posted": 1792910592000,
+   "tags": [
+    "Social-Media-Marketing",
+    "Content-Marketing",
+    "Digital-Marketing",
+    "Community-Management",
+    "Marketing-Intern"
+   ],
+   "desc": "HexCoded is an AI video studio: you should be able to make anything you can imagine.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/korber/jobs/sap-ewm-consultant-fully-remote-possible-barcelona-es-4947727607",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Körber",
+   "title": "SAP EWM Consultant - fully remote possible (Barcelona, ES)",
+   "loc": "Spain",
+   "url": "https://himalayas.app/companies/korber/jobs/sap-ewm-consultant-fully-remote-possible-barcelona-es-4947727607?utm_source=api",
+   "posted": 1792910592000,
+   "tags": [
+    "SAP-EWM-Consultant",
+    "SAP-Consultant",
+    "Supply-Chain-Consulting",
+    "Warehouse-Management-Consultant",
+    "IT-Consulting"
+   ],
+   "desc": "Your new home base at Körber is the Körber Supply Chain Consulting team.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/xage-security/jobs/solutions-engineer-9153068569",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Xage Security",
+   "title": "Solutions Engineer",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/xage-security/jobs/solutions-engineer-9153068569?utm_source=api",
+   "posted": 1792910588000,
+   "tags": [
+    "Solutions-Engineering",
+    "Sales-Engineering",
+    "Pre-Sales",
+    "Cybersecurity-Sales",
+    "Pre-Sales-Engineer"
+   ],
+   "desc": "About XageXage is the first and only zero trust real-world security company.",
+   "salary": "USD180000–220000"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/aircall/jobs/technical-support-specialist",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Aircall",
+   "title": "Technical Support Specialist",
+   "loc": "Portugal",
+   "url": "https://himalayas.app/companies/aircall/jobs/technical-support-specialist?utm_source=api",
+   "posted": 1792910580000,
+   "tags": [
+    "Technical-Support-Specialist",
+    "Technical-Support",
+    "Customer-Support",
+    "Customer-Experience",
+    "SaaS-Support"
+   ],
+   "desc": "Aircall is a unicorn, AI-powered customer communications platform used by 22,000+ companies worldwide to drive revenue, resolve issues faster, and scale customer-facing teams.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/samsara/jobs/digital-transformation-consultant-ism-esm",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Samsara",
+   "title": "Digital Transformation Consultant (ISM/ESM)",
+   "loc": "Mexico",
+   "url": "https://himalayas.app/companies/samsara/jobs/digital-transformation-consultant-ism-esm?utm_source=api",
+   "posted": 1792910579000,
+   "tags": [
+    "Engagement-Services-Consultant",
+    "Solutions-Consultant",
+    "Business-Analyst",
+    "Systems-Analyst",
+    "Implementation-Consultant"
+   ],
+   "desc": "Who we areSamsara (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) data to develop actionable insights and improve their operations.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/tata-aig-general-insurance/jobs/channel-sales-manager-hom-virtual-office-gandhinagar-gandhinagar-in",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "TATA AIG General Insurance",
+   "title": "Channel Sales Manager - HOM Virtual Office (Gandhinagar, Gandhinagar, IN)",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/tata-aig-general-insurance/jobs/channel-sales-manager-hom-virtual-office-gandhinagar-gandhinagar-in?utm_source=api",
+   "posted": 1792910579000,
+   "tags": [
+    "Sales-Manager",
+    "Channel-Sales-Manager",
+    "Insurance-Sales-Manager",
+    "Agency-Manager",
+    "Sales-Channel-Manager"
+   ],
+   "desc": "Role Summary 2. Business Mix of Commercial and Consumer Lines 4.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/jetbridge/jobs/senior-data-engineer",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "JetBridge",
+   "title": "Senior Data Engineer",
+   "loc": "Mexico",
+   "url": "https://himalayas.app/companies/jetbridge/jobs/senior-data-engineer?utm_source=api",
+   "posted": 1792910578000,
+   "tags": [
+    "Data-Engineer",
+    "Data-Engineering",
+    "Data-Platform-Engineering",
+    "Cloud-Data-Engineering",
+    "ETL-Engineering"
+   ],
+   "desc": "Build and scale the data infrastructure for a fast-growing, profitable health-tech company.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/theorycraft-games/jobs/future-opportunities-3692110872",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Theorycraft Games",
+   "title": "Future Opportunities",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/theorycraft-games/jobs/future-opportunities-3692110872?utm_source=api",
+   "posted": 1792910576000,
+   "tags": [
+    "Game-Development",
+    "Game-Design",
+    "Game-Engineering",
+    "Production",
+    "Game-Studio"
+   ],
+   "desc": "As our needs for SUPERVIVE continue to rapidly evolve, please feel free to submit your LinkedIn, Resume, and/or Portfolio for future roles.",
+   "salary": "USD80000–225000"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/infoplus-technologies/jobs/model-n-rms-consultant",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Infoplus Technologies",
+   "title": "'Model N' RMS Consultant",
+   "loc": "Germany",
+   "url": "https://himalayas.app/companies/infoplus-technologies/jobs/model-n-rms-consultant?utm_source=api",
+   "posted": 1792910575000,
+   "tags": [
+    "Model-N-Consultant",
+    "Revenue-Management",
+    "Life-Sciences-Consulting",
+    "Oracle-Consultant",
+    "RMS-Consultant"
+   ],
+   "desc": "Role: Model N (Techno functional)Work experience required: 5 -15 yearsSkill set: Model N, Pl/SQL/Unix Must have skills:• Good experience working with Model N (Commercial & Government pricing systems) • Model N RM/ Model N GP and/or Revitas Classic GP / Revitas Flex /Product Experience • Sound Knowledge of Chargebacks, Rebates, Contracts, Products, Customers, and Membership modules • Experience wit",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/ai-fund/jobs/enterprise-account-executive-ai-for-industrial-safety",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "AI Fund",
+   "title": "Enterprise Account Executive (AI for Industrial Safety)",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/ai-fund/jobs/enterprise-account-executive-ai-for-industrial-safety?utm_source=api",
+   "posted": 1792910571000,
+   "tags": [
+    "Enterprise-Sales",
+    "Account-Executive",
+    "B2B-Sales",
+    "EHS-Software-Sales",
+    "AI-Sales"
+   ],
+   "desc": "About Haven Safety: Haven is transforming how organizations learn from workplace incidents.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/whitetech/jobs/senior-project-manager-5031581451",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "WhiteTech",
+   "title": "Senior Project Manager",
+   "loc": "Australia, Canada, Germany, India, United Kingdom, United States",
+   "url": "https://himalayas.app/companies/whitetech/jobs/senior-project-manager-5031581451?utm_source=api",
+   "posted": 1792910571000,
+   "tags": [
+    "Senior-Project-Manager",
+    "Project-Management",
+    "Business-Analysis",
+    "Agile-Project-Management",
+    "Product-Management"
+   ],
+   "desc": "At WhiteTech, we empower businesses in the financial ecosystem with cutting-edge white-label and SAAS solutions.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/telefonica-tech/jobs/data-platform-architect",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Telefonica Tech",
+   "title": "Data Platform Architect",
+   "loc": "United Kingdom",
+   "url": "https://himalayas.app/companies/telefonica-tech/jobs/data-platform-architect?utm_source=api",
+   "posted": 1792910571000,
+   "tags": [
+    "Data-Architecture",
+    "Solutions-Architect",
+    "Data-Engineering",
+    "Cloud-Architecture",
+    "Enterprise-Data-Management"
+   ],
+   "desc": "Data Platform Architect We are looking for a hands-on architect who can be the technical lead for complex data engineering projects.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/sevaa-group/jobs/client-success-manager",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Sevaa Group",
+   "title": "Client Success Manager",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/sevaa-group/jobs/client-success-manager?utm_source=api",
+   "posted": 1792910570000,
+   "tags": [
+    "Customer-Success-Account-Manager",
+    "Client-Success-Management",
+    "Account-Management",
+    "Customer-Success",
+    "Customer-Retention"
+   ],
+   "desc": "As a Client Success Manager, you will own the customer lifecycle for each of your accounts, including the implementation of Success Programs, contributing to revenue growth, managing the onboarding process, training clients, and minimizing churn.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/assist-world/jobs/executive-assistant-operations-marketing-coordinator",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Assist World",
+   "title": "Executive Assistant / Operations & Marketing Coordinator",
+   "loc": "Philippines",
+   "url": "https://himalayas.app/companies/assist-world/jobs/executive-assistant-operations-marketing-coordinator?utm_source=api",
+   "posted": 1792910570000,
+   "tags": [
+    "Executive-Assistant",
+    "Operations-Coordinator",
+    "Marketing-Coordinator",
+    "Virtual-Assistant",
+    "Project-Coordinator"
+   ],
+   "desc": "About the Role We are looking for a highly organised, proactive, and experienced Executive Assistant /Operations & Marketing Coordinator to work closely with a founder who is managing several growing ventures across the forecasting, prediction markets, events, publishing, and e-commerce space.",
+   "salary": "USD1000–1300"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/sobi/jobs/clinical-account-manager-senior-clinical-account-manager-grand-rapids",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Sobi",
+   "title": "Clinical Account Manager/Senior Clinical Account Manager - Grand Rapids",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/sobi/jobs/clinical-account-manager-senior-clinical-account-manager-grand-rapids?utm_source=api",
+   "posted": 1792910569000,
+   "tags": [
+    "Clinical-Account-Management",
+    "Pharmaceutical-Sales",
+    "Specialty-Sales",
+    "Rare-Disease-Sales",
+    "Hospital-Sales"
+   ],
+   "desc": "The Clinical Account Manager (CAM) acts as the primary customer contact for sales demand creation by executing marketing strategy and promoting Sobi products as lead by the Regional Sales Director.",
+   "salary": "USD170000–210000"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/assist-world/jobs/junior-mid-level-sharepoint-power-platform-developer",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Assist World",
+   "title": "Junior/Mid-Level SharePoint & Power Platform Developer",
+   "loc": "South Africa",
+   "url": "https://himalayas.app/companies/assist-world/jobs/junior-mid-level-sharepoint-power-platform-developer?utm_source=api",
+   "posted": 1792910568000,
+   "tags": [
+    "SharePoint-Development",
+    "Power-Platform-Developer",
+    "Microsoft-365-Developer",
+    "Power-Automate-Developer",
+    "Power-Apps-Developer"
+   ],
+   "desc": "We are looking for a Junior to Mid-Level SharePoint & Power Platform Developer to support an active programme of Microsoft 365 projects.",
+   "salary": "USD1500–2000"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/inv/jobs/pr-marketing-lead",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Invisible Technologies",
+   "title": "PR Marketing Lead",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/inv/jobs/pr-marketing-lead?utm_source=api",
+   "posted": 1792910567000,
+   "tags": [
+    "Marketing-Communications",
+    "Brand-Marketing",
+    "Digital-Marketing",
+    "Content-Marketing",
+    "Marketing-Lead"
+   ],
+   "desc": "Please apply in the following link: In a nutshell Invisible Technologies is searching for a PR Marketing Lead to join our team.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/moving-walls/jobs/data-analyst",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Moving Walls",
+   "title": "Data Analyst",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/moving-walls/jobs/data-analyst?utm_source=api",
+   "posted": 1792910567000,
+   "tags": [
+    "Data-Analyst",
+    "Media-Research",
+    "Marketing-Analytics",
+    "Quantitative-Analysis",
+    "Business-Intelligence"
+   ],
+   "desc": "We want you to: • Gather and process raw data at scale (including writing scripts, web scraping, calling APIs, write SQL queries, etc).",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/xsuite-solutions-inc/jobs/come-join-us-in-reshaping-the-future-senior-technical-consultant-for-ai-driven",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "xSuite Solutions Inc.",
+   "title": "Come join us in reshaping the future: Senior Technical Consultant for AI-driven ",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/xsuite-solutions-inc/jobs/come-join-us-in-reshaping-the-future-senior-technical-consultant-for-ai-driven?utm_source=api",
+   "posted": 1792910566000,
    "tags": [
     "SAP-Consultant",
-    "SAP-Materials-Management-Consultant",
-    "SAP-S-4HANA-Consultant",
-    "SAP-Supply-Chain-Consultant",
-    "SAP-WM-Consultant"
+    "Technical-Consultant",
+    "SAP-S4",
+    "Data-Capture",
+    "Digital-Archiving"
    ],
-   "desc": "SAP S/4HANA MM Consultant (Pharma) Summary We are seeking an experienced professional to serve as an SAP S/4HANA MM Consultant specializing in the pharmaceutical sector.",
+   "desc": "Do you have a passion Artificial Intelligence driven solutions?",
+   "salary": "USD75000–100000"
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/whitetech/jobs/seon-specialist",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "WhiteTech",
+   "title": "SEON Specialist",
+   "loc": "South Korea",
+   "url": "https://himalayas.app/companies/whitetech/jobs/seon-specialist?utm_source=api",
+   "posted": 1792910566000,
+   "tags": [
+    "Fraud-Risk-Management",
+    "Anti-Fraud-Specialist",
+    "Risk-Analytics",
+    "Business-Analyst",
+    "Quality-Assurance"
+   ],
+   "desc": "At WhiteTech, we empower businesses in the financial ecosystem with cutting-edge white-label and SAAS solutions.",
    "salary": ""
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/optimindhealth/jobs/licensed-mental-health-counselor-lmhc-brookline-ma",
+   "id": "himalayas:https://himalayas.app/companies/hellowalnut/jobs/don-t-see-an-exact-fit-let-us-know-5149787442",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "OptiMindHealth",
-   "title": "Licensed Mental Health Counselor (LMHC) - Brookline, MA",
+   "company": "Walnut",
+   "title": "Don't see an exact fit? Let us know.",
+   "loc": "India",
+   "url": "https://himalayas.app/companies/hellowalnut/jobs/don-t-see-an-exact-fit-let-us-know-5149787442?utm_source=api",
+   "posted": 1792910562000,
+   "tags": [
+    "Open-Applications",
+    "Healthcare-Technology",
+    "Fintech",
+    "Embedded-Finance",
+    "Healthcare-Payments"
+   ],
+   "desc": "👋 About WalnutOur Mission We believe that nobody should struggle financially to receive healthcare.",
+   "salary": ""
+  },
+  {
+   "id": "himalayas:https://himalayas.app/companies/branch-gg/jobs/senior-unity-engineer-contract-4963560400",
+   "src": "himalayas",
+   "srcLabel": "Himalayas",
+   "company": "Branch",
+   "title": "Senior Unity Engineer (Contract)",
    "loc": "United States",
-   "url": "https://himalayas.app/companies/optimindhealth/jobs/licensed-mental-health-counselor-lmhc-brookline-ma?utm_source=api",
-   "posted": 1792824097000,
+   "url": "https://himalayas.app/companies/branch-gg/jobs/senior-unity-engineer-contract-4963560400?utm_source=api",
+   "posted": 1792910561000,
    "tags": [
-    "Licensed-Mental-Health-Counselor",
-    "Mental-Health-Counselor",
-    "Clinical-Therapist",
-    "Psychotherapist",
-    "Licensed-Clinical-Social-Worker"
+    "Unity",
+    "Mobile-Game-Development",
+    "Game-Engineering",
+    "Contract-Engineering",
+    "Software-Engineer"
    ],
-   "desc": "Licensed Mental Health Counselor (LMHC) $70K-85K/yr Position Requirement: Remote Full-Time and Part-time Positions Available If you are looking for a new opportunity to grow with a clinician founded and clinician led organization, look no further!",
-   "salary": "USD70000–85000"
+   "desc": "Branch is the early-stage game development company behind Castaways.",
+   "salary": "USD180000–250000"
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/growth-leads/jobs/senior-social-media-manager-9004865317",
+   "id": "himalayas:https://himalayas.app/companies/xsuite-solutions-inc/jobs/work-in-a-place-where-your-team-values-you-senior-customer-success-manager-ap",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Growth Leads",
-   "title": "Senior Social Media Manager",
-   "loc": "Malta",
-   "url": "https://himalayas.app/companies/growth-leads/jobs/senior-social-media-manager-9004865317?utm_source=api",
-   "posted": 1792824076000,
+   "company": "xSuite Solutions Inc.",
+   "title": "Work in a place where your team values YOU! Senior Customer Success Manager - AP",
+   "loc": "United States",
+   "url": "https://himalayas.app/companies/xsuite-solutions-inc/jobs/work-in-a-place-where-your-team-values-you-senior-customer-success-manager-ap?utm_source=api",
+   "posted": 1792910559000,
    "tags": [
-    "Social-Media-Manager",
-    "Digital-Marketing-Manager",
-    "Content-Marketing-Manager",
-    "Community-Manager",
-    "Affiliate-Marketing-Manager"
+    "Customer-Success-Management",
+    "Account-Management",
+    "Customer-Support",
+    "SAP-Consulting",
+    "Sales"
    ],
-   "desc": "Senior Social Media ManagerWe are looking for a creative and highly organised Senior Social Media Manager to lead our digital marketing and audience growth across PlayersBest and our portfolio of digital assets.",
+   "desc": "Want to work as a Customer Success Manager on a small but growing team?",
    "salary": ""
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/sigma-group/jobs/food-beverage-partnerships-manager-italian-speaker-1540103336",
+   "id": "himalayas:https://himalayas.app/companies/rgh-global-limited/jobs/sales-manager",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "SiGMA Group",
-   "title": "Food & Beverage Partnerships Manager – Italian Speaker",
-   "loc": "Italy",
-   "url": "https://himalayas.app/companies/sigma-group/jobs/food-beverage-partnerships-manager-italian-speaker-1540103336?utm_source=api",
-   "posted": 1792824051000,
+   "company": "RGH-Global Limited",
+   "title": "Sales Manager",
+   "loc": "Japan",
+   "url": "https://himalayas.app/companies/rgh-global-limited/jobs/sales-manager?utm_source=api",
+   "posted": 1792910558000,
    "tags": [
-    "Partnerships-Manager",
+    "Sales-Manager",
+    "Sales-Operations-Manager",
     "Business-Development-Manager",
     "Account-Manager",
-    "Sales-Manager",
-    "Account-Manager-Food-and-Beverage"
+    "Manager-Sales"
    ],
-   "desc": "Food&Beverage Partnerships Manager – Italian Speaker Location: Italy, remoteEmployment Type: Full-time / Freelance?",
-   "salary": ""
+   "desc": "Sales ManagerLocation: Tokyo, Japan Salary: US$43,018.",
+   "salary": "USD43018.46–71697.44"
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/lyfegen/jobs/customer-operations-specialist-german-speaker-8732194172",
+   "id": "himalayas:https://himalayas.app/companies/tmac-communications/jobs/marketing-assistant",
    "src": "himalayas",
    "srcLabel": "Himalayas",
-   "company": "Lyfegen",
-   "title": "Customer Operations Specialist - German Speaker",
-   "loc": "Germany",
-   "url": "https://himalayas.app/companies/lyfegen/jobs/customer-operations-specialist-german-speaker-8732194172?utm_source=api",
-   "posted": 1792824026000,
-   "tags": [
-    "Customer-Operations-Specialist",
-    "Customer-Support-Specialist",
-    "Customer-Success-Specialist",
-    "Technical-Support-Specialist",
-    "SaaS-Operations-Specialist"
-   ],
-   "desc": "Möchtest du Teil eines Unternehmens sein, das das Gesundheitswesen transformiert?",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/connectcpa/jobs/lead-senior-specialist-payroll",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "ConnectCPA",
-   "title": "Lead Senior Specialist, Payroll",
-   "loc": "Canada",
-   "url": "https://himalayas.app/companies/connectcpa/jobs/lead-senior-specialist-payroll?utm_source=api",
-   "posted": 1792824026000,
-   "tags": [
-    "Payroll-Specialist",
-    "Payroll-Advisor",
-    "Payroll-Team-Lead",
-    "Payroll-Manager",
-    "Payroll-Specialist-Lead"
-   ],
-   "desc": "This posting is for future opportunities and general networking.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/guidehealth/jobs/registered-nurse-rn-clinical-compliance-auditor-remote",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Guidehealth",
-   "title": "Registered Nurse (RN) Clinical Compliance Auditor- Remote",
+   "company": "TMAC Communications",
+   "title": "Marketing Assistant",
    "loc": "United States",
-   "url": "https://himalayas.app/companies/guidehealth/jobs/registered-nurse-rn-clinical-compliance-auditor-remote?utm_source=api",
-   "posted": 1792824026000,
+   "url": "https://himalayas.app/companies/tmac-communications/jobs/marketing-assistant?utm_source=api",
+   "posted": 1792910557000,
    "tags": [
-    "Clinical-Compliance-Auditor",
-    "Registered-Nurse",
-    "Healthcare-Auditor",
-    "Utilization-Management-Auditor",
-    "Compliance-Auditor"
+    "Marketing-Assistant",
+    "Marketing-Coordinator",
+    "Digital-Marketing",
+    "Content-Marketing",
+    "Communication-Skills"
    ],
-   "desc": "The Clinical Compliance Auditor II is responsible for ensuring Guidehealth’s clinical operations, utilization management activities, and delegated services comply with regulatory requirements, client contractual obligations, and internal clinical standards.",
-   "salary": "USD82000–87000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/thehivecareers/jobs/chief-executive-officer-ceo-960470387",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "TheHiveCareers",
-   "title": "Chief Executive Officer (CEO)",
-   "loc": "Dominican Republic",
-   "url": "https://himalayas.app/companies/thehivecareers/jobs/chief-executive-officer-ceo-960470387?utm_source=api",
-   "posted": 1792824004000,
-   "tags": [
-    "Chief-Executive-Officer",
-    "Managing-Director",
-    "Chief-Operating-Officer",
-    "Executive-Director",
-    "Chief-Executive-Officer-(CEO)"
-   ],
-   "desc": "About the RoleWe are seeking an accomplished and commercially driven Chief Executive Officer (CEO) to lead the strategic growth, operational performance, and long-term value creation of a diversified Construction & Real Estate business.",
+   "desc": "TMAC Communications is seeking marketing assistant to work on a community marketing project with an economic development organization to assist in the development of a campaign to attract new and professionally talented residents to assist with workforce development efforts and enrich our community.",
    "salary": ""
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/truecontext/jobs/enterprise-account-executive-emea-7822323602",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "TrueContext",
-   "title": "Enterprise Account Executive, EMEA",
-   "loc": "United Kingdom",
-   "url": "https://himalayas.app/companies/truecontext/jobs/enterprise-account-executive-emea-7822323602?utm_source=api",
-   "posted": 1792823969000,
-   "tags": [
-    "Enterprise-Account-Executive",
-    "Account-Executive",
-    "B2B-Sales-Executive",
-    "Enterprise-Sales-Executive",
-    "Enterprise-Sales-Account-Executive"
-   ],
-   "desc": "Location: London, UK (remote). North America considered with a commitment to EMEA-shifted hours.",
+   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164246",
+   "src": "jobspresso",
+   "srcLabel": "Jobspresso",
+   "company": "",
+   "title": "Major Account Executive, Financial Services",
+   "loc": "Remote",
+   "url": "https://jobspresso.co/job/major-account-executive-financial-services/",
+   "posted": 1792910055000,
+   "tags": [],
+   "desc": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built int",
    "salary": ""
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/letuelezioni/jobs/insegnante-per-aiuto-compiti-e-dopo-scuola-scuole-elementari",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "LeTueLezioni",
-   "title": "Insegnante per Aiuto Compiti e Dopo Scuola | Scuole Elementari",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/letuelezioni/jobs/insegnante-per-aiuto-compiti-e-dopo-scuola-scuole-elementari?utm_source=api",
-   "posted": 1792823950000,
-   "tags": [
-    "Tutor",
-    "Private-Tutor",
-    "Homework-Help-Tutor",
-    "Elementary-Tutor",
-    "Subject-Specific-Tutor"
-   ],
-   "desc": "Stiamo cercando una persona innovativa ed energica da inserire nel nostro eccellente team di insegnanti privati.",
+   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164244",
+   "src": "jobspresso",
+   "srcLabel": "Jobspresso",
+   "company": "",
+   "title": "Translator, Spanish (es-ES)",
+   "loc": "Remote",
+   "url": "https://jobspresso.co/job/translator-spanish-es-es/",
+   "posted": 1792909062000,
+   "tags": [],
+   "desc": "About Us Circle is building the world s leading AI-powered, all-in-one platform for digital businesses. We make it possible for creators, coaches, educators, and businesses to bring together their audience with engaging discussions, live streams, events, chat, courses, and payments, all in one place, all under their own brand. We re proud to be a fully remote",
    "salary": ""
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/humana/jobs/director-consumer-digital-product-operations",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Humana",
-   "title": "Director, Consumer Digital Product Operations",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/humana/jobs/director-consumer-digital-product-operations?utm_source=api",
-   "posted": 1792823950000,
-   "tags": [
-    "Director-Of-Product-Operations",
-    "Product-Operations-Lead",
-    "Senior-Director-of-Product-Operations",
-    "Full Time"
-   ],
-   "desc": "Become a part of our caring community The Director, Consumer Digital Product Operations, oversees the design and execution of transformation strategies that advance organizational priorities and operational excellence.",
-   "salary": "USD168000–231000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/dell/jobs/principal-engineer-solutions-architecture-networking",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "dell",
-   "title": "Principal Engineer, Solutions Architecture - Networking",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/dell/jobs/principal-engineer-solutions-architecture-networking?utm_source=api",
-   "posted": 1792823926000,
-   "tags": [
-    "Network-Solutions-Architect",
-    "Solutions-Architect",
-    "Principal-Network-Engineer",
-    "Network-Engineer",
-    "Principal-Solutions-Engineer"
-   ],
-   "desc": "Principal Engineer, Solutions Architecture - Networking Dell Services is growing, and we are seeking seasoned network professionals with expertise in AI infrastructure planning, high-performance networking, data center fabrics, and enterprise network transformation.",
+   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164242",
+   "src": "jobspresso",
+   "srcLabel": "Jobspresso",
+   "company": "",
+   "title": "Lead Engineer, AI Platform",
+   "loc": "Remote",
+   "url": "https://jobspresso.co/job/lead-engineer-ai-platform/",
+   "posted": 1792908759000,
+   "tags": [],
+   "desc": "About Us Circle is building the world s leading AI-powered, all-in-one platform for digital businesses. We make it possible for creators, coaches, educators, and businesses to bring together their audience with engaging discussions, live streams, events, chat, courses, and payments, all in one place, all under their own brand. We re proud to be a fully remote",
    "salary": ""
   },
   {
-   "id": "himalayas:https://himalayas.app/companies/pella-windows-doors/jobs/senior-network-administrator",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Pella Windows & Doors",
-   "title": "Senior Network Administrator",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/pella-windows-doors/jobs/senior-network-administrator?utm_source=api",
-   "posted": 1792823926000,
+   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164240",
+   "src": "jobspresso",
+   "srcLabel": "Jobspresso",
+   "company": "",
+   "title": "Enterprise Account Executive",
+   "loc": "Remote",
+   "url": "https://jobspresso.co/job/enterprise-account-executive-2/",
+   "posted": 1792908315000,
+   "tags": [],
+   "desc": "Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale, unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to",
+   "salary": ""
+  },
+  {
+   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164238",
+   "src": "jobspresso",
+   "srcLabel": "Jobspresso",
+   "company": "",
+   "title": "Senior Backend Engineer Analytics",
+   "loc": "Remote",
+   "url": "https://jobspresso.co/job/senior-backend-engineer-analytics/",
+   "posted": 1792907920000,
+   "tags": [],
+   "desc": "Grafana Labs is the company behind Grafana Cloud, the fully managed observability platform trusted by more than 10,000 organizations to ensure reliability, resolve incidents faster, and optimize telemetry at scale. We are a 100 percent remote company with team members across 40 plus countries, backed by Lightspeed Venture Partners, Sequoia Capital, GIC, Coatue, J.P. Morgan,",
+   "salary": ""
+  },
+  {
+   "id": "gh:databricks-8878066002",
+   "src": "greenhouse",
+   "srcLabel": "Databricks",
+   "company": "Databricks",
+   "title": "Hunter Account Executive - Indonesia",
+   "loc": "Singapore",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8878066002",
+   "posted": 1792906768000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:brex-8914953002",
+   "src": "greenhouse",
+   "srcLabel": "Brex",
+   "company": "Brex",
+   "title": "Director, Performance Marketing",
+   "loc": "Vancouver, British Columbia, Canada",
+   "url": "https://www.brex.com/careers/8914953002?gh_jid=8914953002",
+   "posted": 1792898224000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:brex-8914952002",
+   "src": "greenhouse",
+   "srcLabel": "Brex",
+   "company": "Brex",
+   "title": "Director, Performance Marketing",
+   "loc": "Salt Lake City, Utah, United States",
+   "url": "https://www.brex.com/careers/8914952002?gh_jid=8914952002",
+   "posted": 1792898221000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:brex-8914951002",
+   "src": "greenhouse",
+   "srcLabel": "Brex",
+   "company": "Brex",
+   "title": "Director, Performance Marketing",
+   "loc": "Seattle, Washington, United States",
+   "url": "https://www.brex.com/careers/8914951002?gh_jid=8914951002",
+   "posted": 1792898219000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:brex-8914950002",
+   "src": "greenhouse",
+   "srcLabel": "Brex",
+   "company": "Brex",
+   "title": "Director, Performance Marketing",
+   "loc": "New York, New York, United States",
+   "url": "https://www.brex.com/careers/8914950002?gh_jid=8914950002",
+   "posted": 1792898217000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:brex-8899486002",
+   "src": "greenhouse",
+   "srcLabel": "Brex",
+   "company": "Brex",
+   "title": "Director, Performance Marketing",
+   "loc": "San Francisco, California, United States",
+   "url": "https://www.brex.com/careers/8899486002?gh_jid=8899486002",
+   "posted": 1792898214000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:anthropic-5462893008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Enforcement Analyst, Agentic Alignment",
+   "loc": "Boston, MA; San Francisco, CA | Seattle, WA | New York City, NY | Washington, DC",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5462893008",
+   "posted": 1792895644000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:anthropic-5462881008",
+   "src": "greenhouse",
+   "srcLabel": "Anthropic",
+   "company": "Anthropic",
+   "title": "Incident Manager, Safeguards",
+   "loc": "Boston, MA; San Francisco, CA | Seattle, WA | New York City, NY | Washington, DC",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5462881008",
+   "posted": 1792895583000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:samsara-8068523",
+   "src": "greenhouse",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "Manager I, Customer Success Manager",
+   "loc": "Remote - Canada",
+   "url": "https://www.samsara.com/company/careers/roles/8068523?gh_jid=8068523",
+   "posted": 1792881900000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:stripe-8055930",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Forward Deployed AI Accelerator, Marketing",
+   "loc": "Seattle, San Francisco, New York, Chicago, Atlanta, Remote in the US, Canada",
+   "url": "https://stripe.com/jobs/search?gh_jid=8055930",
+   "posted": 1792869967000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:stripe-7747640",
+   "src": "greenhouse",
+   "srcLabel": "Stripe",
+   "company": "Stripe",
+   "title": "Forward Deployed AI Accelerator, Marketing",
+   "loc": "Seattle, San Francisco, New York, Chicago, Atlanta, Remote in the US, Canada",
+   "url": "https://stripe.com/jobs/search?gh_jid=7747640",
+   "posted": 1792869915000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:vercel-5691965004",
+   "src": "greenhouse",
+   "srcLabel": "Vercel",
+   "company": "Vercel",
+   "title": "Senior Legal Counsel, Product",
+   "loc": "Hybrid - San Francisco",
+   "url": "https://job-boards.greenhouse.io/vercel/jobs/5691965004",
+   "posted": 1792859139000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "ab:supabase-9f2ba0b2-6d3b-43ea-990f-5b4bf3930520",
+   "src": "ashby",
+   "srcLabel": "Supabase",
+   "company": "Supabase",
+   "title": "Software Engineer - Storage",
+   "loc": "Remote, Global",
+   "url": "https://jobs.ashbyhq.com/supabase/9f2ba0b2-6d3b-43ea-990f-5b4bf3930520",
+   "posted": 1792858408579,
    "tags": [
-    "Network-Administrator",
-    "Network-Engineer",
-    "Infrastructure-Engineer",
-    "Senior-Network-Technician",
-    "Senior-Network-Engineer"
+    "Engineering",
+    "FullTime"
    ],
-   "desc": "Senior Network Administrator Remote | United States Travel: Approximately 5% Build the network that keeps the business connected.",
-   "salary": "USD118000–160000"
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "ab:supabase-950e8ffc-79a5-4626-b1dd-115fcbcddad0",
+   "src": "ashby",
+   "srcLabel": "Supabase",
+   "company": "Supabase",
+   "title": "Data API Engineer",
+   "loc": "Remote, Global",
+   "url": "https://jobs.ashbyhq.com/supabase/950e8ffc-79a5-4626-b1dd-115fcbcddad0",
+   "posted": 1792857860762,
+   "tags": [
+    "Engineering",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:elastic-8168982",
+   "src": "greenhouse",
+   "srcLabel": "Elastic",
+   "company": "Elastic",
+   "title": "Senior Sales Development Representative (Korean speaking)",
+   "loc": "Singapore",
+   "url": "https://jobs.elastic.co/jobs?gh_jid=8168982&gh_jid=8168982",
+   "posted": 1792853490000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "ab:perplexity-2a5aa5f6-596b-45c3-84db-ac0b96363f93",
+   "src": "ashby",
+   "srcLabel": "Perplexity",
+   "company": "Perplexity",
+   "title": "Member of Technical Staff (Software Engineer, Training Infrastructure)",
+   "loc": "San Francisco",
+   "url": "https://jobs.ashbyhq.com/perplexity/2a5aa5f6-596b-45c3-84db-ac0b96363f93",
+   "posted": 1792852653612,
+   "tags": [
+    "AI Research & Systems",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "ab:perplexity-cc22684f-b419-4ab8-8aa0-b4a393d3beb9",
+   "src": "ashby",
+   "srcLabel": "Perplexity",
+   "company": "Perplexity",
+   "title": "Member of Technical Staff (AI Software Engineer, Agents)",
+   "loc": "San Francisco",
+   "url": "https://jobs.ashbyhq.com/perplexity/cc22684f-b419-4ab8-8aa0-b4a393d3beb9",
+   "posted": 1792851924524,
+   "tags": [
+    "AI Research & Systems",
+    "FullTime"
+   ],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:pinterest-8282844",
+   "src": "greenhouse",
+   "srcLabel": "Pinterest",
+   "company": "Pinterest",
+   "title": "Strategic Sourcing Specialist II",
+   "loc": "Remote, US",
+   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8282844",
+   "posted": 1792849466000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:pinterest-8268336",
+   "src": "greenhouse",
+   "srcLabel": "Pinterest",
+   "company": "Pinterest",
+   "title": "Designer",
+   "loc": "Remote, US",
+   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8268336",
+   "posted": 1792849449000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:airbnb-8316843",
+   "src": "greenhouse",
+   "srcLabel": "Airbnb",
+   "company": "Airbnb",
+   "title": "Connectivity Partner Manager",
+   "loc": "United States",
+   "url": "https://careers.airbnb.com/positions/8316843?gh_jid=8316843",
+   "posted": 1792848032000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:samsara-8132327",
+   "src": "greenhouse",
+   "srcLabel": "Samsara",
+   "company": "Samsara",
+   "title": "Enterprise Customer Success Manager",
+   "loc": "Remote - Germany",
+   "url": "https://www.samsara.com/company/careers/roles/8132327?gh_jid=8132327",
+   "posted": 1792840500000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-8174207",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Software Engineer, R2 Gateway",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8174207?gh_jid=8174207",
+   "posted": 1792838125000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-8155463",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Software Engineer, R2 Gateway",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8155463?gh_jid=8155463",
+   "posted": 1792838066000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-8175620",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Systems Engineer, Growth Engineering",
+   "loc": "Hybrid",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8175620?gh_jid=8175620",
+   "posted": 1792837971000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-6998777",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Design Engineer",
+   "loc": "Hybrid",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/6998777?gh_jid=6998777",
+   "posted": 1792837871000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-8055320",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Principal Software Engineer, Workers Deploy & Config",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8055320?gh_jid=8055320",
+   "posted": 1792837804000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-7377424",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Software Engineer, Workers Deploy & Config",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/7377424?gh_jid=7377424",
+   "posted": 1792837664000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-7764827",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Systems Engineer, Workers AI",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/7764827?gh_jid=7764827",
+   "posted": 1792837258000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-7093840",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Systems Engineer, Basin Pipelines",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/7093840?gh_jid=7093840",
+   "posted": 1792837101000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-8030240",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Systems Engineer, Basin Platform",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8030240?gh_jid=8030240",
+   "posted": 1792836908000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-7560174",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Systems Engineer, AI Gateway",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/7560174?gh_jid=7560174",
+   "posted": 1792836730000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-6578726",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Software Engineer, Workers Runtime",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/6578726?gh_jid=6578726",
+   "posted": 1792836564000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-7276690",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Software Engineer, R2 Metadata",
+   "loc": "Hybrid",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/7276690?gh_jid=7276690",
+   "posted": 1792836354000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-5390243",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Software Engineer, Durable Objects (DO)",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/5390243?gh_jid=5390243",
+   "posted": 1792836122000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-8269100",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Software Engineer, Distributed Databases",
+   "loc": "Hybrid",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8269100?gh_jid=8269100",
+   "posted": 1792835912000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-8080780",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Software Engineer, Cloudflare Queues",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8080780?gh_jid=8080780",
+   "posted": 1792835735000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-8016162",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Software Engineer, Cloudflare Hyperdrive",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8016162?gh_jid=8016162",
+   "posted": 1792835680000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-8043974",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Machine Learning Engineer",
+   "loc": "Hybrid",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8043974?gh_jid=8043974",
+   "posted": 1792835609000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:cloudflare-7629805",
+   "src": "greenhouse",
+   "srcLabel": "Cloudflare",
+   "company": "Cloudflare",
+   "title": "Senior Infrastructure Engineer, Storage Platform",
+   "loc": "In-Office",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/7629805?gh_jid=7629805",
+   "posted": 1792835507000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:robinhood-8312485",
+   "src": "greenhouse",
+   "srcLabel": "Robinhood",
+   "company": "Robinhood",
+   "title": "Fraud Operations Program Manager",
+   "loc": "Chicago, IL; Denver, CO; Lake Mary, FL; Westlake, TX",
+   "url": "https://boards.greenhouse.io/robinhood/jobs/8312485?t=gh_src=&gh_jid=8312485",
+   "posted": 1792828107000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
   },
   {
    "id": "gh:anthropic-5161402008",
@@ -735,766 +2106,6 @@
    "tags": [],
    "desc": "",
    "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/optimindhealth/jobs/psychiatric-nurse-practitioner-pmhnp-bc-arlington-ma",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "OptiMindHealth",
-   "title": "Psychiatric Nurse Practitioner (PMHNP-BC) - Arlington, MA",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/optimindhealth/jobs/psychiatric-nurse-practitioner-pmhnp-bc-arlington-ma?utm_source=api",
-   "posted": 1792823775000,
-   "tags": [
-    "Psychiatric-Nurse-Practitioner",
-    "Nurse-Practitioner",
-    "Mental-Health-Nurse-Practitioner",
-    "Psychiatric-Mental-Health-Nurse-Practitioner",
-    "Psychiatric-Mental-Health-NP"
-   ],
-   "desc": "Psychiatric Nurse Practitioner (PMHNP-BC) $135k - $160k/year Position Requirement: Full-Time FLSA Status: Exempt Location: Arlington, Massachusetts Salary:135K - 160K+Work from Home!",
-   "salary": "USD135000–160000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/frost-sullivan/jobs/account-executive-manager-japanese-or-korean-market",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Frost & Sullivan",
-   "title": "Account Executive/Manager, Japanese OR Korean Market",
-   "loc": "India",
-   "url": "https://himalayas.app/companies/frost-sullivan/jobs/account-executive-manager-japanese-or-korean-market?utm_source=api",
-   "posted": 1792823743000,
-   "tags": [
-    "Account-Executive",
-    "Sales-Manager",
-    "Business-Development-Manager",
-    "Client-Engagement-Manager",
-    "Territory-Sales-Manager"
-   ],
-   "desc": "Do You Have What It Takes to Drive Strategic Growth Across Southeast Asia?",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/lennar/jobs/staff-product-manager-finance-systems-business-solutions",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Lennar",
-   "title": "Staff Product Manager – Finance Systems & Business Solutions",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/lennar/jobs/staff-product-manager-finance-systems-business-solutions?utm_source=api",
-   "posted": 1792823733000,
-   "tags": [
-    "Staff-Product-Manager",
-    "Technical-Product-Manager",
-    "Finance-Systems-Product-Management",
-    "Enterprise-Product-Manager",
-    "Business-Systems-Product-Manager"
-   ],
-   "desc": "Staff Product Manager - Finance Systems & Business Solutions We are LennarLennar is one of the nation's leading homebuilders, dedicated to making an impact and creating an extraordinary experience for their Homeowners, Communities, and Associates by building quality homes and providing exceptional customer service, giving back to the communities in which we work and live in, and fostering a cultur",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/exoscale/jobs/software-engineer-network-automation-go-python-f-m-d",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Exoscale",
-   "title": "Software Engineer - Network Automation (Go/Python) (f/m/d)",
-   "loc": "Germany",
-   "url": "https://himalayas.app/companies/exoscale/jobs/software-engineer-network-automation-go-python-f-m-d?utm_source=api",
-   "posted": 1792823690000,
-   "tags": [
-    "Software-Engineer",
-    "Network-Automation-Engineer",
-    "Platform-Engineer",
-    "Site-Reliability-Engineer",
-    "DevOps-Engineer"
-   ],
-   "desc": "Exoscale is the leading Swiss/European cloud service provider, offering a full spectrum of cloud infrastructure services—from instantly deployable virtual machines to S3-compatible object storage.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/24-hours-group/jobs/executive-assistant-bulacan-philippines",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "24 Hours Group",
-   "title": "Executive Assistant (Bulacan, Philippines)",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/24-hours-group/jobs/executive-assistant-bulacan-philippines?utm_source=api",
-   "posted": 1792823690000,
-   "tags": [
-    "Executive-Assistant",
-    "Administrative-Assistant",
-    "Executive-Support-Specialist",
-    "Virtual-Assistant",
-    "Executive-Admin-Assistant"
-   ],
-   "desc": "This is a remote position. We are seeking a highly organized, proactive, and detail-oriented Executive Assistant to the Chief of Staff to provide administrative, operational, and coordination support in a fast-paced work environment.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/solace/jobs/sales-director-atlanta-2816530008",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Solace",
-   "title": "Sales Director - Atlanta",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/solace/jobs/sales-director-atlanta-2816530008?utm_source=api",
-   "posted": 1792823665000,
-   "tags": [
-    "Sales-Director",
-    "Enterprise-Sales-Director",
-    "Regional-Sales-Director",
-    "Account-Director",
-    "Area-Director-Of-Sales"
-   ],
-   "desc": "Enterprise AI is moving from pilots to production, and the constraint is no longer the model — it's the data.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/qualfon/jobs/remote-bilingual-customer-service-tx",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Qualfon",
-   "title": "Remote Bilingual Customer Service TX",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/qualfon/jobs/remote-bilingual-customer-service-tx?utm_source=api",
-   "posted": 1792823657000,
-   "tags": [
-    "Customer-Service",
-    "Customer-Support-Specialist",
-    "Bilingual-Customer-Service-Representative",
-    "Call-Center-Representative",
-    "Remote-Bilingual-Customer-Service-Representative"
-   ],
-   "desc": "OverviewAbout the CompanyAt Qualfon, we are focused on delivering engaging interactions and positive experiences that leave a lasting impression.",
-   "salary": "USD12–12"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/launch-potato/jobs/lead-data-scientist-adtech-7736850550",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Launch Potato",
-   "title": "Lead Data Scientist, AdTech",
-   "loc": "Guatemala",
-   "url": "https://himalayas.app/companies/launch-potato/jobs/lead-data-scientist-adtech-7736850550?utm_source=api",
-   "posted": 1792823576000,
-   "tags": [
-    "Data-Scientist",
-    "Applied-Data-Scientist",
-    "Machine-Learning-Scientist",
-    "Quantitative-Scientist",
-    "AdTech-Data-Science"
-   ],
-   "desc": "WHO ARE WE? Launch Potato is the discovery and conversion company.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/letuelezioni/jobs/cerchiamo-studenti-universitari-di-fisica-per-dare-lezioni-private",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "LeTueLezioni",
-   "title": "Cerchiamo Studenti Universitari di Fisica per Dare Lezioni Private",
-   "loc": "Italy",
-   "url": "https://himalayas.app/companies/letuelezioni/jobs/cerchiamo-studenti-universitari-di-fisica-per-dare-lezioni-private?utm_source=api",
-   "posted": 1792823576000,
-   "tags": [
-    "Tutor",
-    "Physics-Tutor",
-    "Private-Tutor",
-    "Mathematics-Tutor",
-    "Physics-Tutoring"
-   ],
-   "desc": "Hai una passione per l’insegnamento? Ti piacerebbe aiutare altri studenti a capire davvero ciò che studiano?",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/ewor-gmbh/jobs/space-tech-co-founder-coo-100-remote-m-f-d-3826686814",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "EWOR GmbH",
-   "title": "Space Tech Co-Founder / COO (100 % remote) (m/f/d)",
-   "loc": "Remote",
-   "url": "https://himalayas.app/companies/ewor-gmbh/jobs/space-tech-co-founder-coo-100-remote-m-f-d-3826686814?utm_source=api",
-   "posted": 1792823562000,
-   "tags": [
-    "Co-Founder",
-    "Chief-Operating-Officer",
-    "Startup-Founder",
-    "Business-Operations-Manager",
-    "Space-Tech-Co-Founder"
-   ],
-   "desc": "We are looking to hire ambitious entrepreneurs to start and scale their own startups.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/bright-vision-technologies/jobs/salesforce-enterprise-architect-5750032058",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Bright Vision Technologies",
-   "title": "Salesforce Enterprise Architect",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/bright-vision-technologies/jobs/salesforce-enterprise-architect-5750032058?utm_source=api",
-   "posted": 1792823562000,
-   "tags": [
-    "Enterprise-Architect",
-    "Salesforce-Architect",
-    "Solutions-Architect",
-    "Cloud-Solutions-Architect",
-    "Technical-Architect"
-   ],
-   "desc": "Salesforce Enterprise Architect – Remote Bright Vision Technologies is a technology consulting and software development company delivering cloud, AI, data, and enterprise solutions across the United States.",
-   "salary": "USD175000–200000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/molina-healthcare/jobs/vp-artificial-intelligence-vendor-governance-oversight",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Molina Healthcare",
-   "title": "VP, Artificial Intelligence Vendor Governance & Oversight",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/molina-healthcare/jobs/vp-artificial-intelligence-vendor-governance-oversight?utm_source=api",
-   "posted": 1792823542000,
-   "tags": [
-    "VP-Of-Artificial-Intelligence",
-    "AI-Governance-Director",
-    "Head-Of-AI",
-    "AI-Risk-Management-Director",
-    "Technology-Risk-Management-Director"
-   ],
-   "desc": "JOB DESCRIPTION Job SummaryLeads the executive strategy development, vision and direction for the activation of Molina’s enterprise Artificial Intelligence (AI) governance & vendor oversight strategy and operating framework, responsible for AI vendor oversight, regulatory compliance, risk management, model governance, and value protection across the AI lifecycle.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/abstra-co/jobs/python-developer-ai-hyper-automation-team-santa-ana-costa-rica",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Abstra",
-   "title": "Python Developer — AI / Hyper-Automation Team (Santa Ana, Costa Rica)",
-   "loc": "Costa Rica",
-   "url": "https://himalayas.app/companies/abstra-co/jobs/python-developer-ai-hyper-automation-team-santa-ana-costa-rica?utm_source=api",
-   "posted": 1792823523000,
-   "tags": [
-    "Python-Developer",
-    "Software-Engineer",
-    "Automation-Engineer",
-    "AI-Engineer",
-    "Data-Engineer"
-   ],
-   "desc": "We are hiring an experienced Python Developer to join our offshore AI / hyper-automation team supporting a top-tier global pharmaceutical client.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/optimindhealth/jobs/licensed-clinical-social-worker-lcsw-fort-collins-co",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "OptiMindHealth",
-   "title": "Licensed Clinical Social Worker (LCSW) - Fort Collins, CO",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/optimindhealth/jobs/licensed-clinical-social-worker-lcsw-fort-collins-co?utm_source=api",
-   "posted": 1792823523000,
-   "tags": [
-    "Clinical-Social-Worker",
-    "Licensed-Therapist",
-    "Mental-Health-Counselor",
-    "Psychotherapist",
-    "Licensed-Clinical-Social-Worker-(LCSW)"
-   ],
-   "desc": "Licensed Clinical Social Worker (LCSW) $62K-80K/yr Position Requirement: Remote Full-Time and Part-time Positions Available If you are looking for a new opportunity to grow with a clinician founded and clinician led organization, look no further!",
-   "salary": "USD62000–80000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/irium-portugal/jobs/senior-react-developer",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "IRIUM Portugal",
-   "title": "Senior React Developer",
-   "loc": "Portugal",
-   "url": "https://himalayas.app/companies/irium-portugal/jobs/senior-react-developer?utm_source=api",
-   "posted": 1792823507000,
-   "tags": [
-    "Senior-React-Developer",
-    "Front-End-Developer",
-    "Frontend-Engineer",
-    "Web-Developer",
-    "React-Developer"
-   ],
-   "desc": "Na IRIUM queremos que persigas sempre os teus sonhos!",
-   "salary": "EUR1850–2150"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/letuelezioni/jobs/insegnante-di-tedesco-per-aziende-2903236400",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "LeTueLezioni",
-   "title": "Insegnante di Tedesco per Aziende",
-   "loc": "Italy",
-   "url": "https://himalayas.app/companies/letuelezioni/jobs/insegnante-di-tedesco-per-aziende-2903236400?utm_source=api",
-   "posted": 1792823493000,
-   "tags": [
-    "German-Teacher",
-    "Language-Teacher",
-    "Private-Tutor",
-    "German-Language-Instructor",
-    "German-Language-Teacher"
-   ],
-   "desc": "Letuelezioni, portale leader per fare lezioni private in Italia, è alla ricerca di un insegnante di tedesco.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/dell/jobs/principal-engineer-ai-networking-solutions-architect",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "dell",
-   "title": "Principal Engineer - AI Networking Solutions Architect",
-   "loc": "Saudi Arabia",
-   "url": "https://himalayas.app/companies/dell/jobs/principal-engineer-ai-networking-solutions-architect?utm_source=api",
-   "posted": 1792823478000,
-   "tags": [
-    "Solutions-Architect",
-    "AI-Solutions-Architect",
-    "Cloud-Infrastructure-Solutions-Architect",
-    "Network-Solutions-Architect",
-    "Principal-AI-Solutions-Architect"
-   ],
-   "desc": "Principal Engineer - AI Networking Solutions Architect Dell Technologies customers rely on our products and services to drive progress.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/samdesk/jobs/lead-analyst-crisis-intelligence-4626297103",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "samdesk",
-   "title": "Lead Analyst (Crisis Intelligence)",
-   "loc": "Australia",
-   "url": "https://himalayas.app/companies/samdesk/jobs/lead-analyst-crisis-intelligence-4626297103?utm_source=api",
-   "posted": 1792823471000,
-   "tags": [
-    "Crisis-Intelligence",
-    "Intelligence-Analyst",
-    "OSINT-Analyst",
-    "Situational-Awareness-Analyst",
-    "Risk-Analyst"
-   ],
-   "desc": "Lead Analyst APACWe’re looking for an ambitious and passionate team member based in Australia to join our Asia-Pacific Real-Time Coverage (RTC) team!",
-   "salary": "AUD80000–85000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/optimindhealth/jobs/licensed-mental-health-counselor-lmhc-beverly-ma",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "OptiMindHealth",
-   "title": "Licensed Mental Health Counselor (LMHC) - Beverly, MA",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/optimindhealth/jobs/licensed-mental-health-counselor-lmhc-beverly-ma?utm_source=api",
-   "posted": 1792823456000,
-   "tags": [
-    "Mental-Health-Counselor",
-    "Licensed-Mental-Health-Counselor",
-    "Clinical-Counselor",
-    "Psychotherapist",
-    "Behavioral-Health-Counselor"
-   ],
-   "desc": "Licensed Mental Health Counselor (LMHC) $70K-85K/yr Position Requirement: Remote Full-Time and Part-time Positions Available If you are looking for a new opportunity to grow with a clinician founded and clinician led organization, look no further!",
-   "salary": "USD70000–85000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/cleverclicks/jobs/seo-strategist",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "CleverClicks",
-   "title": "SEO Strategist",
-   "loc": "South Africa",
-   "url": "https://himalayas.app/companies/cleverclicks/jobs/seo-strategist?utm_source=api",
-   "posted": 1792823444000,
-   "tags": [
-    "SEO-Strategist",
-    "SEO-Specialist",
-    "Digital-Marketing-Specialist",
-    "Search-Strategist",
-    "SEO-Ranking-Strategist"
-   ],
-   "desc": "CANDIDATE MUST BE BASED IN SOUTH AFRICA• Are you an SEO expert ready to step up and manage your own portfolio of 3 to 4 international clients?",
-   "salary": "ZAR30000–45000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/palo-alto-networks/jobs/professional-services-staff-consultant-xsiam",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Palo Alto Networks",
-   "title": "Professional Services Staff Consultant, XSIAM",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/palo-alto-networks/jobs/professional-services-staff-consultant-xsiam?utm_source=api",
-   "posted": 1792823443000,
-   "tags": [
-    "Professional-Services-Consultant",
-    "Cybersecurity-Consultant",
-    "Security-Operations-Consultant",
-    "SIEM-Consultant",
-    "Technical-Consultant"
-   ],
-   "desc": "Our MissionAt Palo Alto Networks®, we’re united by a shared mission—to protect our digital way of life.",
-   "salary": "USD144000–198000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/launch-potato/jobs/staff-applied-scientist-adtech-4422594481",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Launch Potato",
-   "title": "Staff Applied Scientist, AdTech",
-   "loc": "Panama",
-   "url": "https://himalayas.app/companies/launch-potato/jobs/staff-applied-scientist-adtech-4422594481?utm_source=api",
-   "posted": 1792823414000,
-   "tags": [
-    "Applied-Scientist",
-    "Data-Scientist",
-    "Machine-Learning-Scientist",
-    "Advertising-Scientist",
-    "Staff-Applied-Scientist"
-   ],
-   "desc": "WHO ARE WE? Launch Potato is the discovery and conversion company.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/point-foundation/jobs/controller-director-level",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Point-Foundation",
-   "title": "Controller (Director Level)",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/point-foundation/jobs/controller-director-level?utm_source=api",
-   "posted": 1792823362000,
-   "tags": [
-    "Controller",
-    "Financial-Controller",
-    "Director-of-Accounting",
-    "Accounting-Manager",
-    "Director-Of-Controlling"
-   ],
-   "desc": "Controller (Director Level)About Point FoundationPoint Foundation is the nation's largest scholarship-granting organization for LGBTQ+ and ally students, supporting 1,250 scholars in the 2026–27 academic year.",
-   "salary": "USD120000–140000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/mangone-law-firm-llc/jobs/humanitarian-immigration-attorney-t-visa-u-visa-vawa",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Mangone Law Firm, LLC",
-   "title": "Humanitarian Immigration Attorney - T Visa, U Visa & VAWA",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/mangone-law-firm-llc/jobs/humanitarian-immigration-attorney-t-visa-u-visa-vawa?utm_source=api",
-   "posted": 1792823354000,
-   "tags": [
-    "Immigration-Attorney",
-    "Humanitarian-Immigration",
-    "Immigration-Lawyer",
-    "Removal-Defense-Attorney",
-    "Family-Based-Immigration"
-   ],
-   "desc": "Help survivors of trafficking, violence and crime find safety and legal status.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/mckesson/jobs/pharmacy-sales-consultant",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "McKesson",
-   "title": "Pharmacy Sales Consultant",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/mckesson/jobs/pharmacy-sales-consultant?utm_source=api",
-   "posted": 1792823328000,
-   "tags": [
-    "Pharmaceutical-Sales-Consultant",
-    "Healthcare-Sales-Consultant",
-    "Territory-Sales-Manager",
-    "Account-Executive",
-    "Pharmacy-Sales-Representative"
-   ],
-   "desc": "McKesson is an impact-driven, Fortune 10 company that touches virtually every aspect of healthcare.",
-   "salary": "USD139000–231600"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/abstra-co/jobs/ai-engineer-7729982960",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Abstra",
-   "title": "AI Engineer",
-   "loc": "Remote",
-   "url": "https://himalayas.app/companies/abstra-co/jobs/ai-engineer-7729982960?utm_source=api",
-   "posted": 1792823322000,
-   "tags": [
-    "AI-Engineer",
-    "Machine-Learning-Engineer",
-    "Software-Engineer",
-    "Automation-Engineer",
-    "Systems-Integration-Engineer"
-   ],
-   "desc": "We are looking for an AI-native builder and generalist to lead practical AI adoption across the organization.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/healthsnap/jobs/it-help-desk",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "HealthSnap",
-   "title": "IT Help Desk",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/healthsnap/jobs/it-help-desk?utm_source=api",
-   "posted": 1792823322000,
-   "tags": [
-    "IT-Helpdesk",
-    "IT-Support-Specialist",
-    "Desktop-Support-Technician",
-    "Technical-Support-Specialist",
-    "Service-Desk-Analyst"
-   ],
-   "desc": "HealthSnap (healthsnap. io) empowers patients and their physicians to improve health outcomes using an innovative platform for modern, proactive patient care.",
-   "salary": "USD50000–65000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/kt-healthcare/jobs/regional-service-lead-send-midlands",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "KT Healthcare",
-   "title": "Regional Service Lead (SEND) - Midlands",
-   "loc": "United Kingdom",
-   "url": "https://himalayas.app/companies/kt-healthcare/jobs/regional-service-lead-send-midlands?utm_source=api",
-   "posted": 1792823289000,
-   "tags": [
-    "Regional-Service-Manager",
-    "SEND-Service-Manager",
-    "Service-Operations-Manager",
-    "Healthcare-Services-Manager",
-    "Regional-Lead"
-   ],
-   "desc": "Regional Service Lead (SEND)Location: Based remotely (based within region) or from our Head Office in Chichester Salary: £45,000 - £50,000 plus excellent benefits package Contract: Permanent Hours:37.",
-   "salary": "GBP45000–50000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/friendlier-com/jobs/enterprise-partner-sales-manager",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Friendlier",
-   "title": "Enterprise Partner Sales Manager",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/friendlier-com/jobs/enterprise-partner-sales-manager?utm_source=api",
-   "posted": 1792823278000,
-   "tags": [
-    "Partner-Sales-Manager",
-    "Enterprise-Sales-Manager",
-    "Sales-Manager",
-    "Account-Executive",
-    "Enterprise-Partner-Account-Manager"
-   ],
-   "desc": "Enterprise Partner Sales ManagerLocation:Remote USA or Remote Canada (with ability to travel to US) Hiring Range: $85,000 - $110,000 CAD + Bonus About Us:Friendlier is a trusted reuse partner for campuses, foodservice operators, and institutions across North America, delivering turnkey reusable packaging systems that simplify the shift away from single-use packaging.",
-   "salary": "CAD85000–110000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/inardua/jobs/salesforce-technical-lead-l5",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Inardua",
-   "title": "Salesforce Technical Lead (L5)",
-   "loc": "United Kingdom",
-   "url": "https://himalayas.app/companies/inardua/jobs/salesforce-technical-lead-l5?utm_source=api",
-   "posted": 1792823260000,
-   "tags": [
-    "Salesforce-Technical-Lead",
-    "Salesforce-Solution-Architect",
-    "Solutions-Architect",
-    "Technical-Architect",
-    "Salesforce-Consultant"
-   ],
-   "desc": "About The RoleAs a Salesforce Technical Lead you'll own the technical development of complex, integration-heavy Salesforce solutions and act as the authoritative technical voice for your delivery squad.",
-   "salary": "GBP73800–90200"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/leidos/jobs/loe-1-tech-lead-vulnerability-management-technology",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Leidos",
-   "title": "LOE 1 Tech Lead – Vulnerability Management Technology",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/leidos/jobs/loe-1-tech-lead-vulnerability-management-technology?utm_source=api",
-   "posted": 1792823260000,
-   "tags": [
-    "Technical-Lead",
-    "Security-Engineering-Lead",
-    "Vulnerability-Lead",
-    "Application-Security-Lead",
-    "Cloud-Security-Engineer"
-   ],
-   "desc": "Position Summary The Tech Lead will coordinate and lead vulnerability management technology improvements across multiple technical teams responsible for delivering components of the end-to-end vulnerability management process.",
-   "salary": "USD154050–278475"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/everyday-dose-inc/jobs/senior-brand-manager",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Everyday Dose Inc.",
-   "title": "Senior Brand Manager",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/everyday-dose-inc/jobs/senior-brand-manager?utm_source=api",
-   "posted": 1792823244000,
-   "tags": [
-    "Brand-Manager",
-    "Senior-Brand-Manager",
-    "Marketing-Manager",
-    "Brand-Marketing-Manager",
-    "Senior-Brand-Marketing-Manager"
-   ],
-   "desc": "We’re looking for an experienced Senior Brand Manager to be the day-to-day steward of how our brand shows up in the world, with a strong point of view on how to turn consumer understanding into ideas that build the brand and drive the business.",
-   "salary": "USD120000–140000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/together-for-girls/jobs/individual-giving-and-donor-engagement-manager",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Together for Girls",
-   "title": "Individual Giving and Donor Engagement Manager",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/together-for-girls/jobs/individual-giving-and-donor-engagement-manager?utm_source=api",
-   "posted": 1792823244000,
-   "tags": [
-    "Individual-Giving-Manager",
-    "Donor-Engagement-Manager",
-    "Fundraising-Manager",
-    "Development-Manager",
-    "Philanthropy-Engagement-Manager"
-   ],
-   "desc": "Individual Giving and Donor Engagement Manager Together for Girls works around the world and combines state-of-the-art data with powerful advocacy to end violence against children and adolescents, especially sexual violence.",
-   "salary": "USD72000–84000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/assembly-software/jobs/customer-success-manager-west-region",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Assembly Software",
-   "title": "Customer Success Manager (West Region)",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/assembly-software/jobs/customer-success-manager-west-region?utm_source=api",
-   "posted": 1792823243000,
-   "tags": [
-    "Customer-Success-Manager",
-    "Customer-Success-Specialist",
-    "Account-Manager",
-    "Regional-Customer-Success-Manager",
-    "Full Time"
-   ],
-   "desc": "About Assembly Software Assembly Software is the team behind Neos, the case management platform purpose-built for personal injury law firms, with embedded intelligence that already knows your cases.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/omilia/jobs/strategic-account-executive",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Omilia",
-   "title": "Strategic Account Executive",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/omilia/jobs/strategic-account-executive?utm_source=api",
-   "posted": 1792823197000,
-   "tags": [
-    "Strategic-Account-Executive",
-    "Enterprise-Account-Executive",
-    "Account-Executive",
-    "Enterprise-Sales-Executive",
-    "Strategic-Accounts-Executive"
-   ],
-   "desc": "Role PurposeThe Strategic Account Executive exists to drive Omilia's enterprise revenue growth in the North American market by winning and expanding high-value, strategically important accounts.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/bright-vision-technologies/jobs/software-security-engineer-4657983820",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Bright Vision Technologies",
-   "title": "Software Security Engineer",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/bright-vision-technologies/jobs/software-security-engineer-4657983820?utm_source=api",
-   "posted": 1792823187000,
-   "tags": [
-    "Software-Security-Engineer",
-    "Application-Security-Engineer",
-    "Product-Security-Engineer",
-    "Cloud-Security-Engineer",
-    "DevSecOps-Engineer"
-   ],
-   "desc": "Bright Vision Technologies is a technology consulting and software development company delivering cloud, AI, data, and enterprise solutions across the United States.",
-   "salary": "USD145000–165000"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/dell/jobs/dell-data-platform-sales-specialist",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "dell",
-   "title": "Dell Data Platform Sales Specialist",
-   "loc": "Singapore",
-   "url": "https://himalayas.app/companies/dell/jobs/dell-data-platform-sales-specialist?utm_source=api",
-   "posted": 1792823187000,
-   "tags": [
-    "Sales-Specialist",
-    "Enterprise-Sales-Specialist",
-    "Account-Executive",
-    "Solution-Sales-Specialist",
-    "Data-Platform-Sales-Executive"
-   ],
-   "desc": "Dell Data Platform Sales SpecialistDell Technologies is seeking a Dell Data Platform Sales Specialist to drive strategic growth across the Unstructured Data Solutions portfolio.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/tista-science-and-technology-corporation/jobs/project-manager",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "TISTA Science and Technology Corporation",
-   "title": "Project Manager",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/tista-science-and-technology-corporation/jobs/project-manager?utm_source=api",
-   "posted": 1792823161000,
-   "tags": [
-    "Project-Manager",
-    "Program-Manager",
-    "Agile-Program-Manager",
-    "IT-Project-Manager",
-    "Technical-Program-Manager"
-   ],
-   "desc": "Overview TISTA Science and Technology is seeking to hire a Project Manager to join our growing team in Austin!",
-   "salary": "USD65234–73645"
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/thehivecareers/jobs/chief-digital-assets-officer-cdao-8301849609",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "TheHiveCareers",
-   "title": "Chief Digital Assets Officer (CDAO)",
-   "loc": "Guyana",
-   "url": "https://himalayas.app/companies/thehivecareers/jobs/chief-digital-assets-officer-cdao-8301849609?utm_source=api",
-   "posted": 1792823138000,
-   "tags": [
-    "Chief-Digital-Assets-Officer",
-    "Chief-Blockchain-Officer",
-    "Chief-Financial-Technology-Officer",
-    "Digital-Asset-Strategy",
-    "Digital-Asset-Officer"
-   ],
-   "desc": "Role SummaryThe Chief Digital Assets Officer (CDAO) is responsible for leading the organization's digital assets strategy, including tokenized assets, digital securities, cryptocurrencies, central bank digital currencies (CBDCs), custody solutions, and blockchain-enabled financial products.",
-   "salary": ""
-  },
-  {
-   "id": "himalayas:https://himalayas.app/companies/novartis/jobs/manager-product-trainer-neuro-immunology-multiple-positions",
-   "src": "himalayas",
-   "srcLabel": "Himalayas",
-   "company": "Novartis",
-   "title": "Manager, Product Trainer Neuro - Immunology- Multiple Positions",
-   "loc": "United States",
-   "url": "https://himalayas.app/companies/novartis/jobs/manager-product-trainer-neuro-immunology-multiple-positions?utm_source=api",
-   "posted": 1792823123000,
-   "tags": [
-    "Product-Trainer",
-    "Training-Manager",
-    "Sales-Training-Manager",
-    "Learning-And-Development-Manager",
-    "Pharmaceutical-Training-Specialist"
-   ],
-   "desc": "Job Description Summary This position can be based remotely anywhere in the U.",
-   "salary": "USD126000–234000"
   },
   {
    "id": "gh:anthropic-5448366008",
@@ -1739,19 +2350,6 @@
    "loc": "New York",
    "url": "https://www.mongodb.com/careers/job/?gh_jid=6982487",
    "posted": 1792816719000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:anthropic-5462881008",
-   "src": "greenhouse",
-   "srcLabel": "Anthropic",
-   "company": "Anthropic",
-   "title": "Incident Manager, Safeguards",
-   "loc": "San Francisco, CA | New York City, NY | Washington, DC",
-   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5462881008",
-   "posted": 1792815979000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -2478,32 +3076,6 @@
    "salary": ""
   },
   {
-   "id": "gh:cloudflare-8080780",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Senior Software Engineer, Cloudflare Queues",
-   "loc": "In-Office",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8080780?gh_jid=8080780",
-   "posted": 1792789881000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:cloudflare-8016162",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Senior Software Engineer, Cloudflare Hyperdrive",
-   "loc": "In-Office",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8016162?gh_jid=8016162",
-   "posted": 1792789500000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:twilio-7595407",
    "src": "greenhouse",
    "srcLabel": "Twilio",
@@ -2538,45 +3110,6 @@
    "loc": "San Francisco, CA",
    "url": "https://stripe.com/jobs/search?gh_jid=7918088",
    "posted": 1792789148000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:cloudflare-6998777",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Senior Design Engineer",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/6998777?gh_jid=6998777",
-   "posted": 1792789037000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:cloudflare-7629805",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Senior Infrastructure Engineer, Storage Platform",
-   "loc": "In-Office",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/7629805?gh_jid=7629805",
-   "posted": 1792788970000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:cloudflare-8043974",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Senior Machine Learning Engineer",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8043974?gh_jid=8043974",
-   "posted": 1792788869000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -2767,19 +3300,6 @@
    "salary": ""
   },
   {
-   "id": "gh:cloudflare-7093840",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Senior Systems Engineer, Basin Pipelines",
-   "loc": "In-Office",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/7093840?gh_jid=7093840",
-   "posted": 1792785815000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:anthropic-5462718008",
    "src": "greenhouse",
    "srcLabel": "Anthropic",
@@ -2801,19 +3321,6 @@
    "loc": "São Paulo, São Paulo, Brazil",
    "url": "https://www.brex.com/careers/8832353002?gh_jid=8832353002",
    "posted": 1792785360000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:samsara-8256425",
-   "src": "greenhouse",
-   "srcLabel": "Samsara",
-   "company": "Samsara",
-   "title": "Staff Product Operations Manager, Platform",
-   "loc": "Remote - US",
-   "url": "https://www.samsara.com/company/careers/roles/8256425?gh_jid=8256425",
-   "posted": 1792785017000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -3007,19 +3514,6 @@
    "salary": ""
   },
   {
-   "id": "gh:samsara-8064913",
-   "src": "greenhouse",
-   "srcLabel": "Samsara",
-   "company": "Samsara",
-   "title": "Customer Success Manager",
-   "loc": "Remote - US",
-   "url": "https://www.samsara.com/company/careers/roles/8064913?gh_jid=8064913",
-   "posted": 1792782280000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:stripe-8230306",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -3093,19 +3587,6 @@
    "loc": "San Francisco, CA | Seattle, WA | New York City, NY | Washington, DC",
    "url": "https://job-boards.greenhouse.io/anthropic/jobs/5415864008",
    "posted": 1792781928000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:databricks-8414474002",
-   "src": "greenhouse",
-   "srcLabel": "Databricks",
-   "company": "Databricks",
-   "title": "Sr. Financial Analyst",
-   "loc": "Mountain View, California; San Francisco, California",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8414474002",
-   "posted": 1792781907000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -3374,19 +3855,6 @@
    "salary": ""
   },
   {
-   "id": "gh:airbnb-8316843",
-   "src": "greenhouse",
-   "srcLabel": "Airbnb",
-   "company": "Airbnb",
-   "title": "Connectivity Partner Manager",
-   "loc": "United States",
-   "url": "https://careers.airbnb.com/positions/8316843?gh_jid=8316843",
-   "posted": 1792776176000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:twilio-8071710",
    "src": "greenhouse",
    "srcLabel": "Twilio",
@@ -3523,19 +3991,6 @@
    "salary": ""
   },
   {
-   "id": "gh:cloudflare-8087792",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Senior Systems Engineer",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8087792?gh_jid=8087792",
-   "posted": 1792774022000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:gitlab-8907130002",
    "src": "greenhouse",
    "srcLabel": "GitLab",
@@ -3583,19 +4038,6 @@
    "loc": "Remote, Poland",
    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8911684002",
    "posted": 1792773603000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:cloudflare-8306580",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Principal, GTM Automation, RevOps.",
-   "loc": "Distributed",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8306580?gh_jid=8306580",
-   "posted": 1792773575000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -3721,32 +4163,6 @@
    "salary": ""
   },
   {
-   "id": "gh:cloudflare-8311366",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Data Center Network Operations Engineer",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8311366?gh_jid=8311366",
-   "posted": 1792772374000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:cloudflare-8311378",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Data Center Network Operations Engineer",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8311378?gh_jid=8311378",
-   "posted": 1792772330000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:brex-8795500002",
    "src": "greenhouse",
    "srcLabel": "Brex",
@@ -3851,45 +4267,6 @@
    "salary": ""
   },
   {
-   "id": "gh:cloudflare-8279302",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Program Lead Strategic CDN Accounts GTM",
-   "loc": "Distributed",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8279302?gh_jid=8279302",
-   "posted": 1792771079000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:cloudflare-7978788",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Senior Customer Engineer, Central & Eastern Europe - Hebrew Speaking",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/7978788?gh_jid=7978788",
-   "posted": 1792770972000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:cloudflare-8312664",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Senior Customer Engineer, Central & Eastern Europe - Russian Speaking",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8312664?gh_jid=8312664",
-   "posted": 1792770845000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:stripe-8284962",
    "src": "greenhouse",
    "srcLabel": "Stripe",
@@ -3911,32 +4288,6 @@
    "loc": "United States",
    "url": "https://www.mongodb.com/careers/job/?gh_jid=8312165",
    "posted": 1792770650000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:cloudflare-8312693",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Senior Manager, Customer Engineering - Central Eastern Europe",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8312693?gh_jid=8312693",
-   "posted": 1792770393000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:cloudflare-8219962",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Senior Sales Manager, Central Eastern Europe - Digital Natives",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8219962?gh_jid=8219962",
-   "posted": 1792770290000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -3981,32 +4332,6 @@
    "salary": ""
   },
   {
-   "id": "gh:mongodb-7318558",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Account Development Representative",
-   "loc": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7318558",
-   "posted": 1792769514000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:mongodb-7310552",
-   "src": "greenhouse",
-   "srcLabel": "MongoDB",
-   "company": "MongoDB",
-   "title": "Account Development Representative",
-   "loc": "Boston",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7310552",
-   "posted": 1792769514000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:mongodb-7318466",
    "src": "greenhouse",
    "srcLabel": "MongoDB",
@@ -4027,6 +4352,32 @@
    "title": "Account Development Representative",
    "loc": "Kuala Lumpur",
    "url": "https://www.mongodb.com/careers/job/?gh_jid=8079914",
+   "posted": 1792769514000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:mongodb-7318558",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Account Development Representative",
+   "loc": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7318558",
+   "posted": 1792769514000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:mongodb-7310552",
+   "src": "greenhouse",
+   "srcLabel": "MongoDB",
+   "company": "MongoDB",
+   "title": "Account Development Representative",
+   "loc": "Boston",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7310552",
    "posted": 1792769514000,
    "tags": [],
    "desc": "",
@@ -4145,19 +4496,6 @@
    "loc": "London, UK",
    "url": "https://job-boards.greenhouse.io/anthropic/jobs/5454188008",
    "posted": 1792768521000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:cloudflare-8248563",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Logistics Operations Specialist",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8248563?gh_jid=8248563",
-   "posted": 1792768507000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -4519,19 +4857,6 @@
    "salary": ""
   },
   {
-   "id": "gh:twilio-8055481",
-   "src": "greenhouse",
-   "srcLabel": "Twilio",
-   "company": "Twilio",
-   "title": "Security Engineer, Incident Response",
-   "loc": "Remote - United Kingdom",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8055481",
-   "posted": 1792766155000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:twilio-8023560",
    "src": "greenhouse",
    "srcLabel": "Twilio",
@@ -4539,6 +4864,19 @@
    "title": "Security Engineer, Incident Response",
    "loc": "Remote - Ireland",
    "url": "https://job-boards.greenhouse.io/twilio/jobs/8023560",
+   "posted": 1792766155000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:twilio-8055481",
+   "src": "greenhouse",
+   "srcLabel": "Twilio",
+   "company": "Twilio",
+   "title": "Security Engineer, Incident Response",
+   "loc": "Remote - United Kingdom",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8055481",
    "posted": 1792766155000,
    "tags": [],
    "desc": "",
@@ -4730,19 +5068,6 @@
    "salary": ""
   },
   {
-   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164087",
-   "src": "jobspresso",
-   "srcLabel": "Jobspresso",
-   "company": "",
-   "title": "HR Generalist",
-   "loc": "Remote",
-   "url": "https://jobspresso.co/job/jdi-integrations-worldwide-various-hr-generalist-us-hours-et-full-time-long-term-remote/",
-   "posted": 1792763730000,
-   "tags": [],
-   "desc": "About JDI Integrations JDI Integrations is a US-based Service-Disabled Veteran-Owned Small Business (SDVOSB) that specializes in supplying US government organizations with physical security solutions, expeditionary site solutions, storage optimization, tactical communication, and general contracting services. We deliver mission-critical solutions, technical support, and seamless end-to-end executi",
-   "salary": ""
-  },
-  {
    "id": "gh:gitlab-8909618002",
    "src": "greenhouse",
    "srcLabel": "GitLab",
@@ -4890,19 +5215,6 @@
    "loc": "Remote UK",
    "url": "https://job-boards.greenhouse.io/affirm/jobs/8020318003",
    "posted": 1792761643000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:cloudflare-8288769",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Principal Engineer",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8288769?gh_jid=8288769",
-   "posted": 1792761313000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -5064,19 +5376,6 @@
    "salary": ""
   },
   {
-   "id": "gh:cloudflare-8258771",
-   "src": "greenhouse",
-   "srcLabel": "Cloudflare",
-   "company": "Cloudflare",
-   "title": "Senior Named Account Executive, Saudi Arabia",
-   "loc": "Hybrid",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8258771?gh_jid=8258771",
-   "posted": 1792754810000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:figma-6229275004",
    "src": "greenhouse",
    "srcLabel": "Figma",
@@ -5085,19 +5384,6 @@
    "loc": "Bengaluru, India",
    "url": "https://boards.greenhouse.io/figma/jobs/6229275004?gh_jid=6229275004",
    "posted": 1792753120000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:anthropic-5460837008",
-   "src": "greenhouse",
-   "srcLabel": "Anthropic",
-   "company": "Anthropic",
-   "title": "International Finance Program Management",
-   "loc": "Dublin, IE",
-   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5460837008",
-   "posted": 1792752530000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -5115,19 +5401,6 @@
     "Marketing",
     "FullTime"
    ],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:razorpaysoftwareprivatelimited-4746961005",
-   "src": "greenhouse",
-   "srcLabel": "Razorpay",
-   "company": "Razorpay",
-   "title": "Lead Software Development Engineer",
-   "loc": "Bengaluru",
-   "url": "https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited/jobs/4746961005",
-   "posted": 1792750913000,
-   "tags": [],
    "desc": "",
    "salary": ""
   },
@@ -5174,19 +5447,6 @@
    "salary": ""
   },
   {
-   "id": "gh:rubrik-8141404",
-   "src": "greenhouse",
-   "srcLabel": "Rubrik",
-   "company": "Rubrik",
-   "title": "Senior Project Manager, Professional Services",
-   "loc": "Bangalore, India",
-   "url": "https://www.rubrik.com/company/careers/departments/job.8141404?gh_jid=8141404",
-   "posted": 1792745860000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:airbnb-8095268",
    "src": "greenhouse",
    "srcLabel": "Airbnb",
@@ -5195,19 +5455,6 @@
    "loc": "United States",
    "url": "https://careers.airbnb.com/positions/8095268?gh_jid=8095268",
    "posted": 1792744451000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:stripe-8175820",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Seller Systems Team Lead (Night Shift)",
-   "loc": "Bengaluru",
-   "url": "https://stripe.com/jobs/search?gh_jid=8175820",
-   "posted": 1792743368000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -5262,71 +5509,6 @@
    "posted": 1792741464000,
    "tags": [],
    "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164074",
-   "src": "jobspresso",
-   "srcLabel": "Jobspresso",
-   "company": "",
-   "title": "Solutions Engineer Commercial (Expansion Sales)",
-   "loc": "Remote",
-   "url": "https://jobspresso.co/job/solutions-engineer-commercial-expansion-sales/",
-   "posted": 1792740557000,
-   "tags": [],
-   "desc": "Thank you for considering Tailscale. If this job description resonates with you, please apply. Frequently cited statistics show that people who identify with historically marginalized groups are likely to apply to jobs only if they meet 100% of the qualifications. We encourage you to help us break that statistic! About Tailscale Tailscale is making safe",
-   "salary": ""
-  },
-  {
-   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164072",
-   "src": "jobspresso",
-   "srcLabel": "Jobspresso",
-   "company": "",
-   "title": "Project Manager",
-   "loc": "Remote",
-   "url": "https://jobspresso.co/job/project-manager/",
-   "posted": 1792740386000,
-   "tags": [],
-   "desc": "Superside is looking for Project Managers to strengthen our team. You will craft and execute creative strategies and assets for some of the world s most forward-thinking companies. All of this while working in a global remote community focused on shaping the future of creative work. In this role, you ll take ownership of key accounts from",
-   "salary": ""
-  },
-  {
-   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164070",
-   "src": "jobspresso",
-   "srcLabel": "Jobspresso",
-   "company": "",
-   "title": "Crypto Researcher",
-   "loc": "Remote",
-   "url": "https://jobspresso.co/job/crypto-researcher/",
-   "posted": 1792740191000,
-   "tags": [],
-   "desc": "Crypto Banter is the world s No.1 LIVE crypto streaming channel with multiple distribution arms, sharing breaking news and alpha to the world. What started with two enthusiasts in a coffee shop has evolved into a consortium of the most influential media channels in the industry, accruing over 10M monthly views; and a suite of products",
-   "salary": ""
-  },
-  {
-   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164069",
-   "src": "jobspresso",
-   "srcLabel": "Jobspresso",
-   "company": "",
-   "title": "Senior Platform Engineer",
-   "loc": "Remote",
-   "url": "https://jobspresso.co/job/senior-platform-engineer/",
-   "posted": 1792740044000,
-   "tags": [],
-   "desc": "Saga is building a suite of products across the crypto ecosystem — from consumer fintech apps to DeFi protocols and the SagaEVM chain. Our mission is to build products and infrastructure that push the crypto ecosystem forward — whether that s consumer applications, DeFi primitives, or the chains themselves. Our team is world-class — veteran web3",
-   "salary": ""
-  },
-  {
-   "id": "jobspresso:https://jobspresso.co/?post_type=job_listing p=164067",
-   "src": "jobspresso",
-   "srcLabel": "Jobspresso",
-   "company": "",
-   "title": "Senior AI Engineer",
-   "loc": "Remote",
-   "url": "https://jobspresso.co/job/senior-ai-engineer-3/",
-   "posted": 1792739914000,
-   "tags": [],
-   "desc": "Saga is building the infrastructure and products for the next generation of AI agents. Our AI Character Agent Network allows studios, creators, and publishers to turn their most iconic IP into living, breathing digital companions that engage fans across social media, drive organic user acquisition, and power a new kind of agentic commerce. Our agents",
    "salary": ""
   },
   {
@@ -5403,19 +5585,6 @@
    "loc": "Palo Alto,CA",
    "url": "https://www.rubrik.com/company/careers/departments/job.8306452?gh_jid=8306452",
    "posted": 1792729565000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:stripe-8287916",
-   "src": "greenhouse",
-   "srcLabel": "Stripe",
-   "company": "Stripe",
-   "title": "Credit Risk Analyst Commercial Underwriter",
-   "loc": "Singapore",
-   "url": "https://stripe.com/jobs/search?gh_jid=8287916",
-   "posted": 1792726664000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -5867,19 +6036,6 @@
    "salary": ""
   },
   {
-   "id": "gh:elastic-8311493",
-   "src": "greenhouse",
-   "srcLabel": "Elastic",
-   "company": "Elastic",
-   "title": "Senior Software Engineer - Control Plane (Hosted Foundations / Applications) ",
-   "loc": "Portugal",
-   "url": "https://jobs.elastic.co/jobs?gh_jid=8311493&gh_jid=8311493",
-   "posted": 1792704310000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:affirm-8038196003",
    "src": "greenhouse",
    "srcLabel": "Affirm",
@@ -6021,32 +6177,6 @@
    "loc": "Seattle, Washington, United States",
    "url": "https://www.brex.com/careers/8784418002?gh_jid=8784418002",
    "posted": 1792700788000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:brex-8784416002",
-   "src": "greenhouse",
-   "srcLabel": "Brex",
-   "company": "Brex",
-   "title": "Senior Growth Marketing Manager, Paid Social",
-   "loc": "New York, New York, United States",
-   "url": "https://www.brex.com/careers/8784416002?gh_jid=8784416002",
-   "posted": 1792700774000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:brex-8782292002",
-   "src": "greenhouse",
-   "srcLabel": "Brex",
-   "company": "Brex",
-   "title": "Senior Growth Marketing Manager, Paid Social",
-   "loc": "San Francisco, California, United States",
-   "url": "https://www.brex.com/careers/8782292002?gh_jid=8782292002",
-   "posted": 1792700756000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -6581,19 +6711,6 @@
    "salary": ""
   },
   {
-   "id": "gh:brex-8845851002",
-   "src": "greenhouse",
-   "srcLabel": "Brex",
-   "company": "Brex",
-   "title": "Senior Brand Producer",
-   "loc": "New York, New York, United States; San Francisco, California, United States",
-   "url": "https://www.brex.com/careers/8845851002?gh_jid=8845851002",
-   "posted": 1792687561000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:squarepointcapital-8209423",
    "src": "greenhouse",
    "srcLabel": "Squarepoint",
@@ -6828,19 +6945,6 @@
    "salary": ""
   },
   {
-   "id": "gh:robinhood-8312485",
-   "src": "greenhouse",
-   "srcLabel": "Robinhood",
-   "company": "Robinhood",
-   "title": "Fraud Operations Program Manager",
-   "loc": "Chicago, IL; Denver, CO; Lake Mary, FL; Westlake, TX",
-   "url": "https://boards.greenhouse.io/robinhood/jobs/8312485?t=gh_src=&gh_jid=8312485",
-   "posted": 1792681011000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:gitlab-8860273002",
    "src": "greenhouse",
    "srcLabel": "GitLab",
@@ -6849,32 +6953,6 @@
    "loc": "Remote Ireland; Remote, Germany; Remote, Spain; Remote, United Kingdom",
    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8860273002",
    "posted": 1792679563000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:brex-8536988002",
-   "src": "greenhouse",
-   "srcLabel": "Brex",
-   "company": "Brex",
-   "title": "Implementation Consultant, Commercial",
-   "loc": "Vancouver, British Columbia, Canada",
-   "url": "https://www.brex.com/careers/8536988002?gh_jid=8536988002",
-   "posted": 1792679392000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:brex-8536986002",
-   "src": "greenhouse",
-   "srcLabel": "Brex",
-   "company": "Brex",
-   "title": "Implementation Consultant, Commercial",
-   "loc": "Salt Lake City, Utah, United States",
-   "url": "https://www.brex.com/careers/8536986002?gh_jid=8536986002",
-   "posted": 1792679339000,
    "tags": [],
    "desc": "",
    "salary": ""
@@ -6996,6 +7074,19 @@
     "HR Business Partner",
     "Full-time Employment"
    ],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:rubrik-7472096",
+   "src": "greenhouse",
+   "srcLabel": "Rubrik",
+   "company": "Rubrik",
+   "title": "Sr. Sales Engineer - Rubrik Agent Cloud",
+   "loc": "Colorado, Illinois ",
+   "url": "https://www.rubrik.com/company/careers/departments/job.7472096?gh_jid=7472096",
+   "posted": 1792671217000,
+   "tags": [],
    "desc": "",
    "salary": ""
   },
@@ -7527,32 +7618,6 @@
    "salary": ""
   },
   {
-   "id": "gh:pinterest-8015360",
-   "src": "greenhouse",
-   "srcLabel": "Pinterest",
-   "company": "Pinterest",
-   "title": "Manager II, Engineering- Analytics Engineering, Core Data Science",
-   "loc": "San Francisco, CA, US; Remote, US",
-   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8015360",
-   "posted": 1792616765000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:pinterest-8015346",
-   "src": "greenhouse",
-   "srcLabel": "Pinterest",
-   "company": "Pinterest",
-   "title": " Staff Software, Engineering – Analytics Engineering, Core Data Science",
-   "loc": "San Francisco, CA, US; Remote, US",
-   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8015346",
-   "posted": 1792616761000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "lv:paytm-b1e79ea6-5f63-46a0-b341-df4105d8807c",
    "src": "lever",
    "srcLabel": "Paytm",
@@ -7792,19 +7857,6 @@
    "salary": ""
   },
   {
-   "id": "gh:janestreet-8842136002",
-   "src": "greenhouse",
-   "srcLabel": "Jane Street",
-   "company": "Jane Street",
-   "title": "Cybersecurity Engineer",
-   "loc": "London, England, United Kingdom",
-   "url": "https://www.janestreet.com/join-jane-street/apply/8842136002?gh_jid=8842136002",
-   "posted": 1792605578000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:janestreet-8842129002",
    "src": "greenhouse",
    "srcLabel": "Jane Street",
@@ -7831,13 +7883,13 @@
    "salary": ""
   },
   {
-   "id": "gh:janestreet-8786447002",
+   "id": "gh:janestreet-8842136002",
    "src": "greenhouse",
    "srcLabel": "Jane Street",
    "company": "Jane Street",
-   "title": "Data Center Operations Engineer",
-   "loc": "Austin, Texas, United States",
-   "url": "https://www.janestreet.com/join-jane-street/apply/8786447002?gh_jid=8786447002",
+   "title": "Cybersecurity Engineer",
+   "loc": "London, England, United Kingdom",
+   "url": "https://www.janestreet.com/join-jane-street/apply/8842136002?gh_jid=8842136002",
    "posted": 1792605578000,
    "tags": [],
    "desc": "",
@@ -7851,6 +7903,19 @@
    "title": "Data Center Operations Engineer",
    "loc": "Chicago",
    "url": "https://www.janestreet.com/join-jane-street/apply/8786398002?gh_jid=8786398002",
+   "posted": 1792605578000,
+   "tags": [],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:janestreet-8786447002",
+   "src": "greenhouse",
+   "srcLabel": "Jane Street",
+   "company": "Jane Street",
+   "title": "Data Center Operations Engineer",
+   "loc": "Austin, Texas, United States",
+   "url": "https://www.janestreet.com/join-jane-street/apply/8786447002?gh_jid=8786447002",
    "posted": 1792605578000,
    "tags": [],
    "desc": "",
@@ -8542,19 +8607,6 @@
    "title": "Head of Professional Services",
    "loc": "Hybrid - San Francisco, New York City, Austin",
    "url": "https://job-boards.greenhouse.io/vercel/jobs/6120051004",
-   "posted": 1792526055000,
-   "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "gh:vercel-6196563004",
-   "src": "greenhouse",
-   "srcLabel": "Vercel",
-   "company": "Vercel",
-   "title": "Senior Accountant",
-   "loc": "Hybrid - San Francisco",
-   "url": "https://job-boards.greenhouse.io/vercel/jobs/6196563004",
    "posted": 1792526055000,
    "tags": [],
    "desc": "",
@@ -9427,22 +9479,6 @@
    "salary": ""
   },
   {
-   "id": "lv:paytm-648841ab-2778-4759-a4c9-eabae97ec65d",
-   "src": "lever",
-   "srcLabel": "Paytm",
-   "company": "Paytm",
-   "title": "Talent Acquisition- Intern || Noida ||",
-   "loc": "Noida, Uttar Pradesh",
-   "url": "https://jobs.lever.co/paytm/648841ab-2778-4759-a4c9-eabae97ec65d",
-   "posted": 1792359011484,
-   "tags": [
-    "HR",
-    "Intern"
-   ],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "ab:perplexity-63785f62-07ac-4dc5-8f68-57779dddb1f3",
    "src": "ashby",
    "srcLabel": "Perplexity",
@@ -9756,6 +9792,22 @@
    "tags": [
     "Sales",
     "FullTime"
+   ],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "lv:paytm-601f0c35-ed32-4447-b39d-82cd4c6e14b8",
+   "src": "lever",
+   "srcLabel": "Paytm",
+   "company": "Paytm",
+   "title": "Process Trainer - TL - Lending",
+   "loc": "Pune, Maharashtra",
+   "url": "https://jobs.lever.co/paytm/601f0c35-ed32-4447-b39d-82cd4c6e14b8",
+   "posted": 1792091390911,
+   "tags": [
+    "Lending",
+    "Full-time Employment"
    ],
    "desc": "",
    "salary": ""
@@ -10955,22 +11007,6 @@
    "salary": ""
   },
   {
-   "id": "ab:perplexity-446ec593-aa8d-4ae4-a2c1-859b8373e1d5",
-   "src": "ashby",
-   "srcLabel": "Perplexity",
-   "company": "Perplexity",
-   "title": "Enterprise Sales Manager",
-   "loc": "New York City",
-   "url": "https://jobs.ashbyhq.com/perplexity/446ec593-aa8d-4ae4-a2c1-859b8373e1d5",
-   "posted": 1791492480336,
-   "tags": [
-    "Sales",
-    "FullTime"
-   ],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "gh:squarepointcapital-8045124",
    "src": "greenhouse",
    "srcLabel": "Squarepoint",
@@ -11032,22 +11068,6 @@
    "url": "https://www.tower-research.com/open-positions/?gh_jid=8198271",
    "posted": 1791485091000,
    "tags": [],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "ab:perplexity-c20486f5-1e9c-436c-ba67-dc69842c221c",
-   "src": "ashby",
-   "srcLabel": "Perplexity",
-   "company": "Perplexity",
-   "title": "Member of Technical Staff (Search Crawler Analyst)",
-   "loc": "Belgrade",
-   "url": "https://jobs.ashbyhq.com/perplexity/c20486f5-1e9c-436c-ba67-dc69842c221c",
-   "posted": 1791479366530,
-   "tags": [
-    "Search",
-    "FullTime"
-   ],
    "desc": "",
    "salary": ""
   },
@@ -11470,6 +11490,19 @@
     "Infrastructure",
     "Full Time Employee"
    ],
+   "desc": "",
+   "salary": ""
+  },
+  {
+   "id": "gh:razorpaysoftwareprivatelimited-4740730005",
+   "src": "greenhouse",
+   "srcLabel": "Razorpay",
+   "company": "Razorpay",
+   "title": "Analyst, Banking Alliances",
+   "loc": "Lucknow",
+   "url": "https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited/jobs/4740730005",
+   "posted": 1791353248000,
+   "tags": [],
    "desc": "",
    "salary": ""
   },
@@ -12110,44 +12143,6 @@
    "salary": ""
   },
   {
-   "id": "wnomads:https://www.workingnomads.com/job/go/1891955/",
-   "src": "workingnomads",
-   "srcLabel": "Working Nomads",
-   "company": "Beekman Social",
-   "title": "Beekman Social - Account Manager",
-   "loc": "Remote, USA Only",
-   "url": "https://www.workingnomads.com/job/go/1891955/",
-   "posted": 1790318173000,
-   "tags": [
-    "account manager",
-    "client relationship",
-    "communication",
-    "creative",
-    "strategy"
-   ],
-   "desc": "OPPORTUNITY: ACCOUNT MANAGER Minimum 3 years of experience working in account management within a social, creative, or integrated agency Freelance role, with possibilities of it becoming a Full Time position BKMN is a fully remote agency Hourly rate / compensation based on experience Beekman Social is currently seeking a sharp, client-facing Account Manager to support key accounts on a freelance b",
-   "salary": ""
-  },
-  {
-   "id": "wnomads:https://www.workingnomads.com/job/go/1889808/",
-   "src": "workingnomads",
-   "srcLabel": "Working Nomads",
-   "company": "CloudGeometry",
-   "title": "Stack .NET Developer / Algorithm Engineer – Backend Focus.",
-   "loc": "Brazil",
-   "url": "https://www.workingnomads.com/job/go/1889808/",
-   "posted": 1790261856000,
-   "tags": [
-    "dotnet",
-    "sql",
-    "architecture",
-    "react",
-    "communication"
-   ],
-   "desc": "Stack .NET Developer / Algorithm Engineer – Backend Focus. Remote We are looking for an experienced Full Stack .Net Developer, very strong on backend with some experience on F/E (react)to join our team and work on core components of a system designed to reduce healthcare costs through drug cost transparency at the point of care. This is a complex product featuring multiple integrations, APIs, a mi",
-   "salary": ""
-  },
-  {
    "id": "lv:cred-b3fdba2a-802c-4e03-b445-5284c5e3c157",
    "src": "lever",
    "srcLabel": "CRED",
@@ -12164,22 +12159,6 @@
    "salary": ""
   },
   {
-   "id": "ab:supabase-c9f78e74-fb9d-4cd0-af0b-b1cec4632331",
-   "src": "ashby",
-   "srcLabel": "Supabase",
-   "company": "Supabase",
-   "title": "OrioleDB Deployment Engineer (AMER)",
-   "loc": "Remote, AMER",
-   "url": "https://jobs.ashbyhq.com/supabase/c9f78e74-fb9d-4cd0-af0b-b1cec4632331",
-   "posted": 1790191268593,
-   "tags": [
-    "Engineering",
-    "FullTime"
-   ],
-   "desc": "",
-   "salary": ""
-  },
-  {
    "id": "ab:sarvam-1eb3008a-2014-4a6c-8a35-cfa7caf8a60f",
    "src": "ashby",
    "srcLabel": "Sarvam AI",
@@ -12190,22 +12169,6 @@
    "posted": 1790175526637,
    "tags": [
     "Marketing",
-    "FullTime"
-   ],
-   "desc": "",
-   "salary": ""
-  },
-  {
-   "id": "ab:supabase-ab8d1463-bc97-417f-97b1-bfc1fe619b3e",
-   "src": "ashby",
-   "srcLabel": "Supabase",
-   "company": "Supabase",
-   "title": "Database Support Engineer (Japanese Speaking)",
-   "loc": "Remote, APAC",
-   "url": "https://jobs.ashbyhq.com/supabase/ab8d1463-bc97-417f-97b1-bfc1fe619b3e",
-   "posted": 1790171922792,
-   "tags": [
-    "Support",
     "FullTime"
    ],
    "desc": "",
